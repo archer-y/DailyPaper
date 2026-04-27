@@ -13,6 +13,23 @@ dotenv.load_dotenv()
 
 def apply_runtime_env_overrides(config: DictConfig) -> None:
     with open_dict(config):
+        # Zotero credentials
+        zotero_id = os.getenv("ZOTERO_ID")
+        if zotero_id:
+            config.zotero.user_id = zotero_id
+        zotero_key = os.getenv("ZOTERO_KEY")
+        if zotero_key:
+            config.zotero.api_key = zotero_key
+        
+        # LLM API credentials
+        openai_key = os.getenv("OPENAI_API_KEY")
+        if openai_key:
+            config.llm.api.key = openai_key
+        openai_base_url = os.getenv("OPENAI_BASE_URL")
+        if openai_base_url:
+            config.llm.api.base_url = openai_base_url
+        
+        # arXiv settings
         arxiv_query = os.getenv("ARXIV_QUERY")
         if arxiv_query:
             config.source.arxiv.category = [

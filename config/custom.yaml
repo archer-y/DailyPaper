@@ -1,6 +1,6 @@
 zotero:
-  user_id: ${oc.env:ZOTERO_ID}
-  api_key: ${oc.env:ZOTERO_KEY}
+  user_id: null  # Set via ZOTERO_ID environment variable
+  api_key: null  # Set via ZOTERO_KEY environment variable
   include_path: ["000-正在阅读/**"]
 
 email:
@@ -13,8 +13,8 @@ email:
 
 llm:
   api:
-    key: ${oc.env:OPENAI_API_KEY}
-    base_url: ${oc.env:OPENAI_BASE_URL,https://api.openai.com/v1}
+    key: null  # Set via OPENAI_API_KEY environment variable
+    base_url: null  # Set via OPENAI_BASE_URL environment variable
   generation_kwargs:
     model: glm-5
   language: Chinese
