@@ -1,19 +1,21 @@
+from .enrichment import apply_keyword_boost, deduplicate_papers, enrich_papers, prefilter_papers_with_code, parallel_filter
+from .protocol import CorpusPaper, Paper
+import os
+from openai import OpenAI
 from loguru import logger
 from pyzotero import zotero
-from omegaconf import DictConfig, ListConfig
+from omegaconf import DictConfig, ListConfig, OmegaConf
 from .utils import glob_match
 from .retriever import get_retriever_cls
-from .protocol import CorpusPaper
+from .reranker import get_reranker_cls
+from tqdm import tqdm
 import random
 from datetime import datetime
-from .reranker import get_reranker_cls
-from .construct_email import render_email
-from .utils import send_email
-from .enrichment import apply_keyword_boost, deduplicate_papers, enrich_papers, prefilter_papers_with_code, parallel_filter
+from .enrichment import apply_keyword_boost, deduplicate_papers, enrich_papers
 from .notifier import send_notifications
 from .reporting import write_outputs
-from openai import OpenAI
-from tqdm import tqdm
+from .utils import send_email
+from .construct_email import render_email
 
 
 def normalize_path_patterns(patterns: list[str] | ListConfig | None, config_key: str) -> list[str] | None:
@@ -35,6 +37,36 @@ def normalize_path_patterns(patterns: list[str] | ListConfig | None, config_key:
 class Executor:
     def __init__(self, config:DictConfig):
         self.config = config
+        
+        # Override with environment variables if not set in config
+        if not config.zotero.get("user_id") or config.zotero.user_id is None:
+            zotero_id = os.getenv("ZOTERO_ID")
+            if zotero_id:
+                OmegaConf.set_struct(config, False)
+                config.zotero.user_id = zotero_id
+                OmegaConf.set_struct(config, True)
+        
+        if not config.zotero.get("api_key") or config.zotero.api_key is None:
+            zotero_key = os.getenv("ZOTERO_KEY")
+            if zotero_key:
+                OmegaConf.set_struct(config, False)
+                config.zotero.api_key = zotero_key
+                OmegaConf.set_struct(config, True)
+        
+        if not config.llm.api.get("key") or config.llm.api.key is None:
+            openai_key = os.getenv("OPENAI_API_KEY")
+            if openai_key:
+                OmegaConf.set_struct(config, False)
+                config.llm.api.key = openai_key
+                OmegaConf.set_struct(config, True)
+        
+        if not config.llm.api.get("base_url") or config.llm.api.base_url is None:
+            openai_base_url = os.getenv("OPENAI_BASE_URL")
+            if openai_base_url:
+                OmegaConf.set_struct(config, False)
+                config.llm.api.base_url = openai_base_url
+                OmegaConf.set_struct(config, True)
+        
         self.include_path_patterns = normalize_path_patterns(config.zotero.include_path, "include_path")
         self.ignore_path_patterns = normalize_path_patterns(config.zotero.ignore_path, "ignore_path")
         self.retrievers = {
