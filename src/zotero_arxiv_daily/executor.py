@@ -9,6 +9,9 @@ from datetime import datetime
 from .reranker import get_reranker_cls
 from .construct_email import render_email
 from .utils import send_email
+from .enrichment import apply_keyword_boost, deduplicate_papers, enrich_papers, prefilter_papers_with_code, parallel_filter
+from .notifier import send_notifications
+from .reporting import write_outputs
 from openai import OpenAI
 from tqdm import tqdm
 
@@ -97,28 +100,71 @@ class Executor:
             logger.error(f"No zotero papers found. Please check your zotero settings:\n{self.config.zotero}")
             return
         all_papers = []
+        source_errors = {}
         for source, retriever in self.retrievers.items():
             logger.info(f"Retrieving {source} papers...")
-            papers = retriever.retrieve_papers()
+            try:
+                papers = retriever.retrieve_papers()
+            except Exception as exc:
+                source_errors[source] = str(exc)
+                logger.warning(f"Failed to retrieve {source} papers: {exc}")
+                continue
             if len(papers) == 0:
                 logger.info(f"No {source} papers found")
                 continue
             logger.info(f"Retrieved {len(papers)} {source} papers")
             all_papers.extend(papers)
         logger.info(f"Total {len(all_papers)} papers retrieved from all sources")
+        all_papers = deduplicate_papers(all_papers)
+        logger.info(f"Total {len(all_papers)} papers after deduplication")
         reranked_papers = []
         if len(all_papers) > 0:
             logger.info("Reranking papers...")
             reranked_papers = self.reranker.rerank(all_papers, corpus)
+            
+            filter_mode = self.config.executor.get("filter_mode", "serial")
+            keywords = self.config.executor.get("keywords", [])
+            keyword_weight = float(self.config.executor.get("keyword_score_weight", 0.0))
+            similarity_threshold = float(self.config.executor.get("similarity_threshold", 2.0))
+            
+            if filter_mode == "parallel":
+                logger.info(f"Using parallel filter mode (keyword OR similarity>={similarity_threshold})")
+                reranked_papers = apply_keyword_boost(reranked_papers, keywords, keyword_weight)
+                candidate_count = min(len(reranked_papers), self.config.executor.get("candidate_pool_size", 50))
+                reranked_papers = parallel_filter(
+                    reranked_papers[:candidate_count],
+                    keywords,
+                    similarity_threshold
+                )
+            else:
+                reranked_papers = apply_keyword_boost(reranked_papers, keywords, keyword_weight)
+                min_code_ratio = float(self.config.executor.get("min_papers_with_code_ratio", 0.0))
+                if min_code_ratio > 0:
+                    candidate_count = min(len(reranked_papers), self.config.executor.get("code_filter_candidates", 50))
+                    reranked_papers = prefilter_papers_with_code(reranked_papers[:candidate_count], min_code_ratio)
+            
             reranked_papers = reranked_papers[:self.config.executor.max_paper_num]
             logger.info("Generating TLDR and affiliations...")
             for p in tqdm(reranked_papers):
                 p.generate_tldr(self.openai_client, self.config.llm)
                 p.generate_affiliations(self.openai_client, self.config.llm)
         elif not self.config.executor.send_empty:
-            logger.info("No new papers found. No email will be sent.")
-            return
-        logger.info("Sending email...")
-        email_content = render_email(reranked_papers)
-        send_email(self.config, email_content)
-        logger.info("Email sent successfully")
+            logger.info("No new papers found. Notifications will be skipped.")
+
+        logger.info("Enriching paper metadata...")
+        enrichment_failures = enrich_papers(reranked_papers, self.config.enrichment)
+        if source_errors:
+            enrichment_failures["retrievers"] = [f"{name}: {error}" for name, error in source_errors.items()]
+
+        if self.config.reporting.enabled:
+            logger.info("Writing Markdown and JSON reports...")
+            markdown_path, json_path = write_outputs(reranked_papers, self.config.reporting, enrichment_failures)
+            logger.info(f"Wrote reports: {markdown_path}, {json_path}")
+            if reranked_papers or self.config.executor.send_empty:
+                send_notifications(self.config.notifications, markdown_path)
+
+        if self.config.email.get("enabled", False) and (reranked_papers or self.config.executor.send_empty):
+            logger.info("Sending email...")
+            email_content = render_email(reranked_papers)
+            send_email(self.config, email_content)
+            logger.info("Email sent successfully")

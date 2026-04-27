@@ -25,6 +25,45 @@
 > [!IMPORTANT]
 > Please keep an eye on this repo, and merge your forked repo in time when there is any update of this upstream, in order to enjoy new features and fix found bugs.
 
+## 本仓库改造说明
+
+这个版本以 `zotero-arxiv-daily` 为底座，面向“Zotero 个性化论文推荐 + 中文研究员快读 + 飞书/企业微信推送”做了第一版改造：
+
+- 默认每天北京时间 09:00 由 GitHub Actions 运行。
+- 默认抓取 `cs.CL`、`cs.AI`、`cs.LG`，可用 `ARXIV_QUERY=cs.CL+cs.AI+cs.LG` 覆盖。
+- 默认精选 10 篇，可用 `MAX_PAPER_NUM` 覆盖。
+- 生成 `reports/YYYY-MM-DD.md` 和 `data/YYYY-MM-DD.json`，并提交回仓库。
+- 使用 Semantic Scholar、Hugging Face Papers、Papers with Code 补充引用、代码、模型、数据集和项目链接。
+- 通过 `FEISHU_WEBHOOK` 和 `WECHAT_WORK_WEBHOOK` 推送；SMTP 邮件默认关闭。
+
+### 推荐配置
+
+必需 Secrets：
+
+| Key | 用途 |
+| :--- | :--- |
+| `ZOTERO_ID` | Zotero 用户 ID |
+| `ZOTERO_KEY` | Zotero 只读 API Key |
+| `OPENAI_API_KEY` | OpenAI 或兼容服务的 API Key |
+
+可选 Secrets：
+
+| Key | 用途 |
+| :--- | :--- |
+| `OPENAI_BASE_URL` | 兼容 OpenAI 的服务地址，默认 `https://api.openai.com/v1` |
+| `SEMANTIC_SCHOLAR_API_KEY` | 提高 Semantic Scholar API 限流额度 |
+| `FEISHU_WEBHOOK` | 飞书群机器人 webhook |
+| `WECHAT_WORK_WEBHOOK` | 企业微信群机器人 webhook |
+
+常用 Variables：
+
+| Key | 默认值 |
+| :--- | :--- |
+| `ARXIV_QUERY` | `cs.CL+cs.AI+cs.LG` |
+| `MAX_PAPER_NUM` | `10` |
+| `MODEL_NAME` | `gpt-4o-mini` |
+| `LANGUAGE` | `Chinese` |
+
 ## 🧐 About <a name = "about"></a>
 
 > Track new scientific researches of your interest by just forking (and staring) this repo!😊

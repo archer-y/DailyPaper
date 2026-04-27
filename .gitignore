@@ -10,10 +10,23 @@ wheels/
 
 # Virtual environments
 .venv
+.venv_test
 test.ipynb
 
+# Generated files
 logs
 models
-test-compose.yml
 outputs
+data/
+reports/
+test-compose.yml
 config/private.yaml
+.uv-cache/
+.pytest_cache/
+.pytest_cache_local/
+.pytest_tmp/
+.pytest_run_tmp/
+pytestcache/
+pytesttmp/
+pytest-cache-files-*/
+tmp*/

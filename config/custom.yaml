@@ -1,26 +1,48 @@
 zotero:
   user_id: ${oc.env:ZOTERO_ID}
   api_key: ${oc.env:ZOTERO_KEY}
-  include_path: null # Or set a list of glob patterns, e.g. ["2026/survey/**","2026/reading-group/**"]
+  include_path: ["000-正在阅读/**"]
 
 email:
-  sender: ${oc.env:SENDER}
-  receiver: ${oc.env:RECEIVER}
-  smtp_server: smtp.qq.com
-  smtp_port: 465
-  sender_password: ${oc.env:SENDER_PASSWORD}
+  enabled: false
+  sender: ${oc.env:SENDER,null}
+  receiver: ${oc.env:RECEIVER,null}
+  smtp_server: ${oc.env:SMTP_SERVER,smtp.qq.com}
+  smtp_port: ${oc.env:SMTP_PORT,465}
+  sender_password: ${oc.env:SENDER_PASSWORD,null}
 
 llm:
   api:
     key: ${oc.env:OPENAI_API_KEY}
-    base_url: ${oc.env:OPENAI_API_BASE}
+    base_url: ${oc.env:OPENAI_BASE_URL,https://api.openai.com/v1}
   generation_kwargs:
-    model: gpt-4o-mini
+    model: glm-5
+  language: Chinese
 
 source:
   arxiv:
-    category: ["cs.AI","cs.CV","cs.LG","cs.CL"]
+    category: ["cs.AI","cs.LG","cs.RO","cs.SY","cs.MA","eess.SY"]
+    include_cross_list: true
+    date_range: "1day"
+  openalex:
+    enabled: false
+    keywords: ["agent","scheduling","satellite","optimization","autonomous","planning"]
+    date_range: "1month"
+    max_results: 100
 
 executor:
-  debug: ${oc.env:DEBUG,null}
+  debug: true
+  send_empty: true
+  max_paper_num: 10
   source: ['arxiv']
+  keywords: ["Agent","multi-agent","autonomous agent","tool-use","planning","scheduling","optimization","spacecraft","satellite","mission planning","orbital","observation","Earth observation","positioning","RAG"]
+  keyword_score_weight: 0.3
+  filter_mode: "parallel"
+  similarity_threshold: 2.0
+  candidate_pool_size: 50
+
+reporting:
+  enabled: true
+
+notifications:
+  enabled: true

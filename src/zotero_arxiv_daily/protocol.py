@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Optional, TypeVar
 from datetime import datetime
 import re
@@ -20,6 +20,10 @@ class Paper:
     tldr: Optional[str] = None
     affiliations: Optional[list[str]] = None
     score: Optional[float] = None
+    doi: Optional[str] = None
+    code_urls: list[str] = field(default_factory=list)
+    project_urls: list[str] = field(default_factory=list)
+    metadata: dict = field(default_factory=dict)
 
     def _generate_tldr_with_llm(self, openai_client:OpenAI,llm_params:dict) -> str:
         lang = llm_params.get('language', 'English')

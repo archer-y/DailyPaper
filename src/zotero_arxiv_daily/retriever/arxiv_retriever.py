@@ -12,6 +12,7 @@ from queue import Empty
 from typing import Any, Callable, TypeVar
 from loguru import logger
 import requests
+from datetime import datetime, timedelta
 
 T = TypeVar("T")
 
@@ -114,9 +115,21 @@ class ArxivRetriever(BaseRetriever):
 
     def _retrieve_raw_papers(self) -> list[ArxivResult]:
         client = arxiv.Client(num_retries=10, delay_seconds=10)
-        query = '+'.join(self.config.source.arxiv.category)
+        categories = self.config.source.arxiv.category
         include_cross_list = self.config.source.arxiv.get("include_cross_list", False)
-        # Get the latest paper from arxiv rss feed
+        date_range = self.config.source.arxiv.get("date_range", "1day")
+        
+        raw_papers = []
+        
+        if date_range == "1day":
+            raw_papers = self._fetch_from_rss(client, categories, include_cross_list)
+        else:
+            raw_papers = self._fetch_from_api(client, categories, date_range)
+        
+        return raw_papers
+
+    def _fetch_from_rss(self, client, categories, include_cross_list) -> list[ArxivResult]:
+        query = '+'.join(categories)
         feed = feedparser.parse(f"https://rss.arxiv.org/atom/{query}")
         if 'Feed error for query' in feed.feed.title:
             raise Exception(f"Invalid ARXIV_QUERY: {query}.")
@@ -128,17 +141,58 @@ class ArxivRetriever(BaseRetriever):
             if i.get("arxiv_announce_type", "new") in allowed_announce_types
         ]
         if self.config.executor.debug:
-            all_paper_ids = all_paper_ids[:10]
+            debug_paper_num = max(50, self.config.executor.get("candidate_pool_size", 50))
+            all_paper_ids = all_paper_ids[:debug_paper_num]
 
-        # Get full information of each paper from arxiv api
-        bar = tqdm(total=len(all_paper_ids))
+        bar = tqdm(total=len(all_paper_ids), desc="Fetching arXiv papers")
         for i in range(0, len(all_paper_ids), 20):
             search = arxiv.Search(id_list=all_paper_ids[i:i + 20])
             batch = list(client.results(search))
             bar.update(len(batch))
             raw_papers.extend(batch)
         bar.close()
+        return raw_papers
 
+    def _fetch_from_api(self, client, categories, date_range) -> list[ArxivResult]:
+        now = datetime.now()
+        if date_range == "3days":
+            start_date = now - timedelta(days=3)
+        elif date_range == "1week":
+            start_date = now - timedelta(days=7)
+        elif date_range == "1month":
+            start_date = now - timedelta(days=30)
+        else:
+            start_date = now - timedelta(days=1)
+        
+        date_str = start_date.strftime('%Y%m%d%H%M%S')
+        query_parts = [f"cat:{cat}" for cat in categories]
+        query = " OR ".join(query_parts)
+        
+        max_results = 200
+        if self.config.executor.debug:
+            max_results = self.config.executor.get("candidate_pool_size", 50)
+        
+        logger.info(f"Searching arXiv for papers since {start_date.strftime('%Y-%m-%d')}")
+        
+        raw_papers = []
+        search = arxiv.Search(
+            query=query,
+            max_results=max_results,
+            sort_by=arxiv.SortCriterion.SubmittedDate,
+            sort_order=arxiv.SortOrder.Descending,
+        )
+        
+        bar = tqdm(desc="Fetching arXiv papers")
+        for result in client.results(search):
+            if result.published.replace(tzinfo=None) < start_date:
+                break
+            raw_papers.append(result)
+            bar.update(1)
+            if len(raw_papers) >= max_results:
+                break
+        bar.close()
+        
+        logger.info(f"Found {len(raw_papers)} papers from arXiv API")
         return raw_papers
 
     def convert_to_paper(self, raw_paper: ArxivResult) -> Paper:
