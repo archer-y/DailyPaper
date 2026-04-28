@@ -31,12 +31,12 @@ source:
     enabled: true
     keywords: ["agent", "scheduling", "satellite", "optimization", "autonomous", "planning"]
     date_range: "1month"
-    max_results: 100
+    max_results: 50
     weight: 1.2
     
   huggingface:
     enabled: true
-    max_results: 50
+    max_results: 25
     date_range: "1day"
     weight: 1.2
     
@@ -44,29 +44,29 @@ source:
     enabled: true
     conferences: ["ICLR 2026", "NeurIPS 2025", "ICML 2025"]
     status: "accepted"
-    max_results: 50
+    max_results: 25
     weight: 1.0
     
   pwc:
     enabled: true
     areas: ["Artificial Intelligence", "Machine Learning", "Robotics"]
     require_code: true
-    max_results: 50
+    max_results: 25
     weight: 1.0
 
 executor:
   debug: true
   send_empty: true
-  max_paper_num: 10
+  max_paper_num: 5
   source: ['arxiv', 'openalex', 'huggingface', 'openreview', 'pwc']
   keywords: ["Agent","multi-agent","autonomous agent","tool-use","planning","scheduling","optimization","spacecraft","satellite","mission planning","orbital","observation","Earth observation","positioning","RAG"]
   keyword_score_weight: 0.5
   filter_mode: "serial"
   similarity_threshold: 0.0
-  candidate_pool_size: 50
+  candidate_pool_size: 25
   source_weighting: true
   source_diversity: true
-  max_per_source: 5
+  max_per_source: 3
 
 reporting:
   enabled: true
