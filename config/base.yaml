@@ -9,11 +9,30 @@ source:
     category: null # The categories of target arxiv papers. Find the abbr of your research area from [here](https://arxiv.org/category_taxonomy). Example: ["cs.AI","cs.CV","cs.LG","cs.CL"]
     include_cross_list: false # Whether to include arXiv cross-list papers in subscribed categories. Example: true
     date_range: "1day" # Time range: "1day", "3days", "1week", "1month"
+    weight: 1.5 # Source weight for multi-source integration
   openalex:
     enabled: false # Whether to enable OpenAlex data source
     keywords: [] # Keywords to search in OpenAlex
     date_range: "1week" # Time range for OpenAlex search
     max_results: 100 # Maximum results from OpenAlex
+    weight: 1.2 # Source weight for multi-source integration
+  huggingface:
+    enabled: false # Whether to enable HuggingFace Papers
+    max_results: 50 # Maximum results from HuggingFace
+    date_range: "1day" # Time range for HuggingFace search
+    weight: 1.2 # Source weight for multi-source integration
+  openreview:
+    enabled: false # Whether to enable OpenReview
+    conferences: ["ICLR 2026", "NeurIPS 2025"] # Conferences to search
+    status: "accepted" # Paper status: "accepted", "all", "rejected"
+    max_results: 50 # Maximum results from OpenReview
+    weight: 1.0 # Source weight for multi-source integration
+  pwc:
+    enabled: false # Whether to enable Papers with Code
+    areas: ["Artificial Intelligence", "Machine Learning"] # Areas to search
+    require_code: true # Only return papers with code
+    max_results: 50 # Maximum results from PWC
+    weight: 1.0 # Source weight for multi-source integration
   biorxiv:
     category: null # The categories of target biorxiv papers. Find categories from [here](https://www.biorxiv.org/). Example: ["biochemistry","animal behavior and cognition"]
   medrxiv:
@@ -54,13 +73,16 @@ executor:
   debug: false # Whether to use debug mode. Example: true
   send_empty: false # Whether to send an empty email even if no new papers today. Example: true
   max_paper_num: 10 # The maximum number of selected papers presented in reports and notifications.
-  source: ??? # The sources of papers to retrieve. Example: ['arxiv','openalex','biorxiv','medrxiv']
+  source: ??? # The sources of papers to retrieve. Example: ['arxiv','openalex','huggingface','openreview','pwc']
   reranker: local # The reranker to use. Example: 'local' or 'api'
   keywords: ["LLM","Agent","RAG","reasoning","alignment","code generation","multimodal"]
   keyword_score_weight: 0.2
   filter_mode: "serial" # Filter mode: "serial" (weighted combination) or "parallel" (keyword OR similarity)
   similarity_threshold: 2.0 # Minimum similarity score for parallel filter mode
   candidate_pool_size: 50 # Maximum number of papers in candidate pool before final selection
+  source_weighting: true # Enable source weighting for multi-source integration
+  source_diversity: true # Ensure source diversity in final selection
+  max_per_source: 5 # Maximum papers from each source
 
 enrichment:
   enabled: true
