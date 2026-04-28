@@ -1,6 +1,6 @@
 {
   "date": "2026-04-28",
-  "paper_count": 5,
+  "paper_count": 10,
   "papers": [
     {
       "rank": 1,
@@ -20,14 +20,15 @@
       "arxiv_id": "2604.22795",
       "doi": null,
       "score": 1.5,
-      "tldr": "本研究提出了一种结合损伤等效载荷代理模型的多智能体强化学习框架，通过在奖励函数中引入实时载荷约束，实现了在限制结构载荷增量的前提下最大化风电场发电功率的协同尾流控制。",
+      "tldr": "本研究提出了一种结合损伤等效载荷代理模型的多智能体强化学习框架，通过将载荷估计纳入奖励函数，成功实现了在将结构载荷增加限制在特定阈值内的同时最大化风电场总功率输出的协同控制策略。",
       "affiliations": null,
       "code_urls": [],
       "project_urls": [],
       "metadata": {
-        "source_weight": 1.0,
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
         "keyword_matches": 3,
-        "weighted_score": 1.5
+        "weighted_score": 2.25
       }
     },
     {
@@ -44,14 +45,17 @@
       "arxiv_id": "2604.22785",
       "doi": null,
       "score": 1.5,
-      "tldr": "该论文提出CoFi-PGMA框架，通过基于边缘贡献的反事实策略梯度方法解决多智能体LLM系统中反馈信号被过滤（如竞争路由的选择性反馈或协作系统的共享奖励）导致的训练偏差问题。",
-      "affiliations": null,
+      "tldr": "该论文提出了CoFi-PGMA框架，通过引入基于边际贡献的反事实策略梯度，有效解决了多智能体LLM系统中竞争路由与协作生成模式下的“过滤反馈”问题，修正了学习信号偏差。",
+      "affiliations": [
+        "Stanford University"
+      ],
       "code_urls": [],
       "project_urls": [],
       "metadata": {
-        "source_weight": 1.0,
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
         "keyword_matches": 3,
-        "weighted_score": 1.5
+        "weighted_score": 2.25
       }
     },
     {
@@ -68,90 +72,218 @@
       "arxiv_id": "2604.22879",
       "doi": null,
       "score": 1.5,
-      "tldr": "本文提出分布式哨兵架构，通过引入语义污点令牌协议解决多智能体系统中因信息孤岛导致的“上下文碎片化违规”问题，实现了在不泄露隐私前提下的高效跨域策略验证。",
+      "tldr": "本文针对多智能体系统中因信息孤岛导致的“上下文碎片化违规”风险，提出了“分布式哨兵”架构，通过语义污点令牌协议实现跨域策略验证，有效解决了现有方法无法检测局部合法但全局违规行为的问题。",
       "affiliations": [
         "Atlassian"
       ],
       "code_urls": [],
       "project_urls": [],
       "metadata": {
-        "source_weight": 1.0,
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
         "keyword_matches": 3,
-        "weighted_score": 1.5,
-        "semantic_scholar": {
-          "paper_id": "643e7f4f479761798adc838961420ac5ba251ead",
-          "url": "https://www.semanticscholar.org/paper/643e7f4f479761798adc838961420ac5ba251ead",
-          "citation_count": 0,
-          "reference_count": 0,
-          "influential_citation_count": 0,
-          "publication_date": "2026-04-24",
-          "tldr": "Results indicate that self-avoidance is unreliable and that multi-agent security benefits from a centralized enforcement layer operating above individual agents, as well as empirically validate the need for external enforcement."
-        }
+        "weighted_score": 2.25
       }
     },
     {
       "rank": 4,
-      "source": "openalex",
-      "title": "Aerodynamic Optimization of Freight Trains. Part 1: Characterization of real-world operation from a full-scale measurement campaign",
+      "source": "arxiv",
+      "title": "Conformal PM2.5 Mapping Under Spatial Covariate Shift: Satellite-Reanalysis Fusion for Africa's Green Industrial Transition",
       "authors": [
-        "James Bell",
-        "Alexander Buhr",
-        "Arne Henning"
+        "Yaw Osei Adjei",
+        "Davis Opoku",
+        "Ephraim Abotsi",
+        "Kwadwo Owusu Amanqua",
+        "Oliver Kornyo",
+        "Elisha Soglo-Ahianyo",
+        "Cephas Anertey Abbey"
       ],
-      "abstract": "The DLR FR8-LAB, a self-contained measurement-system equipped container has been used to take aerodynamic measurements on operational freight-trains. Transient pressure was measured with 330 sensors, and the global transient-forces and moments have been derived: aerodynamic drag – important for operational efficiency, and side-force and rolling moment – important for safety (the risk of overturning and derailment). LiDAR sensors, satellite navigation and thermal cameras are used to couple the aerodynamic measurements with the operating scenarios. Results have indicated significant differences in aerodynamic characteristics based on the operating conditions of freight trains: loading configuration, tunnels, crosswind – that have a significant impact on operating efficiency, and potentially the safety of operation. Together with wind-tunnel experiments performed in parallel – validated by this real-world data – recommendations for aerodynamic optimization can be made for freight-train and infrastructure operators and manufacturers.",
-      "url": "https://doi.org/10.5281/zenodo.18415395",
-      "pdf_url": "https://doi.org/10.5281/zenodo.18415395",
-      "arxiv_id": null,
-      "doi": "https://doi.org/10.5281/zenodo.18415395",
-      "score": 1.5,
-      "tldr": "本文利用全尺寸测量系统对真实运营中的货运列车进行气动特性表征，揭示了载荷、隧道及侧风等运行条件对列车效率与安全的显著影响，为后续气动优化提供了关键依据。",
+      "abstract": "Africa's green industrialization imperative demands reliable infrastructure for monitoring air quality. We present a satellite-reanalysis PM2.5 fusion system trained on 2,068,901 records from 404 monitoring locations in 29 African countries (OpenAQ, 2017-2022), combining LightGBM with leakage-resistant spatial cross-validation and conformal prediction to quantify predictions and their geographic applicability limits. Under 5-fold location-grouped spatial cross-validation, LightGBM achieves RMSE = 30.83 +/- 5.07 ug/m3, MAE = 14.54 +/- 1.66 ug/m3, R2 = 0.134 +/- 0.023, and macro F1 = 0.336 +/- 0.018. This R2 is substantially below random-split benchmarks (>0.90) but reflects true geographic generalisation difficulty rather than model failure. Split conformal prediction targeting 90% marginal coverage reveals severe East Africa degradation (actual PICP = 65.3% vs. nominal 90%), consistent with medium-strength covariate shift (humidity KS = 0.2237, sat_pblh KS = 0.2558). We operationalise these findings through regional reliability flags (High/Medium/Low/Unreliable) and a monitor prioritisation score directing infrastructure expansion toward highest-burden unmonitored populations, directly supporting Africa's green industrial transition and SDGs 3.9, 7.1.2, 9, 11.6.2, and 13.",
+      "url": "http://arxiv.org/abs/2604.22787v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.22787v1",
+      "arxiv_id": "2604.22787",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "本研究构建了基于保形预测的非洲PM2.5卫星融合系统，通过防泄漏空间交叉验证量化了预测的地理适用性与不确定性，为空气监测基础设施建设提供了可靠的决策依据。",
       "affiliations": null,
       "code_urls": [],
       "project_urls": [],
       "metadata": {
-        "source_weight": 1.0,
-        "keyword_matches": 3,
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
         "weighted_score": 1.5
       }
     },
     {
       "rank": 5,
-      "source": "openalex",
-      "title": "Orchestrating Agentic AI in Program Management: Governance Frameworks for Autonomous Project Workflows",
+      "source": "arxiv",
+      "title": "Complete Cyclic Subtask Graphs for Tool-Using LLM Agents: Flexibility, Cost, and Bottlenecks in Multi-Agent Workflows",
       "authors": [
-        "Dr. Sureshkumar Somanathan"
+        "Luay Gharzeddine",
+        "Samer Saab"
       ],
-      "abstract": "The fast adoption of digital ecosystems and hybrid clouds infrastructure has added an unprecedented complexity to the contemporary program management that has generated a major rift between the generation of data and the process of making decisions. Conventional Artificial Intelligence (AI) systems which have been mostly recognized to be passive analytics and human-initiated results have been found to be inadequate in meeting real-time operational requirements like resource optimization, dependency management, and compliance enforcement. The paper provides a new form of governance in how to coordinate the use of Agentic AI, a new paradigm where autonomous agents driven by Large Action Models (LAMs) take multi-step decisions in any enterprise context without the need to be constantly prompted to do so. The study builds a multi-layered architectural design, which includes Ingestion, Reasoning, Action, and Immutable Audit layers and allows it to seamlessly integrate with popular project management and reporting tools, including Jira, MS Project, and PowerBI. The Governance Matrix of the framework is a structured method that divides the decision-making into Green, Amber and Red control areas, thus striking a balance between operating independently and being supervised by humans on a Human-in-the-Loop (HITL) spectrum. The framework also embraces Zero Trust methodologies in agent verification, blockchain-based non-repudiation auditability, and ethical controls to prevent algorithmic prejudice and equitable distribution of the resource. The effectiveness of the suggested model is practical in a simulated case study of a massive hybrid cloud transformation program. Findings show that the results have been significantly improved with a 92 percent reduction in manual data reconciliation, a 97 percent cut in the information latency, improved schedule accuracy, and the compliance audit times have been reduced considerably. Such results confirm that not only routine administrative tasks are automated with the help of Agentic AI, but strategic decisions can be enhanced by providing real-time, prescriptive insights. The paper concludes that the implementation of Agentic AI into a strong governance structure changes the definition of Program Manager as an operational organizer to a strategic coordinator of intelligent systems. The future research directions are quantum resistant security model, sovereign AI compliance model, and the creation of the digital twins to simulate predictive governance. On balance, this piece of writing offers an initial guidebook on how to initiate a secure, ethical, and scalable autonomous program management in the digital-transformation era.",
-      "url": "https://doi.org/10.5281/zenodo.19508816",
-      "pdf_url": "https://doi.org/10.5281/zenodo.19508816",
-      "arxiv_id": null,
-      "doi": "https://doi.org/10.5281/zenodo.19508816",
-      "score": 1.5,
-      "tldr": "本文提出了一种针对项目管理的新型治理框架，通过多层架构和分级决策矩阵编排代理式AI，在保障合规与人类监督的前提下实现了工作流的高度自动化与效率显著提升。",
+      "abstract": "Long-horizon tool-using tasks sometimes benefit from revisiting earlier subtasks for recovery and exploration, but added multi-agent workflow flexibility can also introduce coordination overhead and substantial inference cost. We study complete cyclic subtask graphs, a deliberately maximally flexible multi-agent architecture in which executable subtask nodes are fully connected and a unified state-analysis-and-routing agent selects transitions using natural-language criteria. This makes unrestricted revisitation explicit and directly analyzable at the subtask level. We evaluate task-specific (Spec-Cyc) and benchmark-generic (Gen-Cyc) graphs on TextCraft, ALFWorld, and Finance-Agent, with ablations over planner/executor/router strength, tool exposure (generalist vs specialized), $n$-shot successful trajectory summaries, and fault-injected random subtask perturbations. The benchmarks expose three distinct regimes. ALFWorld highlights a setting where explicit revisitation supports recovery and exploration; TextCraft, a largely prerequisite-chain domain, often favors the efficiency of simpler forward execution; and Finance-Agent remains bottlenecked by retrieval, grounding, and evidence synthesis more than by workflow flexibility alone. Shared-win token comparisons further show that the added flexibility can be substantially more expensive than a single ReAct agent. Overall, we use complete cyclic subtask graphs as a maximally flexible experimental lens for measuring when multi-agent revisitation helps, when it mainly adds coordination cost, and when external task bottlenecks dominate.",
+      "url": "http://arxiv.org/abs/2604.22820v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.22820v1",
+      "arxiv_id": "2604.22820",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "本文提出了完全循环子任务图架构，通过实验揭示了在多智能体工作流中，允许无限制回溯的灵活性虽能支持任务恢复与探索，但也可能带来高昂的协调成本，其有效性取决于具体任务的瓶颈。",
       "affiliations": null,
       "code_urls": [],
       "project_urls": [],
       "metadata": {
-        "source_weight": 1.0,
-        "keyword_matches": 3,
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
         "weighted_score": 1.5
+      }
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "本研究通过对比沙特吉达与延布的滨海开发案例，揭示了两种规划体系的优劣，提出需融合双方优势以优化城市设计治理并契合“2030愿景”。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      }
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://doi.org/10.17037/PUBS.04681611>",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "该研究结合系统动力学与基于主体的建模模拟发现，限制快餐店分布的规划政策虽能减少门店数量，但未能显著改善饮食习惯，需采取多方面的综合干预措施。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      }
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "A semi-autonomous public organization’s legitimation work: the case of the survival of an actor in the disability field",
+      "authors": [
+        "Alexandre Salvatori",
+        "Sarah Richard",
+        "François Grima"
+      ],
+      "abstract": "This qualitative study, based on semi-structured interviews and ethnography, starts from the observation that little research has been done on maintaining the legitimacy of semi-autonomous public organizations in a context constrained by certain principles of New Public Management. These principles question the legitimacy of public organizations as the most relevant actors for meeting user expectations. In this article, we study the case of GHP, a semi-autonomous public organization of the “agency” type based in France, which manages a public fund. Based on neo-institutional theory, the study seeks to understand the involvement of actors in the dynamics of maintaining the internal and external legitimacy that ensures the sustainability of an organization. We show that maintaining legitimacy and its alignment between internal and external sources is achieved in a process involving four stages: challenges, maintenance, diffusion, and consensus. Institutional entrepreneurs within the organization engage in legitimation work. Through this work, they respond to external regulatory challenges and internal destabilizing events that occur at various times and at different levels. We identify four key factors in the ability of institutional entrepreneurs to succeed in maintaining legitimacy: their resources, knowledge of structural gaps, conscious commitment, and the use of boundary organizations.",
+      "url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-1f?lang=en",
+      "pdf_url": "https://shs.cairn.info/article/E_GMP_PR1_0036/pdf?lang=en",
+      "arxiv_id": null,
+      "doi": null,
+      "score": 0.5,
+      "tldr": "本文探讨了半自治公共组织如何在新公共管理原则制约下，通过制度企业家的四阶段合法化工作及关键成功因素，来协调内外合法性以确保组织存续。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      }
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "本研究通过一项II期交叉随机对照试验，探讨了两种地中海-生酮饮食干预对帕金森病患者饮食优化的启示。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      }
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "该研究探讨了虚拟牙科咨询对治疗成本及牙髓治疗规划的具体影响。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
       }
     }
   ],
   "enrichment_failures": {
     "semantic_scholar": [
       "Load constrained wind farm flow control through multi-objective multi-agent reinforcement learning",
-      "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs"
+      "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
+      "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems",
+      "Conformal PM2.5 Mapping Under Spatial Covariate Shift: Satellite-Reanalysis Fusion for Africa's Green Industrial Transition",
+      "Complete Cyclic Subtask Graphs for Tool-Using LLM Agents: Flexibility, Cost, and Bottlenecks in Multi-Agent Workflows"
     ],
     "hugging_face": [
       "Load constrained wind farm flow control through multi-objective multi-agent reinforcement learning",
       "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
-      "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems"
+      "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems",
+      "Conformal PM2.5 Mapping Under Spatial Covariate Shift: Satellite-Reanalysis Fusion for Africa's Green Industrial Transition",
+      "Complete Cyclic Subtask Graphs for Tool-Using LLM Agents: Flexibility, Cost, and Bottlenecks in Multi-Agent Workflows"
     ],
     "papers_with_code": [
       "Load constrained wind farm flow control through multi-objective multi-agent reinforcement learning",
       "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
-      "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems"
+      "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems",
+      "Conformal PM2.5 Mapping Under Spatial Covariate Shift: Satellite-Reanalysis Fusion for Africa's Green Industrial Transition",
+      "Complete Cyclic Subtask Graphs for Tool-Using LLM Agents: Flexibility, Cost, and Bottlenecks in Multi-Agent Workflows"
     ]
   }
 }
