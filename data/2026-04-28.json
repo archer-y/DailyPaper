@@ -1,6 +1,6 @@
 {
   "date": "2026-04-28",
-  "paper_count": 3,
+  "paper_count": 5,
   "papers": [
     {
       "rank": 1,
@@ -20,25 +20,14 @@
       "arxiv_id": "2604.22795",
       "doi": null,
       "score": 1.5,
-      "tldr": "该研究提出了一种多智能体强化学习框架，通过将损伤等效载荷的实时估计整合到奖励函数中，成功训练出能够在约束结构载荷增量的同时最大化风电场功率输出的协同尾流控制策略。",
-      "affiliations": [
-        "Technical University of Denmark"
-      ],
+      "tldr": "本研究提出了一种结合损伤等效载荷代理模型的多智能体强化学习框架，通过在奖励函数中引入实时载荷约束，实现了在限制结构载荷增量的前提下最大化风电场发电功率的协同尾流控制。",
+      "affiliations": null,
       "code_urls": [],
       "project_urls": [],
       "metadata": {
         "source_weight": 1.0,
         "keyword_matches": 3,
-        "weighted_score": 1.5,
-        "semantic_scholar": {
-          "paper_id": "0272021f82ff97e3d69c9eb45808c936a4d08f3e",
-          "url": "https://www.semanticscholar.org/paper/0272021f82ff97e3d69c9eb45808c936a4d08f3e",
-          "citation_count": 0,
-          "reference_count": 13,
-          "influential_citation_count": 0,
-          "publication_date": "2026-04-13",
-          "tldr": "Results indicate that the MARL agents successfully learn collaborative policies that prioritise power gain while actively retreating from high-DEL control strategies."
-        }
+        "weighted_score": 1.5
       }
     },
     {
@@ -55,7 +44,7 @@
       "arxiv_id": "2604.22785",
       "doi": null,
       "score": 1.5,
-      "tldr": "本文提出CoFi-PGMA框架，通过基于边际贡献的反事实训练目标，有效纠正多智能体LLM系统中路由选择与协作生成场景下的过滤反馈问题，实现了更精准的单智能体学习信号分配。",
+      "tldr": "该论文提出CoFi-PGMA框架，通过基于边缘贡献的反事实策略梯度方法解决多智能体LLM系统中反馈信号被过滤（如竞争路由的选择性反馈或协作系统的共享奖励）导致的训练偏差问题。",
       "affiliations": null,
       "code_urls": [],
       "project_urls": [],
@@ -79,7 +68,66 @@
       "arxiv_id": "2604.22879",
       "doi": null,
       "score": 1.5,
-      "tldr": "本文针对多智能体系统中因上下文隔离导致单个智能体看似合规但集体违规的“上下文碎片化违规”问题，提出了一种基于语义污点令牌协议的分布式零信任架构，有效实现了跨域策略验证与防御。",
+      "tldr": "本文提出分布式哨兵架构，通过引入语义污点令牌协议解决多智能体系统中因信息孤岛导致的“上下文碎片化违规”问题，实现了在不泄露隐私前提下的高效跨域策略验证。",
+      "affiliations": [
+        "Atlassian"
+      ],
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "source_weight": 1.0,
+        "keyword_matches": 3,
+        "weighted_score": 1.5,
+        "semantic_scholar": {
+          "paper_id": "643e7f4f479761798adc838961420ac5ba251ead",
+          "url": "https://www.semanticscholar.org/paper/643e7f4f479761798adc838961420ac5ba251ead",
+          "citation_count": 0,
+          "reference_count": 0,
+          "influential_citation_count": 0,
+          "publication_date": "2026-04-24",
+          "tldr": "Results indicate that self-avoidance is unreliable and that multi-agent security benefits from a centralized enforcement layer operating above individual agents, as well as empirically validate the need for external enforcement."
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "source": "openalex",
+      "title": "Aerodynamic Optimization of Freight Trains. Part 1: Characterization of real-world operation from a full-scale measurement campaign",
+      "authors": [
+        "James Bell",
+        "Alexander Buhr",
+        "Arne Henning"
+      ],
+      "abstract": "The DLR FR8-LAB, a self-contained measurement-system equipped container has been used to take aerodynamic measurements on operational freight-trains. Transient pressure was measured with 330 sensors, and the global transient-forces and moments have been derived: aerodynamic drag – important for operational efficiency, and side-force and rolling moment – important for safety (the risk of overturning and derailment). LiDAR sensors, satellite navigation and thermal cameras are used to couple the aerodynamic measurements with the operating scenarios. Results have indicated significant differences in aerodynamic characteristics based on the operating conditions of freight trains: loading configuration, tunnels, crosswind – that have a significant impact on operating efficiency, and potentially the safety of operation. Together with wind-tunnel experiments performed in parallel – validated by this real-world data – recommendations for aerodynamic optimization can be made for freight-train and infrastructure operators and manufacturers.",
+      "url": "https://doi.org/10.5281/zenodo.18415395",
+      "pdf_url": "https://doi.org/10.5281/zenodo.18415395",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.18415395",
+      "score": 1.5,
+      "tldr": "本文利用全尺寸测量系统对真实运营中的货运列车进行气动特性表征，揭示了载荷、隧道及侧风等运行条件对列车效率与安全的显著影响，为后续气动优化提供了关键依据。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "source_weight": 1.0,
+        "keyword_matches": 3,
+        "weighted_score": 1.5
+      }
+    },
+    {
+      "rank": 5,
+      "source": "openalex",
+      "title": "Orchestrating Agentic AI in Program Management: Governance Frameworks for Autonomous Project Workflows",
+      "authors": [
+        "Dr. Sureshkumar Somanathan"
+      ],
+      "abstract": "The fast adoption of digital ecosystems and hybrid clouds infrastructure has added an unprecedented complexity to the contemporary program management that has generated a major rift between the generation of data and the process of making decisions. Conventional Artificial Intelligence (AI) systems which have been mostly recognized to be passive analytics and human-initiated results have been found to be inadequate in meeting real-time operational requirements like resource optimization, dependency management, and compliance enforcement. The paper provides a new form of governance in how to coordinate the use of Agentic AI, a new paradigm where autonomous agents driven by Large Action Models (LAMs) take multi-step decisions in any enterprise context without the need to be constantly prompted to do so. The study builds a multi-layered architectural design, which includes Ingestion, Reasoning, Action, and Immutable Audit layers and allows it to seamlessly integrate with popular project management and reporting tools, including Jira, MS Project, and PowerBI. The Governance Matrix of the framework is a structured method that divides the decision-making into Green, Amber and Red control areas, thus striking a balance between operating independently and being supervised by humans on a Human-in-the-Loop (HITL) spectrum. The framework also embraces Zero Trust methodologies in agent verification, blockchain-based non-repudiation auditability, and ethical controls to prevent algorithmic prejudice and equitable distribution of the resource. The effectiveness of the suggested model is practical in a simulated case study of a massive hybrid cloud transformation program. Findings show that the results have been significantly improved with a 92 percent reduction in manual data reconciliation, a 97 percent cut in the information latency, improved schedule accuracy, and the compliance audit times have been reduced considerably. Such results confirm that not only routine administrative tasks are automated with the help of Agentic AI, but strategic decisions can be enhanced by providing real-time, prescriptive insights. The paper concludes that the implementation of Agentic AI into a strong governance structure changes the definition of Program Manager as an operational organizer to a strategic coordinator of intelligent systems. The future research directions are quantum resistant security model, sovereign AI compliance model, and the creation of the digital twins to simulate predictive governance. On balance, this piece of writing offers an initial guidebook on how to initiate a secure, ethical, and scalable autonomous program management in the digital-transformation era.",
+      "url": "https://doi.org/10.5281/zenodo.19508816",
+      "pdf_url": "https://doi.org/10.5281/zenodo.19508816",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.19508816",
+      "score": 1.5,
+      "tldr": "本文提出了一种针对项目管理的新型治理框架，通过多层架构和分级决策矩阵编排代理式AI，在保障合规与人类监督的前提下实现了工作流的高度自动化与效率显著提升。",
       "affiliations": null,
       "code_urls": [],
       "project_urls": [],
@@ -91,6 +139,10 @@
     }
   ],
   "enrichment_failures": {
+    "semantic_scholar": [
+      "Load constrained wind farm flow control through multi-objective multi-agent reinforcement learning",
+      "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs"
+    ],
     "hugging_face": [
       "Load constrained wind farm flow control through multi-objective multi-agent reinforcement learning",
       "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
@@ -98,10 +150,6 @@
     ],
     "papers_with_code": [
       "Load constrained wind farm flow control through multi-objective multi-agent reinforcement learning",
-      "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
-      "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems"
-    ],
-    "semantic_scholar": [
       "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
       "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems"
     ]
