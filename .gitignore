@@ -13,12 +13,10 @@ wheels/
 .venv_test
 test.ipynb
 
-# Generated files
+# Generated files (logs only, reports and data are tracked for GitHub Pages)
 logs
 models
 outputs
-data/
-reports/
 test-compose.yml
 config/private.yaml
 .uv-cache/

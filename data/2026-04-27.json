@@ -1,0 +1,10 @@
+{
+  "date": "2026-04-27",
+  "paper_count": 0,
+  "papers": [],
+  "enrichment_failures": {
+    "retrievers": [
+      "arxiv: [Errno 22] Invalid argument"
+    ]
+  }
+}

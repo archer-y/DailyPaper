@@ -33,6 +33,6 @@ jobs:
         run: |
           git config user.name "${{ vars.NAME || 'github-actions[bot]' }}"
           git config user.email "${{ vars.EMAIL || '41898282+github-actions[bot]@users.noreply.github.com' }}"
-          git add reports data
+          git add -f reports data || echo "No reports to commit"
           git diff --cached --quiet || git commit -m "Add daily paper report - $(date +%Y-%m-%d)"
           git push
