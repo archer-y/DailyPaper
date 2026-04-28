@@ -277,9 +277,10 @@ class Executor:
             # Ensure source diversity
             source_diversity = self.config.executor.get("source_diversity", True)
             max_per_source = int(self.config.executor.get("max_per_source", 5))
+            min_pwc_ratio = float(self.config.executor.get("min_pwc_ratio", 0.0))
             if source_diversity and len(reranked_papers) > max_per_source:
                 reranked_papers = ensure_source_diversity(
-                    reranked_papers, max_per_source
+                    reranked_papers, max_per_source, min_pwc_ratio
                 )
 
             reranked_papers = reranked_papers[: self.config.executor.max_paper_num]

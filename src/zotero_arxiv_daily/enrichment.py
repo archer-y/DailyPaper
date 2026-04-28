@@ -130,10 +130,21 @@ def weighted_sort_papers(papers: list[Paper]) -> list[Paper]:
 
 
 def ensure_source_diversity(
-    papers: list[Paper], max_per_source: int = 5
+    papers: list[Paper], max_per_source: int = 5, min_pwc_ratio: float = 0.0
 ) -> list[Paper]:
-    """Ensure source diversity, limiting papers from each source."""
+    """Ensure source diversity and minimum PWC ratio.
+
+    Args:
+        papers: List of papers sorted by score
+        max_per_source: Maximum papers from each source
+        min_pwc_ratio: Minimum ratio of papers from PWC (0.0-1.0)
+    """
     from loguru import logger
+
+    if min_pwc_ratio > 0:
+        return ensure_source_diversity_with_pwc_ratio(
+            papers, max_per_source, min_pwc_ratio
+        )
 
     source_counts: dict[str, int] = {}
     diversified: list[Paper] = []
@@ -146,6 +157,73 @@ def ensure_source_diversity(
             source_counts[source] = source_counts.get(source, 0) + 1
 
     logger.info(f"Source diversity: {source_counts}")
+    return diversified
+
+
+def ensure_source_diversity_with_pwc_ratio(
+    papers: list[Paper], max_per_source: int, min_pwc_ratio: float
+) -> list[Paper]:
+    """Ensure minimum PWC ratio while maintaining source diversity.
+
+    Strategy:
+    1. First, select required minimum PWC papers
+    2. Then, fill remaining slots with other sources (max_per_source each)
+    3. Finally, fill any remaining slots with highest-scoring papers
+    """
+    from loguru import logger
+
+    total_needed = len(papers)
+    min_pwc_count = max(1, int(total_needed * min_pwc_ratio))
+
+    pwc_papers = [p for p in papers if p.metadata.get("primary_source") == "pwc"]
+    other_papers = [p for p in papers if p.metadata.get("primary_source") != "pwc"]
+
+    diversified: list[Paper] = []
+    source_counts: dict[str, int] = {}
+
+    # Step 1: Add minimum PWC papers first
+    pwc_added = 0
+    for paper in pwc_papers:
+        if pwc_added < min_pwc_count:
+            diversified.append(paper)
+            source_counts["pwc"] = source_counts.get("pwc", 0) + 1
+            pwc_added += 1
+
+    # Step 2: Add other papers respecting max_per_source
+    for paper in other_papers:
+        source = paper.metadata.get("primary_source", "unknown")
+        if source_counts.get(source, 0) < max_per_source:
+            diversified.append(paper)
+            source_counts[source] = source_counts.get(source, 0) + 1
+
+    # Step 3: If we still need more PWC papers, add them
+    if pwc_added < min_pwc_count:
+        for paper in pwc_papers[pwc_added:]:
+            if paper not in diversified:
+                diversified.append(paper)
+                source_counts["pwc"] = source_counts.get("pwc", 0) + 1
+                pwc_added += 1
+                if pwc_added >= min_pwc_count:
+                    break
+
+    # Step 4: Fill remaining slots with highest-scoring papers not yet included
+    included_ids = {id(p) for p in diversified}
+    for paper in papers:
+        if id(paper) not in included_ids:
+            source = paper.metadata.get("primary_source", "unknown")
+            if source_counts.get(source, 0) < max_per_source:
+                diversified.append(paper)
+                source_counts[source] = source_counts.get(source, 0) + 1
+                included_ids.add(id(paper))
+
+    # Sort by score
+    diversified.sort(key=lambda p: p.metadata.get("weighted_score", 0), reverse=True)
+
+    logger.info(f"Source diversity: {source_counts}")
+    logger.info(
+        f"PWC papers: {source_counts.get('pwc', 0)}/{len(diversified)} ({source_counts.get('pwc', 0) / max(len(diversified), 1):.0%})"
+    )
+
     return diversified
 
 
