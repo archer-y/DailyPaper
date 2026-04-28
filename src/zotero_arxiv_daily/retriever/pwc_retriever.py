@@ -115,6 +115,14 @@ class PWCRetriever(BaseRetriever):
             paper.code_urls = code_urls
             paper.project_urls = code_urls
 
+            pub_date_str = raw_paper.get("date_publication", "")
+            if pub_date_str:
+                try:
+                    published_date = datetime.strptime(pub_date_str, "%Y-%m-%d")
+                    paper.published_date = published_date
+                except:
+                    pass
+
             stars = raw_paper.get("stars", 0)
             if stars:
                 paper.metadata["github_stars"] = stars

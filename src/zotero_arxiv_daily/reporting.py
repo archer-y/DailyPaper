@@ -30,6 +30,9 @@ def paper_to_record(paper: Paper, rank: int) -> dict:
         "code_urls": paper.code_urls,
         "project_urls": paper.project_urls,
         "metadata": paper.metadata,
+        "published_date": paper.published_date.strftime("%Y-%m-%d")
+        if paper.published_date
+        else None,
     }
 
 
@@ -111,6 +114,13 @@ def render_markdown(
                 "",
             ]
         )
+
+        pub_date_str = (
+            paper.published_date.strftime("%Y-%m-%d")
+            if paper.published_date
+            else "未知"
+        )
+        lines.extend([f"📅 发布日期: {pub_date_str}", ""])
 
         links = []
         if paper.url:

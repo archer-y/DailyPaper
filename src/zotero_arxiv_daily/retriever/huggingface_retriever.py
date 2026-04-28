@@ -103,6 +103,16 @@ class HuggingFaceRetriever(BaseRetriever):
             if not upvotes:
                 upvotes = raw_paper.get("upvotes", 0)
 
+            published_date = None
+            published_at = raw_paper.get("publishedAt")
+            if published_at:
+                try:
+                    published_date = datetime.fromisoformat(
+                        published_at.replace("Z", "+00:00")
+                    ).replace(tzinfo=None)
+                except:
+                    pass
+
             paper = Paper(
                 source=self.name,
                 title=title,
@@ -112,6 +122,7 @@ class HuggingFaceRetriever(BaseRetriever):
                 pdf_url=pdf_url,
                 doi=raw_paper.get("doi"),
                 full_text=None,
+                published_date=published_date,
             )
 
             paper.metadata["source_weight"] = self.weight

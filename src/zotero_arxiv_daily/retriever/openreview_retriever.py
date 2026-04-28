@@ -112,6 +112,13 @@ class OpenReviewRetriever(BaseRetriever):
             paper.metadata["openreview_id"] = paper_id
             paper.metadata["venue"] = venue
 
+            cdate = raw_paper.get("cdate", None)
+            if cdate:
+                try:
+                    paper.published_date = datetime.fromtimestamp(cdate / 1000)
+                except:
+                    pass
+
             return paper
 
         except Exception as e:

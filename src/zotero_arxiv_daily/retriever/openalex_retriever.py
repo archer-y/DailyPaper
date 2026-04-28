@@ -105,6 +105,14 @@ class OpenAlexRetriever(BaseRetriever):
 
             weight = self.retriever_config.get("weight", 1.2)
 
+            published_date = None
+            pub_date_str = raw_paper.get("publication_date")
+            if pub_date_str:
+                try:
+                    published_date = datetime.strptime(pub_date_str, "%Y-%m-%d")
+                except:
+                    pass
+
             paper = Paper(
                 source=self.name,
                 title=title,
@@ -114,6 +122,7 @@ class OpenAlexRetriever(BaseRetriever):
                 pdf_url=pdf_url,
                 doi=doi,
                 full_text=None,
+                published_date=published_date,
             )
 
             paper.metadata["primary_source"] = "openalex"

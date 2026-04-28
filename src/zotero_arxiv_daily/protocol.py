@@ -6,7 +6,9 @@ import tiktoken
 from openai import OpenAI
 from loguru import logger
 import json
-RawPaperItem = TypeVar('RawPaperItem')
+
+RawPaperItem = TypeVar("RawPaperItem")
+
 
 @dataclass
 class Paper:
@@ -21,12 +23,13 @@ class Paper:
     affiliations: Optional[list[str]] = None
     score: Optional[float] = None
     doi: Optional[str] = None
+    published_date: Optional[datetime] = None
     code_urls: list[str] = field(default_factory=list)
     project_urls: list[str] = field(default_factory=list)
     metadata: dict = field(default_factory=dict)
 
-    def _generate_tldr_with_llm(self, openai_client:OpenAI,llm_params:dict) -> str:
-        lang = llm_params.get('language', 'English')
+    def _generate_tldr_with_llm(self, openai_client: OpenAI, llm_params: dict) -> str:
+        lang = llm_params.get("language", "English")
         prompt = f"Given the following information of a paper, generate a one-sentence TLDR summary in {lang}:\n\n"
         if self.title:
             prompt += f"Title:\n {self.title}\n\n"
@@ -40,13 +43,13 @@ class Paper:
         if not self.full_text and not self.abstract:
             logger.warning(f"Neither full text nor abstract is provided for {self.url}")
             return "Failed to generate TLDR. Neither full text nor abstract is provided"
-        
+
         # use gpt-4o tokenizer for estimation
         enc = tiktoken.encoding_for_model("gpt-4o")
         prompt_tokens = enc.encode(prompt)
         prompt_tokens = prompt_tokens[:4000]  # truncate to 4000 tokens
         prompt = enc.decode(prompt_tokens)
-        
+
         response = openai_client.chat.completions.create(
             messages=[
                 {
@@ -55,14 +58,14 @@ class Paper:
                 },
                 {"role": "user", "content": prompt},
             ],
-            **llm_params.get('generation_kwargs', {})
+            **llm_params.get("generation_kwargs", {}),
         )
         tldr = response.choices[0].message.content
         return tldr
-    
-    def generate_tldr(self, openai_client:OpenAI,llm_params:dict) -> str:
+
+    def generate_tldr(self, openai_client: OpenAI, llm_params: dict) -> str:
         try:
-            tldr = self._generate_tldr_with_llm(openai_client,llm_params)
+            tldr = self._generate_tldr_with_llm(openai_client, llm_params)
             self.tldr = tldr
             return tldr
         except Exception as e:
@@ -71,7 +74,9 @@ class Paper:
             self.tldr = tldr
             return tldr
 
-    def _generate_affiliations_with_llm(self, openai_client:OpenAI,llm_params:dict) -> Optional[list[str]]:
+    def _generate_affiliations_with_llm(
+        self, openai_client: OpenAI, llm_params: dict
+    ) -> Optional[list[str]]:
         if self.full_text is not None:
             prompt = f"Given the beginning of a paper, extract the affiliations of the authors in a python list format, which is sorted by the author order. If there is no affiliation found, return an empty list '[]':\n\n{self.full_text}"
             # use gpt-4o tokenizer for estimation
@@ -87,26 +92,32 @@ class Paper:
                     },
                     {"role": "user", "content": prompt},
                 ],
-                **llm_params.get('generation_kwargs', {})
+                **llm_params.get("generation_kwargs", {}),
             )
             affiliations = affiliations.choices[0].message.content
 
-            affiliations = re.search(r'\[.*?\]', affiliations, flags=re.DOTALL).group(0)
+            affiliations = re.search(r"\[.*?\]", affiliations, flags=re.DOTALL).group(0)
             affiliations = json.loads(affiliations)
             affiliations = list(set(affiliations))
             affiliations = [str(a) for a in affiliations]
 
             return affiliations
-    
-    def generate_affiliations(self, openai_client:OpenAI,llm_params:dict) -> Optional[list[str]]:
+
+    def generate_affiliations(
+        self, openai_client: OpenAI, llm_params: dict
+    ) -> Optional[list[str]]:
         try:
-            affiliations = self._generate_affiliations_with_llm(openai_client,llm_params)
+            affiliations = self._generate_affiliations_with_llm(
+                openai_client, llm_params
+            )
             self.affiliations = affiliations
             return affiliations
         except Exception as e:
             logger.warning(f"Failed to generate affiliations of {self.url}: {e}")
             self.affiliations = None
             return None
+
+
 @dataclass
 class CorpusPaper:
     title: str
