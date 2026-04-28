@@ -38,34 +38,40 @@ class Executor:
     def __init__(self, config:DictConfig):
         self.config = config
         
-        # Override with environment variables if not set in config
-        if not config.zotero.get("user_id") or config.zotero.user_id is None:
-            zotero_id = os.getenv("ZOTERO_ID")
-            if zotero_id:
-                OmegaConf.set_struct(config, False)
-                config.zotero.user_id = zotero_id
-                OmegaConf.set_struct(config, True)
+        # Force read from environment variables
+        zotero_id = os.getenv("ZOTERO_ID")
+        zotero_key = os.getenv("ZOTERO_KEY")
         
-        if not config.zotero.get("api_key") or config.zotero.api_key is None:
-            zotero_key = os.getenv("ZOTERO_KEY")
-            if zotero_key:
-                OmegaConf.set_struct(config, False)
-                config.zotero.api_key = zotero_key
-                OmegaConf.set_struct(config, True)
+        if zotero_id:
+            OmegaConf.set_struct(config, False)
+            config.zotero.user_id = zotero_id
+            OmegaConf.set_struct(config, True)
+            logger.info(f"ZOTERO_ID loaded from environment: {zotero_id}")
+        else:
+            logger.error("ZOTERO_ID not found in environment variables")
         
-        if not config.llm.api.get("key") or config.llm.api.key is None:
-            openai_key = os.getenv("OPENAI_API_KEY")
-            if openai_key:
-                OmegaConf.set_struct(config, False)
-                config.llm.api.key = openai_key
-                OmegaConf.set_struct(config, True)
+        if zotero_key:
+            OmegaConf.set_struct(config, False)
+            config.zotero.api_key = zotero_key
+            OmegaConf.set_struct(config, True)
+            logger.info("ZOTERO_KEY loaded from environment")
+        else:
+            logger.error("ZOTERO_KEY not found in environment variables")
         
-        if not config.llm.api.get("base_url") or config.llm.api.base_url is None:
-            openai_base_url = os.getenv("OPENAI_BASE_URL")
-            if openai_base_url:
-                OmegaConf.set_struct(config, False)
-                config.llm.api.base_url = openai_base_url
-                OmegaConf.set_struct(config, True)
+        openai_key = os.getenv("OPENAI_API_KEY")
+        openai_base_url = os.getenv("OPENAI_BASE_URL")
+        
+        if openai_key:
+            OmegaConf.set_struct(config, False)
+            config.llm.api.key = openai_key
+            OmegaConf.set_struct(config, True)
+            logger.info("OPENAI_API_KEY loaded from environment")
+        
+        if openai_base_url:
+            OmegaConf.set_struct(config, False)
+            config.llm.api.base_url = openai_base_url
+            OmegaConf.set_struct(config, True)
+            logger.info(f"OPENAI_BASE_URL loaded from environment: {openai_base_url}")
         
         self.include_path_patterns = normalize_path_patterns(config.zotero.include_path, "include_path")
         self.ignore_path_patterns = normalize_path_patterns(config.zotero.ignore_path, "ignore_path")
@@ -76,7 +82,17 @@ class Executor:
         self.openai_client = OpenAI(api_key=config.llm.api.key, base_url=config.llm.api.base_url)
     def fetch_zotero_corpus(self) -> list[CorpusPaper]:
         logger.info("Fetching zotero corpus")
-        zot = zotero.Zotero(self.config.zotero.user_id, 'user', self.config.zotero.api_key)
+        
+        # Verify credentials before connecting
+        user_id = self.config.zotero.user_id
+        api_key = self.config.zotero.api_key
+        
+        if not user_id or not api_key:
+            logger.error(f"Missing credentials: user_id={user_id}, api_key={'***' if api_key else 'None'}")
+            raise ValueError("Zotero credentials not configured. Please set ZOTERO_ID and ZOTERO_KEY environment variables.")
+        
+        logger.info(f"Connecting to Zotero with user_id: {user_id}")
+        zot = zotero.Zotero(user_id, 'user', api_key)
         collections = zot.everything(zot.collections())
         collections = {c['key']:c for c in collections}
         corpus = zot.everything(zot.items(itemType='conferencePaper || journalArticle || preprint'))
