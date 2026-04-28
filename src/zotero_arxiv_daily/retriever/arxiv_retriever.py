@@ -49,32 +49,48 @@ def _run_with_hard_timeout(
     operation: str,
     paper_title: str,
 ) -> T | None:
-    start_methods = multiprocessing.get_all_start_methods()
-    context = multiprocessing.get_context("fork" if "fork" in start_methods else start_methods[0])
-    result_queue = context.Queue()
-    process = context.Process(target=_run_in_subprocess, args=(result_queue, func, args))
-    process.start()
-
     try:
-        status, payload = result_queue.get(timeout=timeout)
-    except Empty:
-        if process.is_alive():
-            process.kill()
+        start_methods = multiprocessing.get_all_start_methods()
+        context = multiprocessing.get_context(
+            "fork" if "fork" in start_methods else start_methods[0]
+        )
+        result_queue = context.Queue()
+        process = context.Process(
+            target=_run_in_subprocess, args=(result_queue, func, args)
+        )
+        process.start()
+
+        try:
+            status, payload = result_queue.get(timeout=timeout)
+        except Empty:
+            if process.is_alive():
+                process.kill()
+            process.join(5)
+            result_queue.close()
+            result_queue.join_thread()
+            logger.warning(
+                f"{operation} timed out for {paper_title} after {timeout} seconds"
+            )
+            return None
+
         process.join(5)
         result_queue.close()
         result_queue.join_thread()
-        logger.warning(f"{operation} timed out for {paper_title} after {timeout} seconds")
+
+        if status == "ok":
+            return payload
+
+        logger.warning(f"{operation} failed for {paper_title}: {payload}")
         return None
-
-    process.join(5)
-    result_queue.close()
-    result_queue.join_thread()
-
-    if status == "ok":
-        return payload
-
-    logger.warning(f"{operation} failed for {paper_title}: {payload}")
-    return None
+    except Exception as exc:
+        logger.warning(
+            f"{operation} multiprocessing failed for {paper_title}: {exc}. Falling back to direct call."
+        )
+        try:
+            return func(*args)
+        except Exception as e:
+            logger.warning(f"{operation} failed for {paper_title}: {e}")
+            return None
 
 
 def _extract_text_from_pdf_worker(pdf_url: str) -> str:
@@ -96,11 +112,15 @@ def _extract_text_from_html_worker(html_url: str) -> str | None:
     return text
 
 
-def _extract_text_from_tar_worker(source_url: str, paper_id: str, paper_title: str | None = None) -> str | None:
+def _extract_text_from_tar_worker(
+    source_url: str, paper_id: str, paper_title: str | None = None
+) -> str | None:
     with TemporaryDirectory() as temp_dir:
         path = os.path.join(temp_dir, "paper.tar.gz")
         _download_file(source_url, path)
-        file_contents = extract_tex_code_from_tar(path, paper_id, paper_title=paper_title)
+        file_contents = extract_tex_code_from_tar(
+            path, paper_id, paper_title=paper_title
+        )
         if not file_contents or "all" not in file_contents:
             raise ValueError("Main tex file not found.")
         return file_contents["all"]
@@ -118,20 +138,36 @@ class ArxivRetriever(BaseRetriever):
         categories = self.config.source.arxiv.category
         include_cross_list = self.config.source.arxiv.get("include_cross_list", False)
         date_range = self.config.source.arxiv.get("date_range", "1day")
-        
+
+        logger.info(
+            f"Fetching arXiv papers: categories={categories}, date_range={date_range}"
+        )
+
         raw_papers = []
-        
-        if date_range == "1day":
-            raw_papers = self._fetch_from_rss(client, categories, include_cross_list)
-        else:
-            raw_papers = self._fetch_from_api(client, categories, date_range)
-        
+
+        try:
+            if date_range == "1day":
+                raw_papers = self._fetch_from_rss(
+                    client, categories, include_cross_list
+                )
+            else:
+                raw_papers = self._fetch_from_api(client, categories, date_range)
+        except Exception as exc:
+            logger.error(f"Failed to fetch arXiv papers: {exc}")
+            import traceback
+
+            logger.error(traceback.format_exc())
+            raise
+
+        logger.info(f"Retrieved {len(raw_papers)} arXiv papers")
         return raw_papers
 
-    def _fetch_from_rss(self, client, categories, include_cross_list) -> list[ArxivResult]:
-        query = '+'.join(categories)
+    def _fetch_from_rss(
+        self, client, categories, include_cross_list
+    ) -> list[ArxivResult]:
+        query = "+".join(categories)
         feed = feedparser.parse(f"https://rss.arxiv.org/atom/{query}")
-        if 'Feed error for query' in feed.feed.title:
+        if "Feed error for query" in feed.feed.title:
             raise Exception(f"Invalid ARXIV_QUERY: {query}.")
         raw_papers = []
         allowed_announce_types = {"new", "cross"} if include_cross_list else {"new"}
@@ -141,12 +177,14 @@ class ArxivRetriever(BaseRetriever):
             if i.get("arxiv_announce_type", "new") in allowed_announce_types
         ]
         if self.config.executor.debug:
-            debug_paper_num = max(50, self.config.executor.get("candidate_pool_size", 50))
+            debug_paper_num = max(
+                50, self.config.executor.get("candidate_pool_size", 50)
+            )
             all_paper_ids = all_paper_ids[:debug_paper_num]
 
         bar = tqdm(total=len(all_paper_ids), desc="Fetching arXiv papers")
         for i in range(0, len(all_paper_ids), 20):
-            search = arxiv.Search(id_list=all_paper_ids[i:i + 20])
+            search = arxiv.Search(id_list=all_paper_ids[i : i + 20])
             batch = list(client.results(search))
             bar.update(len(batch))
             raw_papers.extend(batch)
@@ -163,17 +201,19 @@ class ArxivRetriever(BaseRetriever):
             start_date = now - timedelta(days=30)
         else:
             start_date = now - timedelta(days=1)
-        
-        date_str = start_date.strftime('%Y%m%d%H%M%S')
+
+        date_str = start_date.strftime("%Y%m%d%H%M%S")
         query_parts = [f"cat:{cat}" for cat in categories]
         query = " OR ".join(query_parts)
-        
+
         max_results = 200
         if self.config.executor.debug:
             max_results = self.config.executor.get("candidate_pool_size", 50)
-        
-        logger.info(f"Searching arXiv for papers since {start_date.strftime('%Y-%m-%d')}")
-        
+
+        logger.info(
+            f"Searching arXiv for papers since {start_date.strftime('%Y-%m-%d')}"
+        )
+
         raw_papers = []
         search = arxiv.Search(
             query=query,
@@ -181,7 +221,7 @@ class ArxivRetriever(BaseRetriever):
             sort_by=arxiv.SortCriterion.SubmittedDate,
             sort_order=arxiv.SortOrder.Descending,
         )
-        
+
         bar = tqdm(desc="Fetching arXiv papers")
         for result in client.results(search):
             if result.published.replace(tzinfo=None) < start_date:
@@ -191,7 +231,7 @@ class ArxivRetriever(BaseRetriever):
             if len(raw_papers) >= max_results:
                 break
         bar.close()
-        
+
         logger.info(f"Found {len(raw_papers)} papers from arXiv API")
         return raw_papers
 
