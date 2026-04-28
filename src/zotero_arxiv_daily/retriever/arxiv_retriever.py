@@ -245,7 +245,10 @@ class ArxivRetriever(BaseRetriever):
             full_text = extract_text_from_html(raw_paper)
         if full_text is None:
             full_text = extract_text_from_pdf(raw_paper)
-        return Paper(
+
+        weight = self.retriever_config.get("weight", 1.5)
+
+        paper = Paper(
             source=self.name,
             title=title,
             authors=authors,
@@ -254,6 +257,11 @@ class ArxivRetriever(BaseRetriever):
             pdf_url=pdf_url,
             full_text=full_text,
         )
+
+        paper.metadata["primary_source"] = "arxiv"
+        paper.metadata["source_weight"] = weight
+
+        return paper
 
 
 def extract_text_from_html(paper: ArxivResult) -> str | None:

@@ -44,17 +44,21 @@ class OpenAlexRetriever(BaseRetriever):
         date_filter = self._get_date_filter()
         keywords_query = " OR ".join(self.keywords)
         filter_query = f"{date_filter},title.search:{keywords_query}"
-        
+
         params = {
             "filter": filter_query,
             "per_page": min(self.max_results, 200),
             "sort": "publication_date:desc",
         }
-        
-        logger.info(f"Querying OpenAlex with keywords: {keywords_query}, date: {date_filter}")
-        
+
+        logger.info(
+            f"Querying OpenAlex with keywords: {keywords_query}, date: {date_filter}"
+        )
+
         try:
-            response = requests.get(OPENALEX_API, params=params, timeout=REQUEST_TIMEOUT)
+            response = requests.get(
+                OPENALEX_API, params=params, timeout=REQUEST_TIMEOUT
+            )
             response.raise_for_status()
             data = response.json()
             results = data.get("results", [])
@@ -69,28 +73,28 @@ class OpenAlexRetriever(BaseRetriever):
             title = raw_paper.get("title", "")
             if not title:
                 return None
-            
+
             authors = []
             authorships = raw_paper.get("authorships", [])
             for authorship in authorships:
                 author = authorship.get("author", {})
                 if author and author.get("display_name"):
                     authors.append(author["display_name"])
-            
+
             abstract = raw_paper.get("abstract_inverted_index", None)
             if abstract:
                 abstract_text = self._reconstruct_abstract(abstract)
             else:
                 abstract_text = ""
-            
+
             doi = raw_paper.get("doi", None)
             url = raw_paper.get("id", "")
-            
+
             pdf_url = None
             oa = raw_paper.get("open_access", {})
             if oa.get("is_oa"):
                 pdf_url = oa.get("oa_url")
-            
+
             locations = raw_paper.get("primary_location", {})
             if locations:
                 source = locations.get("source", {})
@@ -98,8 +102,10 @@ class OpenAlexRetriever(BaseRetriever):
                     landing_page = locations.get("landing_page_url", "")
                     if landing_page:
                         url = landing_page
-            
-            return Paper(
+
+            weight = self.retriever_config.get("weight", 1.2)
+
+            paper = Paper(
                 source=self.name,
                 title=title,
                 authors=authors,
@@ -109,6 +115,11 @@ class OpenAlexRetriever(BaseRetriever):
                 doi=doi,
                 full_text=None,
             )
+
+            paper.metadata["primary_source"] = "openalex"
+            paper.metadata["source_weight"] = weight
+
+            return paper
         except Exception as e:
             logger.warning(f"Failed to convert OpenAlex paper: {e}")
             return None
