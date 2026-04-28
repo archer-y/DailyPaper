@@ -81,6 +81,12 @@ class Executor:
         self.reranker = get_reranker_cls(config.executor.reranker)(config)
         self.openai_client = OpenAI(api_key=config.llm.api.key, base_url=config.llm.api.base_url)
     def fetch_zotero_corpus(self) -> list[CorpusPaper]:
+        # Check if Zotero is enabled
+        zotero_enabled = self.config.zotero.get("enabled", True)
+        if not zotero_enabled:
+            logger.info("Zotero is disabled, skipping corpus fetch")
+            return []
+        
         logger.info("Fetching zotero corpus")
         
         # Verify credentials before connecting
@@ -88,8 +94,9 @@ class Executor:
         api_key = self.config.zotero.api_key
         
         if not user_id or not api_key:
-            logger.error(f"Missing credentials: user_id={user_id}, api_key={'***' if api_key else 'None'}")
-            raise ValueError("Zotero credentials not configured. Please set ZOTERO_ID and ZOTERO_KEY environment variables.")
+            logger.warning("Zotero credentials not configured. Skipping Zotero corpus fetch.")
+            logger.warning("Set ZOTERO_ID and ZOTERO_KEY environment variables to enable Zotero integration.")
+            return []
         
         logger.info(f"Connecting to Zotero with user_id: {user_id}")
         zot = zotero.Zotero(user_id, 'user', api_key)
@@ -144,9 +151,12 @@ class Executor:
     def run(self):
         corpus = self.fetch_zotero_corpus()
         corpus = self.filter_corpus(corpus)
+        
+        # Allow running without Zotero corpus (keyword-only mode)
         if len(corpus) == 0:
-            logger.error(f"No zotero papers found. Please check your zotero settings:\n{self.config.zotero}")
-            return
+            logger.warning("No zotero papers found. Running in keyword-only mode.")
+            logger.warning("To enable similarity matching, configure Zotero credentials.")
+        
         all_papers = []
         source_errors = {}
         for source, retriever in self.retrievers.items():

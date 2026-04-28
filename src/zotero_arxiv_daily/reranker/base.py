@@ -8,6 +8,13 @@ class BaseReranker(ABC):
         self.config = config
 
     def rerank(self, candidates:list[Paper], corpus:list[CorpusPaper]) -> list[Paper]:
+        # Handle empty corpus (keyword-only mode)
+        if len(corpus) == 0:
+            # No corpus for similarity matching, return candidates without scores
+            for c in candidates:
+                c.score = 0.0
+            return candidates
+        
         corpus = sorted(corpus,key=lambda x: x.added_date,reverse=True)
         time_decay_weight = 1 / (1 + np.log10(np.arange(len(corpus)) + 1))
         time_decay_weight: np.ndarray = time_decay_weight / time_decay_weight.sum()
