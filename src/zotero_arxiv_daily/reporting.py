@@ -33,45 +33,108 @@ def paper_to_record(paper: Paper, rank: int) -> dict:
     }
 
 
-def render_markdown(papers: list[Paper], report_date: str, enrichment_failures: dict[str, list[str]] | None = None) -> str:
+def render_markdown(
+    papers: list[Paper],
+    report_date: str,
+    enrichment_failures: dict[str, list[str]] | None = None,
+) -> str:
     lines = [
-        f"# Zotero 个性化论文日报 - {report_date}",
+        f"# 📚 论文日报 - {report_date}",
         "",
-        f"今日精选 {len(papers)} 篇论文，按 Zotero 文献库相关性排序。",
+        f"今日精选 **{len(papers)}** 篇论文，来自多源整合。",
         "",
     ]
 
     if not papers:
         lines.extend(["今天没有匹配的新论文。", ""])
+
+    source_stats = {}
+    for paper in papers:
+        src = paper.metadata.get("primary_source", "unknown")
+        source_stats[src] = source_stats.get(src, 0) + 1
+
+    if source_stats:
+        src_str = " | ".join([f"{k}: {v}篇" for k, v in source_stats.items()])
+        lines.extend([f"**来源分布**: {src_str}", ""])
+
     for index, paper in enumerate(papers, start=1):
         score = f"{paper.score:.2f}" if paper.score is not None else "N/A"
-        authors = ", ".join(paper.authors[:5]) + (" et al." if len(paper.authors) > 5 else "")
-        code_links = ", ".join(paper.code_urls) if paper.code_urls else "未发现"
-        project_links = ", ".join(paper.project_urls) if paper.project_urls else "未发现"
-        semantic_tldr = (paper.metadata.get("semantic_scholar") or {}).get("tldr")
+        weighted_score = paper.metadata.get("weighted_score", 0)
+
+        authors = ", ".join(paper.authors[:3]) + (
+            " et al." if len(paper.authors) > 3 else ""
+        )
+
+        source = paper.metadata.get("primary_source", "unknown")
+        source_icon = {
+            "arxiv": "📄",
+            "openalex": "🔍",
+            "huggingface": "🤗",
+            "openreview": "🎓",
+            "pwc": "💻",
+        }.get(source, "📄")
+
+        code_links = paper.code_urls[:2] if paper.code_urls else []
+        code_str = (
+            " | ".join([f"[代码]({url})" for url in code_links])
+            if code_links
+            else "暂无"
+        )
+
+        hf_upvotes = paper.metadata.get("hf_upvotes", 0)
+        github_stars = paper.metadata.get("github_stars", 0)
+
+        social_metrics = []
+        if hf_upvotes:
+            social_metrics.append(f"👍 {hf_upvotes}")
+        if github_stars:
+            social_metrics.append(f"⭐ {github_stars}")
+        social_str = " | ".join(social_metrics) if social_metrics else ""
+
+        tldr = (
+            paper.tldr
+            or (paper.metadata.get("semantic_scholar") or {}).get("tldr")
+            or ""
+        )
 
         lines.extend(
             [
                 f"## {index}. {paper.title}",
                 "",
-                f"- 相关性分数：{score}",
-                f"- 作者：{authors or 'Unknown'}",
-                f"- 论文：{paper.url}",
-                f"- PDF：{paper.pdf_url or '未发现'}",
-                f"- 代码：{code_links}",
-                f"- 项目页：{project_links}",
-                f"- 一句话结论：{paper.tldr or semantic_tldr or '暂无'}",
-                f"- 研究问题：{paper.abstract[:280].strip()}",
-                "- 核心方法：见摘要与 TLDR；第一版不额外编造未抽取到的方法细节。",
-                "- 主要贡献：由 TLDR 与摘要辅助判断，优先阅读原文确认。",
-                "- 局限：自动摘要未可靠覆盖局限性，建议阅读实验和讨论部分。",
-                f"- 推荐理由：与你的 Zotero 文献库相似度较高，且命中领域关键词 {paper.metadata.get('keyword_matches', 0)} 个。",
+                f"{source_icon} **{source}** | 分数: {score} | 权重分: {weighted_score:.2f}",
+                "",
+                f"> 💡 **摘要**: {tldr[:150] + '...' if len(tldr) > 150 else tldr}"
+                if tldr
+                else "> 💡 点击下方链接查看详情",
+                "",
+                f"👨‍🔬 {authors or 'Unknown'}",
                 "",
             ]
         )
 
+        links = []
+        if paper.url:
+            links.append(f"[论文]({paper.url})")
+        if paper.pdf_url:
+            links.append(f"[PDF]({paper.pdf_url})")
+        if code_str != "暂无":
+            links.append(code_str)
+
+        if links:
+            lines.extend([f"🔗 {' | '.join(links)}", ""])
+
+        if social_str:
+            lines.extend([f"📊 {social_str}", ""])
+
+        keyword_matches = paper.metadata.get("keyword_matches", 0)
+        if keyword_matches:
+            lines.extend([f"🏷️ 命中关键词: {keyword_matches}个", ""])
+
+        lines.append("---")
+        lines.append("")
+
     if enrichment_failures:
-        lines.extend(["## 元数据补强失败", ""])
+        lines.extend(["## ⚠️ 元数据补强失败", ""])
         for provider, titles in enrichment_failures.items():
             lines.append(f"- {provider}: {len(titles)} 篇失败")
         lines.append("")
@@ -90,7 +153,9 @@ def write_outputs(
     reports_dir.mkdir(parents=True, exist_ok=True)
     data_dir.mkdir(parents=True, exist_ok=True)
 
-    records = [paper_to_record(paper, rank) for rank, paper in enumerate(papers, start=1)]
+    records = [
+        paper_to_record(paper, rank) for rank, paper in enumerate(papers, start=1)
+    ]
     json_path = data_dir / f"{report_date}.json"
     md_path = reports_dir / f"{report_date}.md"
 
@@ -100,6 +165,10 @@ def write_outputs(
         "papers": records,
         "enrichment_failures": enrichment_failures or {},
     }
-    json_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    md_path.write_text(render_markdown(papers, report_date, enrichment_failures), encoding="utf-8")
+    json_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    md_path.write_text(
+        render_markdown(papers, report_date, enrichment_failures), encoding="utf-8"
+    )
     return md_path, json_path
