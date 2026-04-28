@@ -1,6 +1,6 @@
 {
   "date": "2026-04-28",
-  "paper_count": 10,
+  "paper_count": 3,
   "papers": [
     {
       "rank": 1,
@@ -20,12 +20,25 @@
       "arxiv_id": "2604.22795",
       "doi": null,
       "score": 1.5,
-      "tldr": "本研究提出了一种多智能体强化学习框架，通过将损伤等效载荷实时估计纳入奖励函数设计，训练风机智能体学习协作策略，在满足结构载荷约束阈值的同时最大化风电场总功率产出。",
-      "affiliations": null,
+      "tldr": "该研究提出了一种多智能体强化学习框架，通过将损伤等效载荷的实时估计整合到奖励函数中，成功训练出能够在约束结构载荷增量的同时最大化风电场功率输出的协同尾流控制策略。",
+      "affiliations": [
+        "Technical University of Denmark"
+      ],
       "code_urls": [],
       "project_urls": [],
       "metadata": {
-        "keyword_matches": 3
+        "source_weight": 1.0,
+        "keyword_matches": 3,
+        "weighted_score": 1.5,
+        "semantic_scholar": {
+          "paper_id": "0272021f82ff97e3d69c9eb45808c936a4d08f3e",
+          "url": "https://www.semanticscholar.org/paper/0272021f82ff97e3d69c9eb45808c936a4d08f3e",
+          "citation_count": 0,
+          "reference_count": 13,
+          "influential_citation_count": 0,
+          "publication_date": "2026-04-13",
+          "tldr": "Results indicate that the MARL agents successfully learn collaborative policies that prioritise power gain while actively retreating from high-DEL control strategies."
+        }
       }
     },
     {
@@ -42,12 +55,14 @@
       "arxiv_id": "2604.22785",
       "doi": null,
       "score": 1.5,
-      "tldr": "该论文提出CoFi-PGMA框架，通过基于边际贡献的反事实策略梯度方法，解决了多智能体LLM系统中因路由选择和协作机制导致的过滤反馈问题，从而修正了学习信号并实现了有效的个体智能体训练。",
+      "tldr": "本文提出CoFi-PGMA框架，通过基于边际贡献的反事实训练目标，有效纠正多智能体LLM系统中路由选择与协作生成场景下的过滤反馈问题，实现了更精准的单智能体学习信号分配。",
       "affiliations": null,
       "code_urls": [],
       "project_urls": [],
       "metadata": {
-        "keyword_matches": 3
+        "source_weight": 1.0,
+        "keyword_matches": 3,
+        "weighted_score": 1.5
       }
     },
     {
@@ -64,240 +79,31 @@
       "arxiv_id": "2604.22879",
       "doi": null,
       "score": 1.5,
-      "tldr": "该论文针对多智能体系统中因上下文割裂导致的“局部安全但全局违规”风险，提出了基于语义污点令牌（STT）协议的分布式零信任架构，通过跨域策略验证有效解决了大模型无法自我规避此类安全隐患的问题。",
+      "tldr": "本文针对多智能体系统中因上下文隔离导致单个智能体看似合规但集体违规的“上下文碎片化违规”问题，提出了一种基于语义污点令牌协议的分布式零信任架构，有效实现了跨域策略验证与防御。",
       "affiliations": null,
       "code_urls": [],
       "project_urls": [],
       "metadata": {
-        "keyword_matches": 3
-      }
-    },
-    {
-      "rank": 4,
-      "source": "arxiv",
-      "title": "Conformal PM2.5 Mapping Under Spatial Covariate Shift: Satellite-Reanalysis Fusion for Africa's Green Industrial Transition",
-      "authors": [
-        "Yaw Osei Adjei",
-        "Davis Opoku",
-        "Ephraim Abotsi",
-        "Kwadwo Owusu Amanqua",
-        "Oliver Kornyo",
-        "Elisha Soglo-Ahianyo",
-        "Cephas Anertey Abbey"
-      ],
-      "abstract": "Africa's green industrialization imperative demands reliable infrastructure for monitoring air quality. We present a satellite-reanalysis PM2.5 fusion system trained on 2,068,901 records from 404 monitoring locations in 29 African countries (OpenAQ, 2017-2022), combining LightGBM with leakage-resistant spatial cross-validation and conformal prediction to quantify predictions and their geographic applicability limits. Under 5-fold location-grouped spatial cross-validation, LightGBM achieves RMSE = 30.83 +/- 5.07 ug/m3, MAE = 14.54 +/- 1.66 ug/m3, R2 = 0.134 +/- 0.023, and macro F1 = 0.336 +/- 0.018. This R2 is substantially below random-split benchmarks (>0.90) but reflects true geographic generalisation difficulty rather than model failure. Split conformal prediction targeting 90% marginal coverage reveals severe East Africa degradation (actual PICP = 65.3% vs. nominal 90%), consistent with medium-strength covariate shift (humidity KS = 0.2237, sat_pblh KS = 0.2558). We operationalise these findings through regional reliability flags (High/Medium/Low/Unreliable) and a monitor prioritisation score directing infrastructure expansion toward highest-burden unmonitored populations, directly supporting Africa's green industrial transition and SDGs 3.9, 7.1.2, 9, 11.6.2, and 13.",
-      "url": "http://arxiv.org/abs/2604.22787v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.22787v1",
-      "arxiv_id": "2604.22787",
-      "doi": null,
-      "score": 1.0,
-      "tldr": "该研究利用抗泄漏空间交叉验证和保形预测构建了非洲PM2.5卫星融合模型，量化了空间协变量偏移下的预测不确定性与地理泛化限制，并通过区域可靠性分级工具指导监测基础设施扩张，从而支持非洲的绿色工业转型。",
-      "affiliations": [
-        "Kwame Nkrumah University of Science and Technology"
-      ],
-      "code_urls": [],
-      "project_urls": [],
-      "metadata": {
-        "keyword_matches": 2
-      }
-    },
-    {
-      "rank": 5,
-      "source": "arxiv",
-      "title": "Complete Cyclic Subtask Graphs for Tool-Using LLM Agents: Flexibility, Cost, and Bottlenecks in Multi-Agent Workflows",
-      "authors": [
-        "Luay Gharzeddine",
-        "Samer Saab"
-      ],
-      "abstract": "Long-horizon tool-using tasks sometimes benefit from revisiting earlier subtasks for recovery and exploration, but added multi-agent workflow flexibility can also introduce coordination overhead and substantial inference cost. We study complete cyclic subtask graphs, a deliberately maximally flexible multi-agent architecture in which executable subtask nodes are fully connected and a unified state-analysis-and-routing agent selects transitions using natural-language criteria. This makes unrestricted revisitation explicit and directly analyzable at the subtask level. We evaluate task-specific (Spec-Cyc) and benchmark-generic (Gen-Cyc) graphs on TextCraft, ALFWorld, and Finance-Agent, with ablations over planner/executor/router strength, tool exposure (generalist vs specialized), $n$-shot successful trajectory summaries, and fault-injected random subtask perturbations. The benchmarks expose three distinct regimes. ALFWorld highlights a setting where explicit revisitation supports recovery and exploration; TextCraft, a largely prerequisite-chain domain, often favors the efficiency of simpler forward execution; and Finance-Agent remains bottlenecked by retrieval, grounding, and evidence synthesis more than by workflow flexibility alone. Shared-win token comparisons further show that the added flexibility can be substantially more expensive than a single ReAct agent. Overall, we use complete cyclic subtask graphs as a maximally flexible experimental lens for measuring when multi-agent revisitation helps, when it mainly adds coordination cost, and when external task bottlenecks dominate.",
-      "url": "http://arxiv.org/abs/2604.22820v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.22820v1",
-      "arxiv_id": "2604.22820",
-      "doi": null,
-      "score": 1.0,
-      "tldr": "本文提出完全循环子任务图这一最大化灵活性的多智能体架构，通过在三个基准上的实验系统分析了无限制子任务重访何时有助于恢复探索、何时主要增加协调成本，以及何时外部任务瓶颈成为主导因素。",
-      "affiliations": [
-        "Lebanese American University"
-      ],
-      "code_urls": [],
-      "project_urls": [],
-      "metadata": {
-        "keyword_matches": 2
-      }
-    },
-    {
-      "rank": 6,
-      "source": "arxiv",
-      "title": "Hierarchical RL-MPC Control for Dynamic Wake Steering in Wind Farms",
-      "authors": [
-        "Marcus Binder Nilsen",
-        "Teodor Olof Benedict Åstrand",
-        "Tuhfe Göçmen",
-        "Pierre-Elouan Réthoré"
-      ],
-      "abstract": "Wind farm wake steering optimization is challenging due to complex flow physics and changing conditions. This paper presents a hierarchical framework that combines reinforcement learning with model predictive control, where an RL agent learns compensatory state estimates for an MPC controller, rather than directly controlling turbines. Evaluated on a three-turbine case, the approach achieves a 23\\% power gain over the baseline control and surpasses the idealized MPC with perfect state knowledge. Compared to direct RL control, the hybrid architecture maintains superior safety characteristics during training while achieving comparable performance with more stable control actions.",
-      "url": "http://arxiv.org/abs/2604.22797v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.22797v1",
-      "arxiv_id": "2604.22797",
-      "doi": null,
-      "score": 1.0,
-      "tldr": "该论文提出了一种结合强化学习与模型预测控制的分层框架，利用RL智能体学习补偿性状态估计以辅助MPC进行风电场尾流导向，从而在保证安全性的同时显著提升了发电效率。",
-      "affiliations": [
-        "Technical University of Denmark"
-      ],
-      "code_urls": [],
-      "project_urls": [],
-      "metadata": {
-        "keyword_matches": 2
-      }
-    },
-    {
-      "rank": 7,
-      "source": "arxiv",
-      "title": "MTServe: Efficient Serving for Generative Recommendation Models with Hierarchical Caches",
-      "authors": [
-        "Xin Wang",
-        "Chi Ma",
-        "Shaobin Chen",
-        "Pu Wang",
-        "Menglei Zhou",
-        "Junyi Qiu",
-        "Qiaorui Chen",
-        "Jiayu Sun",
-        "Shijie Liu",
-        "Zehuan Wang",
-        "Lei Yu",
-        "Chuan Liu",
-        "Fei Jiang",
-        "Wei Lin",
-        "Hao Wang",
-        "Jiawei Jiang",
-        "Xiao Yan"
-      ],
-      "abstract": "Generative recommendation (GR) offers superior modeling capabilities but suffers from prohibitive inference costs due to the repeated encoding of long user histories. While cross-request Key-Value (KV) cache reuse presents a significant optimization opportunity, the massive scale of individual user states creates a storage explosion that far exceeds physical GPU limits. We propose MTServe, a hierarchical cache management system that virtualizes GPU memory by leveraging host RAM as a scalable backup store. To bridge the I/O gap between tiers, MTServe introduces a suite of system-level optimizations, including a hybrid storage layout, an asynchronous data transfer pipeline, and a locality-driven replacement policy. On both public and production datasets, MTServe delivers up to 3.1* speedup while maintaining near-perfect hit ratios (>98.5%).",
-      "url": "http://arxiv.org/abs/2604.22881v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.22881v1",
-      "arxiv_id": "2604.22881",
-      "doi": null,
-      "score": 1.0,
-      "tldr": "MTServe 针对生成式推荐模型面临的显存瓶颈与推理成本问题，提出了一种利用主机内存扩展容量的分层缓存管理系统，通过优化存储布局与异步传输机制，实现了高达3.1倍的推理加速。",
-      "affiliations": null,
-      "code_urls": [],
-      "project_urls": [],
-      "metadata": {
-        "keyword_matches": 2
-      }
-    },
-    {
-      "rank": 8,
-      "source": "arxiv",
-      "title": "PExA: Parallel Exploration Agent for Complex Text-to-SQL",
-      "authors": [
-        "Tanmay Parekh",
-        "Ella Hofmann-Coyle",
-        "Shuyi Wang",
-        "Sachith Sri Ram Kothur",
-        "Srivas Prasad",
-        "Yunmo Chen"
-      ],
-      "abstract": "LLM-based agents for text-to-SQL often struggle with latency-performance trade-off, where performance improvements come at the cost of latency or vice versa. We reformulate text-to-SQL generation within the lens of software test coverage where the original query is prepared with a suite of test cases with simpler, atomic SQLs that are executed in parallel and together ensure semantic coverage of the original query. After iterating on test case coverage, the final SQL is generated only when enough information is gathered, leveraging the explored test case SQLs to ground the final generation. We validated our framework on a state-of-the-art benchmark for text-to-SQL, Spider 2.0, achieving a new state-of-the-art with 70.2% execution accuracy.",
-      "url": "http://arxiv.org/abs/2604.22934v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.22934v1",
-      "arxiv_id": "2604.22934",
-      "doi": null,
-      "score": 1.0,
-      "tldr": "该研究将文本转SQL任务重构为软件测试覆盖问题，通过并行探索简单原子测试用例实现延迟与性能的优化平衡，在Spider 2.0基准上达到70.2%的最新执行准确率。",
-      "affiliations": null,
-      "code_urls": [],
-      "project_urls": [],
-      "metadata": {
-        "keyword_matches": 2
-      }
-    },
-    {
-      "rank": 9,
-      "source": "arxiv",
-      "title": "A Decoupled Human-in-the-Loop System for Controlled Autonomy in Agentic Workflows",
-      "authors": [
-        "Edward Cheng",
-        "Jeshua Cheng"
-      ],
-      "abstract": "AI agents are increasingly deployed to execute tasks and make decisions within agentic workflows, introducing new requirements for safe and controlled autonomy. Prior work has established the importance of human oversight for ensuring transparency, accountability, and trustworthiness in such systems. However, existing implementations of Human-in-the-Loop (HITL) mechanisms are typically embedded within application logic, limiting reuse, consistency, and scalability across multi-agent environments.\n  This paper presents a decoupled HITL system architecture that treats human oversight as an independent system component within the agent operating environment. The proposed design separates human interaction management from application workflows through explicit interfaces and a structured execution model. In addition, a design framework is introduced to formalize HITL integration along four dimensions: intervention conditions, role resolution, interaction semantics, and communication channel. This framework enables selective and context-aware human involvement while maintaining system-level consistency.\n  The approach supports alignment with emerging agent communication protocols, allowing HITL to be implemented as a protocol-level concern. By externalizing HITL and structuring its integration, the system provides a foundation for scalable governance and progressive autonomy in agentic workflows.",
-      "url": "http://arxiv.org/abs/2604.23049v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.23049v1",
-      "arxiv_id": "2604.23049",
-      "doi": null,
-      "score": 1.0,
-      "tldr": "本文提出了一种解耦的人机回环（HITL）系统架构，通过将人类监督视为独立系统组件并建立涵盖干预条件、角色解析、交互语义及通信通道的四维设计框架，实现了智能体工作流中可扩展的治理与受控的自主性。",
-      "affiliations": [],
-      "code_urls": [],
-      "project_urls": [],
-      "metadata": {
-        "keyword_matches": 2
-      }
-    },
-    {
-      "rank": 10,
-      "source": "arxiv",
-      "title": "Towards Understanding the Expressive Power of GNNs with Global Readout",
-      "authors": [
-        "Maurice Funk",
-        "Daumantas Kojelis"
-      ],
-      "abstract": "We study the expressive power of message-passing aggregate-combine-readout graph neural networks (ACR-GNNs). Particularly, we focus on the first-order (FO) properties expressible by this formalism. While a tight logical characterisation remains a difficult open question, we make two contributions towards answering it. First, we show that sum aggregation and readout suffice for GNNs to capture FO properties that cannot be expressed in the logic C2 on both directed and undirected graphs. This strengthens known results by Hauke and Wał{\\k e}ga (2026) where aggregation and readout functions are specially crafted for the task. Second, we identify two natural ways of restoring characterisability (with regard to C2) for ACR-GNNs. One option is to limit local aggregation (without imposing restrictions on global readout), whilst the second is to run ACR-GNNs over graphs of bounded degree (but unbounded size). In both cases, the FO properties captured by GNNs are exactly those definable by a formula in graded modal logic with global counting modalities. Our results thus establish an innate lower- and upper-bound in terms of how far (fragments of) C2 can be taken to characterise GNNs, and imply that is indeed the unbounded interaction of aggregation and readout that pushes the logical expressive power of GNNs above C2.",
-      "url": "http://arxiv.org/abs/2604.22870v1",
-      "pdf_url": "https://arxiv.org/pdf/2604.22870v1",
-      "arxiv_id": "2604.22870",
-      "doi": null,
-      "score": 0.5,
-      "tldr": "本文证明了仅使用求和聚合与全局读出的图神经网络能表达超出逻辑$C^2$的一阶性质，并在限制聚合函数或图度数的情况下，精确刻画了其对应于带全局计数模态的分级模态逻辑的表达能力。",
-      "affiliations": [
-        "ScaDS.AI Center Leipzig/Dresden",
-        "Leipzig University"
-      ],
-      "code_urls": [],
-      "project_urls": [],
-      "metadata": {
-        "keyword_matches": 1
+        "source_weight": 1.0,
+        "keyword_matches": 3,
+        "weighted_score": 1.5
       }
     }
   ],
   "enrichment_failures": {
-    "semantic_scholar": [
-      "Load constrained wind farm flow control through multi-objective multi-agent reinforcement learning",
-      "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
-      "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems",
-      "Conformal PM2.5 Mapping Under Spatial Covariate Shift: Satellite-Reanalysis Fusion for Africa's Green Industrial Transition",
-      "Complete Cyclic Subtask Graphs for Tool-Using LLM Agents: Flexibility, Cost, and Bottlenecks in Multi-Agent Workflows",
-      "Hierarchical RL-MPC Control for Dynamic Wake Steering in Wind Farms",
-      "MTServe: Efficient Serving for Generative Recommendation Models with Hierarchical Caches",
-      "PExA: Parallel Exploration Agent for Complex Text-to-SQL",
-      "A Decoupled Human-in-the-Loop System for Controlled Autonomy in Agentic Workflows",
-      "Towards Understanding the Expressive Power of GNNs with Global Readout"
-    ],
     "hugging_face": [
       "Load constrained wind farm flow control through multi-objective multi-agent reinforcement learning",
       "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
-      "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems",
-      "Conformal PM2.5 Mapping Under Spatial Covariate Shift: Satellite-Reanalysis Fusion for Africa's Green Industrial Transition",
-      "Complete Cyclic Subtask Graphs for Tool-Using LLM Agents: Flexibility, Cost, and Bottlenecks in Multi-Agent Workflows",
-      "Hierarchical RL-MPC Control for Dynamic Wake Steering in Wind Farms",
-      "MTServe: Efficient Serving for Generative Recommendation Models with Hierarchical Caches",
-      "PExA: Parallel Exploration Agent for Complex Text-to-SQL",
-      "A Decoupled Human-in-the-Loop System for Controlled Autonomy in Agentic Workflows",
-      "Towards Understanding the Expressive Power of GNNs with Global Readout"
+      "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems"
     ],
     "papers_with_code": [
       "Load constrained wind farm flow control through multi-objective multi-agent reinforcement learning",
       "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
-      "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems",
-      "Conformal PM2.5 Mapping Under Spatial Covariate Shift: Satellite-Reanalysis Fusion for Africa's Green Industrial Transition",
-      "Complete Cyclic Subtask Graphs for Tool-Using LLM Agents: Flexibility, Cost, and Bottlenecks in Multi-Agent Workflows",
-      "Hierarchical RL-MPC Control for Dynamic Wake Steering in Wind Farms",
-      "MTServe: Efficient Serving for Generative Recommendation Models with Hierarchical Caches",
-      "PExA: Parallel Exploration Agent for Complex Text-to-SQL",
-      "A Decoupled Human-in-the-Loop System for Controlled Autonomy in Agentic Workflows",
-      "Towards Understanding the Expressive Power of GNNs with Global Readout"
+      "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems"
+    ],
+    "semantic_scholar": [
+      "CoFi-PGMA: Counterfactual Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
+      "Beyond Single-Agent Alignment: Preventing Context-Fragmented Violations in Multi-Agent Systems"
     ]
   }
 }
