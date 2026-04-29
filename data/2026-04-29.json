@@ -1,0 +1,324 @@
+{
+  "date": "2026-04-29",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Co-Director: Agentic Generative Video Storytelling",
+      "authors": [
+        "Yale Song",
+        "Yiwen Song",
+        "Nick Losier",
+        "Nathan Hodson",
+        "Ye Jin",
+        "Rhyard Zhu",
+        "Yan Xu",
+        "Daniel Vlasic",
+        "Carina Claassen",
+        "Jasmine Leon",
+        "Khanh G. LeViet",
+        "Zack Chomyn",
+        "Joe Timmons",
+        "Brett Slatkin",
+        "Scott Penberthy",
+        "Tomas Pfister"
+      ],
+      "abstract": "While diffusion models generate high-fidelity video clips, transforming them into coherent storytelling engines remains challenging. Current agentic pipelines automate this via chained modules but suffer from semantic drift and cascading failures due to independent, handcrafted prompting. We present Co-Director, a hierarchical multi-agent framework formalizing video storytelling as a global optimization problem. To ensure semantic coherence, we introduce hierarchical parameterization: a multi-armed bandit globally identifies promising creative directions, while a local multimodal self-refinement loop mitigates identity drift and ensures sequence-level consistency. This balances the exploration of novel narrative strategies with the exploitation of effective creative configurations. For evaluation, we introduce GenAD-Bench, a 400-scenario dataset of fictional products for personalized advertising. Experiments demonstrate that Co-Director significantly outperforms state-of-the-art baselines, offering a principled approach that seamlessly generalizes to broader cinematic narratives. Project Page: https://co-director-agent.github.io/",
+      "url": "http://arxiv.org/abs/2604.24842v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.24842v1",
+      "arxiv_id": "2604.24842",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出了Co-Director，一种分层多智能体视频叙事框架，通过将视频叙事形式化为全局优化问题，利用多臂老虎机进行全局探索与局部多模态自精化机制，有效解决了现有方法中的语义漂移与连贯性难题。",
+      "affiliations": [],
+      "code_urls": [],
+      "project_urls": [
+        "https://co-director-agent.github.io/"
+      ],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25,
+        "hugging_face": {
+          "url": "https://huggingface.co/papers/2604.24842",
+          "upvotes": 4,
+          "submitted_by": null,
+          "summary": "While diffusion models generate high-fidelity video clips, transforming them into coherent storytelling engines remains challenging. Current agentic pipelines automate this via chained modules but suffer from semantic drift and cascading failures due to independent, handcrafted prompting. We present Co-Director, a hierarchical multi-agent framework formalizing video storytelling as a global optimization problem. To ensure semantic coherence, we introduce hierarchical parameterization: a multi-armed bandit globally identifies promising creative directions, while a local multimodal self-refinement loop mitigates identity drift and ensures sequence-level consistency. This balances the exploration of novel narrative strategies with the exploitation of effective creative configurations. For evaluation, we introduce GenAD-Bench, a 400-scenario dataset of fictional products for personalized advertising. Experiments demonstrate that Co-Director significantly outperforms state-of-the-art baselines, offering a principled approach that seamlessly generalizes to broader cinematic narratives. Project Page: https://co-director-agent.github.io/",
+          "linked_repos": {
+            "models": [],
+            "datasets": [],
+            "spaces": []
+          }
+        }
+      },
+      "published_date": "2026-04-27"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks",
+      "authors": [
+        "Lawrence Keunho Jang",
+        "Jing Yu Koh",
+        "Daniel Fried",
+        "Ruslan Salakhutdinov"
+      ],
+      "abstract": "Existing web agent benchmarks have largely converged on short, single-site tasks that frontier models are approaching saturation on. However, real world web use consists of long-horizon, multi-site workflows. Common web navigation tasks, such as comparing products across different domains, planning trips across multiple services, or summarizing information from multiple search queries, require sustained context and cross-site reasoning over potentially hours of browsing. To capture and evaluate such behaviors, we introduce Odysseys: a benchmark of 200 long-horizon web tasks derived from real world browsing sessions evaluated on the live Internet. We find that binary pass/fail evaluation is inadequate for long-horizon settings and introduce a rubric-based evaluation, annotating each Odysseys task with an average of 6.1 graded rubrics. We demonstrate that this yields higher agreement with humans and provides a more fine-grained signal than commonly used trajectory-level LLM-as-a-judge evaluation metrics. We tested several leading frontier models and find that the strongest models achieve a success rate of 44.5%, which leaves substantial room for future improvements. Beyond task success, we argue that efficiency is a first-class concern for long-horizon agents. We introduce a Trajectory Efficiency metric (rubric score per step) and find that even frontier agents achieve only 1.15%, marking an evident need for agents that can succeed efficiently and not simply eventually. Odysseys isolates the critical evaluation of long-horizon proficiency in open-web environments, providing a realistic benchmark to measure progress towards computer-use agents that can potentially productively operate for hours. We release our tasks, evaluation scripts, and other results at https://odysseys-website.pages.dev",
+      "url": "http://arxiv.org/abs/2604.24964v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.24964v1",
+      "arxiv_id": "2604.24964",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出了Odysseys基准测试，包含200个基于真实用户浏览行为的长时程、跨网站网页代理任务，并引入了细粒度的评分量表评估方法和轨迹效率指标，揭示了当前前沿模型在真实复杂网页任务中仍有巨大提升空间（最强模型成功率仅44.5%，效率仅1.15%）。",
+      "affiliations": [
+        "Carnegie Mellon University"
+      ],
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-04-27"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Latent Agents: A Post-Training Procedure for Internalized Multi-Agent Debate",
+      "authors": [
+        "John Seon Keun Yi",
+        "Aaron Mueller",
+        "Dokyun Lee"
+      ],
+      "abstract": "Multi-agent debate has been shown to improve reasoning in large language models (LLMs). However, it is compute-intensive, requiring generation of long transcripts before answering questions. To address this inefficiency, we develop a framework that distills multi-agent debate into a single LLM through a two-stage fine-tuning pipeline combining debate structure learning with internalization via dynamic reward scheduling and length clipping. Across multiple models and benchmarks, our internalized models match or exceed explicit multi-agent debate performance using up to 93% fewer tokens. We then investigate the mechanistic basis of this capability through activation steering, finding that internalization creates agent-specific subspaces: interpretable directions in activation space corresponding to different agent perspectives. We further demonstrate a practical application: by instilling malicious agents into the LLM through internalized debate, then applying negative steering to suppress them, we show that distillation makes harmful behaviors easier to localize and control with smaller reductions in general performance compared to steering base models. Our findings offer a new perspective for understanding multi-agent capabilities in distilled models and provide practical guidelines for controlling internalized reasoning behaviors. Code available at https://github.com/johnsk95/latent_agents",
+      "url": "http://arxiv.org/abs/2604.24881v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.24881v1",
+      "arxiv_id": "2604.24881",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "该论文提出了一种名为IMAD的两阶段微调框架，通过将计算密集型的多智能体辩论蒸馏并内化到单个大语言模型中，在大幅降低推理成本的同时保持了优异的推理性能，并揭示了内化过程在模型内部形成了可解释且可控的“智能体子空间”。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-04-27"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Why Search When You Can Transfer? Amortized Agentic Workflow Design from Structural Priors",
+      "authors": [
+        "Shiyi Du",
+        "Jiayuan Liu",
+        "Weihua Du",
+        "Yue Huang",
+        "Jiayi Li",
+        "Yingtao Luo",
+        "Xiangliang Zhang",
+        "Vincent Conitzer",
+        "Carl Kingsford"
+      ],
+      "abstract": "Automated agentic workflow design currently relies on per-task iterative search, which is computationally prohibitive and fails to reuse structural knowledge across tasks. We observe that optimized workflows converge to a small family of domain-specific topologies, suggesting that this combinatorial search is largely redundant. Building on this insight, we propose SWIFT (Synthesizing Workflows via Few-shot Transfer), a framework that amortizes workflow design into reusable structural priors. SWIFT first distills compositional heuristics and output-interface contracts from contrastive analysis of prior search trajectories across source tasks. At inference time, it conditions a single LLM generation pass on these priors together with cross-task workflow demonstrations to synthesize a complete, executable workflow for an unseen target task, bypassing iterative search entirely. On five benchmarks, SWIFT outperforms the state-of-the-art search-based method while reducing marginal per-task optimization cost by three orders of magnitude. It further generalizes to four additional unseen benchmarks and transfers successfully from GPT-4o-mini to three additional foundation models (Grok, Qwen, Gemma). Controlled ablations reveal that workflow demonstrations primarily transfer topological structure rather than surface semantics: replacing all operator names with random strings still retains over 93% of the full system's average performance.",
+      "url": "http://arxiv.org/abs/2604.25012v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.25012v1",
+      "arxiv_id": "2604.25012",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出SWIFT框架，利用可复用的结构先验替代昂贵的迭代搜索，通过单次LLM生成合成智能体工作流，在降低三个数量级优化成本的同时实现了优越的跨任务泛化性能。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-04-27"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "ITAS: A Multi-Agent Architecture for LLM-Based Intelligent Tutoring",
+      "authors": [
+        "Iizalaarab Elhaimeur",
+        "Nikos Chrisochoides"
+      ],
+      "abstract": "Large language model tutors are easy to build in a notebook and hard to run in a real course. We describe ITAS (Intelligent Teaching Assistant System), a multi-agent tutoring system that a graduate quantum computing course used for a semester at Old Dominion University. The system has three layers. The teaching layer is a Spoke-and-Wheel of three parallel specialist agents (Video, Code, Guidance) followed by a Synthesizer, plus a separate autograder that evaluates both the correctness and the approach of checkpoint submissions. The operational layer is four Cloud Run microservices with session state in Cloud SQL and interaction events streamed through Pub/Sub to BigQuery. The feedback layer is a narrow-scope conversational agent that answers instructor questions over per-lesson pseudonymized event streams, addressing what we call the Blind Instructor Problem: LLM tutors accumulate more data about students than the instructor can reach through routine channels. The architecture is a direct response to specific failures of an earlier prototype, and we describe which of those fixes carried forward and which were dropped for this iteration. We report on a pilot deployment (five students, one course, one semester) interpreted as system-behavior evidence rather than learning-outcome evidence: the teaching layer handled 334 chat turns without the task-boundary hallucinations that domain consolidation would have risked, the operational layer captured 10,628 events across five modules, and the feedback layer surfaced two findings the instructor acted on mid-semester. We do not claim the pilot generalizes. We do claim that the system as described is one workable answer to the question of what an LLM-based ITS needs to look like end-to-end to run in a real course.",
+      "url": "http://arxiv.org/abs/2604.24808v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.24808v1",
+      "arxiv_id": "2604.24808",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "**一句话摘要：**\n\n本文提出了ITAS，一个可实际部署的三层多智能体大语言模型智能辅导系统架构，通过专门化代理协作解决了从实验原型到真实课堂场景的端到端工程挑战。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-04-27"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "本文通过对比沙特吉达和延布的滨水开发案例，分析了两种不同规划体系的优劣，提出应结合灵活性与稳定性以优化城市设计治理效能。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://doi.org/10.17037/PUBS.04681611>",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "本研究结合系统动力学与空间基于主体建模发现，限制快餐店的空间规划政策虽能减少门店数量，但未显著改变居民的外出就餐购买行为，表明改善饮食需采取多方面的综合干预措施。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "A semi-autonomous public organization’s legitimation work: the case of the survival of an actor in the disability field",
+      "authors": [
+        "Alexandre Salvatori",
+        "Sarah Richard",
+        "François Grima"
+      ],
+      "abstract": "This qualitative study, based on semi-structured interviews and ethnography, starts from the observation that little research has been done on maintaining the legitimacy of semi-autonomous public organizations in a context constrained by certain principles of New Public Management. These principles question the legitimacy of public organizations as the most relevant actors for meeting user expectations. In this article, we study the case of GHP, a semi-autonomous public organization of the “agency” type based in France, which manages a public fund. Based on neo-institutional theory, the study seeks to understand the involvement of actors in the dynamics of maintaining the internal and external legitimacy that ensures the sustainability of an organization. We show that maintaining legitimacy and its alignment between internal and external sources is achieved in a process involving four stages: challenges, maintenance, diffusion, and consensus. Institutional entrepreneurs within the organization engage in legitimation work. Through this work, they respond to external regulatory challenges and internal destabilizing events that occur at various times and at different levels. We identify four key factors in the ability of institutional entrepreneurs to succeed in maintaining legitimacy: their resources, knowledge of structural gaps, conscious commitment, and the use of boundary organizations.",
+      "url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-1f?lang=en",
+      "pdf_url": "https://shs.cairn.info/article/E_GMP_PR1_0036/pdf?lang=en",
+      "arxiv_id": null,
+      "doi": null,
+      "score": 0.5,
+      "tldr": "本文通过法国GHP案例，揭示了半自治公共组织内的制度企业家如何通过四阶段的合法性论证工作应对内外挑战，从而维持组织合法性并确保其可持续生存。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2050-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "该研究通过一项II期交叉随机对照试验，评估了两种地中海-生酮饮食干预措施，旨在为帕金森病患者的饮食优化提供科学见解。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "本研究探讨了虚拟牙科咨询对牙髓治疗规划及治疗成本的影响。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Co-Director: Agentic Generative Video Storytelling",
+      "Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks",
+      "Latent Agents: A Post-Training Procedure for Internalized Multi-Agent Debate",
+      "Why Search When You Can Transfer? Amortized Agentic Workflow Design from Structural Priors",
+      "ITAS: A Multi-Agent Architecture for LLM-Based Intelligent Tutoring"
+    ],
+    "papers_with_code": [
+      "Co-Director: Agentic Generative Video Storytelling",
+      "Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks",
+      "Latent Agents: A Post-Training Procedure for Internalized Multi-Agent Debate",
+      "Why Search When You Can Transfer? Amortized Agentic Workflow Design from Structural Priors",
+      "ITAS: A Multi-Agent Architecture for LLM-Based Intelligent Tutoring"
+    ],
+    "hugging_face": [
+      "Odysseys: Benchmarking Web Agents on Realistic Long Horizon Tasks",
+      "Latent Agents: A Post-Training Procedure for Internalized Multi-Agent Debate",
+      "Why Search When You Can Transfer? Amortized Agentic Workflow Design from Structural Priors",
+      "ITAS: A Multi-Agent Architecture for LLM-Based Intelligent Tutoring"
+    ]
+  }
+}
