@@ -1,0 +1,301 @@
+{
+  "date": "2026-04-30",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Entropy Centroids as Intrinsic Rewards for Test-Time Scaling",
+      "authors": [
+        "Wenshuo Zhao",
+        "Qi Zhu",
+        "Xingshan Zeng",
+        "Fei Mi",
+        "Lifeng Shang",
+        "Yiren Feng"
+      ],
+      "abstract": "An effective way to scale up test-time compute of large language models is to sample multiple responses and then select the best one, as in Grok Heavy and Gemini Deep Think. Existing selection methods often rely on external reward models, which requires training a strong reward model and introduces additional computation overhead. As an alternative, previous approaches have explored intrinsic signals, such as confidence and entropy, but these signals are noisy with naive aggregation. In this work, we observe that high-entropy tokens tend to cluster into consecutive groups during inference, providing a more stable notion of model uncertainty than individual tokens. Together, these clusters reveal temporal patterns of model uncertainty throughout the inference process. Motivated by this observation, we propose to use the temporal structure of uncertainty as an intrinsic reward. To this end, we first formalize the basic unit of segment-level uncertainty as the High Entropy Phase (HEP), a variable-length segment that begins at a high-entropy token and ends when consecutive low-entropy tokens appear. We then define the Entropy Centroid, inspired by the concept of the center of mass in physics, as the weighted average position of all HEPs along the trajectory. Intuitively, a lower centroid indicates early exploration followed by confident generation, which we find often corresponds to higher response quality. Based on this insight, we propose the Lowest Centroid method, which selects the response with the lowest entropy centroid among multiple candidates. Experiments on mathematics, code generation, logical reasoning, and agentic tasks, across model scales ranging from 14B to 480B, show that Lowest Centroid consistently outperforms existing baselines and delivers stable gains as model size increases. Code is available at https://github.com/hkust-nlp/entropy-centroid.",
+      "url": "http://arxiv.org/abs/2604.26173v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26173v1",
+      "arxiv_id": "2604.26173",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出利用“熵质心”作为测试时扩展的内在奖励，通过量化高熵阶段的时间分布位置来捕捉模型推理的不确定性模式，从而在无需外部奖励模型的情况下有效选出高质量响应。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-04-28"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Budget-Constrained Causal Bandits: Bridging Uplift Modeling and Sequential Decision-Making",
+      "authors": [
+        "Abhirami Pillai"
+      ],
+      "abstract": "Treatment allocation under budget constraints is a central challenge in digital advertising: advertisers must decide which users to show ads to while spending a limited budget wisely. The standard approach follows a two-stage offline pipeline - first collect historical data to estimate heterogeneous treatment effects (HTE), then solve a constrained optimization to allocate the budget. This works well with abundant data, but fails in cold-start settings such as new campaigns, new markets, or new customer segments where little historical data exists. We propose Budget-Constrained Causal Bandits (BCCB), an online framework that learns which users respond to ads while simultaneously spending the budget, making treatment decisions one user at a time. BCCB unifies three components into a single sequential process: learning individual-level ad effectiveness, exploring users whose response is uncertain, and pacing the budget over time. We evaluated on the Criteo Uplift dataset, a large-scale advertising dataset from a real randomized controlled trial. Our key finding is a data-efficiency crossover: offline methods require approximately 10,000 historical observations to produce reliable results, while BCCB operates effectively from the very first user. Furthermore, BCCB exhibits 3-5x lower performance variance between runs, making it more practical for real campaign planning. Among purely online methods, BCCB consistently outperforms standard Thompson Sampling, budgeted Thompson Sampling, and greedy HTE estimation across all budget levels tested.",
+      "url": "http://arxiv.org/abs/2604.26169v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26169v1",
+      "arxiv_id": "2604.26169",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出了预算约束因果老虎机（BCCB）框架，将异质性处理效应估计、汤普森采样探索与预算节奏控制统一为单一在线序贯决策过程，使系统能从第一个用户开始有效学习，而离线方法需要约10,000条历史数据才能获得可靠结果。",
+      "affiliations": [],
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-04-28"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Split over $n$ resource sharing problem: Are fewer capable agents better than many simpler ones?",
+      "authors": [
+        "Karthik Soma",
+        "Mohamed S. Talamali",
+        "Genki Miyauchi",
+        "Giovanni Beltrame",
+        "Heiko Hamann",
+        "Roderich Gross"
+      ],
+      "abstract": "In multi-agent systems, should limited resources be concentrated into a few capable agents or distributed among many simpler ones? This work formulates the split over $n$ resource sharing problem where a group of $n$ agents equally shares a common resource (e.g., monetary budget, computational resources, physical size). We present a case study in multi-agent coverage where the area of the disk-shaped footprint of agents scales as $1/n$. A formal analysis reveals that the initial coverage rate grows with $n$. However, if the speed of agents decreases proportionally with their radii, groups of all sizes perform equally well, whereas if it decreases proportionally with their footprints, a single agent performs best. We also present computer simulations in which resource splitting increases the failure rates of individual agents. The models and findings help identify optimal distributiveness levels and inform the design of multi-agent systems under resource constraints.",
+      "url": "http://arxiv.org/abs/2604.26374v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26374v1",
+      "arxiv_id": "2604.26374",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出了“n分割资源共享问题”，并通过多智能体覆盖任务的建模分析，揭示了在资源受限条件下，最优群体规模取决于个体能力（如移动速度）随资源缩减的具体函数关系。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-04-29"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "A Survey of Multi-Agent Deep Reinforcement Learning with Graph Neural Network-Based Communication",
+      "authors": [
+        "Valentin Cuzin-Rambaud",
+        "Laetitia Matignon",
+        "Maxime Morge"
+      ],
+      "abstract": "In multi-agent reinforcement learning (MARL), the integration of a communication mechanism, allowing agents to better learn to coordinate their actions and converge on their objectives by sharing information. Based on an interaction graph, a subclass of methods employs graph neural networks (GNNs) to learn the communication, enabling agents to improve their internal representations by enriching them with information exchanged. With growing research, we note a lack of explicit structure and framework to distinguish and classify MARL approaches with communication based on GNNs. Thus, this paper surveys recent works in this field. We propose a generalized GNN-based communication process with the goal of making the underlying concepts behind the methods more obvious and accessible.",
+      "url": "http://arxiv.org/abs/2604.25972v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.25972v1",
+      "arxiv_id": "2604.25972",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "本文综述了基于图神经网络通信的多智能体深度强化学习方法，并提出了一种通用的通信流程框架以系统地梳理和分类现有研究。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-04-28"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Operating-Layer Controls for Onchain Language-Model Agents Under Real Capital",
+      "authors": [
+        "T. J. Barton",
+        "Chris Constantakis",
+        "Patti Hauseman",
+        "Annie Mous",
+        "Alaska Hoffman",
+        "Brian Bergeron",
+        "Hunter Goodreau"
+      ],
+      "abstract": "We study reliability in autonomous language-model agents that translate user mandates into validated tool actions under real capital. The setting is DX Terminal Pro, a 21-day deployment in which 3,505 user-funded agents traded real ETH in a bounded onchain market. Users configured vaults through structured controls and natural-language strategies, but only agents could choose normal buy/sell trades. The system produced 7.5M agent invocations, roughly 300K onchain actions, about $20M in volume, more than 5,000 ETH deployed, roughly 70B inference tokens, and 99.9% settlement success for policy-valid submitted transactions. Long-running agents accumulated thousands of sequential decisions, including 6,000+ prompt-state-action cycles for continuously active agents, yielding a large-scale trace from user mandate to rendered prompt, reasoning, validation, portfolio state, and settlement. Reliability did not come from the base model alone; it emerged from the operating layer around the model: prompt compilation, typed controls, policy validation, execution guards, memory design, and trace-level observability. Pre-launch testing exposed failures that text-only benchmarks rarely measure, including fabricated trading rules, fee paralysis, numeric anchoring, cadence trading, and misread tokenomics. Targeted harness changes reduced fabricated sell rules from 57% to 3%, reduced fee-led observations from 32.5% to below 10%, and increased capital deployment from 42.9% to 78.0% in an affected test population. We show that capital-managing agents should be evaluated across the full path from user mandate to prompt, validated action, and settlement.",
+      "url": "http://arxiv.org/abs/2604.26091v1",
+      "pdf_url": "https://arxiv.org/pdf/2604.26091v1",
+      "arxiv_id": "2604.26091",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "本文通过一项涉及真实资金的大规模链上智能体部署实验证明，资金管理型智能体的可靠性并非源于基础模型本身，而是得益于包含提示编译、策略验证及执行防护等机制的操作层控制系统。",
+      "affiliations": [
+        "DX Research Group (DXRG)"
+      ],
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-04-28"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "本研究通过对比吉达和延布的海滨开发案例，分析了沙特两种规划体系的优劣，提出应整合灵活性与稳定性以提升城市设计治理水平。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://doi.org/10.17037/PUBS.04681611>",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "该研究结合系统动力学与基于主体的空间建模模拟发现，限制学校周边快餐店的规划政策虽能大幅减少网点数量，但对改善外出就餐购买行为效果不显著，提示改善饮食需结合社会经济和行为因素实施多方面干预。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "A semi-autonomous public organization’s legitimation work: the case of the survival of an actor in the disability field",
+      "authors": [
+        "Alexandre Salvatori",
+        "Sarah Richard",
+        "François Grima"
+      ],
+      "abstract": "This qualitative study, based on semi-structured interviews and ethnography, starts from the observation that little research has been done on maintaining the legitimacy of semi-autonomous public organizations in a context constrained by certain principles of New Public Management. These principles question the legitimacy of public organizations as the most relevant actors for meeting user expectations. In this article, we study the case of GHP, a semi-autonomous public organization of the “agency” type based in France, which manages a public fund. Based on neo-institutional theory, the study seeks to understand the involvement of actors in the dynamics of maintaining the internal and external legitimacy that ensures the sustainability of an organization. We show that maintaining legitimacy and its alignment between internal and external sources is achieved in a process involving four stages: challenges, maintenance, diffusion, and consensus. Institutional entrepreneurs within the organization engage in legitimation work. Through this work, they respond to external regulatory challenges and internal destabilizing events that occur at various times and at different levels. We identify four key factors in the ability of institutional entrepreneurs to succeed in maintaining legitimacy: their resources, knowledge of structural gaps, conscious commitment, and the use of boundary organizations.",
+      "url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-1f?lang=en",
+      "pdf_url": "https://shs.cairn.info/article/E_GMP_PR1_0036/pdf?lang=en",
+      "arxiv_id": null,
+      "doi": null,
+      "score": 0.5,
+      "tldr": "该研究通过法国案例揭示了半自治公共组织如何依靠内部“制度企业家”的四阶段合法性工作来应对新公共管理背景下的挑战，从而维持组织生存。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2050-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "本研究通过一项二期交叉随机对照试验，探讨了两种地中海-生酮饮食干预措施，为帕金森病患者的饮食优化提供了见解。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "本文探讨了虚拟牙科会诊对治疗成本及牙髓治疗规划的影响。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Entropy Centroids as Intrinsic Rewards for Test-Time Scaling",
+      "Budget-Constrained Causal Bandits: Bridging Uplift Modeling and Sequential Decision-Making",
+      "Split over $n$ resource sharing problem: Are fewer capable agents better than many simpler ones?",
+      "A Survey of Multi-Agent Deep Reinforcement Learning with Graph Neural Network-Based Communication",
+      "Operating-Layer Controls for Onchain Language-Model Agents Under Real Capital"
+    ],
+    "hugging_face": [
+      "Entropy Centroids as Intrinsic Rewards for Test-Time Scaling",
+      "Budget-Constrained Causal Bandits: Bridging Uplift Modeling and Sequential Decision-Making",
+      "Split over $n$ resource sharing problem: Are fewer capable agents better than many simpler ones?",
+      "A Survey of Multi-Agent Deep Reinforcement Learning with Graph Neural Network-Based Communication",
+      "Operating-Layer Controls for Onchain Language-Model Agents Under Real Capital"
+    ],
+    "papers_with_code": [
+      "Entropy Centroids as Intrinsic Rewards for Test-Time Scaling",
+      "Budget-Constrained Causal Bandits: Bridging Uplift Modeling and Sequential Decision-Making",
+      "Split over $n$ resource sharing problem: Are fewer capable agents better than many simpler ones?",
+      "A Survey of Multi-Agent Deep Reinforcement Learning with Graph Neural Network-Based Communication",
+      "Operating-Layer Controls for Onchain Language-Model Agents Under Real Capital"
+    ]
+  }
+}
