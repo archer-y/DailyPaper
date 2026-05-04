@@ -1,0 +1,324 @@
+{
+  "date": "2026-05-04",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Agentic AI for Trip Planning Optimization Application",
+      "authors": [
+        "Tiejin Chen",
+        "Ahmadreza Moradipari",
+        "Kyungtae Han",
+        "Hua Wei",
+        "Nejib Ammar"
+      ],
+      "abstract": "Trip planning for intelligent vehicles increasingly requires selecting optimal routes rather than merely producing feasible itineraries, as interacting factors such as travel time, energy consumption, and traffic conditions directly affect plan quality. Yet existing systems are largely designed for feasibility-oriented planning, and current benchmarks provide only reference answers without ground truth, preventing objective evaluation of optimization performance. In our paper, we address these limitations with an agentic AI framework that enables dynamic refinement through an orchestration agent coordinating specialized agents for traffic, charging, and points of interest, and with the Trip-planning Optimization Problems Dataset, which supplies definitive optimal solutions and category-level task structure for fine-grained analysis. Experiments show that our system achieves 77.4\\% accuracy on the TOP Benchmark, significantly outperforming single-agent and workflow-based multi-agent baselines, demonstrating the importance of orchestrated agentic reasoning for robust trip planning optimization.",
+      "url": "http://arxiv.org/abs/2605.00276v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.00276v1",
+      "arxiv_id": "2605.00276",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "该论文提出了一种基于多智能体协作的Agentic AI框架来解决智能车辆行程规划优化问题，并构建了具备真值的TOP基准数据集以实现客观评估，实验表明该方法显著优于现有基线。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-04-30"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "World Model for Robot Learning: A Comprehensive Survey",
+      "authors": [
+        "Bohan Hou",
+        "Gen Li",
+        "Jindou Jia",
+        "Tuo An",
+        "Xinying Guo",
+        "Sicong Leng",
+        "Haoran Geng",
+        "Yanjie Ze",
+        "Tatsuya Harada",
+        "Philip Torr",
+        "Oier Mees",
+        "Marc Pollefeys",
+        "Zhuang Liu",
+        "Jiajun Wu",
+        "Pieter Abbeel",
+        "Jitendra Malik",
+        "Yilun Du",
+        "Jianfei Yang"
+      ],
+      "abstract": "World models, which are predictive representations of how environments evolve under actions, have become a central component of robot learning. They support policy learning, planning, simulation, evaluation, data generation, and have advanced rapidly with the rise of foundation models and large-scale video generation. However, the literature remains fragmented across architectures, functional roles, and embodied application domains. To address this gap, we present a comprehensive review of world models from a robot-learning perspective. We examine how world models are coupled with robot policies, how they serve as learned simulators for reinforcement learning and evaluation, and how robotic video world models have progressed from imagination-based generation to controllable, structured, and foundation-scale formulations. We further connect these ideas to navigation and autonomous driving, and summarize representative datasets, benchmarks, and evaluation protocols. Overall, this survey systematically reviews the rapidly growing literature on world models for robot learning, clarifies key paradigms and applications, and highlights major challenges and future directions for predictive modeling in embodied agents. To facilitate continued access to newly emerging works, benchmarks, and resources, we will maintain and regularly update the accompanying GitHub repository alongside this survey.",
+      "url": "http://arxiv.org/abs/2605.00080v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.00080v1",
+      "arxiv_id": "2605.00080",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文从机器人学习视角系统综述了世界模型的架构范式与功能角色，深入探讨了其在策略耦合、模拟仿真及视频生成中的核心应用与未来挑战。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-04-30"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "FedACT: Concurrent Federated Intelligence across Heterogeneous Data Sources",
+      "authors": [
+        "Md Sirajul Islam",
+        "Isabelle G Chapman",
+        "N I Md Ashafuddula",
+        "Xu Yuan",
+        "Li Chen",
+        "Nian-Feng Tzeng",
+        "Klara Nahrstedt"
+      ],
+      "abstract": "Federated Learning (FL) enables collaborative intelligence across decentralized data source devices in a privacy-preserving way. While substantial research attention has been drawn to optimizing the learning process for an individual task, real-world applications increasingly require multiple machine learning tasks simultaneously training their models across a shared pool of devices. Naively applying single-FL optimization techniques in multi-FL systems results in suboptimal system performance, particularly due to device heterogeneity and resource inefficiency. To address such a critical open challenge, we introduce {\\em FedACT}, a novel resource heterogeneity-aware device scheduling approach designed to efficiently schedule heterogeneous devices across multiple concurrent FL jobs, with the goal of minimizing their average job completion time (JCT). {\\em FedACT} dynamically assigns devices to FL jobs based on an alignment scoring mechanism that evaluates the compatibility between available resources of devices and resource demands of jobs. Additionally, it incorporates participation fairness to ensure balanced contributions from devices across jobs, further enhancing the accuracy levels of learned global models. An optimal scheduling plan is formulated in {\\em FedACT} by prioritizing devices with higher alignment scores, while ensuring fair participation across jobs. To evaluate the effectiveness of the proposed scheduling algorithm, we carried out comprehensive experiments using diverse FL jobs and benchmark datasets. Experimental results demonstrate that {\\em FedACT} reduces the average JCT by up to 8.3\\(\\times\\) and improves model accuracy by up to 44.5\\%, compared to the state-of-the-art baselines.",
+      "url": "http://arxiv.org/abs/2605.00011v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.00011v1",
+      "arxiv_id": "2605.00011",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出了一种名为FedACT的多任务联邦学习设备调度框架，通过结合资源对齐评分机制与参与公平性策略，优化异构设备分配，显著降低了平均任务完成时间并提升了模型准确率。",
+      "affiliations": [
+        "University of Louisiana at Lafayette",
+        "University of Illinois at Urbana-Champaign",
+        "University of Delaware"
+      ],
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-03-11"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Dynamic-TD3: A Novel Algorithm for UAV Path Planning with Dynamic Obstacle Trajectory Prediction",
+      "authors": [
+        "Wentao Chen",
+        "Jingtang Chen",
+        "Mingjian Fu",
+        "Tiantian Li",
+        "Youfeng Su",
+        "Wenxi Liu",
+        "Yuanlong Yu"
+      ],
+      "abstract": "Deep reinforcement learning (DRL) finds extensive application in autonomous drone navigation within complex, high-risk environments. However, its practical deployment faces a safety-exploration dilemma: soft penalty mechanisms encourage risky trial-and-error, while most constraint-based methods suffer degraded performance under sensor noise and intent uncertainty. We propose Dynamic-TD3, a physically enhanced framework that enforces strict safety constraints while maintaining maneuverability by modeling navigation as a Constrained Markov Decision Process (CMDP). This framework integrates an Adaptive Trajectory Relational Evolution Mechanism (ATREM) to capture long-range intentions and employs a Physically Aware Gated Kalman Filter (PAG-KF) to mitigate non-stationary observation noise. The resulting state representation drives a dual-criterion policy that balances mission efficiency against hard safety constraints via Lagrangian relaxation. In experiments with aggressive dynamic threats, this approach demonstrates superior collision avoidance performance, reduced energy consumption, and smoother flight trajectories.",
+      "url": "http://arxiv.org/abs/2605.00059v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.00059v1",
+      "arxiv_id": "2605.00059",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出Dynamic-TD3框架，通过结合自适应轨迹意图预测机制与物理感知滤波器，在约束马尔可夫决策过程下有效解决了无人机在动态障碍物与观测噪声环境下的安全导航难题。",
+      "affiliations": [],
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-04-30"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Task-Conditioned Uncertainty Costmaps for Legged Locomotion",
+      "authors": [
+        "Kartikeya Singh",
+        "Christo Aluckal",
+        "Romeo Orsolino",
+        "Karthik Dantu"
+      ],
+      "abstract": "Legged robots maintain dynamic feasibility through multicontact interactions with terrain. Learned foothold prediction can provide feasibility-aware costs for motion planning and path selection, but accurately predicting future contacts from perceptual inputs such as height scans remains challenging on highly unstructured terrain, even with a repetitive gait cycle. In this work, we show that modeling epistemic uncertainty in predicted footholds, conditioned on terrain observations and commanded motion, distinguishes in-distribution from out-of-distribution operating regimes in simulation and real-world settings. This allows a single learned model, trained on limited data distributions, to express uncertainty caused by missing training coverage. We use this learned uncertainty to detect OOD regions and incorporate them into a unified costmap-generation framework for uncertainty-aware path planning. Using these uncertainty-aware costmaps, we evaluate feasibility error across in-distribution and OOD terrains in simulation and real-world settings. The results show improved OOD detection, up to a 37% reduction in simulation feasibility error, and more reliable planning behavior than geometry-only baselines.",
+      "url": "http://arxiv.org/abs/2605.00261v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.00261v1",
+      "arxiv_id": "2605.00261",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "该论文提出了一种基于任务条件化认知不确定性的落足点预测方法，通过识别分布外区域构建不确定性代价地图，从而实现了更安全、可行的足式机器人路径规划。",
+      "affiliations": [
+        "University at Buffalo",
+        "Ocado Technology"
+      ],
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-04-30"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "本文通过对比沙特吉达和延布的滨水开发案例，分析了两种规划体系在城市设计治理上的优劣，并提出应整合两者的灵活性与稳定性以提升城市空间质量。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://doi.org/10.17037/PUBS.04681611>",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "本研究结合系统动力学与基于主体的空间建模发现，尽管限制快餐店选址的规划政策能减少门店数量，但未能显著改变居民外出就餐的购买行为，提示需采取多层面的综合干预措施以改善饮食健康。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "A semi-autonomous public organization’s legitimation work: the case of the survival of an actor in the disability field",
+      "authors": [
+        "Alexandre Salvatori",
+        "Sarah Richard",
+        "François Grima"
+      ],
+      "abstract": "This qualitative study, based on semi-structured interviews and ethnography, starts from the observation that little research has been done on maintaining the legitimacy of semi-autonomous public organizations in a context constrained by certain principles of New Public Management. These principles question the legitimacy of public organizations as the most relevant actors for meeting user expectations. In this article, we study the case of GHP, a semi-autonomous public organization of the “agency” type based in France, which manages a public fund. Based on neo-institutional theory, the study seeks to understand the involvement of actors in the dynamics of maintaining the internal and external legitimacy that ensures the sustainability of an organization. We show that maintaining legitimacy and its alignment between internal and external sources is achieved in a process involving four stages: challenges, maintenance, diffusion, and consensus. Institutional entrepreneurs within the organization engage in legitimation work. Through this work, they respond to external regulatory challenges and internal destabilizing events that occur at various times and at different levels. We identify four key factors in the ability of institutional entrepreneurs to succeed in maintaining legitimacy: their resources, knowledge of structural gaps, conscious commitment, and the use of boundary organizations.",
+      "url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-1f?lang=en",
+      "pdf_url": "https://shs.cairn.info/article/E_GMP_PR1_0036/pdf?lang=en",
+      "arxiv_id": null,
+      "doi": null,
+      "score": 0.5,
+      "tldr": "本文基于法国GHP机构的案例，揭示了半自主公共组织在新公共管理背景下，如何依靠制度企业家的合法性工作在动态过程中协调内外部挑战，从而维持组织合法性并确保其生存。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2050-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "本研究通过一项II期交叉随机对照试验，评估了两种地中海-生酮饮食干预措施，为帕金森病患者的饮食优化提供了见解。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "本文探讨了虚拟牙科咨询对治疗成本及牙髓治疗计划制定的影响。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Agentic AI for Trip Planning Optimization Application",
+      "World Model for Robot Learning: A Comprehensive Survey",
+      "FedACT: Concurrent Federated Intelligence across Heterogeneous Data Sources",
+      "Dynamic-TD3: A Novel Algorithm for UAV Path Planning with Dynamic Obstacle Trajectory Prediction",
+      "Task-Conditioned Uncertainty Costmaps for Legged Locomotion"
+    ],
+    "hugging_face": [
+      "Agentic AI for Trip Planning Optimization Application",
+      "World Model for Robot Learning: A Comprehensive Survey",
+      "FedACT: Concurrent Federated Intelligence across Heterogeneous Data Sources",
+      "Dynamic-TD3: A Novel Algorithm for UAV Path Planning with Dynamic Obstacle Trajectory Prediction",
+      "Task-Conditioned Uncertainty Costmaps for Legged Locomotion"
+    ],
+    "papers_with_code": [
+      "Agentic AI for Trip Planning Optimization Application",
+      "World Model for Robot Learning: A Comprehensive Survey",
+      "FedACT: Concurrent Federated Intelligence across Heterogeneous Data Sources",
+      "Dynamic-TD3: A Novel Algorithm for UAV Path Planning with Dynamic Obstacle Trajectory Prediction",
+      "Task-Conditioned Uncertainty Costmaps for Legged Locomotion"
+    ]
+  }
+}
