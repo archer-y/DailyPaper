@@ -1,0 +1,324 @@
+{
+  "date": "2026-05-06",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Generate, Filter, Control, Replay: A Comprehensive Survey of Rollout Strategies for LLM Reinforcement Learning",
+      "authors": [
+        "Rohan Surana",
+        "Gagan Mundada",
+        "Xunyi Jiang",
+        "Chuhan Wang",
+        "Zhenwei Tang",
+        "Difan Jiao",
+        "Zihan Huang",
+        "Yuxin Xiong",
+        "Junda Wu",
+        "Sheldon Yu",
+        "Xintong Li",
+        "Raghav Jain",
+        "Nikki Kuang",
+        "Sizhe Zhou",
+        "Bowen Jin",
+        "Zhendong Chu",
+        "Tong Yu",
+        "Ryan Rossi",
+        "Kuan-Hao Huang",
+        "Jingbo Shang",
+        "Jiawei Han",
+        "Julian McAuley"
+      ],
+      "abstract": "Reinforcement learning (RL) has become a central post-training tool for improving the reasoning abilities of large language models (LLMs). In these systems, the rollout, the trajectory sampled from a prompt to termination, including intermediate reasoning steps and optional tool or environment interactions, determines the data the optimizer learns from, yet rollout design is often underreported. This survey provides an optimizer-agnostic view of rollout strategies for RL-based post-training of reasoning LLMs. We formalize rollout pipelines with unified notation and introduce Generate-Filter-Control-Replay (GFCR), a lifecycle taxonomy that decomposes rollout pipelines into four modular stages: Generate proposes candidate trajectories and topologies; Filter constructs intermediate signals via verifiers, judges, critics; Control allocates compute and makes continuation/branching/stopping decisions under budgets; and Replay retains and reuses artifacts across rollouts without weight updates, including self-evolving curricula that autonomously generate new training tasks. We complement GFCR with a criterion taxonomy of reliability, coverage, and cost sensitivity that characterizes rollout trade-offs. Using this framework, we synthesize methods spanning RL with verifiable rewards, process supervision, judge-based gating, guided and tree/segment rollouts, adaptive compute allocation, early-exit and partial rollouts, throughput optimization, and replay/recomposition for self-improvement. We ground the framework with case studies in math, code/SQL, multimodal reasoning, tool-using agents, and agentic skill benchmarks that evaluate skill induction, reuse, and cross-task transfer. Finally, we provide a diagnostic index that maps common rollout pathologies to GFCR modules and mitigation levers, alongside open challenges for building reproducible, compute-efficient, and trustworthy rollout pipelines.",
+      "url": "http://arxiv.org/abs/2605.02913v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.02913v1",
+      "arxiv_id": "2605.02913",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文综述了大语言模型强化学习中的展开策略，提出了“生成-过滤-控制-重放”（GFCR）这一统一框架，系统性分解了展开流水线并探讨了其设计权衡与应用。",
+      "affiliations": [],
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-04-08"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Healthcare AI GYM for Medical Agents",
+      "authors": [
+        "Minbyul Jeong"
+      ],
+      "abstract": "Clinical reasoning demands multi-step interactions -- gathering patient history, ordering tests, interpreting results, and making safe treatment decisions -- yet a unified training environment provides the breadth of clinical domains and specialized tools to train generalizable medical AI agents through reinforcement learning remains elusive. We present a comprehensive empirical study of multi-turn agentic RL for medical AI, built on \\gym{}, a gymnasium-compatible environment spanning 10 clinical domains with 3.6K+ tasks, 135 domain-specific tools, and a knowledge base of 828K medical passages. Our analysis reveals that agentic multi-turn structure degrades into verbose single-turn monologues, characterized by monotonic length explosion and a simultaneous erosion of tool-use frequency. We characterize how this collapse, alongside distillation instability, stems from the misalignment of sparse terminal rewards with sequential clinical trajectories. We find that vanilla GRPO achieves strong final accuracy on some benchmarks but suffers from training instability, evidenced by significant oscillations in response length and prolonged convergence periods. To improve training efficiency and stability, we propose Turn-level Truncated On-Policy Distillation (TT-OPD), a self-distillation framework where a gradient-free EMA teacher leverages outcome-privileged information to provide dense, outcome-aware KL regularization at every conversation turn. TT-OPD achieves the best performance on 10 of 18 benchmarks with an average +3.9~pp improvement over the non-RL baseline with faster early convergence, controlled response length, and sustained multi-turn tool use.",
+      "url": "http://arxiv.org/abs/2605.02943v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.02943v1",
+      "arxiv_id": "2605.02943",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "该论文构建了涵盖10个临床领域的Healthcare AI GYM强化学习环境，揭示了多轮医疗智能体训练中存在的\"多轮崩溃\"问题（即智能体结构退化为冗长的单轮独白），并提出了TT-OPD方法通过回合级密集KL正则化实现稳定训练，在18个基准测试上取得了平均+3.9pp的性能提升。",
+      "affiliations": [
+        "Upstage AI"
+      ],
+      "code_urls": [
+        "https://github.com/minstar/Healthcare_GYM"
+      ],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25,
+        "hugging_face": {
+          "url": "https://huggingface.co/papers/2605.02943",
+          "upvotes": 0,
+          "submitted_by": null,
+          "summary": "Clinical reasoning demands multi-step interactions -- gathering patient history, ordering tests, interpreting results, and making safe treatment decisions -- yet a unified training environment provides the breadth of clinical domains and specialized tools to train generalizable medical AI agents through reinforcement learning remains elusive. We present a comprehensive empirical study of multi-turn agentic RL for medical AI, built on , a gymnasium-compatible environment spanning 10 clinical domains with 3.6K+ tasks, 135 domain-specific tools, and a knowledge base of 828K medical passages. Our analysis reveals that agentic multi-turn structure degrades into verbose single-turn monologues, characterized by monotonic length explosion and a simultaneous erosion of tool-use frequency. We characterize how this collapse, alongside distillation instability, stems from the misalignment of sparse terminal rewards with sequential clinical trajectories. We find that vanilla GRPO achieves strong final accuracy on some benchmarks but suffers from training instability, evidenced by significant oscillations in response length and prolonged convergence periods. To improve training efficiency and stability, we propose Turn-level Truncated On-Policy Distillation (TT-OPD), a self-distillation framework where a gradient-free EMA teacher leverages outcome-privileged information to provide dense, outcome-aware KL regularization at every conversation turn. TT-OPD achieves the best performance on 10 of 18 benchmarks with an average +3.9~pp improvement over the non-RL baseline with faster early convergence, controlled response length, and sustained multi-turn tool use.",
+          "linked_repos": {
+            "models": [],
+            "datasets": [],
+            "spaces": []
+          }
+        }
+      },
+      "published_date": "2026-05-01"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "From Static Analysis to Audience Dissemination: A Training-Free Multimodal Controversy Detection Multi-Agent Framework",
+      "authors": [
+        "Zihan Ding",
+        "Ziyuan Yang",
+        "Yi Zhang"
+      ],
+      "abstract": "Multimodal controversy detection (MCD) identifies controversial content in videos and their associated user comments, to support risk management for social video platforms.Prior research frames MCD as a static representation learning task, where features are directly extracted from videos and their accompanying comments. However, these methods fail to capture the diverse perspectives and evaluations from different audience groups. Inspired by the real-world process of content dissemination among audiences, we propose AuDisAgent, a training-free multi-agent framework that reformulates MCD as a dynamic propagation process.Our framework explicitly models audience dissemination through a structured multi-agent system. First, three specialized Screening Agents (Video Agent, Comment Agent, and Interaction Agent) conduct initial assessments from visual, textual, and cross-modal perspectives, respectively. For samples where the three agents cannot reach a consensus, a Viewing Panel Agent is activated to simulate post-screening discussions among audiences with diverse backgrounds and stances. This mechanism models how different audience groups interpret and react to the same content, uncovering latent controversial content that may emerge during the dissemination process. Finally, an Arbitration Agent renders the final judgment based on the complete reasoning chain from the preceding steps.In addition, to address the \"cold-start\" scenario where newly released videos have few or no comments, we design a Comment Bootstrapping Strategy that leverages historical public comments from semantically similar videos as the initial comment context. Extensive experiments on a public dataset demonstrate that our framework significantly outperforms existing state-of-the-art (SOTA) methods in both rich-comment and limited-comment scenarios.",
+      "url": "http://arxiv.org/abs/2605.02939v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.02939v1",
+      "arxiv_id": "2605.02939",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出了一个无需训练的多智能体框架AuDisAgent，通过模拟受众的动态传播过程及引入评论引导策略，将多模态争议检测从静态分析转变为动态交互模拟，有效解决了现有方法难以捕捉受众多元观点及冷启动场景下的检测难题。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-01"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "RouteHijack: Routing-Aware Attack on Mixture-of-Experts LLMs",
+      "authors": [
+        "Zhiyuan Xu",
+        "Joseph Gardiner",
+        "Sana Belguith",
+        "Lichao Wu"
+      ],
+      "abstract": "Safety alignment is critical for the responsible deployment of large language models (LLMs). As Mixture-of-Experts (MoE) architectures are increasingly adopted to scale model capacity, understanding their safety robustness becomes essential. Existing adversarial attacks, however, have notable limitations. Prompt-based jailbreaks rely on heuristic search and transfer poorly, model intervention methods require privileged access to internal representations, and optimization-based input attacks remain output-centric and are fundamentally limited to MoE models due to the non-differentiable routing mechanism.\n  In this paper, we present RouteHijack, a routing-aware jailbreak for MoE LLMs. Our key insight is that safety behavior is concentrated in a small subset of experts, creating an opportunity to steer model behavior by influencing routing decisions through input optimization. Building on this observation, RouteHijack first performs response-driven expert localization to identify safety-critical and harmful experts by contrasting activations under safe refusals and harmful completions. It then constructs adversarial suffixes with a routing-aware objective that suppresses safety experts, promotes harmful experts, and prevents early-stage refusal during generation. At inference time, the optimized suffix is appended to a malicious prompt, requiring only input access. Across seven MoE LLMs, RouteHijack achieves a 69.3\\% average attack success rate (ASR), outperforming prior optimization-based attack by $3.2\\times$. RouteHijack also transfers zero-shot across five sibling MoE variants, raising average ASR from 27.7\\% to 61.2\\%, and further generalizes to three MoE-based VLMs, increasing average ASR from 2.47\\% to 38.7\\%. These findings expose a fundamental vulnerability in sparse expert architectures and highlight the need for defenses beyond output-level alignment.",
+      "url": "http://arxiv.org/abs/2605.02946v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.02946v1",
+      "arxiv_id": "2605.02946",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出RouteHijack攻击方法，通过优化输入后缀操纵MoE模型的路由机制，抑制安全专家并激活有害专家，从而高效绕过安全防御。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-01"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Refining Compositional Diffusion for Reliable Long-Horizon Planning",
+      "authors": [
+        "Kyowoon Lee",
+        "Yunhao Luo",
+        "Anh Tong",
+        "Jaesik Choi"
+      ],
+      "abstract": "Compositional diffusion planning generates long-horizon trajectories by stitching together overlapping short-horizon segments through score composition. However, when local plan distributions are multimodal, existing compositional methods suffer from mode-averaging, where averaging incompatible local modes leads to plans that are neither locally feasible nor globally coherent. We propose Refining Compositional Diffusion (RCD), a training-free guidance method that steers compositional sampling toward high-density, globally coherent plans. RCD leverages the self-reconstruction error of a pretrained diffusion model as a proxy for the log-density of composed plans, combined with an overlap consistency term that enforces consistency at segment boundaries. We show that the combined guidance concentrates sampling on high-density plans that mitigate mode-averaging. Experiments on challenging long-horizon tasks from OGBench, including locomotion, object manipulation, and pixel-based observations, demonstrate that RCD consistently outperforms existing methods.",
+      "url": "http://arxiv.org/abs/2605.03075v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.03075v1",
+      "arxiv_id": "2605.03075",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出了无需训练的引导方法 RCD，通过利用自重建误差和重叠一致性项引导采样，有效解决了组合扩散规划在多模态分布下的模式平均问题，生成了全局连贯的长视距轨迹。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-04"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "本研究通过对比吉达和延布的滨海开发案例，揭示了沙特两种规划体系的利弊，提出应融合灵活性与稳定性以提升城市设计治理效能。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://doi.org/10.17037/PUBS.04681611>",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "该研究结合系统动力学与空间智能体建模发现，限制快餐店的规划政策虽能减少门店数量，但未能显著改善饮食购买行为，表明改善饮食需采取多方面的综合干预措施。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "A semi-autonomous public organization’s legitimation work: the case of the survival of an actor in the disability field",
+      "authors": [
+        "Alexandre Salvatori",
+        "Sarah Richard",
+        "François Grima"
+      ],
+      "abstract": "This qualitative study, based on semi-structured interviews and ethnography, starts from the observation that little research has been done on maintaining the legitimacy of semi-autonomous public organizations in a context constrained by certain principles of New Public Management. These principles question the legitimacy of public organizations as the most relevant actors for meeting user expectations. In this article, we study the case of GHP, a semi-autonomous public organization of the “agency” type based in France, which manages a public fund. Based on neo-institutional theory, the study seeks to understand the involvement of actors in the dynamics of maintaining the internal and external legitimacy that ensures the sustainability of an organization. We show that maintaining legitimacy and its alignment between internal and external sources is achieved in a process involving four stages: challenges, maintenance, diffusion, and consensus. Institutional entrepreneurs within the organization engage in legitimation work. Through this work, they respond to external regulatory challenges and internal destabilizing events that occur at various times and at different levels. We identify four key factors in the ability of institutional entrepreneurs to succeed in maintaining legitimacy: their resources, knowledge of structural gaps, conscious commitment, and the use of boundary organizations.",
+      "url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-1f?lang=en",
+      "pdf_url": "https://shs.cairn.info/article/E_GMP_PR1_0036/pdf?lang=en",
+      "arxiv_id": null,
+      "doi": null,
+      "score": 0.5,
+      "tldr": "本文基于新制度理论，通过案例研究揭示了半自治公共组织如何在“新公共管理”背景下，依靠制度企业家的合法性工作协调内外部合法性，从而实现组织生存。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2050-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "本研究通过一项II期随机对照交叉试验，探讨了两种地中海-生酮饮食干预对帕金森病患者饮食优化的见解。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "本文探讨了虚拟牙科咨询对治疗成本及牙髓治疗计划的影响。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Generate, Filter, Control, Replay: A Comprehensive Survey of Rollout Strategies for LLM Reinforcement Learning",
+      "Healthcare AI GYM for Medical Agents",
+      "From Static Analysis to Audience Dissemination: A Training-Free Multimodal Controversy Detection Multi-Agent Framework",
+      "RouteHijack: Routing-Aware Attack on Mixture-of-Experts LLMs",
+      "Refining Compositional Diffusion for Reliable Long-Horizon Planning"
+    ],
+    "hugging_face": [
+      "Generate, Filter, Control, Replay: A Comprehensive Survey of Rollout Strategies for LLM Reinforcement Learning",
+      "From Static Analysis to Audience Dissemination: A Training-Free Multimodal Controversy Detection Multi-Agent Framework",
+      "RouteHijack: Routing-Aware Attack on Mixture-of-Experts LLMs",
+      "Refining Compositional Diffusion for Reliable Long-Horizon Planning"
+    ],
+    "papers_with_code": [
+      "Generate, Filter, Control, Replay: A Comprehensive Survey of Rollout Strategies for LLM Reinforcement Learning",
+      "Healthcare AI GYM for Medical Agents",
+      "From Static Analysis to Audience Dissemination: A Training-Free Multimodal Controversy Detection Multi-Agent Framework",
+      "RouteHijack: Routing-Aware Attack on Mixture-of-Experts LLMs",
+      "Refining Compositional Diffusion for Reliable Long-Horizon Planning"
+    ]
+  }
+}
