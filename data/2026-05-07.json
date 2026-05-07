@@ -1,0 +1,292 @@
+{
+  "date": "2026-05-07",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "LAWS: Learning from Actual Workloads Symbolically -- A Self-Certifying Parametrized Cache Architecture for Neural Inference, Robotics, and Edge Deployment",
+      "authors": [
+        "Gregory Magarshak"
+      ],
+      "abstract": "We introduce LAWS (Learning from Actual Workloads Symbolically), a self-certifying inference caching architecture that builds a growing library of certified expert functions from deployment observations. Each expert covers a region of input space defined by a node in the Probabilistic Language Trie (PLT) of the base model and carries a formal error bound holding uniformly over all inputs. The central result is a self-certification theorem: for any input x, the LAWS approximation error is bounded by epsilon_fit + 2*Lambda(W)*C_E, where Lambda(W) is the model Lipschitz constant, C_E is the maximum embedding diameter, and epsilon_fit is the expert training error -- all checkable at deployment time without ground truth. We prove that LAWS generalizes both Mixture-of-Experts and KV prefix caching as special cases and is strictly more expressive than any fixed-K MoE or finite cache. Further results include a monotone hit rate theorem (any-match routing ensures coverage only increases), an expert library growth rate of O(2^H log N) where H is workload entropy, a fleet learning convergence theorem with Omega(K) speedup for K-unit fleets, and an over-the-air update bandwidth bound. We conjecture that LAWS is acquisition-optimal among stationary online caching algorithms and that the effective Lipschitz constant on the training distribution grows polynomially rather than exponentially in depth. Applications are developed for LLM inference, robotic control, and multi-agent edge deployment.",
+      "url": "http://arxiv.org/abs/2605.04069v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.04069v1",
+      "arxiv_id": "2605.04069",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "本文提出了LAWS这一自认证推理架构，它通过从实际工作负载中自动构建形式化认证的参数化专家库，在保证误差界限的同时推广了MoE和KV缓存机制，从而显著提升了神经网络推理的效率与能耗表现。",
+      "affiliations": [],
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-04-12"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "RetentiveKV: State-Space Memory for Uncertainty-Aware Multimodal KV Cache Eviction",
+      "authors": [
+        "Sihao Liu",
+        "YuFan Xiong",
+        "Zhonghua Jiang",
+        "Zhaode Wang",
+        "chengfei lv Shengyu Zhang"
+      ],
+      "abstract": "Multimodal Large Language Models face severe challenges in computational efficiency and memory consumption due to the substantial expansion of the visual KV cache when processing long visual contexts. Existing KV cache compression methods typically rely on the \"persistence of importance\" hypothesis to prune tokens. However, this approach proves fragile in multimodal settings due to two key issues: 1) Visual tokens display \"deferred importance,\" initially exhibiting low salience but becoming pivotal during later decoding, which can lead to premature eviction. 2) Discrete pruning disrupts the inherent spatial continuity of visual cues. To address these challenges, we propose RetentiveKV, an entropy-driven KV cache optimization method that reformulates KV eviction from \"discrete context truncation\" to \"continuous memory evolution\" based on State Space Models. Our method leverages information entropy to quantify the information potential of low-attention tokens and integrates tokens scheduled for eviction into a continuous state space through entropy-guided state transitions, enabling their dynamic reactivation when semantic relevance arises during subsequent decoding. Extensive experiments on multimodal benchmarks demonstrate that RetentiveKV achieves 5.0 times KV cache compression and 1.5 times decoding acceleration.",
+      "url": "http://arxiv.org/abs/2605.04075v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.04075v1",
+      "arxiv_id": "2605.04075",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "RetentiveKV提出了一种基于状态空间模型的熵驱动KV缓存优化方法，通过将待驱逐的视觉token整合到连续状态空间中保持其潜在信息价值，解决了多模态模型中视觉token\"延迟重要性\"问题，实现了5倍KV缓存压缩和1.5倍解码加速。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-04-14"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Designing a double deep reinforcement learning selection tool for resilient demand prediction",
+      "authors": [
+        "Bilel Abderrahmane Benziane",
+        "Benoit Lardeux",
+        "Ayoub Mcharek",
+        "Maher Jridi"
+      ],
+      "abstract": "The use of artificial intelligence in supply chain forecasting has attracted many scientific studies for several decades. However, the process of selecting an appropriate forecasting solution becomes a daunting task. This complexity arises due to the distinct features inherent to each dataset. Research to tackle this issue has been performed since the eighties but recent development of demand forecasting has opened new perspectives. This research aims to enhance automatic forecasting model selection by proposing a novel architecture that acts as a double deep reinforcement learning agent, selecting automatically a forecasting model from the forecasting committee at the time of prediction. Moreover, a novel early-stopping approach based on average reward convergence has been introduced to expedite training time. To evaluate the model's performance, an empirical study was conducted utilizing grocery sales datasets and snack demands datasets. The experimental results demonstrate the robustness of the proposed approach when compared to state-of-the-art methods.",
+      "url": "http://arxiv.org/abs/2605.04068v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.04068v1",
+      "arxiv_id": "2605.04068",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "该研究提出了一种基于双深度强化学习的自动模型选择架构，能够动态地从预测委员会中筛选最优模型，从而实现更具鲁棒性的供应链需求预测。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-04-12"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Constrained Extreme Gradient Boosting for Adapting Reduced-Order Models",
+      "authors": [
+        "Melika Baghi",
+        "Xiao Liu",
+        "Kamran Paynabar"
+      ],
+      "abstract": "High-fidelity simulations, such as computational fluid dynamics and finite element analysis, are essential for modeling complex engineering systems but are often prohibitively expensive for tasks including parametric studies, optimization, and real-time control. Projection-based reduced-order models (ROMs) alleviate this cost by projecting the governing dynamics onto low-dimensional subspaces. However, their performance can deteriorate under parameter variation, motivating the need for adaptive basis construction. In this work, we propose a constrained ensemble learning framework, termed Constrained Extreme Gradient Boosting (cXGBoost), for predicting Proper Orthogonal Decomposition (POD) bases as functions of system parameters. The approach leverages a geometric representation of subspaces on the Grassmann manifold, which are mapped to a Euclidean space to enable efficient regression using gradient boosting trees. A norm constraint is imposed during training to ensure the validity of the inverse mapping and preserve the geometric structure of the predicted subspaces. The proposed method is evaluated on four numerical examples, including fluid dynamics and wave propagation problems, demonstrating its ability to accurately predict parameter-dependent bases while maintaining robustness across nonlinear regimes. These results highlight the potential of combining geometric learning with constrained ensemble methods for scalable and reliable reduced-order modeling of high-dimensional parametric systems.",
+      "url": "http://arxiv.org/abs/2605.04130v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.04130v1",
+      "arxiv_id": "2605.04130",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "本文提出了一种约束极限梯度提升方法，通过将子空间从Grassmann流形映射到欧几里得空间并在训练中施加范数约束，实现了对随参数变化的POD基的准确预测，从而提升了降阶模型在参数变化下的鲁棒性。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-05-05"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "ARMATA: Auto-Regressive Multi-Agent Task Assignment",
+      "authors": [
+        "Yazan Youssef",
+        "Aboelmagd Noureldin",
+        "Sidney Givigi"
+      ],
+      "abstract": "Coordinating multi-agent systems over spatially distributed areas requires solving a complex hierarchical problem: first distributing areas among agents (allocation) and subsequently determining the optimal visitation order (routing). Existing methods typically decouple these stages ignoring inter-stage dependencies or rely on decentralized heuristics that lack global context. In this work, we propose a centralized, fully end-to-end auto-regressive framework that jointly generates allocation decisions and routing sequences. The core contribution of our approach is a multi-stage decoding mechanism that unifies high-level allocation and low-level routing in a single autoregressive pass while maintaining a centralized global state. This enables the model to implicitly balance workload distribution with routing efficiency, avoiding local optima common in decentralized methods. Extensive experiments demonstrate that our method significantly outperforms diverse baselines, achieving up to a 20\\% improvement in solution quality over industrial solvers such as Google OR-Tools, IBM CPLEX, and LKH-3, while reducing computation time from hours to seconds.",
+      "url": "http://arxiv.org/abs/2605.04225v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.04225v1",
+      "arxiv_id": "2605.04225",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "本文提出ARMATA框架，通过集中式端到端自回归方法与多阶段解码机制联合优化多智能体的任务分配与路径规划，相比传统工业求解器实现解决方案质量提升20%且计算时间从小时级缩短至秒级。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-05-05"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "本研究通过对比沙特吉达与延布的滨水开发案例，分析了两种不同规划系统的优劣，指出吉达的灵活模式导致不一致而延布的规定模式缺乏适应性，进而提出需整合两者优势以提升城市设计治理效能。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://doi.org/10.17037/PUBS.04681611>",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "本研究结合系统动力学与空间智能体建模发现，限制快餐店的规划政策虽能减少门店数量，但未能显著改善居民的饮食习惯，表明需采取综合干预措施。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "A semi-autonomous public organization’s legitimation work: the case of the survival of an actor in the disability field",
+      "authors": [
+        "Alexandre Salvatori",
+        "Sarah Richard",
+        "François Grima"
+      ],
+      "abstract": "This qualitative study, based on semi-structured interviews and ethnography, starts from the observation that little research has been done on maintaining the legitimacy of semi-autonomous public organizations in a context constrained by certain principles of New Public Management. These principles question the legitimacy of public organizations as the most relevant actors for meeting user expectations. In this article, we study the case of GHP, a semi-autonomous public organization of the “agency” type based in France, which manages a public fund. Based on neo-institutional theory, the study seeks to understand the involvement of actors in the dynamics of maintaining the internal and external legitimacy that ensures the sustainability of an organization. We show that maintaining legitimacy and its alignment between internal and external sources is achieved in a process involving four stages: challenges, maintenance, diffusion, and consensus. Institutional entrepreneurs within the organization engage in legitimation work. Through this work, they respond to external regulatory challenges and internal destabilizing events that occur at various times and at different levels. We identify four key factors in the ability of institutional entrepreneurs to succeed in maintaining legitimacy: their resources, knowledge of structural gaps, conscious commitment, and the use of boundary organizations.",
+      "url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-1f?lang=en",
+      "pdf_url": "https://shs.cairn.info/article/E_GMP_PR1_0036/pdf?lang=en",
+      "arxiv_id": null,
+      "doi": null,
+      "score": 0.5,
+      "tldr": "本研究基于新制度理论，通过法国GHP案例揭示了半自治公共组织如何利用制度企业家的合法性工作，在应对新公共管理挑战中协调内外部合法性以确保存续。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2050-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "本研究通过一项II期交叉随机对照试验，探讨了两种地中海-生酮饮食干预对帕金森病患者饮食优化的见解与效果。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "本文探讨了虚拟牙科咨询对治疗成本及牙髓治疗计划的影响。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "LAWS: Learning from Actual Workloads Symbolically -- A Self-Certifying Parametrized Cache Architecture for Neural Inference, Robotics, and Edge Deployment",
+      "RetentiveKV: State-Space Memory for Uncertainty-Aware Multimodal KV Cache Eviction",
+      "Designing a double deep reinforcement learning selection tool for resilient demand prediction",
+      "Constrained Extreme Gradient Boosting for Adapting Reduced-Order Models",
+      "ARMATA: Auto-Regressive Multi-Agent Task Assignment"
+    ],
+    "hugging_face": [
+      "LAWS: Learning from Actual Workloads Symbolically -- A Self-Certifying Parametrized Cache Architecture for Neural Inference, Robotics, and Edge Deployment",
+      "RetentiveKV: State-Space Memory for Uncertainty-Aware Multimodal KV Cache Eviction",
+      "Designing a double deep reinforcement learning selection tool for resilient demand prediction",
+      "Constrained Extreme Gradient Boosting for Adapting Reduced-Order Models",
+      "ARMATA: Auto-Regressive Multi-Agent Task Assignment"
+    ],
+    "papers_with_code": [
+      "LAWS: Learning from Actual Workloads Symbolically -- A Self-Certifying Parametrized Cache Architecture for Neural Inference, Robotics, and Edge Deployment",
+      "RetentiveKV: State-Space Memory for Uncertainty-Aware Multimodal KV Cache Eviction",
+      "Designing a double deep reinforcement learning selection tool for resilient demand prediction",
+      "Constrained Extreme Gradient Boosting for Adapting Reduced-Order Models",
+      "ARMATA: Auto-Regressive Multi-Agent Task Assignment"
+    ]
+  }
+}
