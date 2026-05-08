@@ -1,0 +1,297 @@
+{
+  "date": "2026-05-08",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Track A*: Fast Visibility-Aware Trajectory Planning for Active Target Tracking",
+      "authors": [
+        "Hanxuan Chen",
+        "Kangli Wang",
+        "Ji Pei"
+      ],
+      "abstract": "Offline reference trajectories for active target tracking are needed both for building multi-modal tracking datasets and for benchmarking online tracking planners under repeatable conditions. We present Track A star (TA star), an offline search-based trajectory planner that targets the visibility-aware target tracking objective on a discretized four-dimensional spatio-temporal grid (x, y, z, t). TA star combines a layered Directed Acyclic Graph (DAG) search with three engineering optimizations: cross-time obstacle distance caching against a Bounding Volume Hierarchy (BVH), per-layer beam pruning, and a configurable multi-ray visibility evaluator. TA star employs a beam-pruned heuristic search on this discrete graph to efficiently find high-quality tracking trajectories. While it trades strict theoretical optimality for practical scalability, our empirical results demonstrate robust, near-baseline visibility performance at a fraction of the computational cost. On a 1000-scenario stress test across eight CARLA Optimized maps, TA star converges on all scenarios and completes in 45 s using 32 workers; on a 248-scenario controlled comparison against an unoptimized priority-queue A star baseline (BinaryHeap implementation) under identical scenario inputs and a 5 x 10^6 expansion cap, TA star reduces mean planning time by 23.0x and worst-case planning time by 11.8x, while raising convergence from 56.9% to 100%. On the n=141 baseline-converged subset, TA star changes average visibility by only -0.15 percentage points (pp), with no scenario exceeding a 5 pp drop. We position TA star as a practical offline reference planner under these specific conditions, with limitations and failure cases discussed for environments such as Town07 dense vegetation.",
+      "url": "http://arxiv.org/abs/2605.05338v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.05338v1",
+      "arxiv_id": "2605.05338",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出Track A*算法，一种面向主动目标跟踪的四维时空离线轨迹规划器，通过分层有向无环图搜索和三项工程优化，在将规划时间平均减少23倍的同时保持接近基准的可见性跟踪性能。",
+      "affiliations": [
+        "Autel Robotics"
+      ],
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-06"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Graph Normalization: Fast Binarizing Dynamics for Differentiable MWIS",
+      "authors": [
+        "Laurent Guigues"
+      ],
+      "abstract": "We introduce Graph Normalization (GN), a principled dynamical system on graphs that serves as a differentiable approximation engine for the NP-hard Maximum Weight Independent Set (MWIS) problem. MWIS encompasses many combinatorial challenges, including optimal assignment, scheduling, set packing, and MAP inference in discrete Markov Random Fields. Unlike Belief Propagation, we prove GN always converges to a binary indicator of a Maximum Independent Set. GN realizes a fast quasi-Newton descent through an exact Majorization-Minimization step, systematically improving the MWIS relaxed primal objective. We establish an equivalence between GN and the Replicator Dynamics of a nonlinear evolutionary game, where vertices compete for inclusion in an independent set. While a non-potential game, the GN game follows Fisher's Fundamental Theorem of Natural Selection, where the average fitness equals the MWIS primal objective and strictly increases. This connection leads to a weighted extension of the Motzkin-Straus theorem, showing MISes are in bijection with the local minima of a quadratic form over a tilted simplex. For the Assignment Problem, GN acts as a variant of the Sinkhorn algorithm that naturally converges to a hard assignment while generalizing to arbitrary constraint graphs. We demonstrate GN's performance as a fast binarization engine for the state-of-the-art Bregman-Sinkhorn relaxed MWIS solver. On real-world benchmarks with up to 1M edges, GN identifies solutions within 1% of the best known results in seconds on a CPU. GN opens new avenues for deep learning architectures requiring differentiable, \"hard\" decisions under constraints, with applications in structured sparse attention, dynamic network pruning, and Mixture-of-Experts. Beyond core AI, the GN framework enables end-to-end learning of constrained optimization in computer vision, computational biology, and resource allocation.",
+      "url": "http://arxiv.org/abs/2605.05330v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.05330v1",
+      "arxiv_id": "2605.05330",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "本文提出图归一化（GN）方法，作为一种可微的MWIS求解引擎，不仅保证收敛到二值解并成功将Sinkhorn算法推广至任意图，还能高效处理大规模图数据，为深度学习中的组合优化提供了新思路。",
+      "affiliations": [],
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-06"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "SAT: Sequential Agent Tuning for Coordinator Free Plug and Play Multi-LLM Training with Monotonic Improvement Guarantees",
+      "authors": [
+        "Yi Xie",
+        "Yangyang Xu",
+        "Yi Fan",
+        "Bo Liu"
+      ],
+      "abstract": "Large language models (LLMs) with a large number of parameters achieve strong performance but are often prohibitively expensive to deploy. Recent work explores using teams of smaller, more efficient LLMs that collectively match or even outperform a single large model. However, jointly updating multiple agents introduces compounding distribution shifts, making coordination and stability during training difficult. We address this by introducing Sequential Agent Tuning (SAT), a coordinator-free training paradigm. SAT represents the team as a factorized policy and employs block-coordinate updates over agents, enabling scalable, decentralized training without a central controller. Specifically, we develop a sequence-aware, on-policy advantage estimator that conditions on the evolving team policy, coupled with per-agent KL trust regions that isolate occupancy drift. Theoretically, this framework provides two critical guarantees. First, it ensures monotonic improvement, stabilizing the training process. Second, it establishes provable plug-and-play invariance: any agent can be upgraded to a stronger model without retraining the rest of the team, with a formal guarantee that the performance bound improves. Empirically, a team of three 4B agents (12B total) trained with SAT surpasses the much larger Qwen3-32B on AIME24/25 benchmarks by 3.9\\% on average. We validate our plug-and-play theory by swapping in two 8B agents, which boosts the composite score by 10.4\\%. We provide code and appendix of proof at https://github.com/Yydc/SAT-AAMAS",
+      "url": "http://arxiv.org/abs/2605.05216v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.05216v1",
+      "arxiv_id": "2605.05216",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "该论文提出了一种名为SAT的无协调器顺序智能体调优方法，在理论上保证了多智能体训练的单调改进与即插即用特性，实现了多个小模型协作超越大型单体模型的效果。",
+      "affiliations": [
+        "Rensselaer Polytechnic Institute",
+        "University of Arizona",
+        "Amazon Web Services"
+      ],
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-04-17"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Topology-Driven Anti-Entanglement Control for Soft Robots",
+      "authors": [
+        "Haoyang Le",
+        "Shengxuan Wang",
+        "Mohan Chen",
+        "Shuo Feng"
+      ],
+      "abstract": "In the field of precision manufacturing in complex constrained environments, the role of soft robots is increasingly prominent, and the realization of anti-winding control based on multi-intelligent body reinforcement learning has become a research hotspot. One of the core problems at present is to coordinate multiple robots to complete the unwinding operation in a highly constrained environment. The existing distributed training framework faces some observability challenges in high-density barrier and unstable environments, resulting in poor learning results. This paper proposes a topology-driven Multi-Agent Reinforcement Learning (TD-MARL) framework to coordinate multi-robot systems to avoid entanglement. Specifically, the critical network adopts centralized learning, so that each intelligent body can perceive the strategies of other intelligent bodies by sharing the topological state, thus alleviating the training instability caused by complex interactions; eliminating the demand for communication resources between robots through distributed execution, Upgrade system reliability; the integrated topological security layer uses topological invariants to accurately assess and mitigate the risk of entanglement to avoid the strategy from falling into local difficulties. Finally, the full simulation experiments carried out in the real simulation environment show that the method is better than the current advanced deep reinforcement learning (DRL) method in terms of convergence and anti-winding effect.",
+      "url": "http://arxiv.org/abs/2605.05236v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.05236v1",
+      "arxiv_id": "2605.05236",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "本文提出了TD-MARL框架，通过将拓扑不变量融入多智能体强化学习，实现了软体机器人从几何避障到拓扑防缠绕的范式转变，有效解决了复杂受限环境下的缠绕控制难题。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-05-01"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Neural Co-state Policies: Structuring Hidden States in Recurrent Reinforcement Learning",
+      "authors": [
+        "David Leeftink",
+        "Max Hinne",
+        "Marcel van Gerven"
+      ],
+      "abstract": "A key capability of intelligent agents is operating under partial observability: reasoning and acting effectively despite missing or incomplete state observations. While recurrent (memory-based) policies learned via reinforcement learning address this by encoding history into latent state representations, their internal dynamics remain uninterpretable black boxes. This paper establishes a formal link between these hidden states and the Pontryagin minimum principle (PMP) from optimal control. We demonstrate that for standard recurrent architectures, latent representations map directly to PMP co-states, which allows the readout layer to be interpreted as performing Hamiltonian minimization. Because standard reward maximization does not naturally discover this alignment, we introduce a PMP-derived co-state loss to explicitly structure the internal dynamics. Empirically, this approach matches or improves performance on partially observable DMControl tasks, and is robust against zero-shot out-of-distribution sensor masking. By framing recurrent networks as dynamic processes governed by the minimum principle, we provide a principled approach to designing robust continuous control policies.",
+      "url": "http://arxiv.org/abs/2605.05373v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.05373v1",
+      "arxiv_id": "2605.05373",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "本文将循环强化学习策略的隐藏状态与庞特里亚金最小值原理中的协状态建立形式化联系，通过引入协状态损失函数显式约束网络内部动力学，从而提升了部分可观测连续控制任务中的性能与鲁棒性。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-05-06"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "本研究通过对比吉达和延布的滨海开发案例，分析了沙特两种规划系统的优劣，提出需结合灵活性与稳定性的综合方法以优化城市设计治理并契合2030愿景。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://doi.org/10.17037/PUBS.04681611>",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "本研究通过整合系统动力学与智能体建模发现，限制快餐店的规划政策虽能显著减少门店数量，却未能有效改变消费者的购买行为，表明改善饮食需采取多层面的综合干预措施。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "A semi-autonomous public organization’s legitimation work: the case of the survival of an actor in the disability field",
+      "authors": [
+        "Alexandre Salvatori",
+        "Sarah Richard",
+        "François Grima"
+      ],
+      "abstract": "This qualitative study, based on semi-structured interviews and ethnography, starts from the observation that little research has been done on maintaining the legitimacy of semi-autonomous public organizations in a context constrained by certain principles of New Public Management. These principles question the legitimacy of public organizations as the most relevant actors for meeting user expectations. In this article, we study the case of GHP, a semi-autonomous public organization of the “agency” type based in France, which manages a public fund. Based on neo-institutional theory, the study seeks to understand the involvement of actors in the dynamics of maintaining the internal and external legitimacy that ensures the sustainability of an organization. We show that maintaining legitimacy and its alignment between internal and external sources is achieved in a process involving four stages: challenges, maintenance, diffusion, and consensus. Institutional entrepreneurs within the organization engage in legitimation work. Through this work, they respond to external regulatory challenges and internal destabilizing events that occur at various times and at different levels. We identify four key factors in the ability of institutional entrepreneurs to succeed in maintaining legitimacy: their resources, knowledge of structural gaps, conscious commitment, and the use of boundary organizations.",
+      "url": "https://shs.cairn.info/journal-gestion-et-management-public-2024-5-page-1f?lang=en",
+      "pdf_url": "https://shs.cairn.info/article/E_GMP_PR1_0036/pdf?lang=en",
+      "arxiv_id": null,
+      "doi": null,
+      "score": 0.5,
+      "tldr": "本文基于新制度主义理论，通过法国GHP案例，揭示了半自治公共组织如何通过制度企业家的合法化工作协调内外部合法性，从而在新公共管理约束下实现存续。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2050-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "本研究通过一项II期交叉随机对照试验，探究了两种地中海-生酮饮食干预对帕金森病患者饮食优化的见解与效果。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "本研究探讨了虚拟牙科咨询对治疗成本及牙髓治疗规划的影响。",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Track A*: Fast Visibility-Aware Trajectory Planning for Active Target Tracking",
+      "Graph Normalization: Fast Binarizing Dynamics for Differentiable MWIS",
+      "SAT: Sequential Agent Tuning for Coordinator Free Plug and Play Multi-LLM Training with Monotonic Improvement Guarantees",
+      "Topology-Driven Anti-Entanglement Control for Soft Robots",
+      "Neural Co-state Policies: Structuring Hidden States in Recurrent Reinforcement Learning"
+    ],
+    "hugging_face": [
+      "Track A*: Fast Visibility-Aware Trajectory Planning for Active Target Tracking",
+      "Graph Normalization: Fast Binarizing Dynamics for Differentiable MWIS",
+      "SAT: Sequential Agent Tuning for Coordinator Free Plug and Play Multi-LLM Training with Monotonic Improvement Guarantees",
+      "Topology-Driven Anti-Entanglement Control for Soft Robots",
+      "Neural Co-state Policies: Structuring Hidden States in Recurrent Reinforcement Learning"
+    ],
+    "papers_with_code": [
+      "Track A*: Fast Visibility-Aware Trajectory Planning for Active Target Tracking",
+      "Graph Normalization: Fast Binarizing Dynamics for Differentiable MWIS",
+      "SAT: Sequential Agent Tuning for Coordinator Free Plug and Play Multi-LLM Training with Monotonic Improvement Guarantees",
+      "Topology-Driven Anti-Entanglement Control for Soft Robots",
+      "Neural Co-state Policies: Structuring Hidden States in Recurrent Reinforcement Learning"
+    ]
+  }
+}
