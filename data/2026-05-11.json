@@ -1,0 +1,321 @@
+{
+  "date": "2026-05-11",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms",
+      "authors": [
+        "Jinghao Luo",
+        "Yuchen Tian",
+        "Chuxue Cao",
+        "Ziyang Luo",
+        "Hongzhan Lin",
+        "Kaixin Li",
+        "Chuyi Kong",
+        "Ruichao Yang",
+        "Jing Ma"
+      ],
+      "abstract": "Large Language Model (LLM)-based agents have fundamentally reshaped artificial intelligence by integrating external tools and planning capabilities. While memory mechanisms have emerged as the architectural cornerstone of these systems, current research remains fragmented, oscillating between operating system engineering and cognitive science. This theoretical divide prevents a unified view of technological synthesis and a coherent evolutionary perspective. To bridge this gap, this survey proposes a novel evolutionary framework for LLM agent memory mechanisms, formalizing the development process into three stages: Storage (trajectory preservation), Reflection (trajectory refinement), and Experience (trajectory abstraction). We first formally define these three stages before analyzing the three core drivers of this evolution: the necessity for long-range consistency, the challenges in dynamic environments, and the ultimate goal of continual learning. Furthermore, we specifically explore two transformative mechanisms in the frontier Experience stage: proactive exploration and cross-trajectory abstraction. By synthesizing these disparate views, this work offers robust design principles and a clear roadmap for the development of next-generation LLM agents.",
+      "url": "http://arxiv.org/abs/2605.06716v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.06716v1",
+      "arxiv_id": "2605.06716",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Large Language Model (LLM)-based agents have fundamentally reshaped artificial intelligence by integrating external tools and planning capabilities. While memory mechanisms have emerged as the architectural cornerstone of these systems, current research remains fragmented, oscillating between operating system engineering and cognitive science. This theoretical divide prevents a unified view of technological synthesis and a coherent evolutionary perspective. To bridge this gap, this survey proposes a novel evolutionary framework for LLM agent memory mechanisms, formalizing the development process into three stages: Storage (trajectory preservation), Reflection (trajectory refinement), and Experience (trajectory abstraction). We first formally define these three stages before analyzing the three core drivers of this evolution: the necessity for long-range consistency, the challenges in dynamic environments, and the ultimate goal of continual learning. Furthermore, we specifically explore two transformative mechanisms in the frontier Experience stage: proactive exploration and cross-trajectory abstraction. By synthesizing these disparate views, this work offers robust design principles and a clear roadmap for the development of next-generation LLM agents.",
+      "affiliations": null,
+      "code_urls": [
+        "https://github.com/FeishuLuo/Evolving-LLM-Agent-Memory-Survey"
+      ],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25,
+        "hugging_face": {
+          "url": "https://huggingface.co/papers/2605.06716",
+          "upvotes": 3,
+          "submitted_by": null,
+          "summary": "Large Language Model (LLM)-based agents have fundamentally reshaped artificial intelligence by integrating external tools and planning capabilities. While memory mechanisms have emerged as the architectural cornerstone of these systems, current research remains fragmented, oscillating between operating system engineering and cognitive science. This theoretical divide prevents a unified view of technological synthesis and a coherent evolutionary perspective. To bridge this gap, this survey proposes a novel evolutionary framework for LLM agent memory mechanisms, formalizing the development process into three stages: Storage (trajectory preservation), Reflection (trajectory refinement), and Experience (trajectory abstraction). We first formally define these three stages before analyzing the three core drivers of this evolution: the necessity for long-range consistency, the challenges in dynamic environments, and the ultimate goal of continual learning. Furthermore, we specifically explore two transformative mechanisms in the frontier Experience stage: proactive exploration and cross-trajectory abstraction. By synthesizing these disparate views, this work offers robust design principles and a clear roadmap for the development of next-generation LLM agents.",
+          "linked_repos": {
+            "models": [],
+            "datasets": [],
+            "spaces": []
+          }
+        }
+      },
+      "published_date": "2026-05-07"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Conformal Agent Error Attribution",
+      "authors": [
+        "Naihe Feng",
+        "Yi Sui",
+        "Shiyi Hou",
+        "Ga Wu",
+        "Jesse C. Cresswell"
+      ],
+      "abstract": "When multi-agent systems (MAS) fail, identifying where the decisive error occurred is the first step for automated recovery to an earlier state. Error attribution remains a fundamental challenge due to the long interaction traces that large language model-based MAS generate. This paper presents a framework for error attribution based on conformal prediction (CP) which provides finite-sample, distribution-free coverage guarantees. We introduce new algorithms for filtration-based CP designed for sequential data such as agent trajectories. Unlike existing CP algorithms, our approach predicts sets that are contiguous sequences to enable efficient recovery and debugging. We verify our theoretical guarantees on a variety of agents and datasets, show that errors can be precisely isolated, then use prediction sets to rollback MAS to correct their own errors. Our overall approach is model-agnostic, and offers a principled uncertainty layer for MAS error attribution. We release code at https://github.com/layer6ai-labs/conformal-agent-error-attribution.",
+      "url": "http://arxiv.org/abs/2605.06788v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.06788v1",
+      "arxiv_id": "2605.06788",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "When multi-agent systems (MAS) fail, identifying where the decisive error occurred is the first step for automated recovery to an earlier state. Error attribution remains a fundamental challenge due to the long interaction traces that large language model-based MAS generate. This paper presents a framework for error attribution based on conformal prediction (CP) which provides finite-sample, distribution-free coverage guarantees. We introduce new algorithms for filtration-based CP designed for sequential data such as agent trajectories. Unlike existing CP algorithms, our approach predicts sets that are contiguous sequences to enable efficient recovery and debugging. We verify our theoretical guarantees on a variety of agents and datasets, show that errors can be precisely isolated, then use prediction sets to rollback MAS to correct their own errors. Our overall approach is model-agnostic, and offers a principled uncertainty layer for MAS error attribution. We release code at https://github.com/layer6ai-labs/conformal-agent-error-attribution.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-07"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Randomness is sometimes necessary for coordination",
+      "authors": [
+        "Rohan Patil",
+        "Jai Malegaonkar",
+        "Henrik I. Christensen"
+      ],
+      "abstract": "Full parameter sharing is standard in cooperative multi-agent reinforcement learning (MARL) for homogeneous agents. Under permutation-symmetric observations, however, a shared deterministic policy outputs identical action distributions for every agent, making role differentiation impossible. This failure can theoretically be resolved using symmetry breaking among anonymous identical processors, which requires randomness. We propose Diamond Attention, a cross-attention architecture in which each agent samples a scalar random number per timestep, inducing a transient rank ordering that masks lower-ranked peers from agent-to-agent attention while leaving task attention fully unmasked. This realizes a random-bit coordination protocol in a single broadcast round, and the set-based attention enables zero-shot deployment to teams of different sizes. We evaluate across three regimes that isolate when structured randomness matters. On the perfectly symmetric XOR game, our method achieves $1.0$ success while all deterministic baselines plateau near $0.5$. On control coordination tasks, a policy trained on $N=4$ generalizes zero-shot to $N \\in [2,8]$. On SMACLite cross-scenario transfer, we achieve zero-shot transfer where standard baselines cannot transfer due to structural limitations. Furthermore, replacing the structured mask with standard dropout-based randomness results in a 0\\% win rate, confirming that protocol-space structure, not stochastic noise, is the operative ingredient. https://anonymous.4open.science/r/randomness-137A/",
+      "url": "http://arxiv.org/abs/2605.06825v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.06825v1",
+      "arxiv_id": "2605.06825",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Full parameter sharing is standard in cooperative multi-agent reinforcement learning (MARL) for homogeneous agents. Under permutation-symmetric observations, however, a shared deterministic policy outputs identical action distributions for every agent, making role differentiation impossible. This failure can theoretically be resolved using symmetry breaking among anonymous identical processors, which requires randomness. We propose Diamond Attention, a cross-attention architecture in which each agent samples a scalar random number per timestep, inducing a transient rank ordering that masks lower-ranked peers from agent-to-agent attention while leaving task attention fully unmasked. This realizes a random-bit coordination protocol in a single broadcast round, and the set-based attention enables zero-shot deployment to teams of different sizes. We evaluate across three regimes that isolate when structured randomness matters. On the perfectly symmetric XOR game, our method achieves $1.0$ success while all deterministic baselines plateau near $0.5$. On control coordination tasks, a policy trained on $N=4$ generalizes zero-shot to $N \\in [2,8]$. On SMACLite cross-scenario transfer, we achieve zero-shot transfer where standard baselines cannot transfer due to structural limitations. Furthermore, replacing the structured mask with standard dropout-based randomness results in a 0\\% win rate, confirming that protocol-space structure, not stochastic noise, is the operative ingredient. https://anonymous.4open.science/r/randomness-137A/",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-07"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Towards Security-Auditable LLM Agents: A Unified Graph Representation",
+      "authors": [
+        "Chaofan Li",
+        "Lyuye Zhang",
+        "Jintao Zhai",
+        "Siyue Feng",
+        "Xichun Yang",
+        "Huahao Wang",
+        "Shihan Dou",
+        "Yu Ji",
+        "Yutao Hu",
+        "Yueming Wu",
+        "Yang Liu",
+        "Deqing Zou"
+      ],
+      "abstract": "LLM-based agentic systems are rapidly evolving to perform complex autonomous tasks through dynamic tool invocation, stateful memory management, and multi-agent collaboration. However, this semantics-driven execution paradigm creates a severe semantic gap between low-level physical events and high-level execution intent, making post-hoc security auditing fundamentally difficult. Existing representation mechanisms, including static SBOMs and runtime logs, provide only fragmented evidence and fail to capture cognitive-state evolution, capability bindings, persistent memory contamination, and cascading risk propagation across interacting agents. To bridge this gap, we propose Agent-BOM, a unified structural representation for agent security auditing. Agent-BOM models an agentic system as a hierarchical attributed directed graph that separates static capability bases, such as models, tools, and long-term memory, from dynamic runtime semantic states, such as goals, reasoning trajectories, and actions. These layers are connected through semantic edges and security attributes, transforming fragmented execution traces into queryable audit paths. Building on Agent-BOM, we develop a graph-query-based paradigm for path-level risk assessment and instantiate it with the OWASP Agentic Top 10. We further implement an auditing plugin in the OpenClaw environment to construct Agent-BOM from live executions. Evaluation on representative real-world agentic attack scenarios shows that Agent-BOM can reconstruct stealthy attack chains, including cross-session memory poisoning and tool misuse, capability supply-chain hijacking and unexpected code execution, multi-agent ecosystem hijacking, and privilege and trust abuse. These results demonstrate that Agent-BOM provides a unified and auditable foundation for root-cause analysis and security adjudication in complex agentic ecosystems.",
+      "url": "http://arxiv.org/abs/2605.06812v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.06812v1",
+      "arxiv_id": "2605.06812",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "LLM-based agentic systems are rapidly evolving to perform complex autonomous tasks through dynamic tool invocation, stateful memory management, and multi-agent collaboration. However, this semantics-driven execution paradigm creates a severe semantic gap between low-level physical events and high-level execution intent, making post-hoc security auditing fundamentally difficult. Existing representation mechanisms, including static SBOMs and runtime logs, provide only fragmented evidence and fail to capture cognitive-state evolution, capability bindings, persistent memory contamination, and cascading risk propagation across interacting agents. To bridge this gap, we propose Agent-BOM, a unified structural representation for agent security auditing. Agent-BOM models an agentic system as a hierarchical attributed directed graph that separates static capability bases, such as models, tools, and long-term memory, from dynamic runtime semantic states, such as goals, reasoning trajectories, and actions. These layers are connected through semantic edges and security attributes, transforming fragmented execution traces into queryable audit paths. Building on Agent-BOM, we develop a graph-query-based paradigm for path-level risk assessment and instantiate it with the OWASP Agentic Top 10. We further implement an auditing plugin in the OpenClaw environment to construct Agent-BOM from live executions. Evaluation on representative real-world agentic attack scenarios shows that Agent-BOM can reconstruct stealthy attack chains, including cross-session memory poisoning and tool misuse, capability supply-chain hijacking and unexpected code execution, multi-agent ecosystem hijacking, and privilege and trust abuse. These results demonstrate that Agent-BOM provides a unified and auditable foundation for root-cause analysis and security adjudication in complex agentic ecosystems.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-07"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "SHARP: A Self-Evolving Human-Auditable Rubric Policy for Financial Trading Agents",
+      "authors": [
+        "Xiwen Chen",
+        "Wenhui Zhu",
+        "Songzhu Zheng",
+        "Kashif Rasul",
+        "Yueyue Deng",
+        "Huayu Li"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly deployed for autonomous financial trading, a domain requiring continuous adaptation to noisy, non-stationary markets. Existing self-improving agents typically address this through unbounded free-form prompt optimization. However, in low signal-to-noise environments with delayed scalar rewards (P\\&L), this unstructured approach exacerbates the fundamental credit assignment problem: optimizers cannot reliably distinguish systematic logic flaws from stochastic market variance, inevitably leading to policy drift. To overcome this bottleneck, we introduce the Self-Evolving Human-Auditable Rubric Policy (SHARP), a neuro-symbolic framework that replaces unconstrained text mutation with structured, symbolic policy optimization. SHARP confines the agent's reasoning to a bounded, human-readable rubric of explicit condition-action rules. When sub-optimal trades occur, an attribution agent employs cross-sample reasoning across multiple samples to isolate specific rule failures. This enables targeted, atomic policy edits that are subsequently regularized through strict walk-forward validation. Evaluated across three diverse equity sectors and four LLM backbones, SHARP consistently transforms generic initial heuristics into highly robust strategies, lifting the empirical performance of compact models by 10 to 20 percentage points on average (e.g., GPT-4o-mini). Ultimately, SHARP demonstrates that LLMs can achieve dynamic and efficient adaptation while significantly enhancing the structural transparency and auditability demanded by institutional finance.",
+      "url": "http://arxiv.org/abs/2605.06822v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.06822v1",
+      "arxiv_id": "2605.06822",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Large language models (LLMs) are increasingly deployed for autonomous financial trading, a domain requiring continuous adaptation to noisy, non-stationary markets. Existing self-improving agents typically address this through unbounded free-form prompt optimization. However, in low signal-to-noise environments with delayed scalar rewards (P\\&L), this unstructured approach exacerbates the fundamental credit assignment problem: optimizers cannot reliably distinguish systematic logic flaws from stochastic market variance, inevitably leading to policy drift. To overcome this bottleneck, we introduce the Self-Evolving Human-Auditable Rubric Policy (SHARP), a neuro-symbolic framework that replaces unconstrained text mutation with structured, symbolic policy optimization. SHARP confines the agent's reasoning to a bounded, human-readable rubric of explicit condition-action rules. When sub-optimal trades occur, an attribution agent employs cross-sample reasoning across multiple samples to isolate specific rule failures. This enables targeted, atomic policy edits that are subsequently regularized through strict walk-forward validation. Evaluated across three diverse equity sectors and four LLM backbones, SHARP consistently transforms generic initial heuristics into highly robust strategies, lifting the empirical performance of compact models by 10 to 20 percentage points on average (e.g., GPT-4o-mini). Ultimately, SHARP demonstrates that LLMs can achieve dynamic and efficient adaptation while significantly enhancing the structural transparency and auditability demanded by institutional finance.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-07"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://doi.org/10.17037/PUBS.04681611>",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Efficient and Automatic Flight Track Planning for UAVs with Synthetic Aperture Radar Sensors",
+      "authors": [
+        "Guilherme Bertolino"
+      ],
+      "abstract": "",
+      "url": "https://elib.dlr.de/224118/",
+      "pdf_url": null,
+      "arxiv_id": null,
+      "doi": null,
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2027-12-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms",
+      "Conformal Agent Error Attribution",
+      "Randomness is sometimes necessary for coordination",
+      "Towards Security-Auditable LLM Agents: A Unified Graph Representation",
+      "SHARP: A Self-Evolving Human-Auditable Rubric Policy for Financial Trading Agents"
+    ],
+    "papers_with_code": [
+      "From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms",
+      "Conformal Agent Error Attribution",
+      "Randomness is sometimes necessary for coordination",
+      "Towards Security-Auditable LLM Agents: A Unified Graph Representation",
+      "SHARP: A Self-Evolving Human-Auditable Rubric Policy for Financial Trading Agents"
+    ],
+    "hugging_face": [
+      "Conformal Agent Error Attribution",
+      "Randomness is sometimes necessary for coordination",
+      "Towards Security-Auditable LLM Agents: A Unified Graph Representation",
+      "SHARP: A Self-Evolving Human-Auditable Rubric Policy for Financial Trading Agents"
+    ]
+  }
+}
