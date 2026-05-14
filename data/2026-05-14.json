@@ -1,0 +1,290 @@
+{
+  "date": "2026-05-14",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "CHAL: Council of Hierarchical Agentic Language",
+      "authors": [
+        "Tommaso Giovannelli",
+        "Griffin D. Kent"
+      ],
+      "abstract": "Multi-agent debate has emerged as a promising approach for improving LLM reasoning on ground-truth tasks, yet current methodologies face certain structural limitations: debate tends to induce a martingale over belief trajectories, majority voting accounts for most observed gains, and LLMs exhibit confidence escalation rather than calibration across rounds. We argue that the genuine value of debate, and dialectic systems as a whole, lies not in ground-truth tasks but in defeasible domains, where every position can in principle be defeated by better reasoning. We present the Council of Hierarchical Agentic Language (CHAL), a multi-agent dialectic framework that treats defeasible argumentation as an engine for belief optimization. Each agent maintains a CHAL Belief Schema (CBS), a graph-structured belief representation with a Bayesian-inspired architecture, that facilitates belief revision through a gradient-informed dynamic mechanism by leveraging the strength of the belief's thesis as a differentiable objective. Meta-cognitive value systems spanning epistemology, logic, and ethics are elevated to configurable hyperparameters governing agent reasoning and adjudication outcomes. We provide a series of ablation experiments that demonstrate systematic and interpretable effects: the adjudicator's value system determines the debate's overall trajectories in latent belief space, council diversity refines beliefs for all participants, and the framework generalizes across broad fields. CHAL is, to our knowledge, the first framework to treat multi-agent debate as structured belief optimization over defeasible domains. Further, the auditable belief artifacts it produces establish the foundation for dedicated evaluation suites for defeasible argumentation, with broader implications for building AI systems whose reasoning and value commitments are transparent, aligned, and subject to human oversight.",
+      "url": "http://arxiv.org/abs/2605.12718v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.12718v1",
+      "arxiv_id": "2605.12718",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Multi-agent debate has emerged as a promising approach for improving LLM reasoning on ground-truth tasks, yet current methodologies face certain structural limitations: debate tends to induce a martingale over belief trajectories, majority voting accounts for most observed gains, and LLMs exhibit confidence escalation rather than calibration across rounds. We argue that the genuine value of debate, and dialectic systems as a whole, lies not in ground-truth tasks but in defeasible domains, where every position can in principle be defeated by better reasoning. We present the Council of Hierarchical Agentic Language (CHAL), a multi-agent dialectic framework that treats defeasible argumentation as an engine for belief optimization. Each agent maintains a CHAL Belief Schema (CBS), a graph-structured belief representation with a Bayesian-inspired architecture, that facilitates belief revision through a gradient-informed dynamic mechanism by leveraging the strength of the belief's thesis as a differentiable objective. Meta-cognitive value systems spanning epistemology, logic, and ethics are elevated to configurable hyperparameters governing agent reasoning and adjudication outcomes. We provide a series of ablation experiments that demonstrate systematic and interpretable effects: the adjudicator's value system determines the debate's overall trajectories in latent belief space, council diversity refines beliefs for all participants, and the framework generalizes across broad fields. CHAL is, to our knowledge, the first framework to treat multi-agent debate as structured belief optimization over defeasible domains. Further, the auditable belief artifacts it produces establish the foundation for dedicated evaluation suites for defeasible argumentation, with broader implications for building AI systems whose reasoning and value commitments are transparent, aligned, and subject to human oversight.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-05-12"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "State-Centric Decision Process",
+      "authors": [
+        "Sungheon Jeong",
+        "Ryozo Masukawa",
+        "Sanggeon Yun",
+        "Mahdi Imani",
+        "Mohsen Imani"
+      ],
+      "abstract": "Language environments such as web browsers, code terminals, and interactive simulations emit raw text rather than states, and provide none of the runtime structure that MDP analysis requires. No explicit state space, no observation-to-state mapping, no certified transitions, and no termination criterion. We introduce the State-Centric Decision Process (SDP), a runtime framework that constructs these missing inputs by having the agent build them, predicate by predicate, as it acts. At each step the agent commits to a natural-language predicate describing how the world should look, takes an action to make it true, and checks the observation against it. Predicates that pass become certified states, and the resulting trajectory carries the four objects language environments do not provide, namely a task-induced state space, an observation-to-state mapping, certified transitions, and a termination criterion. We evaluate SDP on five benchmarks spanning planning, scientific exploration, web reasoning, and multi-hop question answering. SDP achieves the best training-free results on all five, with the advantage widening as the horizon grows. The certified trajectories additionally support analyses unavailable to reactive agents, including per-predicate credit assignment, failure localization, partial-progress measurement, and modular operator replacement.",
+      "url": "http://arxiv.org/abs/2605.12755v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.12755v1",
+      "arxiv_id": "2605.12755",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Language environments such as web browsers, code terminals, and interactive simulations emit raw text rather than states, and provide none of the runtime structure that MDP analysis requires. No explicit state space, no observation-to-state mapping, no certified transitions, and no termination criterion. We introduce the State-Centric Decision Process (SDP), a runtime framework that constructs these missing inputs by having the agent build them, predicate by predicate, as it acts. At each step the agent commits to a natural-language predicate describing how the world should look, takes an action to make it true, and checks the observation against it. Predicates that pass become certified states, and the resulting trajectory carries the four objects language environments do not provide, namely a task-induced state space, an observation-to-state mapping, certified transitions, and a termination criterion. We evaluate SDP on five benchmarks spanning planning, scientific exploration, web reasoning, and multi-hop question answering. SDP achieves the best training-free results on all five, with the advantage widening as the horizon grows. The certified trajectories additionally support analyses unavailable to reactive agents, including per-predicate credit assignment, failure localization, partial-progress measurement, and modular operator replacement.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-12"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Learning When to Act: Communication-Efficient Reinforcement Learning via Run-Time Assurance",
+      "authors": [
+        "Adam Haroon",
+        "Erick J. Rodríguez-Seda",
+        "Cody Fleming",
+        "Tristan Schuler"
+      ],
+      "abstract": "Safe reinforcement learning (RL) typically asks $\\textit{what}$ an agent should do. We ask $\\textit{when}$ it needs to act, and show that a single policy can jointly learn control inputs and communication-efficient timing decisions under a pointwise Lyapunov safety shield. We focus on stabilization around a known equilibrium, where CARE-based LQR backups, Lyapunov certificates, and classical Lyapunov-STC are well defined, enabling clean comparison against analytical baselines. A run-time assurance (RTA) layer overrides the policy via a one-step-ahead Lyapunov prediction and a precomputed LQR backup, providing a strictly stronger guarantee than constrained MDP methods that enforce safety only in expectation. On an inverted pendulum, cart--pole, and planar quadrotor, the learned policy achieves $1.91\\times$, $1.45\\times$, and $3.51\\times$ higher mean inter-sample interval (MSI) than a Lyapunov-triggered baseline; a fixed LQR controller at the same average rate is unstable on all three plants, showing that adaptive timing, not a lower average rate, makes sparsity safe. A CARE-derived Lyapunov reward transfers across environments without redesign, with a single weight $w_c$ controlling the stability--communication tradeoff; ablations confirm the RTA shield is essential, with its removal reducing MSI by $1.27$--$1.84\\times$ and degrading state norms. A preference-conditioned extension recovers the full tradeoff frontier from one model at $\\tfrac{2}{11}$ of training compute, and SAC experiments show the results are algorithm-agnostic across discrete and continuous domains. A 12-state 3D quadrotor case study extends the framework to higher-dimensional systems where classical STC is intractable, and robustness to $\\pm30\\%$ mass variation and disturbances shows graceful degradation, with the RTA absorbing what the learned policy cannot.",
+      "url": "http://arxiv.org/abs/2605.12561v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.12561v1",
+      "arxiv_id": "2605.12561",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Safe reinforcement learning (RL) typically asks $\\textit{what}$ an agent should do. We ask $\\textit{when}$ it needs to act, and show that a single policy can jointly learn control inputs and communication-efficient timing decisions under a pointwise Lyapunov safety shield. We focus on stabilization around a known equilibrium, where CARE-based LQR backups, Lyapunov certificates, and classical Lyapunov-STC are well defined, enabling clean comparison against analytical baselines. A run-time assurance (RTA) layer overrides the policy via a one-step-ahead Lyapunov prediction and a precomputed LQR backup, providing a strictly stronger guarantee than constrained MDP methods that enforce safety only in expectation. On an inverted pendulum, cart--pole, and planar quadrotor, the learned policy achieves $1.91\\times$, $1.45\\times$, and $3.51\\times$ higher mean inter-sample interval (MSI) than a Lyapunov-triggered baseline; a fixed LQR controller at the same average rate is unstable on all three plants, showing that adaptive timing, not a lower average rate, makes sparsity safe. A CARE-derived Lyapunov reward transfers across environments without redesign, with a single weight $w_c$ controlling the stability--communication tradeoff; ablations confirm the RTA shield is essential, with its removal reducing MSI by $1.27$--$1.84\\times$ and degrading state norms. A preference-conditioned extension recovers the full tradeoff frontier from one model at $\\tfrac{2}{11}$ of training compute, and SAC experiments show the results are algorithm-agnostic across discrete and continuous domains. A 12-state 3D quadrotor case study extends the framework to higher-dimensional systems where classical STC is intractable, and robustness to $\\pm30\\%$ mass variation and disturbances shows graceful degradation, with the RTA absorbing what the learned policy cannot.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-05-11"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Plan Before You Trade: Inference-Time Optimization for RL Trading Agents",
+      "authors": [
+        "Eun Go",
+        "Rohan Deb",
+        "Arindam Banerjee"
+      ],
+      "abstract": "Reinforcement learning agents for portfolio management are typically trained and deployed as static policies, with no mechanism for using price forecasts at inference time. We propose $\\text{FPILOT}$ (**Fin**ancial **P**lugin **I**nference-time **L**earning for **O**ptimal **T**rading), a plugin inference-time optimization framework inspired by Model Predictive Control (MPC). Our key structural insight is that future prices mostly do not depend on one agent's portfolio allocation, so a suitable predictive model can produce a multi-step price trajectory without iterative action-conditioned rollouts as in typical reinforcement learning. At each decision step, we use the forecaster's predicted price trajectory to construct an allocation-based imagined return objective, and optimize the policy at inference-time before executing one step of the trade. Our framework is compatible with any pre-trained agent and adapts the policy to the forecaster's predictions without any retraining. Evaluated across five policy learning algorithms on the TradeMaster DJ30 benchmark, $\\text{FPILOT}$ produces consistent improvements in total return and return-based risk-adjusted metrics (Sharpe, Sortino, Calmar), with stochastic policies benefiting more than deterministic ones. Further, using synthetic forecasts at calibrated quality levels, we show that gains consistently improve with forecaster quality, suggesting that our performance will improve based on advances in financial forecasting.",
+      "url": "http://arxiv.org/abs/2605.12653v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.12653v1",
+      "arxiv_id": "2605.12653",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Reinforcement learning agents for portfolio management are typically trained and deployed as static policies, with no mechanism for using price forecasts at inference time. We propose $\\text{FPILOT}$ (**Fin**ancial **P**lugin **I**nference-time **L**earning for **O**ptimal **T**rading), a plugin inference-time optimization framework inspired by Model Predictive Control (MPC). Our key structural insight is that future prices mostly do not depend on one agent's portfolio allocation, so a suitable predictive model can produce a multi-step price trajectory without iterative action-conditioned rollouts as in typical reinforcement learning. At each decision step, we use the forecaster's predicted price trajectory to construct an allocation-based imagined return objective, and optimize the policy at inference-time before executing one step of the trade. Our framework is compatible with any pre-trained agent and adapts the policy to the forecaster's predictions without any retraining. Evaluated across five policy learning algorithms on the TradeMaster DJ30 benchmark, $\\text{FPILOT}$ produces consistent improvements in total return and return-based risk-adjusted metrics (Sharpe, Sortino, Calmar), with stochastic policies benefiting more than deterministic ones. Further, using synthetic forecasts at calibrated quality levels, we show that gains consistently improve with forecaster quality, suggesting that our performance will improve based on advances in financial forecasting.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-05-12"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "DelAC: A Multi-agent Reinforcement Learning of Team-Symmetric Stochastic Games",
+      "authors": [
+        "Duan-Shin Lee",
+        "Yu-Hsiu Hung"
+      ],
+      "abstract": "In this paper we study team-symmetric games with $m\\ge 2$ teams. Players within a team have symmetric identity and have a common payoff function. We show that team-symmetric games always have a team-symmetric Nash equilibrium. We develop and solve a linear complementarity problem of team-symmetric Nash equilibria. We propose an actor-critic based multi-agent reinforcement learning algorithm for team-symmetric games. Through simulations, we show that this multi-agent reinforcement learning algorithm performs much better than many existing algorithms.",
+      "url": "http://arxiv.org/abs/2605.12555v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.12555v1",
+      "arxiv_id": "2605.12555",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "In this paper we study team-symmetric games with $m\\ge 2$ teams. Players within a team have symmetric identity and have a common payoff function. We show that team-symmetric games always have a team-symmetric Nash equilibrium. We develop and solve a linear complementarity problem of team-symmetric Nash equilibria. We propose an actor-critic based multi-agent reinforcement learning algorithm for team-symmetric games. Through simulations, we show that this multi-agent reinforcement learning algorithm performs much better than many existing algorithms.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-05-11"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://doi.org/10.17037/PUBS.04681611>",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Efficient and Automatic Flight Track Planning for UAVs with Synthetic Aperture Radar Sensors",
+      "authors": [
+        "Guilherme Bertolino"
+      ],
+      "abstract": "",
+      "url": "https://elib.dlr.de/224118/",
+      "pdf_url": null,
+      "arxiv_id": null,
+      "doi": null,
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2027-12-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "CHAL: Council of Hierarchical Agentic Language",
+      "State-Centric Decision Process",
+      "Learning When to Act: Communication-Efficient Reinforcement Learning via Run-Time Assurance",
+      "Plan Before You Trade: Inference-Time Optimization for RL Trading Agents",
+      "DelAC: A Multi-agent Reinforcement Learning of Team-Symmetric Stochastic Games"
+    ],
+    "hugging_face": [
+      "CHAL: Council of Hierarchical Agentic Language",
+      "State-Centric Decision Process",
+      "Learning When to Act: Communication-Efficient Reinforcement Learning via Run-Time Assurance",
+      "Plan Before You Trade: Inference-Time Optimization for RL Trading Agents",
+      "DelAC: A Multi-agent Reinforcement Learning of Team-Symmetric Stochastic Games"
+    ],
+    "papers_with_code": [
+      "CHAL: Council of Hierarchical Agentic Language",
+      "State-Centric Decision Process",
+      "Learning When to Act: Communication-Efficient Reinforcement Learning via Run-Time Assurance",
+      "Plan Before You Trade: Inference-Time Optimization for RL Trading Agents",
+      "DelAC: A Multi-agent Reinforcement Learning of Team-Symmetric Stochastic Games"
+    ]
+  }
+}
