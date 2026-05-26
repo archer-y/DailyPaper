@@ -1,0 +1,304 @@
+{
+  "date": "2026-05-26",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "SODE: Analyzing Social Dynamics in LLM Agents",
+      "authors": [
+        "Inseo Jung",
+        "Yoonseok Oh",
+        "Kyungryul Back",
+        "Jinkyu Kim",
+        "Jungbeom Lee"
+      ],
+      "abstract": "As Large Language Models (LLMs) evolve into interactive agents, understanding their behavioral alignment within human social dynamics becomes essential. While behavioral game theory offers a framework to study these interactions, previous work has predominantly relied on outcome-based metrics such as average scores. This focus overlooks the mechanisms that facilitate sustainable cooperation, as identical scores can be derived from vastly different strategies. To bridge this gap, we introduce SODE (Social Dynamics Evaluation), a framework that evaluates LLM agents across three evolutionary dimensions: Direct Reciprocity for strategy adaptation, Indirect Reciprocity for reputation sensitivity, and Group Dynamics for cooperative resilience. Applying SODE reveals systematic divergences: instruction-tuned models often exhibit \"passive compliance\" that renders them vulnerable to exploitation, while reasoning models prioritize short-horizon optimization, destabilizing long-term cooperation. Notably, we demonstrate that a \"long-horizon framing\" can unlock reciprocal capabilities in reasoning models. Thus, SODE offers a systematic, mechanism-grounded benchmark for aligning AI agents with complex human social dynamics.",
+      "url": "http://arxiv.org/abs/2605.23949v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23949v1",
+      "arxiv_id": "2605.23949",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "As Large Language Models (LLMs) evolve into interactive agents, understanding their behavioral alignment within human social dynamics becomes essential. While behavioral game theory offers a framework to study these interactions, previous work has predominantly relied on outcome-based metrics such as average scores. This focus overlooks the mechanisms that facilitate sustainable cooperation, as identical scores can be derived from vastly different strategies. To bridge this gap, we introduce SODE (Social Dynamics Evaluation), a framework that evaluates LLM agents across three evolutionary dimensions: Direct Reciprocity for strategy adaptation, Indirect Reciprocity for reputation sensitivity, and Group Dynamics for cooperative resilience. Applying SODE reveals systematic divergences: instruction-tuned models often exhibit \"passive compliance\" that renders them vulnerable to exploitation, while reasoning models prioritize short-horizon optimization, destabilizing long-term cooperation. Notably, we demonstrate that a \"long-horizon framing\" can unlock reciprocal capabilities in reasoning models. Thus, SODE offers a systematic, mechanism-grounded benchmark for aligning AI agents with complex human social dynamics.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-06"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Why We Need World Models for AGI: Where LLMs Fail and How World Models May Outperform",
+      "authors": [
+        "Feisal Alaswad",
+        "Batoul Aljaddouh",
+        "Maher Alrahhal",
+        "Poovammal E",
+        "Talal Bonny"
+      ],
+      "abstract": "Large language models achieve strong performance in language generation and knowledge-intensive tasks, yet remain limited in settings requiring causal reasoning, persistent state tracking, and long-horizon planning. We argue that these limitations may arise from an objective-level mismatch between sequence prediction and reasoning over latent environment dynamics. To formalize this distinction, we introduce Latent Dynamics Inference (LDI), a conceptual perspective that interprets language and multimodal observations as partial evidence of underlying transition dynamics. To empirically investigate this perspective, we introduce Flux, a sequential reasoning environment specified entirely through natural-language rules. As a proof-of-concept case study, the rules are first compiled into an explicit state-transition simulator, illustrating that structured latent transition dynamics can, in some cases, be operationally extracted from textual rule descriptions. This enables a controlled comparison between the LLMs operating purely over textual observations and reinforcement-learning agents trained directly within the extracted latent state space. Within this case study, agents operating with explicit access to the latent state space exhibit substantially more stable behavior in long-horizon gameplay, achieving an aggregate win rate of approximately 79% versus 11% for LLMs. Qualitative analysis further reveals failure modes consistent with unstable persistent state tracking, including invalid actions, state-tracking errors, and short-horizon reasoning failures. The complete implementation of the Flux environment available at https://github.com/FeisalAlaswad/FLUX-RL-Agent Within the evaluated setting, these results suggest that strong sequence prediction alone may struggle to support robust long-horizon dynamic reasoning without mechanisms for persistent state tracking and transition modeling",
+      "url": "http://arxiv.org/abs/2605.23972v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23972v1",
+      "arxiv_id": "2605.23972",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Large language models achieve strong performance in language generation and knowledge-intensive tasks, yet remain limited in settings requiring causal reasoning, persistent state tracking, and long-horizon planning. We argue that these limitations may arise from an objective-level mismatch between sequence prediction and reasoning over latent environment dynamics. To formalize this distinction, we introduce Latent Dynamics Inference (LDI), a conceptual perspective that interprets language and multimodal observations as partial evidence of underlying transition dynamics. To empirically investigate this perspective, we introduce Flux, a sequential reasoning environment specified entirely through natural-language rules. As a proof-of-concept case study, the rules are first compiled into an explicit state-transition simulator, illustrating that structured latent transition dynamics can, in some cases, be operationally extracted from textual rule descriptions. This enables a controlled comparison between the LLMs operating purely over textual observations and reinforcement-learning agents trained directly within the extracted latent state space. Within this case study, agents operating with explicit access to the latent state space exhibit substantially more stable behavior in long-horizon gameplay, achieving an aggregate win rate of approximately 79% versus 11% for LLMs. Qualitative analysis further reveals failure modes consistent with unstable persistent state tracking, including invalid actions, state-tracking errors, and short-horizon reasoning failures. The complete implementation of the Flux environment available at https://github.com/FeisalAlaswad/FLUX-RL-Agent Within the evaluated setting, these results suggest that strong sequence prediction alone may struggle to support robust long-horizon dynamic reasoning without mechanisms for persistent state tracking and transition modeling",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-13"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Multi-market value-stacking: Battery control for combined imbalance participation and non-uniform FCR bidding",
+      "authors": [
+        "Celle Hendrickx",
+        "Fabio Pavirani",
+        "Chris Develder"
+      ],
+      "abstract": "The growing share of Renewable Energy Sources (RES) in modern power systems increases both grid imbalances and frequency deviations, reinforcing the need for ancillary services such as Frequency Containment Reserve (FCR) and passive balancing. Battery Energy Storage Systems (BESS) are well-suited for these services, but prior research typically relies on uniform FCR bids that remain constant throughout the control period. Such static bids fail to fully exploit BESS flexibility, as they do not balance the trade-off between reserving energy for FCR delivery and using it for imbalance arbitrage, limiting the achievable value in value-stacking settings. To address this limitation, we propose a two-stage control framework for the European context that introduces non-uniform FCR bids. In the first stage, we derive a time-varying bid sequence using data-driven Monte Carlo (MC) optimization. In the second stage, a Deep Reinforcement Learning (DRL) agent leverages the residual flexibility for real-time imbalance trading while proactively managing the State of Energy (SoE) to ensure compliance with FCR requirements. The framework is presented as a proof of concept, highlighting the potential benefits of time-varying bidding strategies. By incorporating daily cycle budgets and time-varying reserve commitments, our approach achieves a 7.56% profit increase compared to uniform baselines. These results show that non-uniform bidding can unlock additional value by more effectively aligning reserve obligations with rapidly changing imbalance opportunities.",
+      "url": "http://arxiv.org/abs/2605.23964v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23964v1",
+      "arxiv_id": "2605.23964",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "The growing share of Renewable Energy Sources (RES) in modern power systems increases both grid imbalances and frequency deviations, reinforcing the need for ancillary services such as Frequency Containment Reserve (FCR) and passive balancing. Battery Energy Storage Systems (BESS) are well-suited for these services, but prior research typically relies on uniform FCR bids that remain constant throughout the control period. Such static bids fail to fully exploit BESS flexibility, as they do not balance the trade-off between reserving energy for FCR delivery and using it for imbalance arbitrage, limiting the achievable value in value-stacking settings. To address this limitation, we propose a two-stage control framework for the European context that introduces non-uniform FCR bids. In the first stage, we derive a time-varying bid sequence using data-driven Monte Carlo (MC) optimization. In the second stage, a Deep Reinforcement Learning (DRL) agent leverages the residual flexibility for real-time imbalance trading while proactively managing the State of Energy (SoE) to ensure compliance with FCR requirements. The framework is presented as a proof of concept, highlighting the potential benefits of time-varying bidding strategies. By incorporating daily cycle budgets and time-varying reserve commitments, our approach achieves a 7.56% profit increase compared to uniform baselines. These results show that non-uniform bidding can unlock additional value by more effectively aligning reserve obligations with rapidly changing imbalance opportunities.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-12"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "DRIVE: Modeling Skills at the Reasoning and Interaction Levels for Web Agents under Continual Learning",
+      "authors": [
+        "Xirui Liu",
+        "Sihang Zhou",
+        "Yanning Hou",
+        "Rong Zhou",
+        "Haoyuan Chen",
+        "Maolin He",
+        "Siwei Wang",
+        "Hao Chen",
+        "Jian Huang"
+      ],
+      "abstract": "Web agents require both high-level reasoning (for task decomposition) and low-level interactions (for page elements manipulation) to conduct different tasks. However, these knowledge types differ fundamentally: reasoning knowledge (e.g., booking a flight requires first searching for routes) is abstract and transferable across websites, while interaction knowledge (e.g., clicking the Search button at a specific coordinate on Site A) depends heavily on page-specific contexts. Existing methods store experiences uniformly. This creates a dilemma: abstract representations lose executability on concrete pages, while concrete representations fail to generalize across domains. This entanglement limits capability accumulation: on new websites, agents either fail to recognize reusable task logic due to surface-level differences or attempt infeasible actions from outdated page structures. To disentangle them, we propose DRIVE, a dual-level skill modeling framework separating historical experience into natural language reasoning skills, which capture transferable task logic, and programmatic interaction skills, grounding abstract actions to executable operations. A scene-aware coordination mechanism adaptively retrieves and invokes these dual-level skills based on task semantics. DRIVE also uses skill-level reflection to identify hierarchy-specific failure modes, enabling targeted skill library expansion and refinement. Experiments across five WebArena domains show DRIVE attains an average task success rate of 52.8%, exceeding the skill-free baseline by 7.3 percentage points. Further ablations show reasoning and interaction skills provide distinct, complementary benefits, supporting separation of transferable task logic from executable page-level operations.",
+      "url": "http://arxiv.org/abs/2605.23939v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23939v1",
+      "arxiv_id": "2605.23939",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Web agents require both high-level reasoning (for task decomposition) and low-level interactions (for page elements manipulation) to conduct different tasks. However, these knowledge types differ fundamentally: reasoning knowledge (e.g., booking a flight requires first searching for routes) is abstract and transferable across websites, while interaction knowledge (e.g., clicking the Search button at a specific coordinate on Site A) depends heavily on page-specific contexts. Existing methods store experiences uniformly. This creates a dilemma: abstract representations lose executability on concrete pages, while concrete representations fail to generalize across domains. This entanglement limits capability accumulation: on new websites, agents either fail to recognize reusable task logic due to surface-level differences or attempt infeasible actions from outdated page structures. To disentangle them, we propose DRIVE, a dual-level skill modeling framework separating historical experience into natural language reasoning skills, which capture transferable task logic, and programmatic interaction skills, grounding abstract actions to executable operations. A scene-aware coordination mechanism adaptively retrieves and invokes these dual-level skills based on task semantics. DRIVE also uses skill-level reflection to identify hierarchy-specific failure modes, enabling targeted skill library expansion and refinement. Experiments across five WebArena domains show DRIVE attains an average task success rate of 52.8%, exceeding the skill-free baseline by 7.3 percentage points. Further ablations show reasoning and interaction skills provide distinct, complementary benefits, supporting separation of transferable task logic from executable page-level operations.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-04-28"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "BoxLitE: A Faithful Knowledge Base Embedding Based on Convex Optimization",
+      "authors": [
+        "Bruno F. Lourenço",
+        "Hesham Morgan",
+        "Ana Ozaki",
+        "Aleksandar Pavlović",
+        "Emanuel Sallinger"
+      ],
+      "abstract": "Knowledge base (KB) embeddings aim at combining the capability of classical knowledge graph embeddings to generalize the information present in facts, the ABox, with conceptual knowledge represented in an ontology language, the TBox. Several authors have recently explored the idea of mapping concepts to convex regions in a vector space. This is useful to represent hierarchies, typically present in TBoxes, since more general concepts can be mapped to larger regions, containing those regions associated with more specific concepts. However, the power of convexity is rarely leveraged during the actual learning tasks. Here, we introduce BoxLitE, a KB embedding model for DL-Lite$^{\\mathcal{H}}$ that allows for convex optimization. We show that for any satisfiable DL-Lite$^{\\mathcal{H}}$ KB, there is a BoxLitE embedding that is a weakly faithful model. As a proof of concept, we show how to formulate the KB embedding task as a convex optimization problem and how to obtain embeddings with such desirable faithfulness properties.",
+      "url": "http://arxiv.org/abs/2605.23937v1",
+      "pdf_url": "https://arxiv.org/pdf/2605.23937v1",
+      "arxiv_id": "2605.23937",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Knowledge base (KB) embeddings aim at combining the capability of classical knowledge graph embeddings to generalize the information present in facts, the ABox, with conceptual knowledge represented in an ontology language, the TBox. Several authors have recently explored the idea of mapping concepts to convex regions in a vector space. This is useful to represent hierarchies, typically present in TBoxes, since more general concepts can be mapped to larger regions, containing those regions associated with more specific concepts. However, the power of convexity is rarely leveraged during the actual learning tasks. Here, we introduce BoxLitE, a KB embedding model for DL-Lite$^{\\mathcal{H}}$ that allows for convex optimization. We show that for any satisfiable DL-Lite$^{\\mathcal{H}}$ KB, there is a BoxLitE embedding that is a weakly faithful model. As a proof of concept, we show how to formulate the KB embedding task as a convex optimization problem and how to obtain embeddings with such desirable faithfulness properties.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-04-27"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://doi.org/10.17037/PUBS.04681611>",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Systematic Optimization of LC-MS/MS Acquisition Parameters for untargeted proteomics on an Agilent 1290 Infinity II UHPLC coupled to 6545XT Q-TOF part-1",
+      "authors": [
+        "Pooja Doshi",
+        "Vikas Patidar",
+        "Snehal Bagatharia",
+        "Ishan Raval"
+      ],
+      "abstract": "This dataset contains zipped archives of raw .d files recorded on Agilent 6545XT",
+      "url": "https://doi.org/10.5281/zenodo.20322078",
+      "pdf_url": "https://doi.org/10.5281/zenodo.20322078",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.20322078",
+      "score": 0.5,
+      "tldr": "This dataset contains zipped archives of raw .d files recorded on Agilent 6545XT",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Advanced optimization methods for interpretable machine learning models and their applications in chemical engineering",
+      "authors": [
+        "Jiayang Ren"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/94391",
+      "pdf_url": "http://hdl.handle.net/2429/94391",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0452516",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "SODE: Analyzing Social Dynamics in LLM Agents",
+      "Why We Need World Models for AGI: Where LLMs Fail and How World Models May Outperform",
+      "Multi-market value-stacking: Battery control for combined imbalance participation and non-uniform FCR bidding",
+      "DRIVE: Modeling Skills at the Reasoning and Interaction Levels for Web Agents under Continual Learning",
+      "BoxLitE: A Faithful Knowledge Base Embedding Based on Convex Optimization"
+    ],
+    "hugging_face": [
+      "SODE: Analyzing Social Dynamics in LLM Agents",
+      "Why We Need World Models for AGI: Where LLMs Fail and How World Models May Outperform",
+      "Multi-market value-stacking: Battery control for combined imbalance participation and non-uniform FCR bidding",
+      "DRIVE: Modeling Skills at the Reasoning and Interaction Levels for Web Agents under Continual Learning",
+      "BoxLitE: A Faithful Knowledge Base Embedding Based on Convex Optimization"
+    ],
+    "papers_with_code": [
+      "SODE: Analyzing Social Dynamics in LLM Agents",
+      "Why We Need World Models for AGI: Where LLMs Fail and How World Models May Outperform",
+      "Multi-market value-stacking: Battery control for combined imbalance participation and non-uniform FCR bidding",
+      "DRIVE: Modeling Skills at the Reasoning and Interaction Levels for Web Agents under Continual Learning",
+      "BoxLitE: A Faithful Knowledge Base Embedding Based on Convex Optimization"
+    ]
+  }
+}
