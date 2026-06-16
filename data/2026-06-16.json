@@ -1,0 +1,297 @@
+{
+  "date": "2026-06-16",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Bayesian Optimization for Learning Nonlinear MPC in Autonomous Agent Navigation",
+      "authors": [
+        "Lorenzo Ortolani",
+        "Gabriel Voss",
+        "Gabriele Beltrami",
+        "Francesco Dorati",
+        "Tommaso Felice Banfi"
+      ],
+      "abstract": "Real-time autonomous navigation in dynamic, unknown environments remains a fundamental challenge for mobile robotics. We propose a map-free framework that tightly integrates reactive rolling-horizon planning with nonlinear Model Predictive Control (MPC). At each control cycle, a LiDAR-based Gaussian occupancy representation is constructed and used to generate collision-free trajectories via A* search, which are then tracked by a CasADi/IPOPT MPC formulation incorporating a smooth sigmoid obstacle barrier. To improve robustness to parameter sensitivity, we adopt an offline Bayesian optimization scheme based on Tree-structured Parzen Estimators (TPE), which identifies near-optimal controller parameters with respect to a composite navigation objective. In addition, a Gaussian Process surrogate is used to analyze parameter sensitivity and provide insight into the optimization landscape.\n  The proposed framework is robot-agnostic and is evaluated on the Unitree Go2 quadruped in simulation using Gazebo, followed by deployment on the physical robot. Experimental results show that parameters tuned in simulation transfer effectively to hardware, maintaining comparable performance without additional tuning. The full system achieves up to a 90.0\\% navigation success rate when deployed, along with a 38.9\\% average improvement in the evaluation metrics across simulated environments.",
+      "url": "http://arxiv.org/abs/2606.14763v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14763v1",
+      "arxiv_id": "2606.14763",
+      "doi": null,
+      "score": 2.5,
+      "tldr": "Real-time autonomous navigation in dynamic, unknown environments remains a fundamental challenge for mobile robotics. We propose a map-free framework that tightly integrates reactive rolling-horizon planning with nonlinear Model Predictive Control (MPC). At each control cycle, a LiDAR-based Gaussian occupancy representation is constructed and used to generate collision-free trajectories via A* search, which are then tracked by a CasADi/IPOPT MPC formulation incorporating a smooth sigmoid obstacle barrier. To improve robustness to parameter sensitivity, we adopt an offline Bayesian optimization scheme based on Tree-structured Parzen Estimators (TPE), which identifies near-optimal controller parameters with respect to a composite navigation objective. In addition, a Gaussian Process surrogate is used to analyze parameter sensitivity and provide insight into the optimization landscape.\n  The proposed framework is robot-agnostic and is evaluated on the Unitree Go2 quadruped in simulation using Gazebo, followed by deployment on the physical robot. Experimental results show that parameters tuned in simulation transfer effectively to hardware, maintaining comparable performance without additional tuning. The full system achieves up to a 90.0\\% navigation success rate when deployed, along with a 38.9\\% average improvement in the evaluation metrics across simulated environments.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 5,
+        "weighted_score": 3.75
+      },
+      "published_date": "2026-06-08"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Robust Sampling-Based Covariance Steering for Aerocapture Guidance",
+      "authors": [
+        "Alex Rose",
+        "Christopher Jewison",
+        "Jonathan P. How"
+      ],
+      "abstract": "Aerocapture is a maneuver where a spacecraft dives through the atmosphere of a planet or moon to reduce its velocity and prepare for orbital insertion. Aerocapture allows for higher cruise velocities and reduces fuel consumption, decreasing transit time and increasing payload mass. However, uncertainties in the atmospheric entry state and atmospheric density increase the risk of aerocapture. Dynamic nonlinearities and nonlinearities caused by the state-dependence of the atmospheric density pose additional challenges. This work develops a robust sampling-based covariance steering algorithm designed for aerocapture guidance. Our proposed algorithm leverages sampled nonlinear system trajectories to improve evaluation of the delta-V required for aerocapture and address nonlinearities caused by the aerocapture dynamics and atmospheric disturbances. We perform Monte Carlo simulations with dispersed entry and atmospheric conditions on aerocapture scenarios at Mars and Uranus and demonstrate a 5-15% reduction in the 99th-percentile, 99.7th-percentile, and worst-case delta-V required for aerocapture when compared against a state-of-the-art covariance steering algorithm.",
+      "url": "http://arxiv.org/abs/2606.14979v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14979v1",
+      "arxiv_id": "2606.14979",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Aerocapture is a maneuver where a spacecraft dives through the atmosphere of a planet or moon to reduce its velocity and prepare for orbital insertion. Aerocapture allows for higher cruise velocities and reduces fuel consumption, decreasing transit time and increasing payload mass. However, uncertainties in the atmospheric entry state and atmospheric density increase the risk of aerocapture. Dynamic nonlinearities and nonlinearities caused by the state-dependence of the atmospheric density pose additional challenges. This work develops a robust sampling-based covariance steering algorithm designed for aerocapture guidance. Our proposed algorithm leverages sampled nonlinear system trajectories to improve evaluation of the delta-V required for aerocapture and address nonlinearities caused by the aerocapture dynamics and atmospheric disturbances. We perform Monte Carlo simulations with dispersed entry and atmospheric conditions on aerocapture scenarios at Mars and Uranus and demonstrate a 5-15% reduction in the 99th-percentile, 99.7th-percentile, and worst-case delta-V required for aerocapture when compared against a state-of-the-art covariance steering algorithm.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-06-12"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Remember, Don't Re-read: Stateful ReAct Agents for Token-Efficient Autonomous Experimentation",
+      "authors": [
+        "Faramarz Jabbarvaziri"
+      ],
+      "abstract": "The autoresearch pattern enables autonomous experimentation by having a large language model (LLM) iteratively modify code to optimize a target metric. Its stateless design, however, reconstructs experimental context from scratch at every iteration, incurring $O(n)$ token cost per iteration and $O(n^{2})$ total. This work reformulates the pattern as a stateful ReAct agent using LangGraph, where typed persistent state carries experimental history across iterations via a tool-calling interface. Two benchmarks are evaluated: hyperparameter tuning (15 iterations, small per-iteration observations) and code performance optimization (40 iterations, large per-iteration observations containing full source code and benchmark results). On hyperparameter tuning, the stateful agent consumes 90\\% fewer tokens (2{,}492 vs.\\ 24{,}465). On code optimization, the stateful agent consumes 52\\% fewer tokens (627K vs.\\ 1{,}275K) while achieving comparable optimization quality on both tasks. The token reduction is structural: the stateless agent re-reads the full history at $O(n)$ cost per iteration, while the stateful agent operates within a fixed-size conversation window at $O(1)$ cost. This paper describes the architecture in sufficient detail for practitioners to implement a stateful autoresearch agent for their own workflows.",
+      "url": "http://arxiv.org/abs/2606.14945v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14945v1",
+      "arxiv_id": "2606.14945",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "The autoresearch pattern enables autonomous experimentation by having a large language model (LLM) iteratively modify code to optimize a target metric. Its stateless design, however, reconstructs experimental context from scratch at every iteration, incurring $O(n)$ token cost per iteration and $O(n^{2})$ total. This work reformulates the pattern as a stateful ReAct agent using LangGraph, where typed persistent state carries experimental history across iterations via a tool-calling interface. Two benchmarks are evaluated: hyperparameter tuning (15 iterations, small per-iteration observations) and code performance optimization (40 iterations, large per-iteration observations containing full source code and benchmark results). On hyperparameter tuning, the stateful agent consumes 90\\% fewer tokens (2{,}492 vs.\\ 24{,}465). On code optimization, the stateful agent consumes 52\\% fewer tokens (627K vs.\\ 1{,}275K) while achieving comparable optimization quality on both tasks. The token reduction is structural: the stateless agent re-reads the full history at $O(n)$ cost per iteration, while the stateful agent operates within a fixed-size conversation window at $O(1)$ cost. This paper describes the architecture in sufficient detail for practitioners to implement a stateful autoresearch agent for their own workflows.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-06-12"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Exact, Efficient, and Safe Occlusion-Aware Planning Using AH-Polyhedrons",
+      "authors": [
+        "Long Kiu Chung",
+        "David Isele",
+        "Toktam Mohammadnejad",
+        "Faizan M. Tariq",
+        "Sangjae Bae",
+        "Shreyas Kousik",
+        "Jovin D'sa"
+      ],
+      "abstract": "Safely handling occlusions is a fundamental challenge for autonomous mobile robots operating in dynamic environments. This issue is especially prominent in autonomous valet parking (AVP), where traffic rules are lax, occlusions are frequent and cluttered, and overly conservative behavior can leave vehicles stuck. However, existing methods either lack formal safety guarantees, assume agents follow road structures, or introduce conservatism, leaving occlusion-aware planning for AVP an open challenge. In this paper, we propose APRO (AH-Polyhedron Reachability for Occlusions), an exact and efficient occlusion-aware planning framework based on game-theoretic active perception and AH-polyhedron reachability analysis with AVP as our canonical use case. Our key insight is to reformulate set-based safety conditions in prior work as unions of AH-polyhedrons, enabling exact safety verification through linear programming (LP) without any additional conservatism in set computations or assumptions on road topology. We further show how the resulting safety conditions can be integrated into optimization-based planners or a bisection search scheme for real-time applications. We validate our method in simulation and hardware experiments, including data replay on a real-world parking lot dataset. Experimental results demonstrate that our method consistently achieved a 100% safety rate across all evaluated scenarios while maintaining real-time performance, resulting in safer and more optimal decisions than existing methods with formal safety guarantees.",
+      "url": "http://arxiv.org/abs/2606.15046v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.15046v1",
+      "arxiv_id": "2606.15046",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Safely handling occlusions is a fundamental challenge for autonomous mobile robots operating in dynamic environments. This issue is especially prominent in autonomous valet parking (AVP), where traffic rules are lax, occlusions are frequent and cluttered, and overly conservative behavior can leave vehicles stuck. However, existing methods either lack formal safety guarantees, assume agents follow road structures, or introduce conservatism, leaving occlusion-aware planning for AVP an open challenge. In this paper, we propose APRO (AH-Polyhedron Reachability for Occlusions), an exact and efficient occlusion-aware planning framework based on game-theoretic active perception and AH-polyhedron reachability analysis with AVP as our canonical use case. Our key insight is to reformulate set-based safety conditions in prior work as unions of AH-polyhedrons, enabling exact safety verification through linear programming (LP) without any additional conservatism in set computations or assumptions on road topology. We further show how the resulting safety conditions can be integrated into optimization-based planners or a bisection search scheme for real-time applications. We validate our method in simulation and hardware experiments, including data replay on a real-world parking lot dataset. Experimental results demonstrate that our method consistently achieved a 100% safety rate across all evaluated scenarios while maintaining real-time performance, resulting in safer and more optimal decisions than existing methods with formal safety guarantees.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-06-13"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "MiroBench: Benchmarking Realism in Agentic Simulation of Real-world Discussions",
+      "authors": [
+        "Yaoning Yu",
+        "Ye Yu",
+        "Haojing Luo",
+        "Haohan Wang"
+      ],
+      "abstract": "LLM agents are increasingly used to simulate real world interactions, but it remains unclear whether simulated behaviors preserve the content patterns and interaction dynamics of real human behaviors. Existing evaluations remain fragmented, which makes it difficult to compare systems or measure progress. In this paper, we focus on Reddit discussions as a concrete first step toward evaluating real-world social simulation. Reddit threads provide public, topic-grounded, multi-party interactions where people share experiences, debate, seek advice, express emotion, and collectively respond to products, events, and social issues. These discussions offer an observable window into broader social behavior, making them a useful setting for testing whether LLM agents can reproduce not only fluent text, but also the distributional patterns and interaction dynamics of real online communities. We introduce MiroBench, a benchmark for Reddit discussion simulation built from 4,292 real Reddit threads. MiroBench uses statistical tests to compare generated and real discussions across four major aspects: repetition and semantic uniformity, narrative content, toxicity and aggression, and structural complexity. Experiments across five domains and five models show that current simulators remain distributionally mismatched with real Reddit threads, while a lightweight prompt-based improvement procedure provides only limited gains. MiroBench offers a concrete benchmark for measuring, diagnosing, and improving realism in LLM-based social simulation.",
+      "url": "http://arxiv.org/abs/2606.14715v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14715v1",
+      "arxiv_id": "2606.14715",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "LLM agents are increasingly used to simulate real world interactions, but it remains unclear whether simulated behaviors preserve the content patterns and interaction dynamics of real human behaviors. Existing evaluations remain fragmented, which makes it difficult to compare systems or measure progress. In this paper, we focus on Reddit discussions as a concrete first step toward evaluating real-world social simulation. Reddit threads provide public, topic-grounded, multi-party interactions where people share experiences, debate, seek advice, express emotion, and collectively respond to products, events, and social issues. These discussions offer an observable window into broader social behavior, making them a useful setting for testing whether LLM agents can reproduce not only fluent text, but also the distributional patterns and interaction dynamics of real online communities. We introduce MiroBench, a benchmark for Reddit discussion simulation built from 4,292 real Reddit threads. MiroBench uses statistical tests to compare generated and real discussions across four major aspects: repetition and semantic uniformity, narrative content, toxicity and aggression, and structural complexity. Experiments across five domains and five models show that current simulators remain distributionally mismatched with real Reddit threads, while a lightweight prompt-based improvement procedure provides only limited gains. MiroBench offers a concrete benchmark for measuring, diagnosing, and improving realism in LLM-based social simulation.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-05-10"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://openalex.org/W7163572035",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://doi.org/10.17037/PUBS.04681611>",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Systematic Optimization of LC-MS/MS Acquisition Parameters for untargeted proteomics on an Agilent 1290 Infinity II UHPLC coupled to 6545XT Q-TOF part-1",
+      "authors": [
+        "Pooja Doshi",
+        "Vikas Patidar",
+        "Snehal Bagatharia",
+        "Ishan Raval"
+      ],
+      "abstract": "This dataset contains zipped archives of raw .d files recorded on Agilent 6545XT",
+      "url": "https://doi.org/10.5281/zenodo.20322078",
+      "pdf_url": "https://doi.org/10.5281/zenodo.20322078",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.20322078",
+      "score": 0.5,
+      "tldr": "This dataset contains zipped archives of raw .d files recorded on Agilent 6545XT",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Bayesian Optimization for Learning Nonlinear MPC in Autonomous Agent Navigation",
+      "Robust Sampling-Based Covariance Steering for Aerocapture Guidance",
+      "Remember, Don't Re-read: Stateful ReAct Agents for Token-Efficient Autonomous Experimentation",
+      "Exact, Efficient, and Safe Occlusion-Aware Planning Using AH-Polyhedrons",
+      "MiroBench: Benchmarking Realism in Agentic Simulation of Real-world Discussions"
+    ],
+    "hugging_face": [
+      "Bayesian Optimization for Learning Nonlinear MPC in Autonomous Agent Navigation",
+      "Robust Sampling-Based Covariance Steering for Aerocapture Guidance",
+      "Remember, Don't Re-read: Stateful ReAct Agents for Token-Efficient Autonomous Experimentation",
+      "Exact, Efficient, and Safe Occlusion-Aware Planning Using AH-Polyhedrons",
+      "MiroBench: Benchmarking Realism in Agentic Simulation of Real-world Discussions"
+    ],
+    "papers_with_code": [
+      "Bayesian Optimization for Learning Nonlinear MPC in Autonomous Agent Navigation",
+      "Robust Sampling-Based Covariance Steering for Aerocapture Guidance",
+      "Remember, Don't Re-read: Stateful ReAct Agents for Token-Efficient Autonomous Experimentation",
+      "Exact, Efficient, and Safe Occlusion-Aware Planning Using AH-Polyhedrons",
+      "MiroBench: Benchmarking Realism in Agentic Simulation of Real-world Discussions"
+    ]
+  }
+}
