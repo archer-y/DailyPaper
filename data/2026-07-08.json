@@ -1,0 +1,291 @@
+{
+  "date": "2026-07-08",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Prompt-to-Paper: Agentic AI System for Bioinformatics",
+      "authors": [
+        "Ramsha Kamran",
+        "Maheera Amjad",
+        "Zartasha Mustansar",
+        "Arsalan Shaukat",
+        "Salma Sherbaz",
+        "Muhammad U. S. Khan"
+      ],
+      "abstract": "While recent advances in large language models have enabled end-to-end automated manuscript generation, existing systems suffer from three critical deficiencies: (i) generated claims are not deterministically grounded in verifiable literature, (ii) experimental results are frequently fabricated rather than executed, and (iii) there exists no standardized, multi-dimensional framework to assess whether AI-generated manuscripts meet the quality and rigor required for real-world publication. We present Prompt-to-Paper, a multi-agent framework that directly addresses this evaluation gap through three integrated innovations. First, a deterministic retrieval-augmented generation pipeline with section-aware relevance scoring and snowball citation expansion grounds every claim in a verifiable corpus of 60--100 papers. Second, an autonomous coding agent executes real computational biology experiments replacing synthetic outputs with genuine numerical results. Third, an eight-dimensional automated quality scorer, benchmarked with approximate reference statistics from published papers and augmented with explicit hallucination penalties, provides standardized, reproducible quality assessments. The quality-driven improvement loop uses a context-rich reviser that routes each iteration to one of three researcher actions and fires a deep research cycle every ten iterations to re-run experiments and re-manuscript from stronger outputs. We validate the system on five bioinformatics case studies; all five cases compiled submission-formatted PDFs with zero out-of-range citations. The improvement loop raises manuscript quality by an average of +17.96 points on a 0--100 scale (maximum +26.04. As partial external checks, a human reviewer scored the five manuscripts at an average of 7.0 out of 10. Complete manuscripts are produced at approximately 0.31 USD per paper.",
+      "url": "http://arxiv.org/abs/2607.05456v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05456v1",
+      "arxiv_id": "2607.05456",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "While recent advances in large language models have enabled end-to-end automated manuscript generation, existing systems suffer from three critical deficiencies: (i) generated claims are not deterministically grounded in verifiable literature, (ii) experimental results are frequently fabricated rather than executed, and (iii) there exists no standardized, multi-dimensional framework to assess whether AI-generated manuscripts meet the quality and rigor required for real-world publication. We present Prompt-to-Paper, a multi-agent framework that directly addresses this evaluation gap through three integrated innovations. First, a deterministic retrieval-augmented generation pipeline with section-aware relevance scoring and snowball citation expansion grounds every claim in a verifiable corpus of 60--100 papers. Second, an autonomous coding agent executes real computational biology experiments replacing synthetic outputs with genuine numerical results. Third, an eight-dimensional automated quality scorer, benchmarked with approximate reference statistics from published papers and augmented with explicit hallucination penalties, provides standardized, reproducible quality assessments. The quality-driven improvement loop uses a context-rich reviser that routes each iteration to one of three researcher actions and fires a deep research cycle every ten iterations to re-run experiments and re-manuscript from stronger outputs. We validate the system on five bioinformatics case studies; all five cases compiled submission-formatted PDFs with zero out-of-range citations. The improvement loop raises manuscript quality by an average of +17.96 points on a 0--100 scale (maximum +26.04. As partial external checks, a human reviewer scored the five manuscripts at an average of 7.0 out of 10. Complete manuscripts are produced at approximately 0.31 USD per paper.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-07-05"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Federated Physics-Grounded Reinforcement Learning for Distributed Stability Control in Smart Grids",
+      "authors": [
+        "Omar Al-Refai",
+        "Ibrahim Shahbaz",
+        "Adam Ali Husseinat",
+        "Eman Hammad"
+      ],
+      "abstract": "Transient stability control in smart grids requires rapid post-fault damping of generator frequency and rotor angle deviations to prevent cascading failures. This paper proposes FedPPO-PG, a Federated Multi-Agent Proximal Policy Optimization framework with Physics-Grounded neighborhoods, which reformulates transient stability control as a cooperative multi-agent reinforcement learning problem optimized directly against closed-loop stability objectives. Each generator hosts an independent local actor augmented with the frequency deviations of its two most strongly coupled electrical neighbors, identified from the post-fault Kron-reduced susceptance matrix. A guided policy initialization phase warm-starts all actors from the classical decentralized controller, while a centralized critic guides advantage estimation under the centralized training--decentralized execution (CTDE) paradigm. Evaluated on a simulation of the IEEE 39-bus benchmark system across five training and three unseen fault contingencies, FedPPO-PG achieves 100% stabilization in all 24 trials, reduces mean stability time by 72.4%, and cuts the control power by 7-14 times compared to the centralized baseline. Each actor executes independently with no central coordinator at deployment, and the per-actor inference latency satisfies the IEEE/IEC 60255-118-1-2018 real-time reporting requirements.",
+      "url": "http://arxiv.org/abs/2607.05553v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05553v1",
+      "arxiv_id": "2607.05553",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Transient stability control in smart grids requires rapid post-fault damping of generator frequency and rotor angle deviations to prevent cascading failures. This paper proposes FedPPO-PG, a Federated Multi-Agent Proximal Policy Optimization framework with Physics-Grounded neighborhoods, which reformulates transient stability control as a cooperative multi-agent reinforcement learning problem optimized directly against closed-loop stability objectives. Each generator hosts an independent local actor augmented with the frequency deviations of its two most strongly coupled electrical neighbors, identified from the post-fault Kron-reduced susceptance matrix. A guided policy initialization phase warm-starts all actors from the classical decentralized controller, while a centralized critic guides advantage estimation under the centralized training--decentralized execution (CTDE) paradigm. Evaluated on a simulation of the IEEE 39-bus benchmark system across five training and three unseen fault contingencies, FedPPO-PG achieves 100% stabilization in all 24 trials, reduces mean stability time by 72.4%, and cuts the control power by 7-14 times compared to the centralized baseline. Each actor executes independently with no central coordinator at deployment, and the per-actor inference latency satisfies the IEEE/IEC 60255-118-1-2018 real-time reporting requirements.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-07-06"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "FirstResearch: Auditable Question Formation for LLM Scientific Discovery Agents",
+      "authors": [
+        "Yufeng Wang"
+      ],
+      "abstract": "LLM systems for scientific discovery increasingly assist with ideation, literature synthesis, experiment planning, and report generation, but the first research question they propose can remain difficult to audit: it may sound plausible without exposing the mechanism, falsifier, or assumption that a scientist should inspect. We introduce FirstResearch, a first-principles research-question formation framework for scientific LLM agents whose core artifact is a structured Research Question Certificate. The certificate records primitive definitions, assumptions, a mechanism model, a tension or contradiction, a falsifiable hypothesis, a minimal decisive test, and a failure update rule, making the proposed question inspectable before downstream execution. On ten LLM-agent research topics, FirstResearch outperforms controlled prompt-level baselines inspired by AI co-scientist, Agent Laboratory, and AI Scientist-v2 under a primary DeepSeek-blind-judge protocol. A Gemini-2.5-Flash independent-judge rescore of the same 40 baseline packages preserves the system-level ranking, with FirstResearch scoring 4.86/5 versus 4.38/5 for the strongest baseline and Pearson agreement of 0.865 on average score. A one-repeat ablation checkpoint further suggests that the certificate-centered core is the strongest component: certificate-only scoring reaches 4.90/5 under DeepSeek and 4.88/5 under Gemini, while removing certificates drops below 1/5 under both judges. These results are preliminary and use LLM judges rather than human domain experts, but they support a narrow scientific-discovery claim: explicit derivation constraints are a promising mechanism for making LLM-generated scientific questions more auditable. Code, prompts, saved outputs, and reproduction scripts are available at https://github.com/louiswang524/FirstResearch.",
+      "url": "http://arxiv.org/abs/2607.05682v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05682v1",
+      "arxiv_id": "2607.05682",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "LLM systems for scientific discovery increasingly assist with ideation, literature synthesis, experiment planning, and report generation, but the first research question they propose can remain difficult to audit: it may sound plausible without exposing the mechanism, falsifier, or assumption that a scientist should inspect. We introduce FirstResearch, a first-principles research-question formation framework for scientific LLM agents whose core artifact is a structured Research Question Certificate. The certificate records primitive definitions, assumptions, a mechanism model, a tension or contradiction, a falsifiable hypothesis, a minimal decisive test, and a failure update rule, making the proposed question inspectable before downstream execution. On ten LLM-agent research topics, FirstResearch outperforms controlled prompt-level baselines inspired by AI co-scientist, Agent Laboratory, and AI Scientist-v2 under a primary DeepSeek-blind-judge protocol. A Gemini-2.5-Flash independent-judge rescore of the same 40 baseline packages preserves the system-level ranking, with FirstResearch scoring 4.86/5 versus 4.38/5 for the strongest baseline and Pearson agreement of 0.865 on average score. A one-repeat ablation checkpoint further suggests that the certificate-centered core is the strongest component: certificate-only scoring reaches 4.90/5 under DeepSeek and 4.88/5 under Gemini, while removing certificates drops below 1/5 under both judges. These results are preliminary and use LLM judges rather than human domain experts, but they support a narrow scientific-discovery claim: explicit derivation constraints are a promising mechanism for making LLM-generated scientific questions more auditable. Code, prompts, saved outputs, and reproduction scripts are available at https://github.com/louiswang524/FirstResearch.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-07-06"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "PatchOptic for Shared-State LLM Workflows with Projected Views and Verified Structured Updates",
+      "authors": [
+        "Zhaoyu Bai",
+        "Jiaqi Cai"
+      ],
+      "abstract": "Agentic workflows often operate over shared, structured state. Because LLM context windows are limited, each model invocation is typically shown only the state fragment needed for the current workflow step, a pattern commonly known as progressive disclosure. Modern systems construct such model-facing views using grep-like keyword search, retrieval-augmented generation (RAG), abstract-syntax-tree (AST) queries, and task-specific agent skills. These methods make the read side manageable, but they do not define when a locally proposed rewrite is valid after it is applied back to the full state. The missing piece is a contract between local updates and global validity. We introduce PatchOptic, an optic-inspired interface for shared-state LLM workflows. Optics are compositional bidirectional accessors that describe how views of structured data are read and updated. PatchOptic borrows this view/update intuition and realizes it through projected reads and verified structured patches. Each workflow step declares a projected read view, an authorized write region, and a patch-source region. Beyond runtime enforcement, the same declaration yields a path-level footprint that supports delegation, sub-workflow composition, and static certificates for reordering independent steps within the same phase. We evaluate this design with PatchBench, a benchmark with 46 cases across domains. The results show that projected reads reduce reported leakage and token cost while preserving accepted-output quality under the strong actor. Runtime verification blocks declared workflow-contract violations before commit, and patch-read enforcement rejects compromised patch artifacts that use hidden sources.",
+      "url": "http://arxiv.org/abs/2607.05483v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05483v1",
+      "arxiv_id": "2607.05483",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Agentic workflows often operate over shared, structured state. Because LLM context windows are limited, each model invocation is typically shown only the state fragment needed for the current workflow step, a pattern commonly known as progressive disclosure. Modern systems construct such model-facing views using grep-like keyword search, retrieval-augmented generation (RAG), abstract-syntax-tree (AST) queries, and task-specific agent skills. These methods make the read side manageable, but they do not define when a locally proposed rewrite is valid after it is applied back to the full state. The missing piece is a contract between local updates and global validity. We introduce PatchOptic, an optic-inspired interface for shared-state LLM workflows. Optics are compositional bidirectional accessors that describe how views of structured data are read and updated. PatchOptic borrows this view/update intuition and realizes it through projected reads and verified structured patches. Each workflow step declares a projected read view, an authorized write region, and a patch-source region. Beyond runtime enforcement, the same declaration yields a path-level footprint that supports delegation, sub-workflow composition, and static certificates for reordering independent steps within the same phase. We evaluate this design with PatchBench, a benchmark with 46 cases across domains. The results show that projected reads reduce reported leakage and token cost while preserving accepted-output quality under the strong actor. Runtime verification blocks declared workflow-contract violations before commit, and patch-read enforcement rejects compromised patch artifacts that use hidden sources.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-07-06"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Decision Protocols in Multi-Agent Large Language Model Conversations",
+      "authors": [
+        "Lars Benedikt Kaesberg"
+      ],
+      "abstract": "Improving the task performance of Large Language Models (LLMs) is essential, yet scaling these models faces significant challenges such as diminishing returns and high costs. Multi-Agent Systems (MAS) offer a promising solution by distributing tasks among specialized agents to improve the overall task performance. This can reduce training costs at the expense of increased test time due to the discussion and decision-making process. The decision protocol is a critical component of MAS because it specifies how multiple agents collaborate to create a final solution. This thesis introduces the Multi-Agent LLM (MALLM) framework, which implements and evaluates various decision protocols, namely voting, consensus, and judge decision mechanisms, to simulate multi-agent discussions for conversational task solving. Unlike previous work that used a single decision protocol or tested them on limited datasets, this study systematically examines their impact on a diverse set of tasks, ranging from knowledge-based datasets (MMLU, MMLU-Pro, GPQA) and logic-based datasets (StrategyQA, MuSR, Math-lvl-5, SQuAD 2.0). The results indicate that consensus protocols excel in knowledge-intensive domains while voting and judge protocols are more effective for logic-based tasks. Increasing response diversity through independent solution generation improves decision quality, while changes in information access during the decision process have minimal impact.",
+      "url": "http://arxiv.org/abs/2607.05477v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05477v1",
+      "arxiv_id": "2607.05477",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Improving the task performance of Large Language Models (LLMs) is essential, yet scaling these models faces significant challenges such as diminishing returns and high costs. Multi-Agent Systems (MAS) offer a promising solution by distributing tasks among specialized agents to improve the overall task performance. This can reduce training costs at the expense of increased test time due to the discussion and decision-making process. The decision protocol is a critical component of MAS because it specifies how multiple agents collaborate to create a final solution. This thesis introduces the Multi-Agent LLM (MALLM) framework, which implements and evaluates various decision protocols, namely voting, consensus, and judge decision mechanisms, to simulate multi-agent discussions for conversational task solving. Unlike previous work that used a single decision protocol or tested them on limited datasets, this study systematically examines their impact on a diverse set of tasks, ranging from knowledge-based datasets (MMLU, MMLU-Pro, GPQA) and logic-based datasets (StrategyQA, MuSR, Math-lvl-5, SQuAD 2.0). The results indicate that consensus protocols excel in knowledge-intensive domains while voting and judge protocols are more effective for logic-based tasks. Increasing response diversity through independent solution generation improves decision quality, while changes in information access during the decision process have minimal impact.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-07-06"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://openalex.org/W7163572035",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Systematic Optimization of LC-MS/MS Acquisition Parameters for untargeted proteomics on an Agilent 1290 Infinity II UHPLC coupled to 6545XT Q-TOF part-1",
+      "authors": [
+        "Pooja Doshi",
+        "Vikas Patidar",
+        "Snehal Bagatharia",
+        "Ishan Raval"
+      ],
+      "abstract": "This dataset contains zipped archives of raw .d files recorded on Agilent 6545XT",
+      "url": "https://doi.org/10.5281/zenodo.20322078",
+      "pdf_url": "https://doi.org/10.5281/zenodo.20322078",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.20322078",
+      "score": 0.5,
+      "tldr": "This dataset contains zipped archives of raw .d files recorded on Agilent 6545XT",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Advanced optimization methods for interpretable machine learning models and their applications in chemical engineering",
+      "authors": [
+        "Jiayang Ren"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/94391",
+      "pdf_url": "http://hdl.handle.net/2429/94391",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0452516",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Prompt-to-Paper: Agentic AI System for Bioinformatics",
+      "Federated Physics-Grounded Reinforcement Learning for Distributed Stability Control in Smart Grids",
+      "FirstResearch: Auditable Question Formation for LLM Scientific Discovery Agents",
+      "PatchOptic for Shared-State LLM Workflows with Projected Views and Verified Structured Updates",
+      "Decision Protocols in Multi-Agent Large Language Model Conversations"
+    ],
+    "hugging_face": [
+      "Prompt-to-Paper: Agentic AI System for Bioinformatics",
+      "Federated Physics-Grounded Reinforcement Learning for Distributed Stability Control in Smart Grids",
+      "FirstResearch: Auditable Question Formation for LLM Scientific Discovery Agents",
+      "PatchOptic for Shared-State LLM Workflows with Projected Views and Verified Structured Updates",
+      "Decision Protocols in Multi-Agent Large Language Model Conversations"
+    ],
+    "papers_with_code": [
+      "Prompt-to-Paper: Agentic AI System for Bioinformatics",
+      "Federated Physics-Grounded Reinforcement Learning for Distributed Stability Control in Smart Grids",
+      "FirstResearch: Auditable Question Formation for LLM Scientific Discovery Agents",
+      "PatchOptic for Shared-State LLM Workflows with Projected Views and Verified Structured Updates",
+      "Decision Protocols in Multi-Agent Large Language Model Conversations"
+    ]
+  }
+}
