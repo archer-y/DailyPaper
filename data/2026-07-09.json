@@ -1,0 +1,288 @@
+{
+  "date": "2026-07-09",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "CILC: Cryptographically-secure Inter-agent Loop Closure Candidate Detection for Multi-Agent Collaborative SLAM",
+      "authors": [
+        "Andrew Fishberg",
+        "Yixuan Jia",
+        "Jonathan P. How"
+      ],
+      "abstract": "Multi-agent Simultaneous Localization and Mapping (SLAM) and collaborative SLAM (CSLAM) require robots to continuously exchange global descriptors (GDs) to detect inter-agent loop closures (ILCs). While encrypted radios protect this traffic from external eavesdroppers, they offer no protection against a compromised swarm member. We show this threat is concrete by demonstrating how a corrupted agent can reconstruct approximations of an honest agent's imagery and trajectory from its public GD broadcasts. To address this, we propose CILC (Cryptographically-secure Inter-agent Loop Closure candidate detection), a first-of-its-kind system leveraging Secure Multi-Party Computation (SMPC) to detect ILC candidates without exchanging GDs in the clear. Rather than securing the entire CSLAM pipeline, we apply SMPC only to ILC candidate detection (i.e., GD similarity comparison), a privacy-sensitive yet computationally lightweight step, yielding an advantageous privacy-to-overhead trade-off. We validate in both simulation and hardware experiments that CILC remains real-time and communication-feasible across multimodal GDs (visual and LiDAR), while mitigating information leakage to a compromised swarm agent.",
+      "url": "http://arxiv.org/abs/2607.06700v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06700v1",
+      "arxiv_id": "2607.06700",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Multi-agent Simultaneous Localization and Mapping (SLAM) and collaborative SLAM (CSLAM) require robots to continuously exchange global descriptors (GDs) to detect inter-agent loop closures (ILCs). While encrypted radios protect this traffic from external eavesdroppers, they offer no protection against a compromised swarm member. We show this threat is concrete by demonstrating how a corrupted agent can reconstruct approximations of an honest agent's imagery and trajectory from its public GD broadcasts. To address this, we propose CILC (Cryptographically-secure Inter-agent Loop Closure candidate detection), a first-of-its-kind system leveraging Secure Multi-Party Computation (SMPC) to detect ILC candidates without exchanging GDs in the clear. Rather than securing the entire CSLAM pipeline, we apply SMPC only to ILC candidate detection (i.e., GD similarity comparison), a privacy-sensitive yet computationally lightweight step, yielding an advantageous privacy-to-overhead trade-off. We validate in both simulation and hardware experiments that CILC remains real-time and communication-feasible across multimodal GDs (visual and LiDAR), while mitigating information leakage to a compromised swarm agent.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-07-07"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "TriRoute: Unified Learned Routing for Joint Adaptive Attention, Experts, and KV-Cache Allocation",
+      "authors": [
+        "Andrii Balashov",
+        "Olena Ponomarova"
+      ],
+      "abstract": "Conditional computation can decouple language model quality from per-token inference cost, yet leading techniques act on a single axis in isolation: Mixture-of-Experts (MoE) sparsifies the FFN, Mixture-of-Depths (MoD) skips whole transformer blocks, and KV-cache quantization compresses attention memory. We argue these three decisions (attention resolution, expert selection, and cache bit-width) are strongly coupled and should be made jointly: a token rare enough to warrant full attention may also need high-precision caching regardless of which expert processes it. We introduce TriRoute, a single lightweight controller shared across all three axes that, for every token at every layer, emits a coordinated policy: (i) an attention mode (skip/local/full), (ii) a sparse set of FFN experts (with a null expert recovering MoD), and (iii) a KV-cache bit-width. The controller trains end-to-end via a heterogeneous relaxation (Gumbel-Softmax with straight-through estimation for categorical decisions and load-balanced top-k gating for experts) under a Lagrangian budget constraint that turns the average compute and memory cost into a controllable knob. We identify a cross-axis routing-collapse cascade in naive joint training, where collapse on one axis propagates to the others, and address it with per-axis normalization and a coupling-aware balancing loss. On decoder-only models from 160M to 1.3B parameters at compute-optimal token counts, TriRoute Pareto-dominates the best independent MoD+MoE+KV-quantization combination at matched inference FLOPs and memory, while better preserving tail-case robustness on rare entities, code, and arithmetic that pure perplexity optimization erodes. Post-hoc analysis reveals interpretable structure: the controller allocates full attention and high-precision cache to sentence-initial positions, rare subwords, and named entities, while cheaply routing function words.",
+      "url": "http://arxiv.org/abs/2607.06601v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06601v1",
+      "arxiv_id": "2607.06601",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Conditional computation can decouple language model quality from per-token inference cost, yet leading techniques act on a single axis in isolation: Mixture-of-Experts (MoE) sparsifies the FFN, Mixture-of-Depths (MoD) skips whole transformer blocks, and KV-cache quantization compresses attention memory. We argue these three decisions (attention resolution, expert selection, and cache bit-width) are strongly coupled and should be made jointly: a token rare enough to warrant full attention may also need high-precision caching regardless of which expert processes it. We introduce TriRoute, a single lightweight controller shared across all three axes that, for every token at every layer, emits a coordinated policy: (i) an attention mode (skip/local/full), (ii) a sparse set of FFN experts (with a null expert recovering MoD), and (iii) a KV-cache bit-width. The controller trains end-to-end via a heterogeneous relaxation (Gumbel-Softmax with straight-through estimation for categorical decisions and load-balanced top-k gating for experts) under a Lagrangian budget constraint that turns the average compute and memory cost into a controllable knob. We identify a cross-axis routing-collapse cascade in naive joint training, where collapse on one axis propagates to the others, and address it with per-axis normalization and a coupling-aware balancing loss. On decoder-only models from 160M to 1.3B parameters at compute-optimal token counts, TriRoute Pareto-dominates the best independent MoD+MoE+KV-quantization combination at matched inference FLOPs and memory, while better preserving tail-case robustness on rare entities, code, and arithmetic that pure perplexity optimization erodes. Post-hoc analysis reveals interpretable structure: the controller allocates full attention and high-precision cache to sentence-initial positions, rare subwords, and named entities, while cheaply routing function words.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-07-07"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "D2PO: Optimizing Diffusion Samplers via Dynamic Preference",
+      "authors": [
+        "Jinkyu Kim",
+        "Jinyoung Choi",
+        "Bohyung Han"
+      ],
+      "abstract": "We propose D2PO (Dynamic Direct Preference Optimization), a principled framework for optimizing diffusion sampling policies with respect to timestep schedules and classifier-free guidance (CFG) weights. Our work is motivated by a fundamental limitation of existing student-teacher regression frameworks; low-NFE student samplers are trained to mimic high-NFEteachers, often sacrificing high-frequency texture fidelity while preserving coarse global structures, thereby misaligning the sampler with perceptual quality. D2PO addresses this challenge by reformulating sampler optimization as a preference-based alignment problem, leveraging the Direct Preference Optimization (DPO) framework. To make DPO applicable to diffusion samplers, we model the sampling policy as an energy-based model (EBM), transforming preference comparisons into tractable energy differences. We further introduce a novel energy formulation derived directly from the pretrained score network, enabling preference evaluation in perturbed spaces that jointly capture structural consistency and fine-grained details. Moreover, we introduce dynamic preferences, where the preferred samples used for alignment progressively improve as the sampling policies are learned. This self-improving mechanism replaces rigid static teacher supervision with an iterative, preference-guided refinement process, providing progressively stronger alignment signals. Extensive experiments demonstrate that D2PO aligns diffusion samplers with perceptual quality more faithfully, unlocking the full potential of high-quality teachers and consistently outperforming conventional regression-based schedulers under low-NFE constraints.",
+      "url": "http://arxiv.org/abs/2607.06609v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06609v1",
+      "arxiv_id": "2607.06609",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "We propose D2PO (Dynamic Direct Preference Optimization), a principled framework for optimizing diffusion sampling policies with respect to timestep schedules and classifier-free guidance (CFG) weights. Our work is motivated by a fundamental limitation of existing student-teacher regression frameworks; low-NFE student samplers are trained to mimic high-NFEteachers, often sacrificing high-frequency texture fidelity while preserving coarse global structures, thereby misaligning the sampler with perceptual quality. D2PO addresses this challenge by reformulating sampler optimization as a preference-based alignment problem, leveraging the Direct Preference Optimization (DPO) framework. To make DPO applicable to diffusion samplers, we model the sampling policy as an energy-based model (EBM), transforming preference comparisons into tractable energy differences. We further introduce a novel energy formulation derived directly from the pretrained score network, enabling preference evaluation in perturbed spaces that jointly capture structural consistency and fine-grained details. Moreover, we introduce dynamic preferences, where the preferred samples used for alignment progressively improve as the sampling policies are learned. This self-improving mechanism replaces rigid static teacher supervision with an iterative, preference-guided refinement process, providing progressively stronger alignment signals. Extensive experiments demonstrate that D2PO aligns diffusion samplers with perceptual quality more faithfully, unlocking the full potential of high-quality teachers and consistently outperforming conventional regression-based schedulers under low-NFE constraints.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-07-07"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Does Demand Response Increase Vulnerability to Cyber Attacks by Adversarial Data Modifications?",
+      "authors": [
+        "Clemens Kortmann",
+        "Eike Cramer"
+      ],
+      "abstract": "Adversarial attacks are crafted data manipulations that aim to deteriorate the outcomes of prediction or decision-making algorithms. In the energy systems literature, adversarial attacks have been studied with a focus on problems regarding the electricity grid. Such problems include forecasting and grid state estimation, where adversarial attacks are also known as false data injection attacks. Only few studies have analyzed the potential impact that adversarial attacks have on the demand side. We analyze how manipulated price forecasts impact the decision-making in industrial demand response. To this end, we design adversarial attacks that aim to deteriorate the output of electricity price forecasting models and solve scheduling optimization problems of energy-intensive production processes using the distorted price forecasts. We make use of a generalized process model to investigate the vulnerability to adversarial attacks for a range of production scheduling problems with different levels of process flexibility. We find that adversarial attacks can erode the profits gained from demand response. However, when perturbations are limited in extent (so that they are hard to detect by the human user), demand response preserves about 90\\% of its financial advantage compared to steady-state process operation. Further, we find that the impact of adversarial attacks on demand response does not only depend on the magnitude of the perturbations but rather on the orientation of the adversarial perturbations. Therefore, we argue that attack analyses should explicitly incorporate the sensitivities of scheduling optimization models into the attack design to enable more rigorous assessments of decision-making under adversarial attacks.",
+      "url": "http://arxiv.org/abs/2607.06632v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06632v1",
+      "arxiv_id": "2607.06632",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Adversarial attacks are crafted data manipulations that aim to deteriorate the outcomes of prediction or decision-making algorithms. In the energy systems literature, adversarial attacks have been studied with a focus on problems regarding the electricity grid. Such problems include forecasting and grid state estimation, where adversarial attacks are also known as false data injection attacks. Only few studies have analyzed the potential impact that adversarial attacks have on the demand side. We analyze how manipulated price forecasts impact the decision-making in industrial demand response. To this end, we design adversarial attacks that aim to deteriorate the output of electricity price forecasting models and solve scheduling optimization problems of energy-intensive production processes using the distorted price forecasts. We make use of a generalized process model to investigate the vulnerability to adversarial attacks for a range of production scheduling problems with different levels of process flexibility. We find that adversarial attacks can erode the profits gained from demand response. However, when perturbations are limited in extent (so that they are hard to detect by the human user), demand response preserves about 90\\% of its financial advantage compared to steady-state process operation. Further, we find that the impact of adversarial attacks on demand response does not only depend on the magnitude of the perturbations but rather on the orientation of the adversarial perturbations. Therefore, we argue that attack analyses should explicitly incorporate the sensitivities of scheduling optimization models into the attack design to enable more rigorous assessments of decision-making under adversarial attacks.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-07-07"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "The Approximation Ratio for the Risk of Myopic Bayesian Active Learning for Linear Regression",
+      "authors": [
+        "Stephen Mussmann"
+      ],
+      "abstract": "Active learning studies the fundamental question: what data should we choose to observe? The greedy algorithm in optimal experiment design is a common heuristic and also equivalent to myopic Bayesian active learning for linear regression, the common framework where long-term planning is replaced with the one-step optimal choice. In this work, we prove a first-of-its-kind approximation ratio for the greedy algorithm's risk that is tight up to an absolute constant. The approximation ratio is linear in the maximum initial leverage score (MILS), a newly identified quantity fundamental to the greedy algorithm's performance. Finally, we illustrate the results with simple numerical simulations.",
+      "url": "http://arxiv.org/abs/2607.06642v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06642v1",
+      "arxiv_id": "2607.06642",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Active learning studies the fundamental question: what data should we choose to observe? The greedy algorithm in optimal experiment design is a common heuristic and also equivalent to myopic Bayesian active learning for linear regression, the common framework where long-term planning is replaced with the one-step optimal choice. In this work, we prove a first-of-its-kind approximation ratio for the greedy algorithm's risk that is tight up to an absolute constant. The approximation ratio is linear in the maximum initial leverage score (MILS), a newly identified quantity fundamental to the greedy algorithm's performance. Finally, we illustrate the results with simple numerical simulations.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-07-07"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://openalex.org/W7163572035",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Systematic Optimization of LC-MS/MS Acquisition Parameters for untargeted proteomics on an Agilent 1290 Infinity II UHPLC coupled to 6545XT Q-TOF part-1",
+      "authors": [
+        "Pooja Doshi",
+        "Vikas Patidar",
+        "Snehal Bagatharia",
+        "Ishan Raval"
+      ],
+      "abstract": "This dataset contains zipped archives of raw .d files recorded on Agilent 6545XT",
+      "url": "https://doi.org/10.5281/zenodo.20322078",
+      "pdf_url": "https://doi.org/10.5281/zenodo.20322078",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.20322078",
+      "score": 0.5,
+      "tldr": "This dataset contains zipped archives of raw .d files recorded on Agilent 6545XT",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Advanced optimization methods for interpretable machine learning models and their applications in chemical engineering",
+      "authors": [
+        "Jiayang Ren"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/94391",
+      "pdf_url": "http://hdl.handle.net/2429/94391",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0452516",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "CILC: Cryptographically-secure Inter-agent Loop Closure Candidate Detection for Multi-Agent Collaborative SLAM",
+      "TriRoute: Unified Learned Routing for Joint Adaptive Attention, Experts, and KV-Cache Allocation",
+      "D2PO: Optimizing Diffusion Samplers via Dynamic Preference",
+      "Does Demand Response Increase Vulnerability to Cyber Attacks by Adversarial Data Modifications?",
+      "The Approximation Ratio for the Risk of Myopic Bayesian Active Learning for Linear Regression"
+    ],
+    "hugging_face": [
+      "CILC: Cryptographically-secure Inter-agent Loop Closure Candidate Detection for Multi-Agent Collaborative SLAM",
+      "TriRoute: Unified Learned Routing for Joint Adaptive Attention, Experts, and KV-Cache Allocation",
+      "D2PO: Optimizing Diffusion Samplers via Dynamic Preference",
+      "Does Demand Response Increase Vulnerability to Cyber Attacks by Adversarial Data Modifications?",
+      "The Approximation Ratio for the Risk of Myopic Bayesian Active Learning for Linear Regression"
+    ],
+    "papers_with_code": [
+      "CILC: Cryptographically-secure Inter-agent Loop Closure Candidate Detection for Multi-Agent Collaborative SLAM",
+      "TriRoute: Unified Learned Routing for Joint Adaptive Attention, Experts, and KV-Cache Allocation",
+      "D2PO: Optimizing Diffusion Samplers via Dynamic Preference",
+      "Does Demand Response Increase Vulnerability to Cyber Attacks by Adversarial Data Modifications?",
+      "The Approximation Ratio for the Risk of Myopic Bayesian Active Learning for Linear Regression"
+    ]
+  }
+}
