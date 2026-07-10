@@ -1,0 +1,304 @@
+{
+  "date": "2026-07-10",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Collective Intelligence with Foundation Models",
+      "authors": [
+        "J. de Curtò",
+        "I. de Zarzà"
+      ],
+      "abstract": "As foundation models grow in scale and diversity, coordinating multiple models into cooperative reasoning systems offers a path toward safer, more reliable AI. This chapter presents a multi-agent framework where solver models generate independent drafts, each undergoes structured critique and revision by a critic agent, and an aggregator agent synthesizes a final consensus solution. A scoring module provides semantic, numerical, and procedural evaluation across all agents. Through ablation studies on a benchmark spanning calculus, physics, chemistry, biology, economics, optimization, statistics, and mathematics, we isolate the contributions of framework architecture versus model diversity. We compare four configurations: (1) Individual Baseline, (2) Homogeneous Framework using one shared model, (3) Redundant Homogeneous Solvers using multiple instances of the same model, and (4) Heterogeneous Framework with diverse specialized models. Results show that while framework structure and redundant sampling yield modest gains, model heterogeneity is the critical factor driving substantial performance improvements. The heterogeneous configuration achieves superior step-wise accuracy (0.64 vs. 0.54 for individual models; 2.3x improvement over homogeneous configurations) with reduced variance across categories and difficulty levels. Step-wise reasoning quality (correctness of intermediate steps, not just final answers) improves dramatically only with model diversity, showing that heterogeneous agents provide complementary error detection and reasoning refinement essential for explainability and auditability. We discuss architectural principles, evaluation methodology, and implications for Global Applied AI, showing how heterogeneous multi-agent coordination supports transparent, auditable, high-confidence decision-making across scientific and industrial domains.",
+      "url": "http://arxiv.org/abs/2607.07729v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07729v1",
+      "arxiv_id": "2607.07729",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "As foundation models grow in scale and diversity, coordinating multiple models into cooperative reasoning systems offers a path toward safer, more reliable AI. This chapter presents a multi-agent framework where solver models generate independent drafts, each undergoes structured critique and revision by a critic agent, and an aggregator agent synthesizes a final consensus solution. A scoring module provides semantic, numerical, and procedural evaluation across all agents. Through ablation studies on a benchmark spanning calculus, physics, chemistry, biology, economics, optimization, statistics, and mathematics, we isolate the contributions of framework architecture versus model diversity. We compare four configurations: (1) Individual Baseline, (2) Homogeneous Framework using one shared model, (3) Redundant Homogeneous Solvers using multiple instances of the same model, and (4) Heterogeneous Framework with diverse specialized models. Results show that while framework structure and redundant sampling yield modest gains, model heterogeneity is the critical factor driving substantial performance improvements. The heterogeneous configuration achieves superior step-wise accuracy (0.64 vs. 0.54 for individual models; 2.3x improvement over homogeneous configurations) with reduced variance across categories and difficulty levels. Step-wise reasoning quality (correctness of intermediate steps, not just final answers) improves dramatically only with model diversity, showing that heterogeneous agents provide complementary error detection and reasoning refinement essential for explainability and auditability. We discuss architectural principles, evaluation methodology, and implications for Global Applied AI, showing how heterogeneous multi-agent coordination supports transparent, auditable, high-confidence decision-making across scientific and industrial domains.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-07-06"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Scalable and Trustworthy Earth Observation Foundation Models",
+      "authors": [
+        "Syed Usama Imtiaz",
+        "Mitra Nasr Azadani",
+        "Nasrin Alamdari"
+      ],
+      "abstract": "Foundation models (FMs) have transformed machine learning from isolated task-specific model development toward general-purpose models pretrained on broad data and adapted to multiple downstream tasks. Earth observation (EO) is an important domain for this paradigm because satellite and airborne archives are large, high-revisit, and increasingly multimodal, while reliable field labels are often sparse. Remote sensing foundation models (RSFMs) cannot be transferred reliably/optimally without domain-specific adaptation. This is because EO data are governed by measurement physics and operational decision constraints. This chapter reviews the design principles arising from these domain-specific constraints. It first defines the FMs paradigm in remote sensing (RS), then synthesizes the current model landscape, pretraining objectives, architecture designs, downstream adaptation and trustworthiness requirements. The chapter also incorporates recent benchmark evidence showing that no single geospatial foundation model is universally best and that inconsistent evaluation remains a major issue to fair comparison and reliable deployment. In addition, two brief environmental monitoring case studies; physics-informed spectral targeted masking for harmful algal bloom prediction and reinforcement learning for adaptive environmental monitoring station selection to illustrate the FMs domain-guided principles in practice. This chapter posits that next-generation RSFMs should be evaluated not only by benchmark accuracy, but also by modality-aware transfer and physically plausible representations for trustworthy EO decisions.",
+      "url": "http://arxiv.org/abs/2607.07758v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07758v1",
+      "arxiv_id": "2607.07758",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Foundation models (FMs) have transformed machine learning from isolated task-specific model development toward general-purpose models pretrained on broad data and adapted to multiple downstream tasks. Earth observation (EO) is an important domain for this paradigm because satellite and airborne archives are large, high-revisit, and increasingly multimodal, while reliable field labels are often sparse. Remote sensing foundation models (RSFMs) cannot be transferred reliably/optimally without domain-specific adaptation. This is because EO data are governed by measurement physics and operational decision constraints. This chapter reviews the design principles arising from these domain-specific constraints. It first defines the FMs paradigm in remote sensing (RS), then synthesizes the current model landscape, pretraining objectives, architecture designs, downstream adaptation and trustworthiness requirements. The chapter also incorporates recent benchmark evidence showing that no single geospatial foundation model is universally best and that inconsistent evaluation remains a major issue to fair comparison and reliable deployment. In addition, two brief environmental monitoring case studies; physics-informed spectral targeted masking for harmful algal bloom prediction and reinforcement learning for adaptive environmental monitoring station selection to illustrate the FMs domain-guided principles in practice. This chapter posits that next-generation RSFMs should be evaluated not only by benchmark accuracy, but also by modality-aware transfer and physically plausible representations for trustworthy EO decisions.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-07-08"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Agentic AI and Retrieval-Augmented Models in Straight-Through Underwriting",
+      "authors": [
+        "Robert Richardson",
+        "Josh Meyers",
+        "Brian Hartman",
+        "David Sandberg"
+      ],
+      "abstract": "Artificial intelligence (AI) is beginning to reshape actuarial practice, particularly in domains that require reasoning over unstructured documents, heterogeneous data sources, and regulated decision workflows. Actuaries now face a design space that ranges from traditional rule-based automation to large language models (LLMs), retrieval-augmented generation (RAG), and multi-agent ``agentic'' systems that plan, retrieve, call tools, and reflect. This paper examines how these emerging architectures can support actuarial priorities such as transparency, auditability, and human-in-the-loop governance, with a focus on straight-through decision processes. To make these ideas concrete, we develop and analyze an agentic AI framework for straight-through underwriting of small commercial Business Owner Policies (BOPs). We construct a synthetic but realistic experimental environment and compare three underwriting pipelines: (i) a single-LLM baseline, (ii) a naive RAG system, and (iii) a multi-agent ``Agentic RAG'' pipeline that combines targeted retrieval, third-party data checks, and explicit multi-step rule evaluation. The agentic system performs best overall, with the largest gains in multi-step and missing-information scenarios, where structured retrieval and reflection help the model avoid unsupported straight-through decisions.",
+      "url": "http://arxiv.org/abs/2607.07858v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07858v1",
+      "arxiv_id": "2607.07858",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Artificial intelligence (AI) is beginning to reshape actuarial practice, particularly in domains that require reasoning over unstructured documents, heterogeneous data sources, and regulated decision workflows. Actuaries now face a design space that ranges from traditional rule-based automation to large language models (LLMs), retrieval-augmented generation (RAG), and multi-agent ``agentic'' systems that plan, retrieve, call tools, and reflect. This paper examines how these emerging architectures can support actuarial priorities such as transparency, auditability, and human-in-the-loop governance, with a focus on straight-through decision processes. To make these ideas concrete, we develop and analyze an agentic AI framework for straight-through underwriting of small commercial Business Owner Policies (BOPs). We construct a synthetic but realistic experimental environment and compare three underwriting pipelines: (i) a single-LLM baseline, (ii) a naive RAG system, and (iii) a multi-agent ``Agentic RAG'' pipeline that combines targeted retrieval, third-party data checks, and explicit multi-step rule evaluation. The agentic system performs best overall, with the largest gains in multi-step and missing-information scenarios, where structured retrieval and reflection help the model avoid unsupported straight-through decisions.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-07-08"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Context Graphs for Proactive Enterprise Agents",
+      "authors": [
+        "Avinash Kumar"
+      ],
+      "abstract": "Retrieval-Augmented Generation (RAG) and agentic frameworks have advanced enterprise AI considerably, yet agents remain fundamentally reactive: they wait for a human query before acting. This paper argues that genuine enterprise productivity gains require proactive agents: systems that surface relevant, actionable information to workers before they ask. We propose the Context Graph, a live relational data structure that models enterprise entities, their relationships, and state transitions over time. Built on this graph, we define a Delta Detection Engine that continuously monitors state changes, a Proactivity Scorer that ranks candidate insights by urgency, relevance, and persona-fit, and a Surfacing Layer powered by an LLM that delivers ranked notifications with grounded explanations. We formalize each component, derive a unified Proactivity Score function, and provide a complete end-to-end Python implementation using NetworkX and the Anthropic Claude API. Evaluation across three generic enterprise case studies (contract lifecycle management, engineering incident response, and sales pipeline hygiene) demonstrates that context-graph-driven proactivity achieves Precision@5 of 0.83, a false positive rate of 0.11, and reduces mean time to surface from 47 minutes (reactive baseline) to under 30 second.",
+      "url": "http://arxiv.org/abs/2607.07721v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07721v1",
+      "arxiv_id": "2607.07721",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Retrieval-Augmented Generation (RAG) and agentic frameworks have advanced enterprise AI considerably, yet agents remain fundamentally reactive: they wait for a human query before acting. This paper argues that genuine enterprise productivity gains require proactive agents: systems that surface relevant, actionable information to workers before they ask. We propose the Context Graph, a live relational data structure that models enterprise entities, their relationships, and state transitions over time. Built on this graph, we define a Delta Detection Engine that continuously monitors state changes, a Proactivity Scorer that ranks candidate insights by urgency, relevance, and persona-fit, and a Surfacing Layer powered by an LLM that delivers ranked notifications with grounded explanations. We formalize each component, derive a unified Proactivity Score function, and provide a complete end-to-end Python implementation using NetworkX and the Anthropic Claude API. Evaluation across three generic enterprise case studies (contract lifecycle management, engineering incident response, and sales pipeline hygiene) demonstrates that context-graph-driven proactivity achieves Precision@5 of 0.83, a false positive rate of 0.11, and reduces mean time to surface from 47 minutes (reactive baseline) to under 30 second.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-07-04"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Jet-Long: Efficient Long-Context Extension with Dynamic Bifocal RoPE",
+      "authors": [
+        "Haozhan Tang",
+        "Zerui Wang",
+        "Yuxian Gu",
+        "Song Han",
+        "Han Cai"
+      ],
+      "abstract": "Modern LLMs are increasingly deployed in long-context applications such as retrieval-augmented generation, repository-level coding, and agentic workflows whose accumulated reasoning and tool traces routinely push the input an order of magnitude past the pretraining window, making zero-shot context extension the dominant deployment path for open-weight checkpoints. Most existing zero-shot methods fix a single rescaling factor up front, so an aggressive factor sacrifices short-context fidelity while a conservative one breaks down at long contexts. We propose Jet-Long, a tuning-free zero-shot method that pairs a local RoPE-faithful window with a long-range window whose rescaling factor adapts dynamically to the current sequence length, recovering the base model exactly at short inputs while extrapolating cleanly at long ones. An inclusion-exclusion attention merge and an on-the-fly RoPE correction rotation make the bifocal construction essentially free at inference; fused into a single CuTe kernel, long-context prefill reaches up to $1.39\\times$ FA2 throughput on H100 (approaching the Hopper-only FA4), and single-batch generation incurs $\\le 4\\%$ overhead at every length. On Qwen3-1.7B/4B/8B up to 128K context, Jet-Long leads RULER by $+4.79$/$+2.18$/$+2.03$~pp over the strongest baseline at 1.7B/4B/8B, achieves the best overall accuracy on HELMET-RAG (a benchmark identified by HELMET as the most efficient predictor of downstream long-context performance) and attains the lowest PG-19 perplexity. Jet-Long also generalizes to hybrid attention architectures such as Jet-Nemotron for further long-context improvement without retraining, and remains hyperparameter-resilient for ease of deployment.",
+      "url": "http://arxiv.org/abs/2607.07740v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07740v1",
+      "arxiv_id": "2607.07740",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Modern LLMs are increasingly deployed in long-context applications such as retrieval-augmented generation, repository-level coding, and agentic workflows whose accumulated reasoning and tool traces routinely push the input an order of magnitude past the pretraining window, making zero-shot context extension the dominant deployment path for open-weight checkpoints. Most existing zero-shot methods fix a single rescaling factor up front, so an aggressive factor sacrifices short-context fidelity while a conservative one breaks down at long contexts. We propose Jet-Long, a tuning-free zero-shot method that pairs a local RoPE-faithful window with a long-range window whose rescaling factor adapts dynamically to the current sequence length, recovering the base model exactly at short inputs while extrapolating cleanly at long ones. An inclusion-exclusion attention merge and an on-the-fly RoPE correction rotation make the bifocal construction essentially free at inference; fused into a single CuTe kernel, long-context prefill reaches up to $1.39\\times$ FA2 throughput on H100 (approaching the Hopper-only FA4), and single-batch generation incurs $\\le 4\\%$ overhead at every length. On Qwen3-1.7B/4B/8B up to 128K context, Jet-Long leads RULER by $+4.79$/$+2.18$/$+2.03$~pp over the strongest baseline at 1.7B/4B/8B, achieves the best overall accuracy on HELMET-RAG (a benchmark identified by HELMET as the most efficient predictor of downstream long-context performance) and attains the lowest PG-19 perplexity. Jet-Long also generalizes to hybrid attention architectures such as Jet-Nemotron for further long-context improvement without retraining, and remains hyperparameter-resilient for ease of deployment.",
+      "affiliations": null,
+      "code_urls": [
+        "https://github.com/jet-ai-projects/jet-long"
+      ],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5,
+        "hugging_face": {
+          "url": "https://huggingface.co/papers/2607.07740",
+          "upvotes": 4,
+          "submitted_by": null,
+          "summary": "Modern LLMs are increasingly deployed in long-context applications such as retrieval-augmented generation, repository-level coding, and agentic workflows whose accumulated reasoning and tool traces routinely push the input an order of magnitude past the pretraining window, making zero-shot context extension the dominant deployment path for open-weight checkpoints. Most existing zero-shot methods fix a single rescaling factor up front, so an aggressive factor sacrifices short-context fidelity while a conservative one breaks down at long contexts. We propose Jet-Long, a tuning-free zero-shot method that pairs a local RoPE-faithful window with a long-range window whose rescaling factor adapts dynamically to the current sequence length, recovering the base model exactly at short inputs while extrapolating cleanly at long ones. An inclusion-exclusion attention merge and an on-the-fly RoPE correction rotation make the bifocal construction essentially free at inference; fused into a single CuTe kernel, long-context prefill reaches up to 1.39times FA2 throughput on H100 (approaching the Hopper-only FA4), and single-batch generation incurs le 4% overhead at every length. On Qwen3-1.7B/4B/8B up to 128K context, Jet-Long leads RULER by +4.79/+2.18/+2.03~pp over the strongest baseline at 1.7B/4B/8B, achieves the best overall accuracy on HELMET-RAG (a benchmark identified by HELMET as the most efficient predictor of downstream long-context performance) and attains the lowest PG-19 perplexity. Jet-Long also generalizes to hybrid attention architectures such as Jet-Nemotron for further long-context improvement without retraining, and remains hyperparameter-resilient for ease of deployment.",
+          "linked_repos": {
+            "models": [],
+            "datasets": [],
+            "spaces": []
+          }
+        }
+      },
+      "published_date": "2026-07-08"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://openalex.org/W7163572035",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Code and Experimental Data for Feasibility-Oriented Dung Beetle Optimization for Collision-Constrained Robotic Path Planning",
+      "authors": [
+        "QIANKUN ZHOU",
+        "Xiaotong Lian",
+        "Yubin Lan",
+        "Wanjie Xiong"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "pdf_url": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "score": 1.0,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-07-05"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Collective Intelligence with Foundation Models",
+      "Scalable and Trustworthy Earth Observation Foundation Models",
+      "Agentic AI and Retrieval-Augmented Models in Straight-Through Underwriting",
+      "Context Graphs for Proactive Enterprise Agents",
+      "Jet-Long: Efficient Long-Context Extension with Dynamic Bifocal RoPE"
+    ],
+    "hugging_face": [
+      "Collective Intelligence with Foundation Models",
+      "Scalable and Trustworthy Earth Observation Foundation Models",
+      "Agentic AI and Retrieval-Augmented Models in Straight-Through Underwriting",
+      "Context Graphs for Proactive Enterprise Agents"
+    ],
+    "papers_with_code": [
+      "Collective Intelligence with Foundation Models",
+      "Scalable and Trustworthy Earth Observation Foundation Models",
+      "Agentic AI and Retrieval-Augmented Models in Straight-Through Underwriting",
+      "Context Graphs for Proactive Enterprise Agents",
+      "Jet-Long: Efficient Long-Context Extension with Dynamic Bifocal RoPE"
+    ]
+  }
+}
