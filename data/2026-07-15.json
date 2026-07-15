@@ -1,0 +1,299 @@
+{
+  "date": "2026-07-15",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "A Dynamic Scene Interaction Reasoning Framework for Scene-level Lane-Change Intention and Trajectory Prediction of Multiple Interacting Vehicles",
+      "authors": [
+        "Joshua Kofi Asamoah",
+        "Blessing Agyei Kyem",
+        "Eugene Denteh",
+        "Armstrong Aboah"
+      ],
+      "abstract": "Safe motion planning in advanced driver-assistance systems and autonomous vehicles requires an accurate understanding of how the surrounding traffic scene is likely to evolve. However, many existing lane-change prediction methods remain centered on a single target vehicle, while multi-agent forecasting approaches often describe scene evolution only through future positions and provide limited explicit information about the maneuver associated with each vehicle. This study proposes a dynamic scene graph attention framework that predicts the lane-change intention and future trajectory of every relevant vehicle within a local traffic scene. The scene is represented as a time-varying interaction graph in which vehicles are modeled as nodes and their spatial and kinematic relationships are encoded through explicit edge features. Temporal graph-attention message passing captures evolving inter-vehicle dependencies and pre-maneuver cues, while an intention-guided decoder links each predicted maneuver to its corresponding future motion. A scene-level consistency objective further encourages compatible multi-vehicle futures. Experiments on the NGSIM I-80, NGSIM US-101, and highD datasets demonstrate consistent improvements over competing baselines. DSiGAT achieves intention prediction accuracies of 90.12% and 90.97% on NGSIM I-80 and US-101, respectively, and reduces trajectory RMSE by up to 52.94% relative to the strongest baseline. It also produces lower inter-agent collision rates and joint displacement errors, indicating more coherent scene-level predictions. Ablation, sensitivity, robustness, and qualitative analyses further validate the contribution of the proposed components and the effectiveness of the scene-focused formulation.",
+      "url": "http://arxiv.org/abs/2607.09740v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.09740v1",
+      "arxiv_id": "2607.09740",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Safe motion planning in advanced driver-assistance systems and autonomous vehicles requires an accurate understanding of how the surrounding traffic scene is likely to evolve. However, many existing lane-change prediction methods remain centered on a single target vehicle, while multi-agent forecasting approaches often describe scene evolution only through future positions and provide limited explicit information about the maneuver associated with each vehicle. This study proposes a dynamic scene graph attention framework that predicts the lane-change intention and future trajectory of every relevant vehicle within a local traffic scene. The scene is represented as a time-varying interaction graph in which vehicles are modeled as nodes and their spatial and kinematic relationships are encoded through explicit edge features. Temporal graph-attention message passing captures evolving inter-vehicle dependencies and pre-maneuver cues, while an intention-guided decoder links each predicted maneuver to its corresponding future motion. A scene-level consistency objective further encourages compatible multi-vehicle futures. Experiments on the NGSIM I-80, NGSIM US-101, and highD datasets demonstrate consistent improvements over competing baselines. DSiGAT achieves intention prediction accuracies of 90.12% and 90.97% on NGSIM I-80 and US-101, respectively, and reduces trajectory RMSE by up to 52.94% relative to the strongest baseline. It also produces lower inter-agent collision rates and joint displacement errors, indicating more coherent scene-level predictions. Ablation, sensitivity, robustness, and qualitative analyses further validate the contribution of the proposed components and the effectiveness of the scene-focused formulation.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-07-02"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Closed-Loop Control with Rule-Aligned Small Language Models and Multi-Agent Self-Correction",
+      "authors": [
+        "Yuchen Wang",
+        "Javal Vyas",
+        "Tong Liu",
+        "Mehmet Mercangoz"
+      ],
+      "abstract": "A key step toward autonomous industrial operation is the ability to create and reconfigure control policies from natural-language requirement specifications, with minimal or no manual redesign. In this setting, policy generation by AI agents can be a credible path when paired with a plant-aware validator (e.g., a digital twin) that can check generated candidate actions before execution. However, practical deployment is constrained by inference latency and compute footprint: large cloud-based models are often too slow, opaque, or data-sensitive for edge closed-loop use. This work investigates whether a compact Small Language Model (SLM) can be retrained for control reasoning and embedded in a validator-guided correction loop. We use a Qwen2.5-1.5B model aligned via Group Relative Policy Optimization (GRPO), combined with (i) an action agent, (ii) a symbolic/digital-twin-style validation layer, and (iii) a reprompting agent that iteratively steers outputs toward valid actions. In randomized thermal-control simulations (30 experiments with 500 steps each), the framework achieves 91.5% average action-alignment accuracy (86.3%--100% across cases) at 3.84\\,s mean inference latency. Under symbolic re-mapping, it maintains a 95% in-range rate, indicating robust physical regulation despite reduced token-level agreement. These results support SLM+validator architectures as a practical path toward reconfigurable autonomous control at the edge.",
+      "url": "http://arxiv.org/abs/2607.09713v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.09713v1",
+      "arxiv_id": "2607.09713",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "A key step toward autonomous industrial operation is the ability to create and reconfigure control policies from natural-language requirement specifications, with minimal or no manual redesign. In this setting, policy generation by AI agents can be a credible path when paired with a plant-aware validator (e.g., a digital twin) that can check generated candidate actions before execution. However, practical deployment is constrained by inference latency and compute footprint: large cloud-based models are often too slow, opaque, or data-sensitive for edge closed-loop use. This work investigates whether a compact Small Language Model (SLM) can be retrained for control reasoning and embedded in a validator-guided correction loop. We use a Qwen2.5-1.5B model aligned via Group Relative Policy Optimization (GRPO), combined with (i) an action agent, (ii) a symbolic/digital-twin-style validation layer, and (iii) a reprompting agent that iteratively steers outputs toward valid actions. In randomized thermal-control simulations (30 experiments with 500 steps each), the framework achieves 91.5% average action-alignment accuracy (86.3%--100% across cases) at 3.84\\,s mean inference latency. Under symbolic re-mapping, it maintains a 95% in-range rate, indicating robust physical regulation despite reduced token-level agreement. These results support SLM+validator architectures as a practical path toward reconfigurable autonomous control at the edge.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-06-24"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "YUKTI: From Natural-Language Situations to Robust, Verifiable Decisions An Uncertainty-Typed Proposition IR, Assumption-Robust Pareto Frontiers, and a Regret Certificate",
+      "authors": [
+        "Suyash Mishra"
+      ],
+      "abstract": "Language models turn a worded situation into a numeric plan, and the dominant pipelines (NL4Opt, OptiMUS, ORLM, OR-LLM-Agent) commit to a single objective and point-valued coefficients, then solve once. For decisions that allocate real budget, effort, or clinical attention, that confidence is the failure mode: every objectified number is an assumption, and a plan optimal only if the guesses are exactly right is fragile -- mimicry of computation. YUKTI changes the target of autoformulation. Its representation is a typed-proposition graph whose relationships carry shape priors, coefficient uncertainty, and provenance. YUKTI routes each stage to an exact, nonlinear, or evolutionary solver; couples stages by a distributional Pareto hand-off; and introduces Assumption-Robust Pareto Frontiers (ARPF), resampling assumptions (including structural epsilon-contamination) to score how often each action survives (rho). We prove a bound making rho an exact factor of decision regret, add auditable traceability, and synthesize a benchmark-faithful data foundation when none exists (SRJANA). We validate three ways: under controlled misspecification the robust compromise cuts mean and tail regret by over 90% versus a naive point plan; on a regulated commercial decision we optimize inside a lawful action space and price the downside in euros; and on a real public dataset of 41,188 decisions an out-of-sample backtest beats the logged status quo by 34% and a naive point rule by 4% while reducing the optimizer's curse. The solvers are standard; we claim no benchmark-SOTA win. A head-to-head shows an LLM given the correct numbers, and single-objective optimization, both incur about 47x the held-out regret of YUKTI -- an LLM is a formulator, not a solver. Under long-range causal coupling, the forward hand-off becomes unsound, locating where it must become a backward-induction causal policy.",
+      "url": "http://arxiv.org/abs/2607.09706v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.09706v1",
+      "arxiv_id": "2607.09706",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Language models turn a worded situation into a numeric plan, and the dominant pipelines (NL4Opt, OptiMUS, ORLM, OR-LLM-Agent) commit to a single objective and point-valued coefficients, then solve once. For decisions that allocate real budget, effort, or clinical attention, that confidence is the failure mode: every objectified number is an assumption, and a plan optimal only if the guesses are exactly right is fragile -- mimicry of computation. YUKTI changes the target of autoformulation. Its representation is a typed-proposition graph whose relationships carry shape priors, coefficient uncertainty, and provenance. YUKTI routes each stage to an exact, nonlinear, or evolutionary solver; couples stages by a distributional Pareto hand-off; and introduces Assumption-Robust Pareto Frontiers (ARPF), resampling assumptions (including structural epsilon-contamination) to score how often each action survives (rho). We prove a bound making rho an exact factor of decision regret, add auditable traceability, and synthesize a benchmark-faithful data foundation when none exists (SRJANA). We validate three ways: under controlled misspecification the robust compromise cuts mean and tail regret by over 90% versus a naive point plan; on a regulated commercial decision we optimize inside a lawful action space and price the downside in euros; and on a real public dataset of 41,188 decisions an out-of-sample backtest beats the logged status quo by 34% and a naive point rule by 4% while reducing the optimizer's curse. The solvers are standard; we claim no benchmark-SOTA win. A head-to-head shows an LLM given the correct numbers, and single-objective optimization, both incur about 47x the held-out regret of YUKTI -- an LLM is a formulator, not a solver. Under long-range causal coupling, the forward hand-off becomes unsound, locating where it must become a backward-induction causal policy.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-06-22"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Transfer Learning Across Policy Regimes in Adaptive Multi-Agent Systems",
+      "authors": [
+        "Roberto Garrone"
+      ],
+      "abstract": "Policy models often assume that the relationship between a policy instrument and its outcome remains stable across institutional conditions. In adaptive socio-technical systems this assumption may fail: regulatory change can alter incentives, agents can respond strategically, and the mapping from policy variables to aggregate outcomes can change. This paper studies such regime change as a transfer-learning problem in adaptive multi-agent systems. A policy regime is represented as a learning problem induced by an observable input distribution and a target function mapping policy variables to outcomes. We compare a blank-slate learner that searches a flexible hypothesis class in the new regime with a transfer learner whose effective hypothesis class is restricted by structural knowledge from the previous regime. Transfer is beneficial when this restriction preserves the new target function while reducing effective complexity; it is harmful when the restriction excludes the new target and creates misspecification. A stylized emissions-regulation experimental environment and a dynamic ABM robustness experiment support the claim. When the target regime preserves an affine monotone tax-emissions relation, transfer improves empirical small-sample performance. When the target regime introduces a threshold break, the same transferred structure produces negative transfer: held-out error remains high, online prediction generates more mistakes, and repeated online streams show larger cumulative and final-window error under misspecification. The contribution is methodological: previous regulatory experience should be reused when it captures stable structural invariants, but treated cautiously when policy change alters the policy-outcome relationship.",
+      "url": "http://arxiv.org/abs/2607.09685v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.09685v1",
+      "arxiv_id": "2607.09685",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Policy models often assume that the relationship between a policy instrument and its outcome remains stable across institutional conditions. In adaptive socio-technical systems this assumption may fail: regulatory change can alter incentives, agents can respond strategically, and the mapping from policy variables to aggregate outcomes can change. This paper studies such regime change as a transfer-learning problem in adaptive multi-agent systems. A policy regime is represented as a learning problem induced by an observable input distribution and a target function mapping policy variables to outcomes. We compare a blank-slate learner that searches a flexible hypothesis class in the new regime with a transfer learner whose effective hypothesis class is restricted by structural knowledge from the previous regime. Transfer is beneficial when this restriction preserves the new target function while reducing effective complexity; it is harmful when the restriction excludes the new target and creates misspecification. A stylized emissions-regulation experimental environment and a dynamic ABM robustness experiment support the claim. When the target regime preserves an affine monotone tax-emissions relation, transfer improves empirical small-sample performance. When the target regime introduces a threshold break, the same transferred structure produces negative transfer: held-out error remains high, online prediction generates more mistakes, and repeated online streams show larger cumulative and final-window error under misspecification. The contribution is methodological: previous regulatory experience should be reused when it captures stable structural invariants, but treated cautiously when policy change alters the policy-outcome relationship.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5,
+        "semantic_scholar": {
+          "paper_id": "205ad3c2bb9d631fba940134cdc4cac599a1f7e3",
+          "url": "https://www.semanticscholar.org/paper/205ad3c2bb9d631fba940134cdc4cac599a1f7e3",
+          "citation_count": 0,
+          "reference_count": 19,
+          "influential_citation_count": 0,
+          "publication_date": "2026-06-15",
+          "tldr": "This paper compares a blank-slate learner that searches a flexible hypothesis class in the new regime with a transfer learner whose effective hypothesis class is restricted by structural knowledge from the previous regime, finding that transfer is beneficial when this restriction preserves the new target function while reducing effective complexity."
+        }
+      },
+      "published_date": "2026-06-15"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Prioritizing Search Space Regions in the Low Autocorrelation Binary Sequences Problem",
+      "authors": [
+        "Blaž Pšeničnik",
+        "Borko Bošković",
+        "Jan Popić",
+        "Janez Brest"
+      ],
+      "abstract": "Low autocorrelation binary sequences problem (LABS) is a hard combinatorial optimization challenge with important applications in communications, signal processing, and satellite navigation. This paper proposes a hybrid search framework that combines Thompson sampling with parallel self-avoiding walks to adaptively allocate computational effort across restriction classes of the LABS search space. By modeling partitions as arms in a multi-armed bandit setting, the proposed method dynamically shifts search resources toward partitions that empirically produce higher merit factors while maintaining exploration of less-sampled regions. The approach is further accelerated through GPU-parallel execution, shared posterior updates, efficient neighborhood evaluation, and a Bloom filter for cycle prevention. In addition, we use a two-stage optimization strategy that first searches constrained partitioned skew-symmetric spaces and then refines the best candidates in the unrestricted space. Experiments on long binary sequences show that the proposed method improves the previously best-known results for 35 sequence lengths in the range $450 \\le L \\le 527$ and for $L=573$. In particular, we report a new longest sequence with merit factor exceeding $8.0$, obtained for $L=451$. The results also show that Thompson sampling effectively prioritizes partitions with better observed performance, confirming the value of online, data-driven resource allocation in LABS optimization. Overall, the proposed framework provides a scalable and effective strategy for high-performance merit factor maximization.",
+      "url": "http://arxiv.org/abs/2607.09688v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.09688v1",
+      "arxiv_id": "2607.09688",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Low autocorrelation binary sequences problem (LABS) is a hard combinatorial optimization challenge with important applications in communications, signal processing, and satellite navigation. This paper proposes a hybrid search framework that combines Thompson sampling with parallel self-avoiding walks to adaptively allocate computational effort across restriction classes of the LABS search space. By modeling partitions as arms in a multi-armed bandit setting, the proposed method dynamically shifts search resources toward partitions that empirically produce higher merit factors while maintaining exploration of less-sampled regions. The approach is further accelerated through GPU-parallel execution, shared posterior updates, efficient neighborhood evaluation, and a Bloom filter for cycle prevention. In addition, we use a two-stage optimization strategy that first searches constrained partitioned skew-symmetric spaces and then refines the best candidates in the unrestricted space. Experiments on long binary sequences show that the proposed method improves the previously best-known results for 35 sequence lengths in the range $450 \\le L \\le 527$ and for $L=573$. In particular, we report a new longest sequence with merit factor exceeding $8.0$, obtained for $L=451$. The results also show that Thompson sampling effectively prioritizes partitions with better observed performance, confirming the value of online, data-driven resource allocation in LABS optimization. Overall, the proposed framework provides a scalable and effective strategy for high-performance merit factor maximization.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-06-17"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://openalex.org/W7163572035",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Code and Experimental Data for Feasibility-Oriented Dung Beetle Optimization for Collision-Constrained Robotic Path Planning",
+      "authors": [
+        "QIANKUN ZHOU",
+        "Xiaotong Lian",
+        "Yubin Lan",
+        "Wanjie Xiong"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "pdf_url": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "score": 1.0,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-07-05"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "A Dynamic Scene Interaction Reasoning Framework for Scene-level Lane-Change Intention and Trajectory Prediction of Multiple Interacting Vehicles",
+      "Closed-Loop Control with Rule-Aligned Small Language Models and Multi-Agent Self-Correction",
+      "YUKTI: From Natural-Language Situations to Robust, Verifiable Decisions An Uncertainty-Typed Proposition IR, Assumption-Robust Pareto Frontiers, and a Regret Certificate",
+      "Prioritizing Search Space Regions in the Low Autocorrelation Binary Sequences Problem"
+    ],
+    "hugging_face": [
+      "A Dynamic Scene Interaction Reasoning Framework for Scene-level Lane-Change Intention and Trajectory Prediction of Multiple Interacting Vehicles",
+      "Closed-Loop Control with Rule-Aligned Small Language Models and Multi-Agent Self-Correction",
+      "YUKTI: From Natural-Language Situations to Robust, Verifiable Decisions An Uncertainty-Typed Proposition IR, Assumption-Robust Pareto Frontiers, and a Regret Certificate",
+      "Transfer Learning Across Policy Regimes in Adaptive Multi-Agent Systems",
+      "Prioritizing Search Space Regions in the Low Autocorrelation Binary Sequences Problem"
+    ],
+    "papers_with_code": [
+      "A Dynamic Scene Interaction Reasoning Framework for Scene-level Lane-Change Intention and Trajectory Prediction of Multiple Interacting Vehicles",
+      "Closed-Loop Control with Rule-Aligned Small Language Models and Multi-Agent Self-Correction",
+      "YUKTI: From Natural-Language Situations to Robust, Verifiable Decisions An Uncertainty-Typed Proposition IR, Assumption-Robust Pareto Frontiers, and a Regret Certificate",
+      "Transfer Learning Across Policy Regimes in Adaptive Multi-Agent Systems",
+      "Prioritizing Search Space Regions in the Low Autocorrelation Binary Sequences Problem"
+    ]
+  }
+}
