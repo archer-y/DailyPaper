@@ -1,0 +1,308 @@
+{
+  "date": "2026-07-29",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "QFoldAgent: An Autonomous Quantum Optimization Multi-Agent System for Protein Structure Prediction",
+      "authors": [
+        "Winson Chen",
+        "Yuqi Zhang",
+        "Sixu Chen",
+        "Nuo Xu",
+        "Qiang Guan",
+        "Caiwen Ding"
+      ],
+      "abstract": "Hybrid quantum-classical protein structure prediction depends strongly on Hamiltonian penalty weights, yet existing lattice-based workflows typically fix these coefficients by hand and evaluate only very short fragments in simulation. We present QFoldAgent, a closed-loop multi-agent framework for 5-residue tetrahedral-lattice folding in which a design agent proposes sequence-conditioned penalties, a VQE-based quantum-classical pipeline optimizes the resulting Hamiltonian under Qiskit Aer noise, and a feedback agent uses energy-landscape diagnostics and MolProbity validation signals to refine penalties across cycles. Ground-truth metrics such as RMSD are never exposed to the agents and are used only for evaluation. We study the framework on two complementary datasets: 55 QDockBank-derived fragments with known structures and 100 coverage-optimized unseen sequences. On the QDockBank benchmark, QFoldAgent reduces median RMSD from 3.64 Å to 3.20 Å, with the largest gains on the hardest targets. On unseen sequences, the closed loop raises structural validity from 87.5% to 98.7%, recovers 87% of initially invalid cases, and the strongest controller improves cycle-3 energy on 87% of sequences while maintaining 96% Ramachandran-favored geometry. These results show that iterative agent control can systematically improve optimization behavior and reduce failure cases in a 5-residue quantum setting.",
+      "url": "http://arxiv.org/abs/2607.22549v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.22549v1",
+      "arxiv_id": "2607.22549",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Hybrid quantum-classical protein structure prediction depends strongly on Hamiltonian penalty weights, yet existing lattice-based workflows typically fix these coefficients by hand and evaluate only very short fragments in simulation. We present QFoldAgent, a closed-loop multi-agent framework for 5-residue tetrahedral-lattice folding in which a design agent proposes sequence-conditioned penalties, a VQE-based quantum-classical pipeline optimizes the resulting Hamiltonian under Qiskit Aer noise, and a feedback agent uses energy-landscape diagnostics and MolProbity validation signals to refine penalties across cycles. Ground-truth metrics such as RMSD are never exposed to the agents and are used only for evaluation. We study the framework on two complementary datasets: 55 QDockBank-derived fragments with known structures and 100 coverage-optimized unseen sequences. On the QDockBank benchmark, QFoldAgent reduces median RMSD from 3.64 Å to 3.20 Å, with the largest gains on the hardest targets. On unseen sequences, the closed loop raises structural validity from 87.5% to 98.7%, recovers 87% of initially invalid cases, and the strongest controller improves cycle-3 energy on 87% of sequences while maintaining 96% Ramachandran-favored geometry. These results show that iterative agent control can systematically improve optimization behavior and reduce failure cases in a 5-residue quantum setting.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-05-11"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "HeraSys: Collaborative Serving of Multiple LLM Workflows via Fine-Grained End-to-End Optimization",
+      "authors": [
+        "Size Li",
+        "Zhiqing Tang",
+        "Hongrui Liang",
+        "Jianxiong Guo",
+        "Jiong Lou",
+        "Tian Wang",
+        "Weijia Jia"
+      ],
+      "abstract": "The proliferation of Large Language Models (LLMs) has shifted serving systems from processing isolated requests to orchestrating high-concurrency, multi-tenant agentic workflows. However, existing solutions typically prioritize intra-workflow optimization, largely neglecting the significant potential for inter-workflow optimization. In this paper, we propose HeraSys, an LLM serving system designed to optimize the end-to-end performance of concurrent workflows. Through fine-grained orchestration, HeraSys eliminates cross-workflow computational redundancy via structural node merging and reuse. Furthermore, HeraSys introduces a load-aware joint scheduling policy that dynamically manages execution order by evaluating both inter- and intra-query priorities. By integrating a resource skewing mechanism with adaptive batching and pipeline decomposition, HeraSys effectively mitigates tail latency while maintaining low average latency, thereby substantially improving system throughput. Extensive experiments demonstrate that HeraSys reduces P99 latency by up to 2.17$\\times$ and increases serving throughput by up to 1.85$\\times$ under strict latency guarantees.",
+      "url": "http://arxiv.org/abs/2607.22578v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.22578v1",
+      "arxiv_id": "2607.22578",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "The proliferation of Large Language Models (LLMs) has shifted serving systems from processing isolated requests to orchestrating high-concurrency, multi-tenant agentic workflows. However, existing solutions typically prioritize intra-workflow optimization, largely neglecting the significant potential for inter-workflow optimization. In this paper, we propose HeraSys, an LLM serving system designed to optimize the end-to-end performance of concurrent workflows. Through fine-grained orchestration, HeraSys eliminates cross-workflow computational redundancy via structural node merging and reuse. Furthermore, HeraSys introduces a load-aware joint scheduling policy that dynamically manages execution order by evaluating both inter- and intra-query priorities. By integrating a resource skewing mechanism with adaptive batching and pipeline decomposition, HeraSys effectively mitigates tail latency while maintaining low average latency, thereby substantially improving system throughput. Extensive experiments demonstrate that HeraSys reduces P99 latency by up to 2.17$\\times$ and increases serving throughput by up to 1.85$\\times$ under strict latency guarantees.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-06-07"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "SCAIR: Schema-Conditioned Agentic Iterative Reasoning for Enterprise Knowledge Graphs",
+      "authors": [
+        "Prateek Chaturvedi",
+        "Yuqicheng Zhu",
+        "Hongkuan Zhou",
+        "Dongzhuoran Zhou",
+        "Yunjie He",
+        "Steffen Staab",
+        "Fei Du",
+        "Jie Tang",
+        "Evgeny Kharlamov"
+      ],
+      "abstract": "Knowledge Graph-based Retrieval-Augmented Generation (KG-RAG) enables natural language interaction with structured enterprise knowledge, yet existing agentic approaches that perform well on public benchmarks often fail to generalize to real-world enterprise Knowledge Graphs (KGs), which are dense, schema-driven, and operationally constrained. To address these limitations, we propose SCAIR (Schema-Conditioned Agentic Iterative Reasoning), a training-free framework that integrates structured planning with controlled iterative reasoning by injecting schema-conditioned structural priors and enforcing schema-aware traversal during multi-hop reasoning. Experiments on an enterprise-oriented benchmark constructed from a real-world Configuration Management DataBase (CMDB) demonstrate that SCAIR substantially improves performance over existing KG-RAG methods. Crucially, our study highlights that reliable enterprise graph reasoning cannot rely on generic agentic designs; instead, it must explicitly incorporate the target domain's structural and operational constraints into the reasoning process. We demonstrate that by aligning agent design with business logic, substantial performance gains can be achieved without the need for costly model retraining.",
+      "url": "http://arxiv.org/abs/2607.22571v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.22571v1",
+      "arxiv_id": "2607.22571",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Knowledge Graph-based Retrieval-Augmented Generation (KG-RAG) enables natural language interaction with structured enterprise knowledge, yet existing agentic approaches that perform well on public benchmarks often fail to generalize to real-world enterprise Knowledge Graphs (KGs), which are dense, schema-driven, and operationally constrained. To address these limitations, we propose SCAIR (Schema-Conditioned Agentic Iterative Reasoning), a training-free framework that integrates structured planning with controlled iterative reasoning by injecting schema-conditioned structural priors and enforcing schema-aware traversal during multi-hop reasoning. Experiments on an enterprise-oriented benchmark constructed from a real-world Configuration Management DataBase (CMDB) demonstrate that SCAIR substantially improves performance over existing KG-RAG methods. Crucially, our study highlights that reliable enterprise graph reasoning cannot rely on generic agentic designs; instead, it must explicitly incorporate the target domain's structural and operational constraints into the reasoning process. We demonstrate that by aligning agent design with business logic, substantial performance gains can be achieved without the need for costly model retraining.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-06-02"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Synthetic Scenario Generation for Evaluation of Industry 4.0 Agents",
+      "authors": [
+        "Sagar Chethan Kumar",
+        "Rohith Kanathur",
+        "Dhaval Patel",
+        "Kaoutar El Maghraoui"
+      ],
+      "abstract": "Industrial agent benchmarks require realistic evaluation scenarios that integrate telemetry, failure modes, maintenance records, and domain standards. However, existing benchmarks such as AssetOpsBench rely on manually authored scenarios and cover a limited set of asset classes. We extend AssetOpsBench with a Smart Grid Transformer asset class and four IEC-grounded diagnostic tools for health-index prediction, dissolved-gas analysis, winding-temperature assessment, and load-profile assessment. We further introduce ScenarioGeneratorAgent, a pipeline for synthetic industrial-agent scenario generation. The pipeline constructs evidence-grounded asset profiles, allocates coverage-aware scenario budgets across operational domains, and generates candidates through a hybrid validation-and-repair loop that enforces schema validity, tool reachability, physical plausibility, standards alignment, and deduplication. To improve scalability, we apply two-level caching, parallel focus-group generation, thread-pool offloading, batched LLM calls, and early rejection filtering. On Smart Grid Transformer scenario generation, these optimizations reduce end-to-end runtime by $8\\times$ for 50 scenarios while preserving quality, achieving a composite quality score of $74.2 \\pm 1.9$ compared with $73.8 \\pm 3.0$ for the unoptimized baseline. These results show that standards-grounded synthetic scenario generation can efficiently expand industrial-agent benchmarks without sacrificing scenario quality.",
+      "url": "http://arxiv.org/abs/2607.22563v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.22563v1",
+      "arxiv_id": "2607.22563",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Industrial agent benchmarks require realistic evaluation scenarios that integrate telemetry, failure modes, maintenance records, and domain standards. However, existing benchmarks such as AssetOpsBench rely on manually authored scenarios and cover a limited set of asset classes. We extend AssetOpsBench with a Smart Grid Transformer asset class and four IEC-grounded diagnostic tools for health-index prediction, dissolved-gas analysis, winding-temperature assessment, and load-profile assessment. We further introduce ScenarioGeneratorAgent, a pipeline for synthetic industrial-agent scenario generation. The pipeline constructs evidence-grounded asset profiles, allocates coverage-aware scenario budgets across operational domains, and generates candidates through a hybrid validation-and-repair loop that enforces schema validity, tool reachability, physical plausibility, standards alignment, and deduplication. To improve scalability, we apply two-level caching, parallel focus-group generation, thread-pool offloading, batched LLM calls, and early rejection filtering. On Smart Grid Transformer scenario generation, these optimizations reduce end-to-end runtime by $8\\times$ for 50 scenarios while preserving quality, achieving a composite quality score of $74.2 \\pm 1.9$ compared with $73.8 \\pm 3.0$ for the unoptimized baseline. These results show that standards-grounded synthetic scenario generation can efficiently expand industrial-agent benchmarks without sacrificing scenario quality.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-29"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Lexical discovery in unknown environments orchestrated by Large Language Models",
+      "authors": [
+        "Rafael Sendra-Arranz",
+        "Iñaki Dellibarda Varela",
+        "Eduardo Rocon",
+        "Álvaro Gutiérrez",
+        "Manuel Cebrian"
+      ],
+      "abstract": "Populations of autonomous agents deployed in unknown environments (e.g. planetary or deep-sea exploration) must develop shared vocabularies to refer to entities that have no name in any human language. We propose the Neuro-Symbolic Lexical Discovery (NSLD) framework, in which a population of LLM-based agents plays a referential game over out-of-distribution visual referents, autonomously self-organising a shared alien lexicon. Each agent combines a frozen CLIP vision encoder with a private FAISS vector index and a text-only LLM. Crucially, discovered alien words are anchored to natural language via semantic proximity in the embedding space, enlarging the human vocabulary with new perceptually grounded words. Consensus is reached in simulations with populations of up to twenty agents and ten visual referents. Convergence dynamics are characterised through three analytical models achieving R^2 > 0.95, representing a first step towards pre-deployment planning in autonomous exploration missions.",
+      "url": "http://arxiv.org/abs/2607.22591v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.22591v1",
+      "arxiv_id": "2607.22591",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Populations of autonomous agents deployed in unknown environments (e.g. planetary or deep-sea exploration) must develop shared vocabularies to refer to entities that have no name in any human language. We propose the Neuro-Symbolic Lexical Discovery (NSLD) framework, in which a population of LLM-based agents plays a referential game over out-of-distribution visual referents, autonomously self-organising a shared alien lexicon. Each agent combines a frozen CLIP vision encoder with a private FAISS vector index and a text-only LLM. Crucially, discovered alien words are anchored to natural language via semantic proximity in the embedding space, enlarging the human vocabulary with new perceptually grounded words. Consensus is reached in simulations with populations of up to twenty agents and ten visual referents. Convergence dynamics are characterised through three analytical models achieving R^2 > 0.95, representing a first step towards pre-deployment planning in autonomous exploration missions.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-06-10"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://openalex.org/W7163572035",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Code and Experimental Data for Feasibility-Oriented Dung Beetle Optimization for Collision-Constrained Robotic Path Planning",
+      "authors": [
+        "QIANKUN ZHOU",
+        "Xiaotong Lian",
+        "Yubin Lan",
+        "Wanjie Xiong"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "pdf_url": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "score": 1.0,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-07-05"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "QFoldAgent: An Autonomous Quantum Optimization Multi-Agent System for Protein Structure Prediction",
+      "HeraSys: Collaborative Serving of Multiple LLM Workflows via Fine-Grained End-to-End Optimization",
+      "SCAIR: Schema-Conditioned Agentic Iterative Reasoning for Enterprise Knowledge Graphs",
+      "Synthetic Scenario Generation for Evaluation of Industry 4.0 Agents",
+      "Lexical discovery in unknown environments orchestrated by Large Language Models"
+    ],
+    "hugging_face": [
+      "QFoldAgent: An Autonomous Quantum Optimization Multi-Agent System for Protein Structure Prediction",
+      "HeraSys: Collaborative Serving of Multiple LLM Workflows via Fine-Grained End-to-End Optimization",
+      "SCAIR: Schema-Conditioned Agentic Iterative Reasoning for Enterprise Knowledge Graphs",
+      "Synthetic Scenario Generation for Evaluation of Industry 4.0 Agents",
+      "Lexical discovery in unknown environments orchestrated by Large Language Models"
+    ],
+    "papers_with_code": [
+      "QFoldAgent: An Autonomous Quantum Optimization Multi-Agent System for Protein Structure Prediction",
+      "HeraSys: Collaborative Serving of Multiple LLM Workflows via Fine-Grained End-to-End Optimization",
+      "SCAIR: Schema-Conditioned Agentic Iterative Reasoning for Enterprise Knowledge Graphs",
+      "Synthetic Scenario Generation for Evaluation of Industry 4.0 Agents",
+      "Lexical discovery in unknown environments orchestrated by Large Language Models"
+    ]
+  }
+}
