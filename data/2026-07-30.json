@@ -1,0 +1,311 @@
+{
+  "date": "2026-07-30",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "RSMeM: Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation",
+      "authors": [
+        "Bingxian Wu",
+        "Yu Zhang",
+        "Zonghao Guo",
+        "Tang Liu",
+        "Chen Qian",
+        "Yuxiang Lu",
+        "Xingbo Du",
+        "Yanghao Li",
+        "Yidan Zhang",
+        "Chi Chen",
+        "Ling Yao",
+        "Maosong Sun"
+      ],
+      "abstract": "Geoscience research requires complex analysis and domain expertise, with remote sensing (RS) observations as a key foundation. However, existing RS agents built on general-purpose LLMs remain largely domain-agnostic, resulting in brittle and error-prone workflows. Moreover, these failures are seldom consolidated into a reusable experience for subsequent analyses. To address this issue, we introduce RSMeM, a knowledge-enhanced memory evolution mechanism that bootstraps RS agents with pre-distilled domain knowledge and iteratively integrates online experience for robust multi-step tool execution. RSMeM is composed of two components: (i) Hierarchical Knowledge Grounding, which performs taxonomy-aware retrieval over a hierarchical domain corpus to guide planning and tool selection; and (ii) Failure-Aware Experience Refinement, which distills failure-annotated tool-use traces into reusable constraints for next-round tool execution. By iteratively employing these two processes, RS agents can evolve to absorb task-level domain knowledge and effectively translate it into instance-level execution experience. Extensive experiments on EarthBench demonstrate that RSMeM consistently improves tool-use performance and end-to-end answer across a diverse set of LLM backbones. Notably, RSMeM achieves a 6% accuracy improvement on DeepSeek-V3.2 with less than 1% additional experience tokens, demonstrating the strong knowledge density of our distilled experience. Our code is available at https://github.com/AI9Stars/RSMeM",
+      "url": "http://arxiv.org/abs/2607.24772v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24772v1",
+      "arxiv_id": "2607.24772",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Geoscience research requires complex analysis and domain expertise, with remote sensing (RS) observations as a key foundation. However, existing RS agents built on general-purpose LLMs remain largely domain-agnostic, resulting in brittle and error-prone workflows. Moreover, these failures are seldom consolidated into a reusable experience for subsequent analyses. To address this issue, we introduce RSMeM, a knowledge-enhanced memory evolution mechanism that bootstraps RS agents with pre-distilled domain knowledge and iteratively integrates online experience for robust multi-step tool execution. RSMeM is composed of two components: (i) Hierarchical Knowledge Grounding, which performs taxonomy-aware retrieval over a hierarchical domain corpus to guide planning and tool selection; and (ii) Failure-Aware Experience Refinement, which distills failure-annotated tool-use traces into reusable constraints for next-round tool execution. By iteratively employing these two processes, RS agents can evolve to absorb task-level domain knowledge and effectively translate it into instance-level execution experience. Extensive experiments on EarthBench demonstrate that RSMeM consistently improves tool-use performance and end-to-end answer across a diverse set of LLM backbones. Notably, RSMeM achieves a 6% accuracy improvement on DeepSeek-V3.2 with less than 1% additional experience tokens, demonstrating the strong knowledge density of our distilled experience. Our code is available at https://github.com/AI9Stars/RSMeM",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-06-11"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Beyond Memory: A Templated Substrate for Heterogeneous Collaborative Knowledge Work with LLM Agents",
+      "authors": [
+        "Priscila Saboia Moreira",
+        "Christopher R. Sweet"
+      ],
+      "abstract": "Research projects, educational efforts, and adjacent knowledge work accumulate findings, decisions, and reasoning that future collaborators rarely recover. The parts most useful to that work, including dead ends and walked-back claims, are routinely excluded from publications and shared code; future researchers re-attempt the same failures because no record survives. LLM coding agents are common participants but hold no persistent memory across sessions, and retrieval-augmented generation over raw sources does not compound. The llm-wiki pattern (Karpathy, 2026; tonbi, 2026) addresses this by inserting an LLM-maintained, interlinked wiki between raw sources and the agent. We present llm-wiki-memory-template, a reusable, agent-aware instantiation, and argue it is a substrate for heterogeneous collaborative knowledge work along three axes (multi-human, multi-AI-agent, multi-domain) with each axis supported by a distinct architectural element of the template (§4). The wiki is append-only by convention, which preserves what did not work alongside what did, addressing a negative-result loss problem that publications and code-sharing structurally cannot solve. Three deployed case studies and one design report cover the axes individually: a solo research lineage that preserves abandoned iterations; a two-author project whose retroactive audit revised two prior experiments' claimed 20-of-20 coverage down to 14 and 12 evidence-based answers, then to 18 and 18 after a fix, with the failure path preserved across the artifact; an in-progress multi-agent deployment reported as a design; and a cross-domain educational variant. We name failure-path preservation, agent honesty, and appropriation as cross-cutting sociotechnical properties of the artifact, not only of its technical mechanisms.",
+      "url": "http://arxiv.org/abs/2607.24759v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24759v1",
+      "arxiv_id": "2607.24759",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Research projects, educational efforts, and adjacent knowledge work accumulate findings, decisions, and reasoning that future collaborators rarely recover. The parts most useful to that work, including dead ends and walked-back claims, are routinely excluded from publications and shared code; future researchers re-attempt the same failures because no record survives. LLM coding agents are common participants but hold no persistent memory across sessions, and retrieval-augmented generation over raw sources does not compound. The llm-wiki pattern (Karpathy, 2026; tonbi, 2026) addresses this by inserting an LLM-maintained, interlinked wiki between raw sources and the agent. We present llm-wiki-memory-template, a reusable, agent-aware instantiation, and argue it is a substrate for heterogeneous collaborative knowledge work along three axes (multi-human, multi-AI-agent, multi-domain) with each axis supported by a distinct architectural element of the template (§4). The wiki is append-only by convention, which preserves what did not work alongside what did, addressing a negative-result loss problem that publications and code-sharing structurally cannot solve. Three deployed case studies and one design report cover the axes individually: a solo research lineage that preserves abandoned iterations; a two-author project whose retroactive audit revised two prior experiments' claimed 20-of-20 coverage down to 14 and 12 evidence-based answers, then to 18 and 18 after a fix, with the failure path preserved across the artifact; an in-progress multi-agent deployment reported as a design; and a cross-domain educational variant. We name failure-path preservation, agent honesty, and appropriation as cross-cutting sociotechnical properties of the artifact, not only of its technical mechanisms.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-29"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "HOBA: Hierarchical On-Policy Bidding Agents for Adaptive Online Advertising",
+      "authors": [
+        "Ji Wu",
+        "Yunshan Peng",
+        "Wentao Bai",
+        "Yunke Bai",
+        "Wenzheng Shu",
+        "Jinan Pang",
+        "Yanxiang Zeng",
+        "Xialong Liu"
+      ],
+      "abstract": "Online advertising bidding systems typically deploy multiple offline-trained expert models (e.g., PID controllers, model predictive control, offline RL policies) but face two critical limitations: lack of online adaptability to non-stationary auction markets, and reliance on costly manual tuning of hyperparameters such as bid bounds and budget pacing constraints. We propose HOBA (Hierarchical On-policy Bidding Agents), a hierarchical reinforcement learning framework that decouples strategic reasoning, model selection, and bid execution across three time scales. At the high level, a large language model infers hyperparameters from contextual signals through a Think-Act-Observe-Reflect loop with historical experience retrieval. At the mid level, a SARSA agent dynamically selects among expert models, incorporating causal adjustment to eliminate selection bias. At the low level, a dynamic expert pool (PID, MPC, IQL, Decision Transformer) executes bids under high-level constraints. This design confines online learning to discrete expert selection rather than continuous bid optimization, significantly reducing exploration risk while maintaining adaptability. Experiments on the AuctionNet benchmark and a large-scale A/B test demonstrate consistent improvements over state-of-the-art baselines. In a large-scale online deployment, HOBA delivered substantial business value, achieving a +3.6\\% increase in target cost, proving the effectiveness of our hierarchical multi-agent bidding paradigm.",
+      "url": "http://arxiv.org/abs/2607.24779v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24779v1",
+      "arxiv_id": "2607.24779",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Online advertising bidding systems typically deploy multiple offline-trained expert models (e.g., PID controllers, model predictive control, offline RL policies) but face two critical limitations: lack of online adaptability to non-stationary auction markets, and reliance on costly manual tuning of hyperparameters such as bid bounds and budget pacing constraints. We propose HOBA (Hierarchical On-policy Bidding Agents), a hierarchical reinforcement learning framework that decouples strategic reasoning, model selection, and bid execution across three time scales. At the high level, a large language model infers hyperparameters from contextual signals through a Think-Act-Observe-Reflect loop with historical experience retrieval. At the mid level, a SARSA agent dynamically selects among expert models, incorporating causal adjustment to eliminate selection bias. At the low level, a dynamic expert pool (PID, MPC, IQL, Decision Transformer) executes bids under high-level constraints. This design confines online learning to discrete expert selection rather than continuous bid optimization, significantly reducing exploration risk while maintaining adaptability. Experiments on the AuctionNet benchmark and a large-scale A/B test demonstrate consistent improvements over state-of-the-art baselines. In a large-scale online deployment, HOBA delivered substantial business value, achieving a +3.6\\% increase in target cost, proving the effectiveness of our hierarchical multi-agent bidding paradigm.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-06-17"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Kernel Forge: An Agent Harness for LLM-based Generation and Optimization of CUDA Kernels",
+      "authors": [
+        "Joshua Brodsky",
+        "Dhravid Kumar",
+        "Savini Kashmira",
+        "Jayanaka Danatanarayana",
+        "Jason Mars",
+        "Krisztian Flautner",
+        "Lingjia Tang"
+      ],
+      "abstract": "Machine learning models are increasingly embedded in everyday software, and most of their runtime is spent in a small set of compute kernels such as matrix multiplication, convolution, and normalization. Optimizing these kernels is one of the most direct ways to reduce latency and cost, but it has traditionally required expert engineers to hand-write low-level GPU code. Agentic systems built on large language models (LLMs) can now generate and optimize kernels with far less human effort, yet existing tools are largely evaluated on randomly generated tensors and isolated kernels, emit standalone CUDA code that developers must manually reintegrate, mostly target only LLM PyTorch models, and offer limited support for inspecting and debugging results. We present Kernel Forge, an open-source, end-to-end agentic harness that accepts any unmodified PyTorch model in place. Kernel Forge supports vision, diffusion, and LLM workloads, uses Monte Carlo Tree Search (MCTS) to explore multiple optimization paths rather than a single linear refinement chain, and ships with a graphical user interface for monitoring progress, inspecting candidate kernels, and debugging failures. We evaluate Kernel Forge on four PyTorch models spanning vision, diffusion, and LLM workloads on an NVIDIA DGX Spark with GB10 GPU. With only 50 optimization iterations per kernel, it optimizes 14 kernels to outperform PyTorch eager mode, reaching $1.52\\times$ on adaptive\\_avgpool2d in ResNet-50, $1.70\\times$ on group\\_norm in Stable Diffusion 3.5 Medium, $2.83\\times$ on softmax in Gemma 4 E2B, and $1.54\\times$ on softmax in Qwen 3.5 35B-A3B.",
+      "url": "http://arxiv.org/abs/2607.24762v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24762v1",
+      "arxiv_id": "2607.24762",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Machine learning models are increasingly embedded in everyday software, and most of their runtime is spent in a small set of compute kernels such as matrix multiplication, convolution, and normalization. Optimizing these kernels is one of the most direct ways to reduce latency and cost, but it has traditionally required expert engineers to hand-write low-level GPU code. Agentic systems built on large language models (LLMs) can now generate and optimize kernels with far less human effort, yet existing tools are largely evaluated on randomly generated tensors and isolated kernels, emit standalone CUDA code that developers must manually reintegrate, mostly target only LLM PyTorch models, and offer limited support for inspecting and debugging results. We present Kernel Forge, an open-source, end-to-end agentic harness that accepts any unmodified PyTorch model in place. Kernel Forge supports vision, diffusion, and LLM workloads, uses Monte Carlo Tree Search (MCTS) to explore multiple optimization paths rather than a single linear refinement chain, and ships with a graphical user interface for monitoring progress, inspecting candidate kernels, and debugging failures. We evaluate Kernel Forge on four PyTorch models spanning vision, diffusion, and LLM workloads on an NVIDIA DGX Spark with GB10 GPU. With only 50 optimization iterations per kernel, it optimizes 14 kernels to outperform PyTorch eager mode, reaching $1.52\\times$ on adaptive\\_avgpool2d in ResNet-50, $1.70\\times$ on group\\_norm in Stable Diffusion 3.5 Medium, $2.83\\times$ on softmax in Gemma 4 E2B, and $1.54\\times$ on softmax in Qwen 3.5 35B-A3B.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-06-02"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "PATHFinder Agent for Tailored Prenatal Care",
+      "authors": [
+        "Vaibhav Balloli",
+        "Carissa Samuel",
+        "Samia Abdelnabi",
+        "Alex Peahl",
+        "Elizabeth Bondi-Kelly"
+      ],
+      "abstract": "Prenatal care is an important preventive service designed to improve outcomes for pregnant individuals. The American College of Obstetricians and Gynecologists (ACOG) recently introduced guidelines advocating tailored prenatal care, called PATH (Plan for Tailored Healthcare). We present PATHFinder Agent(Planner for Appropriate Tailored Healthcare), an end-to-end conversational agentic system that gathers patient health and social context through structured dialogue, curates individualized prenatal care plans aligned with PATH guidelines, and surfaces community resources from Michigan 211. The system features a four-stage workflow spanning patient intake, dynamic interaction, plan synthesis, and clinician oversight. We evaluate frontier large language models (LLMs) on expert-curated rubrics across five clinical dimensions, finding that GPT-5.2 achieves the highest average score (77.6\\%) while identifying key gaps in antenatal testing recommendations. We discuss future validation through human participant studies and randomized controlled trials.",
+      "url": "http://arxiv.org/abs/2607.24768v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.24768v1",
+      "arxiv_id": "2607.24768",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Prenatal care is an important preventive service designed to improve outcomes for pregnant individuals. The American College of Obstetricians and Gynecologists (ACOG) recently introduced guidelines advocating tailored prenatal care, called PATH (Plan for Tailored Healthcare). We present PATHFinder Agent(Planner for Appropriate Tailored Healthcare), an end-to-end conversational agentic system that gathers patient health and social context through structured dialogue, curates individualized prenatal care plans aligned with PATH guidelines, and surfaces community resources from Michigan 211. The system features a four-stage workflow spanning patient intake, dynamic interaction, plan synthesis, and clinician oversight. We evaluate frontier large language models (LLMs) on expert-curated rubrics across five clinical dimensions, finding that GPT-5.2 achieves the highest average score (77.6\\%) while identifying key gaps in antenatal testing recommendations. We discuss future validation through human participant studies and randomized controlled trials.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-06-09"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://openalex.org/W7163572035",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Code and Experimental Data for Feasibility-Oriented Dung Beetle Optimization for Collision-Constrained Robotic Path Planning",
+      "authors": [
+        "QIANKUN ZHOU",
+        "Xiaotong Lian",
+        "Yubin Lan",
+        "Wanjie Xiong"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "pdf_url": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "score": 1.0,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-07-05"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "RSMeM: Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation",
+      "Beyond Memory: A Templated Substrate for Heterogeneous Collaborative Knowledge Work with LLM Agents",
+      "HOBA: Hierarchical On-Policy Bidding Agents for Adaptive Online Advertising",
+      "Kernel Forge: An Agent Harness for LLM-based Generation and Optimization of CUDA Kernels",
+      "PATHFinder Agent for Tailored Prenatal Care"
+    ],
+    "hugging_face": [
+      "RSMeM: Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation",
+      "Beyond Memory: A Templated Substrate for Heterogeneous Collaborative Knowledge Work with LLM Agents",
+      "HOBA: Hierarchical On-Policy Bidding Agents for Adaptive Online Advertising",
+      "Kernel Forge: An Agent Harness for LLM-based Generation and Optimization of CUDA Kernels",
+      "PATHFinder Agent for Tailored Prenatal Care"
+    ],
+    "papers_with_code": [
+      "RSMeM: Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation",
+      "Beyond Memory: A Templated Substrate for Heterogeneous Collaborative Knowledge Work with LLM Agents",
+      "HOBA: Hierarchical On-Policy Bidding Agents for Adaptive Online Advertising",
+      "Kernel Forge: An Agent Harness for LLM-based Generation and Optimization of CUDA Kernels",
+      "PATHFinder Agent for Tailored Prenatal Care"
+    ]
+  }
+}
