@@ -1,0 +1,312 @@
+{
+  "date": "2026-08-08",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Project2Task: Graph-Guided Project-Level Planning for Autonomous Research",
+      "authors": [
+        "Huirui Xu",
+        "Runtao Xu",
+        "Shuo Ren",
+        "Jiajun Zhang"
+      ],
+      "abstract": "Research agents can increasingly search literature, propose hypotheses, generate code, run experiments, and draft manuscripts from a single topic. However, a research project is not merely a larger task: it is a long-horizon agenda that must be advanced through multiple bounded tasks with distinct but related objectives, parallel alternatives, and dependency-aware sequences. Existing single-task systems often treat the project as one oversized task, produce a flat set of vague or overlapping tasks, or leave task boundaries and execution order to manual coordination. We introduce Project2Task, a graph-guided project-level planning layer for autonomous research. Given a project brief, it represents candidate contributions as innovation atoms and organizes them in a directed lineage graph. A lightweight Bernoulli block-model objective selects among horizontal, vertical, and hybrid portfolio decompositions. Project2Task then generates bounded tasks with explicit contribution ownership, repairs overlaps and missing execution fields, and emits dependency-aware task contracts that specify objectives, inputs, expected artifacts, evaluation requirements, boundary constraints, dependencies, and execution order. The contracts are independent of any particular downstream research executor and support integration of task outputs into a coherent project-level result. On a benchmark of ten project briefs yielding roughly 30 tasks, manuscript-based portfolio evaluation gives Project2Task an average quality score of 7.15, compared with 4.58 for the Brief Baseline and 5.31 for the Topic-only Setting. Integrating its contracts with AutoResearchClaw increases average downstream task accuracy from 0.536 to 0.759. These results demonstrate the value of explicit project-to-task planning for producing coherent, non-redundant, and executable research-task portfolios.",
+      "url": "http://arxiv.org/abs/2608.05225v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.05225v1",
+      "arxiv_id": "2608.05225",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Research agents can increasingly search literature, propose hypotheses, generate code, run experiments, and draft manuscripts from a single topic. However, a research project is not merely a larger task: it is a long-horizon agenda that must be advanced through multiple bounded tasks with distinct but related objectives, parallel alternatives, and dependency-aware sequences. Existing single-task systems often treat the project as one oversized task, produce a flat set of vague or overlapping tasks, or leave task boundaries and execution order to manual coordination. We introduce Project2Task, a graph-guided project-level planning layer for autonomous research. Given a project brief, it represents candidate contributions as innovation atoms and organizes them in a directed lineage graph. A lightweight Bernoulli block-model objective selects among horizontal, vertical, and hybrid portfolio decompositions. Project2Task then generates bounded tasks with explicit contribution ownership, repairs overlaps and missing execution fields, and emits dependency-aware task contracts that specify objectives, inputs, expected artifacts, evaluation requirements, boundary constraints, dependencies, and execution order. The contracts are independent of any particular downstream research executor and support integration of task outputs into a coherent project-level result. On a benchmark of ten project briefs yielding roughly 30 tasks, manuscript-based portfolio evaluation gives Project2Task an average quality score of 7.15, compared with 4.58 for the Brief Baseline and 5.31 for the Topic-only Setting. Integrating its contracts with AutoResearchClaw increases average downstream task accuracy from 0.536 to 0.759. These results demonstrate the value of explicit project-to-task planning for producing coherent, non-redundant, and executable research-task portfolios.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-08-05"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Agentic Nesting: A New Methodology for Existing Enterprise Application Integration and Services",
+      "authors": [
+        "Xi Wang",
+        "Kun Li",
+        "Xianyao Ling",
+        "Gang Yin",
+        "Liang Zhang",
+        "Jiang Wu",
+        "Wenbo Lei",
+        "Jun Xu",
+        "Annie Wang",
+        "Fu Zhang",
+        "Weizhe Wang"
+      ],
+      "abstract": "Enterprise operations extensively rely on multiple heterogeneous business systems and information applications, which also result in severe data silos and process fragmentation. Enterprises have invested considerable financial and material resources in building these applications, however, effectively leveraging and orchestrating them remains a formidable challenge. Conventional approaches to enterprise application integration, encompassing middleware architectures such as Enterprise Service Bus (ESB), API gateway infrastructures, and Robotic Process Automation (RPA), suffer from inherent limitations like high architectural coupling, escalating operation and maintenance costs, and limited intelligence capabilities. This paper proposes Agentic Nesting, a multi-agent collaboration framework in which existing enterprise applications are encapsulated as autonomous AI agents within a hierarchically nested structure. Rather than flat interconnection, agents are organized into layered stewardship topologies that mirror the compositional complexity of enterprise ecosystems. The framework extracts a digital agent proxy from each legacy application to enable natural-language interaction and autonomous manipulation, coordinates multiple agents through a central orchestrator for task decomposition and dynamic dispatching, and exposes a unified conversational interface for cross-application querying and process orchestration. The main contributions of this paper are the proposition of the \"Application-as-Agent\" integration paradigm and the \"Conversation-as-Integration\" interaction philosophy, together with an exploration of the generalization potential of this methodology in scenarios encompassing heterogeneous system coordination, and large-scale data applications.",
+      "url": "http://arxiv.org/abs/2608.05159v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.05159v1",
+      "arxiv_id": "2608.05159",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Enterprise operations extensively rely on multiple heterogeneous business systems and information applications, which also result in severe data silos and process fragmentation. Enterprises have invested considerable financial and material resources in building these applications, however, effectively leveraging and orchestrating them remains a formidable challenge. Conventional approaches to enterprise application integration, encompassing middleware architectures such as Enterprise Service Bus (ESB), API gateway infrastructures, and Robotic Process Automation (RPA), suffer from inherent limitations like high architectural coupling, escalating operation and maintenance costs, and limited intelligence capabilities. This paper proposes Agentic Nesting, a multi-agent collaboration framework in which existing enterprise applications are encapsulated as autonomous AI agents within a hierarchically nested structure. Rather than flat interconnection, agents are organized into layered stewardship topologies that mirror the compositional complexity of enterprise ecosystems. The framework extracts a digital agent proxy from each legacy application to enable natural-language interaction and autonomous manipulation, coordinates multiple agents through a central orchestrator for task decomposition and dynamic dispatching, and exposes a unified conversational interface for cross-application querying and process orchestration. The main contributions of this paper are the proposition of the \"Application-as-Agent\" integration paradigm and the \"Conversation-as-Integration\" interaction philosophy, together with an exploration of the generalization potential of this methodology in scenarios encompassing heterogeneous system coordination, and large-scale data applications.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-25"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Posture and Sustainment Optimization Under Adversarial Uncertainty",
+      "authors": [
+        "Amelie Norris",
+        "Alyssa Lee",
+        "Natan Vidra",
+        "Spurthi Setty"
+      ],
+      "abstract": "Pre-commitment posture, the assignment of military assets to theater locations before conflict scenarios resolve, is a critical and formally unsolved problem in joint operational planning. Current practice relies on greedy heuristics that maximize value and ignore geographic coverage and are structurally vulnerable to adversaries that target high-strategic value locations. This paper presents a scenario-weighted adversarially robust posture optimization engine for the Posture and sustainability allocation (PSA) problem, modeled as a finite-horizon Markov Decision Process over assets, theater locations, and time steps. We introduce the Composite Expected Value (CEV) optimizer, which places assets by maximizing scenario-weighted expected posture efficiency over a distribution of threat scenarios, and the RobustCEV extension, which iterates against a Bayesian adversary that updates its targeting distribution in response to observed placement. Across three experiments in an Indo-Pacific basing environment with 20 assets and 5 theater locations, we demonstrate that: (1) the greedy baseline incurs a permanent 25.1% posture efficiency penalty due to geographic under-coverage and a 57.3% scenario-weighted readiness collapse under value-correlated adversarial threat; (2) the CEV optimizer recovers up to 19.8% efficiency over greedy when the threat distribution carries a geographic signal, with a curated set of 5 to 20 scenarios sufficient to capture the majority of this gain; and (3) the RobustCEV extension recovers up to 158% efficiency relative to a naive optimizer when an adaptive adversary employs a deceptive threat prior. All findings are validated using paired t-tests with Bonferroni correction and two-level variance decomposition, confirming that the performance gaps reported are structural properties of placement strategies rather than sampling artifacts.",
+      "url": "http://arxiv.org/abs/2608.05256v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.05256v1",
+      "arxiv_id": "2608.05256",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Pre-commitment posture, the assignment of military assets to theater locations before conflict scenarios resolve, is a critical and formally unsolved problem in joint operational planning. Current practice relies on greedy heuristics that maximize value and ignore geographic coverage and are structurally vulnerable to adversaries that target high-strategic value locations. This paper presents a scenario-weighted adversarially robust posture optimization engine for the Posture and sustainability allocation (PSA) problem, modeled as a finite-horizon Markov Decision Process over assets, theater locations, and time steps. We introduce the Composite Expected Value (CEV) optimizer, which places assets by maximizing scenario-weighted expected posture efficiency over a distribution of threat scenarios, and the RobustCEV extension, which iterates against a Bayesian adversary that updates its targeting distribution in response to observed placement. Across three experiments in an Indo-Pacific basing environment with 20 assets and 5 theater locations, we demonstrate that: (1) the greedy baseline incurs a permanent 25.1% posture efficiency penalty due to geographic under-coverage and a 57.3% scenario-weighted readiness collapse under value-correlated adversarial threat; (2) the CEV optimizer recovers up to 19.8% efficiency over greedy when the threat distribution carries a geographic signal, with a curated set of 5 to 20 scenarios sufficient to capture the majority of this gain; and (3) the RobustCEV extension recovers up to 158% efficiency relative to a naive optimizer when an adaptive adversary employs a deceptive threat prior. All findings are validated using paired t-tests with Bonferroni correction and two-level variance decomposition, confirming that the performance gaps reported are structural properties of placement strategies rather than sampling artifacts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-08-05"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Adaptive Arena-based Contestable Argumentative Network-of-Experts for Open-Ended Care Plan Coordination",
+      "authors": [
+        "Truong Thanh Hung Nguyen",
+        "Hoang-Loc Cao",
+        "Phuc Ho",
+        "Phuc Truong Loc Nguyen",
+        "René Richard",
+        "Hung Cao"
+      ],
+      "abstract": "Care plan coordination demands synthesizing heterogeneous clinical, functional, and psychosocial information across multiple professional disciplines, where monolithic LLM pipelines cannot perform in a transparent or safe manner. We present CANOE (Contestable Argumentative Network-of-Experts), a multi-agent neuro-symbolic framework that addresses these limitations through five modules: complexity assessment, adaptive team recruitment, role-based argumentative computation via an Arena-based Quantitative Bipolar Argumentation Framework (A-QBAF), human-in-the-loop contestation, and care-plan synthesis. Role-specialized agents generate supporting and attacking arguments for candidate interventions; conflicts are resolved through arena-based clash resolution before acceptability scores propagate across the argumentation graph. Care planners may accept, reject, edit, or add arguments, and the framework will deterministically recompute the final plan. Evaluation on Discharge Me! and MedicalRAG using ROUGE-L, AlignScore, MEDCON F1, FKGL, and LLM-as-a-judge shows that medically fine-tuned models achieve the strongest clinical correctness and safety, while CANOE's argumentative structure provides faithful explanation and human contestability.",
+      "url": "http://arxiv.org/abs/2608.05391v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.05391v1",
+      "arxiv_id": "2608.05391",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Care plan coordination demands synthesizing heterogeneous clinical, functional, and psychosocial information across multiple professional disciplines, where monolithic LLM pipelines cannot perform in a transparent or safe manner. We present CANOE (Contestable Argumentative Network-of-Experts), a multi-agent neuro-symbolic framework that addresses these limitations through five modules: complexity assessment, adaptive team recruitment, role-based argumentative computation via an Arena-based Quantitative Bipolar Argumentation Framework (A-QBAF), human-in-the-loop contestation, and care-plan synthesis. Role-specialized agents generate supporting and attacking arguments for candidate interventions; conflicts are resolved through arena-based clash resolution before acceptability scores propagate across the argumentation graph. Care planners may accept, reject, edit, or add arguments, and the framework will deterministically recompute the final plan. Evaluation on Discharge Me! and MedicalRAG using ROUGE-L, AlignScore, MEDCON F1, FKGL, and LLM-as-a-judge shows that medically fine-tuned models achieve the strongest clinical correctness and safety, while CANOE's argumentative structure provides faithful explanation and human contestability.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-08-05"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "SkillTrace: Multi-Trace Provenance Auditing for LLM-Agent Skill Reuse",
+      "authors": [
+        "Jialuo Chen",
+        "Minghe Wang",
+        "Lingqi Jiang",
+        "Jianan Ma",
+        "Xinhao Deng",
+        "Xiaohu Du",
+        "Ruixiao Lin",
+        "Yunhao Feng",
+        "Linkang Du",
+        "Jingyi Wang"
+      ],
+      "abstract": "LLM-agent ecosystems are rapidly growing around reusable skills: mixed-modality packages of metadata, natural-language instructions, code, tools, references, and operational workflows. As skills become marketplace artifacts, auditing their reuse is no longer the same problem as ordinary code clone detection. Existing detectors target single-modality source code or whole-package similarity, yet skill reuse evidence is distributed across authored text, implementation fragments, and operational structure. As a result, they can miss reuse that preserves only one part of a skill. We present SKILLTRACE, a multi-trace provenance auditing framework for LLM-agent skill reuse. SKILLTRACE extracts three provenance traces: Expression, Implementation, and Operational. It represents the Operational Trace as a Skill Operational Graph (SOG) that captures activation, procedure, and resource-flow structure. An LLM assists only the Operational-trace extraction, once at ingestion; at audit time SKILLTRACE compares cached traces deterministically, calibrates each trace against same-function strict negatives, and reports which trace supports a reuse decision. On SKILLTRACE-BENCH, with 820 transformed reuse positives over 100 marketplace anchors and 751 negative controls, SKILLTRACE achieves AUROC 0.938 and F1 0.898. A 36,446-skill wild audit further shows that trace-attributed evidence surfaces actionable reuse review queues beyond repository-level baselines.",
+      "url": "http://arxiv.org/abs/2608.05204v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.05204v1",
+      "arxiv_id": "2608.05204",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "LLM-agent ecosystems are rapidly growing around reusable skills: mixed-modality packages of metadata, natural-language instructions, code, tools, references, and operational workflows. As skills become marketplace artifacts, auditing their reuse is no longer the same problem as ordinary code clone detection. Existing detectors target single-modality source code or whole-package similarity, yet skill reuse evidence is distributed across authored text, implementation fragments, and operational structure. As a result, they can miss reuse that preserves only one part of a skill. We present SKILLTRACE, a multi-trace provenance auditing framework for LLM-agent skill reuse. SKILLTRACE extracts three provenance traces: Expression, Implementation, and Operational. It represents the Operational Trace as a Skill Operational Graph (SOG) that captures activation, procedure, and resource-flow structure. An LLM assists only the Operational-trace extraction, once at ingestion; at audit time SKILLTRACE compares cached traces deterministically, calibrates each trace against same-function strict negatives, and reports which trace supports a reuse decision. On SKILLTRACE-BENCH, with 820 transformed reuse positives over 100 marketplace anchors and 751 negative controls, SKILLTRACE achieves AUROC 0.938 and F1 0.898. A 36,446-skill wild audit further shows that trace-attributed evidence surfaces actionable reuse review queues beyond repository-level baselines.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-08-05"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://openalex.org/W7163572035",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Code and Experimental Data for Feasibility-Oriented Dung Beetle Optimization for Collision-Constrained Robotic Path Planning",
+      "authors": [
+        "QIANKUN ZHOU",
+        "Xiaotong Lian",
+        "Yubin Lan",
+        "Wanjie Xiong"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "pdf_url": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "score": 1.0,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-07-05"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Project2Task: Graph-Guided Project-Level Planning for Autonomous Research",
+      "Agentic Nesting: A New Methodology for Existing Enterprise Application Integration and Services",
+      "Posture and Sustainment Optimization Under Adversarial Uncertainty",
+      "Adaptive Arena-based Contestable Argumentative Network-of-Experts for Open-Ended Care Plan Coordination",
+      "SkillTrace: Multi-Trace Provenance Auditing for LLM-Agent Skill Reuse"
+    ],
+    "hugging_face": [
+      "Project2Task: Graph-Guided Project-Level Planning for Autonomous Research",
+      "Agentic Nesting: A New Methodology for Existing Enterprise Application Integration and Services",
+      "Posture and Sustainment Optimization Under Adversarial Uncertainty",
+      "Adaptive Arena-based Contestable Argumentative Network-of-Experts for Open-Ended Care Plan Coordination",
+      "SkillTrace: Multi-Trace Provenance Auditing for LLM-Agent Skill Reuse"
+    ],
+    "papers_with_code": [
+      "Project2Task: Graph-Guided Project-Level Planning for Autonomous Research",
+      "Agentic Nesting: A New Methodology for Existing Enterprise Application Integration and Services",
+      "Posture and Sustainment Optimization Under Adversarial Uncertainty",
+      "Adaptive Arena-based Contestable Argumentative Network-of-Experts for Open-Ended Care Plan Coordination",
+      "SkillTrace: Multi-Trace Provenance Auditing for LLM-Agent Skill Reuse"
+    ]
+  }
+}
