@@ -1,0 +1,316 @@
+{
+  "date": "2026-08-13",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "DOCSCHISEL: Adaptive Tool Documentation Optimization Framework for LLM Agents",
+      "authors": [
+        "You Lu",
+        "Kun Zhang",
+        "Bihuan Chen",
+        "Xin Peng"
+      ],
+      "abstract": "Large language models (LLMs) increasingly rely on external tools to accomplish complex real-world tasks, making tool documentation a critical grounding resource for LLM agents. Existing studies mainly focus on improving the tool-use capabilities of LLM agents, while largely treating tool documentation as a fixed input. Although several recent works attempt to optimize tool documentation through rewriting or compression, little is known about how the information contained in tool documentation affects agent performance across different settings.\n  To bridge this gap, we conduct a large-scale empirical study on tool documentation for LLM agents. Our study reveals substantial heterogeneity in the information fields provided by existing tool documentation. Moreover, the effectiveness of different information fields is highly dependent on the task domain, LLM backbone, and agent paradigm, indicating that no fixed tool documentation can consistently generalize across diverse agent settings.\n  Motivated by these findings, we propose DocsChisel, an adaptive tool documentation optimization framework for LLM agents. DocsChisel analyzes failed execution traces of a target LLM agent to identify documentation-related issues, and iteratively optimizes tool documentation by adding, removing, and refining information fields for each tool. We evaluate DocsChisel against two state-of-the-art baselines, i.e., EasyTool and DRAFT. Experimental results show that DocsChisel improves the task success rate of LLM agents by 95.89% over the original tool documentation and by 75.15%, on average, over existing baselines, while incurring limited optimization time and token overhead",
+      "url": "http://arxiv.org/abs/2608.10037v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10037v1",
+      "arxiv_id": "2608.10037",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Large language models (LLMs) increasingly rely on external tools to accomplish complex real-world tasks, making tool documentation a critical grounding resource for LLM agents. Existing studies mainly focus on improving the tool-use capabilities of LLM agents, while largely treating tool documentation as a fixed input. Although several recent works attempt to optimize tool documentation through rewriting or compression, little is known about how the information contained in tool documentation affects agent performance across different settings.\n  To bridge this gap, we conduct a large-scale empirical study on tool documentation for LLM agents. Our study reveals substantial heterogeneity in the information fields provided by existing tool documentation. Moreover, the effectiveness of different information fields is highly dependent on the task domain, LLM backbone, and agent paradigm, indicating that no fixed tool documentation can consistently generalize across diverse agent settings.\n  Motivated by these findings, we propose DocsChisel, an adaptive tool documentation optimization framework for LLM agents. DocsChisel analyzes failed execution traces of a target LLM agent to identify documentation-related issues, and iteratively optimizes tool documentation by adding, removing, and refining information fields for each tool. We evaluate DocsChisel against two state-of-the-art baselines, i.e., EasyTool and DRAFT. Experimental results show that DocsChisel improves the task success rate of LLM agents by 95.89% over the original tool documentation and by 75.15%, on average, over existing baselines, while incurring limited optimization time and token overhead",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0,
+        "semantic_scholar": {
+          "paper_id": "38c9c96d37e2415bc54435e50d93f64b971e6f46",
+          "url": "https://www.semanticscholar.org/paper/38c9c96d37e2415bc54435e50d93f64b971e6f46",
+          "citation_count": 0,
+          "reference_count": 56,
+          "influential_citation_count": 0,
+          "publication_date": "2026-08-10",
+          "tldr": "Results show that DocsChisel improves the task success rate of LLM agents by 95.89% over the original tool documentation and by 75.15%, on average, over existing baselines, while incurring limited optimization time and token overhead."
+        }
+      },
+      "published_date": "2026-08-10"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "MESA:Task-Adaptive Multi-Structure Evidence Selection for Long-Horizon Agent Memory",
+      "authors": [
+        "Beidi Zhao",
+        "Yaoqi Chen",
+        "Yuru Feng",
+        "Menghao Li",
+        "Qianxi Zhang",
+        "Baotong Lu",
+        "Jianan Lu",
+        "Zhirui Wang",
+        "Xinjiang Wang",
+        "Shusen Xu",
+        "Zengzhong Li",
+        "Xiaoxiao Li",
+        "Qi Chen"
+      ],
+      "abstract": "Long-horizon agents accumulate trajectories spanning hundreds of interleaved reasoning, action, and observation steps, where answering a query may depend on evidence buried far back in the history. External memory stores such trajectories as structured representations, yet each structure provides a distinct and incomplete view. Existing multi-memory systems either read a fixed set of structures for every query, inflating context and introducing noise, or route each query to a single structure, preventing the composition of complementary evidence. A controlled analysis on AMA-Bench shows that the optimal memory configuration is typically neither a single structure nor the full union, but a tailored composition of multiple structural memories that varies with query and task demands. Motivated by these findings, we formulate structure-level dynamic selection: selecting and fusing a query-adaptive subset from a library of specialized memory structures. We propose MESA (a Multi-structure Evidence Selection framework for long-horizon Agent), which builds five complementary structure views of each trajectory and learns from end-to-end answer-level feedback to select and fuse a query-specific subset for a frozen answer model. To learn under this weak supervision, MESA employs harness optimization with prior-guided search and UCB-guided scheduling to balance exploration and exploitation. On AMA-Bench, MESA outperforms the strongest baseline by 8.5% while using 41% fewer evidence tokens than the all-structure alternative.",
+      "url": "http://arxiv.org/abs/2608.10108v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10108v1",
+      "arxiv_id": "2608.10108",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Long-horizon agents accumulate trajectories spanning hundreds of interleaved reasoning, action, and observation steps, where answering a query may depend on evidence buried far back in the history. External memory stores such trajectories as structured representations, yet each structure provides a distinct and incomplete view. Existing multi-memory systems either read a fixed set of structures for every query, inflating context and introducing noise, or route each query to a single structure, preventing the composition of complementary evidence. A controlled analysis on AMA-Bench shows that the optimal memory configuration is typically neither a single structure nor the full union, but a tailored composition of multiple structural memories that varies with query and task demands. Motivated by these findings, we formulate structure-level dynamic selection: selecting and fusing a query-adaptive subset from a library of specialized memory structures. We propose MESA (a Multi-structure Evidence Selection framework for long-horizon Agent), which builds five complementary structure views of each trajectory and learns from end-to-end answer-level feedback to select and fuse a query-specific subset for a frozen answer model. To learn under this weak supervision, MESA employs harness optimization with prior-guided search and UCB-guided scheduling to balance exploration and exploitation. On AMA-Bench, MESA outperforms the strongest baseline by 8.5% while using 41% fewer evidence tokens than the all-structure alternative.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0,
+        "semantic_scholar": {
+          "paper_id": "fd31ea28c66c4fff4c5cc47a77ec4487aa9f2e0c",
+          "url": "https://www.semanticscholar.org/paper/fd31ea28c66c4fff4c5cc47a77ec4487aa9f2e0c",
+          "citation_count": 0,
+          "reference_count": 37,
+          "influential_citation_count": 0,
+          "publication_date": "2026-08-10",
+          "tldr": "This work proposes MESA (a Multi-structure Evidence Selection framework for long-horizon Agent), which builds five complementary structure views of each trajectory and learns from end-to-end answer-level feedback to select and fuse a query-specific subset for a frozen answer model."
+        }
+      },
+      "published_date": "2026-08-10"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "The CASE Framework: A Multi-Disciplinary Control Architecture for Governing Enterprise Agentic AI",
+      "authors": [
+        "Srinivas Telukunta",
+        "Georgios Nektarios Lilis",
+        "Lucio Baron"
+      ],
+      "abstract": "Enterprises are deploying autonomous AI agents faster than they can govern them, and prevailing approaches stretch a single discipline, typically DevSecOps built for deterministic automation, across every scale of agency. We argue that agentic AI governance is four problems, not one, each with a mature governing science. The CASE framework assigns Control theory to the individual agent (intent as setpoint, guardrails as feedback, evaluation as observation), complex Adaptive systems theory to agent collectives (where emergence makes single-agent assurance non-compositional), Supervisory cybernetics to human-agent teams (where the Law of Requisite Variety shows unaided human oversight fails structurally), and Engineering operations to fleets (extending error budgets to decision quality so autonomy becomes a controlled variable). We formalize each layer, derive cross-layer coupling conditions, including a zero-touch deployment paradox where excellence at one-layer strains the others, and trace twenty-plus enterprise controls to their classical constructs. Three empirical studies validate the thesis: 82 percent of documented production agent failures are multi-layer trajectories; none of 22 ecosystem tools offers full Layer 2 (emergence) coverage; and all 35 scored public deployments fall in the lowest maturity band. We name this mismatch, risk realized at the emergence layer against capability barely offered and practice absent, the Emergence Gap. A five-level maturity model with a non-compensatory bottleneck-weighted index and assessment instrument operationalizes CASE as a scientific rather than process maturity model, grounded in production enterprise agentic platforms. As EU AI Act Article 14 makes effective human oversight a legal requirement, only architectures satisfying requisite variety can make oversight real rather than ceremonial.",
+      "url": "http://arxiv.org/abs/2608.10153v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10153v1",
+      "arxiv_id": "2608.10153",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Enterprises are deploying autonomous AI agents faster than they can govern them, and prevailing approaches stretch a single discipline, typically DevSecOps built for deterministic automation, across every scale of agency. We argue that agentic AI governance is four problems, not one, each with a mature governing science. The CASE framework assigns Control theory to the individual agent (intent as setpoint, guardrails as feedback, evaluation as observation), complex Adaptive systems theory to agent collectives (where emergence makes single-agent assurance non-compositional), Supervisory cybernetics to human-agent teams (where the Law of Requisite Variety shows unaided human oversight fails structurally), and Engineering operations to fleets (extending error budgets to decision quality so autonomy becomes a controlled variable). We formalize each layer, derive cross-layer coupling conditions, including a zero-touch deployment paradox where excellence at one-layer strains the others, and trace twenty-plus enterprise controls to their classical constructs. Three empirical studies validate the thesis: 82 percent of documented production agent failures are multi-layer trajectories; none of 22 ecosystem tools offers full Layer 2 (emergence) coverage; and all 35 scored public deployments fall in the lowest maturity band. We name this mismatch, risk realized at the emergence layer against capability barely offered and practice absent, the Emergence Gap. A five-level maturity model with a non-compensatory bottleneck-weighted index and assessment instrument operationalizes CASE as a scientific rather than process maturity model, grounded in production enterprise agentic platforms. As EU AI Act Article 14 makes effective human oversight a legal requirement, only architectures satisfying requisite variety can make oversight real rather than ceremonial.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-08-10"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Post-Hoc Sparse Coding of Latent Communication Between Vision-Language Model Agents",
+      "authors": [
+        "Di Wu",
+        "Xiaohui Zhu"
+      ],
+      "abstract": "Latent-space communication allows heterogeneous vision-language model agents to exchange continuous representations without serializing visual and reasoning states into text. Vision Wormhole realizes this approach by translating visual features into a universal latent representation that can be consumed by another model, but every message is transported as a dense tensor of the same size regardless of its content. A fixed-capacity dense tensor therefore need not have a fixed effective information density: some messages may use only a small fraction of the available representational degrees of freedom. This observation suggests that the communication channel may be substantially compressible. We study its redundancy by fitting a post-hoc sparse autoencoder to frozen Vision Wormhole activations and measuring reconstruction, downstream utility, feature reuse, and token-level interventions across nine reasoning benchmarks. Relative to the original float32 transport, a uint16-index/float16-value sparse payload with k=4 active coefficients per token reduces the transmitted bytes by 128x. In a single-run evaluation, the seven-task non-AIME mean accuracy changes from 49.85% to 49.77%. The fitted 4096-element dictionary uses only 50 features, and task-level active sets have a mean pairwise Jaccard similarity of 0.906. These measurements establish strong post-hoc compressibility relative to the original transport, but do not yet isolate the incremental contribution of sparse coding from position selection, reduced precision, low-rank structure, or SAE optimization effects. The results motivate matched-payload comparisons and communication mechanisms whose payload adapts to the information used by each message.",
+      "url": "http://arxiv.org/abs/2608.10198v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10198v1",
+      "arxiv_id": "2608.10198",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Latent-space communication allows heterogeneous vision-language model agents to exchange continuous representations without serializing visual and reasoning states into text. Vision Wormhole realizes this approach by translating visual features into a universal latent representation that can be consumed by another model, but every message is transported as a dense tensor of the same size regardless of its content. A fixed-capacity dense tensor therefore need not have a fixed effective information density: some messages may use only a small fraction of the available representational degrees of freedom. This observation suggests that the communication channel may be substantially compressible. We study its redundancy by fitting a post-hoc sparse autoencoder to frozen Vision Wormhole activations and measuring reconstruction, downstream utility, feature reuse, and token-level interventions across nine reasoning benchmarks. Relative to the original float32 transport, a uint16-index/float16-value sparse payload with k=4 active coefficients per token reduces the transmitted bytes by 128x. In a single-run evaluation, the seven-task non-AIME mean accuracy changes from 49.85% to 49.77%. The fitted 4096-element dictionary uses only 50 features, and task-level active sets have a mean pairwise Jaccard similarity of 0.906. These measurements establish strong post-hoc compressibility relative to the original transport, but do not yet isolate the incremental contribution of sparse coding from position selection, reduced precision, low-rank structure, or SAE optimization effects. The results motivate matched-payload comparisons and communication mechanisms whose payload adapts to the information used by each message.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-08-10"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Complexity of Local Observation Consistency in Discrete-Event Systems",
+      "authors": [
+        "Tomáš Masopust"
+      ],
+      "abstract": "Hierarchical and multi-agent supervisory control under partial observation relies on local consistency conditions between a plant and its abstraction: local observation consistency (LOC) for the projection abstractions of hierarchical control, and local relabeling observation consistency (LROC) for the relabeling abstractions of multi-agent systems. Both are companions to a global condition and both have been used without their verification complexity being settled. We show that both are PSpace-complete for nondeterministic plants and decidable in polynomial time for deterministic plants.",
+      "url": "http://arxiv.org/abs/2608.10111v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10111v1",
+      "arxiv_id": "2608.10111",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Hierarchical and multi-agent supervisory control under partial observation relies on local consistency conditions between a plant and its abstraction: local observation consistency (LOC) for the projection abstractions of hierarchical control, and local relabeling observation consistency (LROC) for the relabeling abstractions of multi-agent systems. Both are companions to a global condition and both have been used without their verification complexity being settled. We show that both are PSpace-complete for nondeterministic plants and decidable in polynomial time for deterministic plants.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-08-10"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Code and Experimental Data for Feasibility-Oriented Dung Beetle Optimization for Collision-Constrained Robotic Path Planning",
+      "authors": [
+        "QIANKUN ZHOU",
+        "Xiaotong Lian",
+        "Yubin Lan",
+        "Wanjie Xiong"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "pdf_url": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/tfrr2pcmrk.1",
+      "score": 1.0,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-07-05"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "hugging_face": [
+      "DOCSCHISEL: Adaptive Tool Documentation Optimization Framework for LLM Agents",
+      "MESA:Task-Adaptive Multi-Structure Evidence Selection for Long-Horizon Agent Memory",
+      "The CASE Framework: A Multi-Disciplinary Control Architecture for Governing Enterprise Agentic AI",
+      "Post-Hoc Sparse Coding of Latent Communication Between Vision-Language Model Agents",
+      "Complexity of Local Observation Consistency in Discrete-Event Systems"
+    ],
+    "papers_with_code": [
+      "DOCSCHISEL: Adaptive Tool Documentation Optimization Framework for LLM Agents",
+      "MESA:Task-Adaptive Multi-Structure Evidence Selection for Long-Horizon Agent Memory",
+      "The CASE Framework: A Multi-Disciplinary Control Architecture for Governing Enterprise Agentic AI",
+      "Post-Hoc Sparse Coding of Latent Communication Between Vision-Language Model Agents",
+      "Complexity of Local Observation Consistency in Discrete-Event Systems"
+    ],
+    "semantic_scholar": [
+      "The CASE Framework: A Multi-Disciplinary Control Architecture for Governing Enterprise Agentic AI",
+      "Post-Hoc Sparse Coding of Latent Communication Between Vision-Language Model Agents",
+      "Complexity of Local Observation Consistency in Discrete-Event Systems"
+    ]
+  }
+}
