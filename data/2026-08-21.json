@@ -1,0 +1,306 @@
+{
+  "date": "2026-08-21",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Position: Behavioral Systems Require Behavioral Tests",
+      "authors": [
+        "Manuel Cherep",
+        "Nikhil Singh",
+        "Pattie Maes"
+      ],
+      "abstract": "Artificial agentic systems increasingly operate as behavioral systems by interacting with dynamic environments, pursuing goals, and adapting over time. Yet, current evaluation methods largely focus on performance outcomes, not the underlying behavioral processes that produce them. This paper argues that AI agents must be evaluated like other behavioral systems: through systematic observation, perturbation, and interpretation of their actions. We draw on lessons from the behavioral sciences to motivate this position, and propose a research agenda focused on developing rigorous behavioral tests. These include methods for recovering decision strategies from action sequences, constructing environments that isolate behavioral differences, and probing emergent dynamics in multi-agent systems. Taken together, these directions offer a roadmap for developing a science of AI behavior.",
+      "url": "http://arxiv.org/abs/2608.18081v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18081v1",
+      "arxiv_id": "2608.18081",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Artificial agentic systems increasingly operate as behavioral systems by interacting with dynamic environments, pursuing goals, and adapting over time. Yet, current evaluation methods largely focus on performance outcomes, not the underlying behavioral processes that produce them. This paper argues that AI agents must be evaluated like other behavioral systems: through systematic observation, perturbation, and interpretation of their actions. We draw on lessons from the behavioral sciences to motivate this position, and propose a research agenda focused on developing rigorous behavioral tests. These include methods for recovering decision strategies from action sequences, constructing environments that isolate behavioral differences, and probing emergent dynamics in multi-agent systems. Taken together, these directions offer a roadmap for developing a science of AI behavior.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-31"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "GAPL: Grounded Action-effect Policy Learning for LLM-Based Trajectory Planning",
+      "authors": [
+        "Zhihong Cui",
+        "Hengyu Liu",
+        "Zhangkai Wu",
+        "Yushuai Li",
+        "Tianyi Li",
+        "Peiyuan Guan",
+        "Amir Taherkordi",
+        "Tor Skeie"
+      ],
+      "abstract": "Trajectory planning for autonomous driving requires both high-level reasoning and precise low-level control. Large Language Models (LLMs) offer semantic-rich planning capabilities, however, their application is limited by hallucinated reasoning, poor grounding in environment dynamics, and limited numerical precision in control. We propose GAPL (Grounded Action-effect Policy Learning), a unified framework that integrates LLM-based effect estimation, simulation-based effect grounding, and policy optimization into a closed-loop system. GAPL consists of three modules: (1) an LLM-based Effect Evaluator for structured multi-dimensional action-effect estimation; (2) a Simulation-based Effect Grounder that predicts dynamics-consistent effects from simulator rollouts; and (3) an Effect-Aware Decision Maker that grounds LLM effect estimates against simulation via a distiller to guide Proximal Policy Optimization (PPO)-based policy learning. Experiments on four Highway-env scenarios demonstrate that GAPL consistently outperforms baselines, achieving average reductions of {0.76, 0.86, 2.00} in collision rate, average displacement error (ADE), and final displacement error (FDE), and an average reward gain of 1.44.",
+      "url": "http://arxiv.org/abs/2608.18254v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18254v1",
+      "arxiv_id": "2608.18254",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Trajectory planning for autonomous driving requires both high-level reasoning and precise low-level control. Large Language Models (LLMs) offer semantic-rich planning capabilities, however, their application is limited by hallucinated reasoning, poor grounding in environment dynamics, and limited numerical precision in control. We propose GAPL (Grounded Action-effect Policy Learning), a unified framework that integrates LLM-based effect estimation, simulation-based effect grounding, and policy optimization into a closed-loop system. GAPL consists of three modules: (1) an LLM-based Effect Evaluator for structured multi-dimensional action-effect estimation; (2) a Simulation-based Effect Grounder that predicts dynamics-consistent effects from simulator rollouts; and (3) an Effect-Aware Decision Maker that grounds LLM effect estimates against simulation via a distiller to guide Proximal Policy Optimization (PPO)-based policy learning. Experiments on four Highway-env scenarios demonstrate that GAPL consistently outperforms baselines, achieving average reductions of {0.76, 0.86, 2.00} in collision rate, average displacement error (ADE), and final displacement error (FDE), and an average reward gain of 1.44.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-08-18"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Position: Multi-Agent Systems Should Prioritize Concurrency Control",
+      "authors": [
+        "Xin Yang",
+        "Letian Li",
+        "Zimo Ji",
+        "Terry Jingchen Zhang",
+        "Wenyuan Jiang"
+      ],
+      "abstract": "LLM-based multi-agent systems (MAS) promise scalable collaboration, yet adding agents often reduces reliability. This position paper argues that many MAS failures are fundamentally concurrency control problems: agents concurrently read and write shared state, and long LLM inference windows amplify the risk of stale reads, lost updates, and inconsistent outcomes. Failure modes commonly attributed to coordination or communication breakdowns can be mapped directly onto classical concurrency anomalies. We contend that MAS frameworks should address these failures through explicit concurrency control mechanisms: conflict detection, isolation guarantees, and structured access to shared resources. Concurrency control should be a first-class design concern, not an afterthought.",
+      "url": "http://arxiv.org/abs/2608.18092v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18092v1",
+      "arxiv_id": "2608.18092",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "LLM-based multi-agent systems (MAS) promise scalable collaboration, yet adding agents often reduces reliability. This position paper argues that many MAS failures are fundamentally concurrency control problems: agents concurrently read and write shared state, and long LLM inference windows amplify the risk of stale reads, lost updates, and inconsistent outcomes. Failure modes commonly attributed to coordination or communication breakdowns can be mapped directly onto classical concurrency anomalies. We contend that MAS frameworks should address these failures through explicit concurrency control mechanisms: conflict detection, isolation guarantees, and structured access to shared resources. Concurrency control should be a first-class design concern, not an afterthought.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-06-06"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Scheduling and Routing with Degradation-Triggered Job Arrivals: An Application to Forest Firefighting with an Unmanned Aerial Vehicle Fleet",
+      "authors": [
+        "Erdi Dasdemir",
+        "Esther Jose",
+        "Rajan Batta"
+      ],
+      "abstract": "We define an intertwined scheduling and routing problem where new jobs appear due to the degradation of the existing jobs. Specifically, once a job arrives at a potential job location, a time window begins during which the demand of the job can be fulfilled. The demand degrades within the time window, and once it surpasses a particular threshold, it triggers the arrival of new jobs. Each job location inherently possesses an initial default reward, and the presence of an unprocessed job at a location gradually reduces this default value. The overall objective is to maximize the total remaining reward. The underlying motivation of this problem aligns with the proverb ``a stitch in time saves nine,\" and the problem itself carries practical implications. We focus on the problem in the context of aerial forest firefighting. Each ignited area has a designated action window; delaying intervention causes the fire to grow, diminishing the area's value and causing it to spread to adjacent areas. We develop a mixed-integer programming model that maximizes value retention in wildfire-threatened regions, and a hybrid model based on dynamic constraint generation to enhance the scalability of the model. We evaluate the performance and practicality of our models through computational experiments and a case study. Additionally, we ensure the study's reproducibility and encourage further research by providing open access to the codebase of our model.",
+      "url": "http://arxiv.org/abs/2608.18140v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18140v1",
+      "arxiv_id": "2608.18140",
+      "doi": "10.1016/j.ejor.2025.09.019",
+      "score": 1.0,
+      "tldr": "We define an intertwined scheduling and routing problem where new jobs appear due to the degradation of the existing jobs. Specifically, once a job arrives at a potential job location, a time window begins during which the demand of the job can be fulfilled. The demand degrades within the time window, and once it surpasses a particular threshold, it triggers the arrival of new jobs. Each job location inherently possesses an initial default reward, and the presence of an unprocessed job at a location gradually reduces this default value. The overall objective is to maximize the total remaining reward. The underlying motivation of this problem aligns with the proverb ``a stitch in time saves nine,\" and the problem itself carries practical implications. We focus on the problem in the context of aerial forest firefighting. Each ignited area has a designated action window; delaying intervention causes the fire to grow, diminishing the area's value and causing it to spread to adjacent areas. We develop a mixed-integer programming model that maximizes value retention in wildfire-threatened regions, and a hybrid model based on dynamic constraint generation to enhance the scalability of the model. We evaluate the performance and practicality of our models through computational experiments and a case study. Additionally, we ensure the study's reproducibility and encourage further research by providing open access to the codebase of our model.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5,
+        "semantic_scholar": {
+          "paper_id": "41475899e2f84f7d292a5a68000a9cdc8bdfb7de",
+          "url": "https://www.semanticscholar.org/paper/41475899e2f84f7d292a5a68000a9cdc8bdfb7de",
+          "citation_count": 1,
+          "reference_count": 44,
+          "influential_citation_count": 0,
+          "publication_date": "2025-10-01",
+          "tldr": null
+        }
+      },
+      "published_date": "2026-08-04"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Adversarial Review: Structured Disagreement for Grounded Agentic Code Review",
+      "authors": [
+        "Eric S. Qiu",
+        "Joyce Gill"
+      ],
+      "abstract": "Early multi-agent LLM systems often used role-separated teams, yet scaling agent count yields diminishing returns on repository-level coding tasks. Recent alternatives treat agents as passive tools (subagents), yet this removes the benefits of agent interaction entirely. We study whether a subagent paradigm can support a middle ground: minimal agentic cooperation without the overhead of large multi-agent teams. We introduce Adversarial Review (AR), a minimal cooperative code-review protocol in which a main coding agent works with a reviewer and a critic agent. The reviewer evaluates code, while the critic audits the review through structured disagreement before the main agent edits. On LiveCodeBench, AR achieves the highest pass rate among tested methods, outperforming a five-agent baseline while using only three agents. On SWE-PRBench, naive AR exposes a false-consensus failure mode, where agents converge on agreement without sufficient evidence, but a single prompt iteration that adds disagreement explicitly achieves the highest F1 among tested methods. On SWE-bench Verified, AR also shows improvements over the baselines on repository-level coding tasks. Together, AR demonstrates that cooperative code review does not require many agents or complex communication structures: it requires that disagreement be minimal, structured, and evidence-grounded.",
+      "url": "http://arxiv.org/abs/2608.18167v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18167v1",
+      "arxiv_id": "2608.18167",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Early multi-agent LLM systems often used role-separated teams, yet scaling agent count yields diminishing returns on repository-level coding tasks. Recent alternatives treat agents as passive tools (subagents), yet this removes the benefits of agent interaction entirely. We study whether a subagent paradigm can support a middle ground: minimal agentic cooperation without the overhead of large multi-agent teams. We introduce Adversarial Review (AR), a minimal cooperative code-review protocol in which a main coding agent works with a reviewer and a critic agent. The reviewer evaluates code, while the critic audits the review through structured disagreement before the main agent edits. On LiveCodeBench, AR achieves the highest pass rate among tested methods, outperforming a five-agent baseline while using only three agents. On SWE-PRBench, naive AR exposes a false-consensus failure mode, where agents converge on agreement without sufficient evidence, but a single prompt iteration that adds disagreement explicitly achieves the highest F1 among tested methods. On SWE-bench Verified, AR also shows improvements over the baselines on repository-level coding tasks. Together, AR demonstrates that cooperative code review does not require many agents or complex communication structures: it requires that disagreement be minimal, structured, and evidence-grounded.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-08-16"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Systematic Optimization of LC-MS/MS Acquisition Parameters for untargeted proteomics on an Agilent 1290 Infinity II UHPLC coupled to 6545XT Q-TOF part-1",
+      "authors": [
+        "Pooja Doshi",
+        "Vikas Patidar",
+        "Snehal Bagatharia",
+        "Ishan Raval"
+      ],
+      "abstract": "This dataset contains zipped archives of raw .d files recorded on Agilent 6545XT",
+      "url": "https://doi.org/10.5281/zenodo.20322078",
+      "pdf_url": "https://doi.org/10.5281/zenodo.20322078",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.20322078",
+      "score": 0.5,
+      "tldr": "This dataset contains zipped archives of raw .d files recorded on Agilent 6545XT",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Position: Behavioral Systems Require Behavioral Tests",
+      "GAPL: Grounded Action-effect Policy Learning for LLM-Based Trajectory Planning",
+      "Position: Multi-Agent Systems Should Prioritize Concurrency Control",
+      "Adversarial Review: Structured Disagreement for Grounded Agentic Code Review"
+    ],
+    "hugging_face": [
+      "Position: Behavioral Systems Require Behavioral Tests",
+      "GAPL: Grounded Action-effect Policy Learning for LLM-Based Trajectory Planning",
+      "Position: Multi-Agent Systems Should Prioritize Concurrency Control",
+      "Scheduling and Routing with Degradation-Triggered Job Arrivals: An Application to Forest Firefighting with an Unmanned Aerial Vehicle Fleet",
+      "Adversarial Review: Structured Disagreement for Grounded Agentic Code Review"
+    ],
+    "papers_with_code": [
+      "Position: Behavioral Systems Require Behavioral Tests",
+      "GAPL: Grounded Action-effect Policy Learning for LLM-Based Trajectory Planning",
+      "Position: Multi-Agent Systems Should Prioritize Concurrency Control",
+      "Scheduling and Routing with Degradation-Triggered Job Arrivals: An Application to Forest Firefighting with an Unmanned Aerial Vehicle Fleet",
+      "Adversarial Review: Structured Disagreement for Grounded Agentic Code Review"
+    ]
+  }
+}
