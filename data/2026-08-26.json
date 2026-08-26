@@ -1,0 +1,291 @@
+{
+  "date": "2026-08-26",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Federated Ensemble Forecasting Under Supply-Chain Market Volatility",
+      "authors": [
+        "Shunmukha Sagar Puppala"
+      ],
+      "abstract": "Supply chain forecasting systems increasingly operate under market shocks, non-identically distributed regional demand, and limited willingness to centralize commercial data. This work proposes Federated Ensemble Forecasting with Negative-Correlation Learning (FEF NCL), a distributed method that trains specialized forecasting experts across client nodes while discouraging redundant model errors. The framework combines temporal feature encoders, client level drift scoring, reliability-weighted aggregation, and an explain ability layer that exposes the market and supplier variables most responsible for each forecast. A single synthetic dataset is used to evaluate the design. It contains 124,800 weekly SKU region observations from ten regional client nodes, 60 product families, 40 suppliers, five commodity groups, and a 2021-2024 volatility profile with explicit price-shock regimes. Because the dataset is synthetic, the reported results should be interpreted as controlled evidence of internal consistency rather than real-world validation. Across the synthetic test split, FEF NCL reduces weighted mean absolute percentage error from 13.9% for the best federated baseline to 12.4%, improves delay-risk macro-F1 from 0.755 to 0.801, and lowers the high volatility quintile error by 2.1 percentage points relative to SCAFFOLD. The analysis suggests that negative-correlation specialization is useful when clients face different supplier, freight, and commodity conditions, although deployment would require stronger privacy analysis, live drift monitoring, and operational calibration. Index Terms federated learning, ensemble learning, negative correlation learning, supply chain forecasting, market volatility, data drift, demand planning, risk governance",
+      "url": "http://arxiv.org/abs/2608.21399v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21399v1",
+      "arxiv_id": "2608.21399",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Supply chain forecasting systems increasingly operate under market shocks, non-identically distributed regional demand, and limited willingness to centralize commercial data. This work proposes Federated Ensemble Forecasting with Negative-Correlation Learning (FEF NCL), a distributed method that trains specialized forecasting experts across client nodes while discouraging redundant model errors. The framework combines temporal feature encoders, client level drift scoring, reliability-weighted aggregation, and an explain ability layer that exposes the market and supplier variables most responsible for each forecast. A single synthetic dataset is used to evaluate the design. It contains 124,800 weekly SKU region observations from ten regional client nodes, 60 product families, 40 suppliers, five commodity groups, and a 2021-2024 volatility profile with explicit price-shock regimes. Because the dataset is synthetic, the reported results should be interpreted as controlled evidence of internal consistency rather than real-world validation. Across the synthetic test split, FEF NCL reduces weighted mean absolute percentage error from 13.9% for the best federated baseline to 12.4%, improves delay-risk macro-F1 from 0.755 to 0.801, and lowers the high volatility quintile error by 2.1 percentage points relative to SCAFFOLD. The analysis suggests that negative-correlation specialization is useful when clients face different supplier, freight, and commodity conditions, although deployment would require stronger privacy analysis, live drift monitoring, and operational calibration. Index Terms federated learning, ensemble learning, negative correlation learning, supply chain forecasting, market volatility, data drift, demand planning, risk governance",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-08-05"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "SchemaRouter: Field-Aware Tool Routing for Efficient Heterogeneous Agentic RAG",
+      "authors": [
+        "Yong-eun Cho"
+      ],
+      "abstract": "Heterogeneous agentic retrieval-augmented generation (RAG) systems increasingly orchestrate external APIs, internal databases, vector stores, and graph stores. Exposing all tool descriptions to an LLM agent, or selecting tools only by vector similarity, causes two costly failures: over-fetching, which increases payload size, token use, and latency, and under-fetching, which omits fields needed to answer the query.\n  We present SchemaRouter, a lightweight routing layer that represents tools, endpoints, parameters, response fields, domain concepts, units, provenance, and license policies as a schema graph. Given a query, SchemaRouter emits an executable tool plan specifying which tools to call and which fields to retrieve. A small LLM extracts intent, concepts, and source constraints, while field selection is deterministic over the graph through intent-group projection and concept-field matching with an alias layer.\n  On a materials-science benchmark of 110 queries, SchemaRouter achieves answer accuracy of 0.71, matching fetch-everything within overlapping confidence intervals and exceeding prompt-all's 0.66, though their intervals overlap. It uses 227 retrieved-context tokens versus 2,066 for fetch-everything and achieves 2.7x lower end-to-end latency than prompt-all. It also obtains the best tool-exact rate of 0.93 and parameter validity of 1.0. SchemaRouter grounds provenance and license information in 62 percent of answers, compared with approximately 0 percent for all baselines.\n  We also find that minimizing selected-field count is counterproductive: it reduces answer accuracy to 0.56 with negligible token savings, while recall-preserving projection restores top accuracy. SchemaRouter improves efficiency, schema-size-independent scaling, and verifiable provenance/license-grounded answering at competitive accuracy.",
+      "url": "http://arxiv.org/abs/2608.21375v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21375v1",
+      "arxiv_id": "2608.21375",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Heterogeneous agentic retrieval-augmented generation (RAG) systems increasingly orchestrate external APIs, internal databases, vector stores, and graph stores. Exposing all tool descriptions to an LLM agent, or selecting tools only by vector similarity, causes two costly failures: over-fetching, which increases payload size, token use, and latency, and under-fetching, which omits fields needed to answer the query.\n  We present SchemaRouter, a lightweight routing layer that represents tools, endpoints, parameters, response fields, domain concepts, units, provenance, and license policies as a schema graph. Given a query, SchemaRouter emits an executable tool plan specifying which tools to call and which fields to retrieve. A small LLM extracts intent, concepts, and source constraints, while field selection is deterministic over the graph through intent-group projection and concept-field matching with an alias layer.\n  On a materials-science benchmark of 110 queries, SchemaRouter achieves answer accuracy of 0.71, matching fetch-everything within overlapping confidence intervals and exceeding prompt-all's 0.66, though their intervals overlap. It uses 227 retrieved-context tokens versus 2,066 for fetch-everything and achieves 2.7x lower end-to-end latency than prompt-all. It also obtains the best tool-exact rate of 0.93 and parameter validity of 1.0. SchemaRouter grounds provenance and license information in 62 percent of answers, compared with approximately 0 percent for all baselines.\n  We also find that minimizing selected-field count is counterproductive: it reduces answer accuracy to 0.56 with negligible token savings, while recall-preserving projection restores top accuracy. SchemaRouter improves efficiency, schema-size-independent scaling, and verifiable provenance/license-grounded answering at competitive accuracy.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-07-03"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Active Interaction-Aware Model Predictive Path Integral via Ego-Conditioned Generative Predictions",
+      "authors": [
+        "Khaled A. Mustafa",
+        "Mohamed-Khalil Bouzidi",
+        "Christian Schlauch",
+        "Ahmad Gazar",
+        "Nadja Klein",
+        "Joerg Reichardt",
+        "Javier Alonso-Mora"
+      ],
+      "abstract": "Dense traffic is inherently interactive. The ego vehicle and surrounding agents continuously influence each other's reactions, making \"what-if\" reasoning essential for safe and efficient driving. To enable such an active interaction-aware behavior, we propose a planning framework that integrates an ego-conditioned generative autoregressive prediction model within Model Predictive Path Integral (MPPI) control. The generative prediction model outputs stochastic, multi-modal predictions of surrounding agents conditioned on each of the ego's considered future actions. A nested sampling scheme enables tractable evaluation of expected cost and collision risk under the induced distribution. This formulation allows the ego to actively probe how different candidate actions shape the interaction outcomes and to identify actions that reduce ambiguity in uncertain interactions. Closed-loop simulations demonstrate improved safety and efficiency compared to conventional predict-then-plan and passive interaction-aware approaches.",
+      "url": "http://arxiv.org/abs/2608.21400v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21400v1",
+      "arxiv_id": "2608.21400",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Dense traffic is inherently interactive. The ego vehicle and surrounding agents continuously influence each other's reactions, making \"what-if\" reasoning essential for safe and efficient driving. To enable such an active interaction-aware behavior, we propose a planning framework that integrates an ego-conditioned generative autoregressive prediction model within Model Predictive Path Integral (MPPI) control. The generative prediction model outputs stochastic, multi-modal predictions of surrounding agents conditioned on each of the ego's considered future actions. A nested sampling scheme enables tractable evaluation of expected cost and collision risk under the induced distribution. This formulation allows the ego to actively probe how different candidate actions shape the interaction outcomes and to identify actions that reduce ambiguity in uncertain interactions. Closed-loop simulations demonstrate improved safety and efficiency compared to conventional predict-then-plan and passive interaction-aware approaches.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-08-06"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Multimodal-Language-Model-Driven Interaction and Companionship for Service Robots in Elderly-Care Facilities",
+      "authors": [
+        "Ching-Chieh Liu",
+        "Cong-Thanh Vu",
+        "Yen-Chen Liu"
+      ],
+      "abstract": "Service robots are increasingly deployed in elderly-care facilities to alleviate caregiver workload and enhance the quality of daily care. However, most existing studies focus on isolated service functions and lack integrated capabilities for continuous companionship, natural interaction, and safety monitoring. In this paper, we present an intelligent companion robot system that unifies active visual human-following, real-time LLM-driven speech interaction for intent understanding and task execution, and VLM-based safety monitoring for fall detection and abnormal posture assessment. The perception layer ensures robust human tracking and uses an active gimbal to maintain the user in view during occlusions or abrupt movements. At the interaction layer, a Large Language Model interprets spoken requests and maps them to robot actions, enabling escorting and semantic navigation. Simultaneously, a VLM-based safety agent continuously analyzes visual observations to detect fall-related or abnormal postures and triggers emergency responses when necessary. Experimental results demonstrate the system's ability to reliably follow and interact with humans, while effectively detecting potential falls to ensure user safety.",
+      "url": "http://arxiv.org/abs/2608.21387v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21387v1",
+      "arxiv_id": "2608.21387",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Service robots are increasingly deployed in elderly-care facilities to alleviate caregiver workload and enhance the quality of daily care. However, most existing studies focus on isolated service functions and lack integrated capabilities for continuous companionship, natural interaction, and safety monitoring. In this paper, we present an intelligent companion robot system that unifies active visual human-following, real-time LLM-driven speech interaction for intent understanding and task execution, and VLM-based safety monitoring for fall detection and abnormal posture assessment. The perception layer ensures robust human tracking and uses an active gimbal to maintain the user in view during occlusions or abrupt movements. At the interaction layer, a Large Language Model interprets spoken requests and maps them to robot actions, enabling escorting and semantic navigation. Simultaneously, a VLM-based safety agent continuously analyzes visual observations to detect fall-related or abnormal postures and triggers emergency responses when necessary. Experimental results demonstrate the system's ability to reliably follow and interact with humans, while effectively detecting potential falls to ensure user safety.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-07-22"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "RoboShape: Information-Theoretic Point Cloud Representations for Privacy-Aware Robot Perception",
+      "authors": [
+        "Oguzhan Baser",
+        "Mirac Sozen",
+        "Kaan Kale",
+        "Sandeep Chinchali",
+        "Sriram Vishwanath"
+      ],
+      "abstract": "With the increased adoption of robotic agents operating in human environments by scanning and sharing 3D representations (e.g., for fleet learning, cloud-based planning, or collaborative mapping), collected point clouds reveal not just the objects in a scene but also sensitive spatial context, such as room function or information that occupants never consented to disclose. Traditional point cloud encoders offer no principled control over this: either all is preserved, or none. Hence, we introduce RoboShape, an information theory guided compression head following the frozen {\\tt Sonata} encoder. We project voxel-level embeddings using the Donsker-Varadhan formulation of mutual information (MI). Specifically, we maximize the MI between embeddings and object-level understanding while minimizing it for private attributes. RoboShape leads to 87.5\\% smaller embeddings that retain 98.7\\% of object classification utility while collapsing sensitive attribute predictions by 39.3\\% across the three real-world indoor LiDAR datasets. Its privacy-preserving embeddings are cheaper to transmit over the network or to train a model for any downstream tasks. We release the RoboShape codebase to give the robotics community a practical, encoder-agnostic tool for building perception pipelines that are compact, privacy-aware, and deployment-ready.",
+      "url": "http://arxiv.org/abs/2608.21380v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21380v1",
+      "arxiv_id": "2608.21380",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "With the increased adoption of robotic agents operating in human environments by scanning and sharing 3D representations (e.g., for fleet learning, cloud-based planning, or collaborative mapping), collected point clouds reveal not just the objects in a scene but also sensitive spatial context, such as room function or information that occupants never consented to disclose. Traditional point cloud encoders offer no principled control over this: either all is preserved, or none. Hence, we introduce RoboShape, an information theory guided compression head following the frozen {\\tt Sonata} encoder. We project voxel-level embeddings using the Donsker-Varadhan formulation of mutual information (MI). Specifically, we maximize the MI between embeddings and object-level understanding while minimizing it for private attributes. RoboShape leads to 87.5\\% smaller embeddings that retain 98.7\\% of object classification utility while collapsing sensitive attribute predictions by 39.3\\% across the three real-world indoor LiDAR datasets. Its privacy-preserving embeddings are cheaper to transmit over the network or to train a model for any downstream tasks. We release the RoboShape codebase to give the robotics community a practical, encoder-agnostic tool for building perception pipelines that are compact, privacy-aware, and deployment-ready.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-07-16"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://openalex.org/W7127920137",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn.1",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Federated Ensemble Forecasting Under Supply-Chain Market Volatility",
+      "SchemaRouter: Field-Aware Tool Routing for Efficient Heterogeneous Agentic RAG",
+      "Active Interaction-Aware Model Predictive Path Integral via Ego-Conditioned Generative Predictions",
+      "Multimodal-Language-Model-Driven Interaction and Companionship for Service Robots in Elderly-Care Facilities",
+      "RoboShape: Information-Theoretic Point Cloud Representations for Privacy-Aware Robot Perception"
+    ],
+    "hugging_face": [
+      "Federated Ensemble Forecasting Under Supply-Chain Market Volatility",
+      "SchemaRouter: Field-Aware Tool Routing for Efficient Heterogeneous Agentic RAG",
+      "Active Interaction-Aware Model Predictive Path Integral via Ego-Conditioned Generative Predictions",
+      "Multimodal-Language-Model-Driven Interaction and Companionship for Service Robots in Elderly-Care Facilities",
+      "RoboShape: Information-Theoretic Point Cloud Representations for Privacy-Aware Robot Perception"
+    ],
+    "papers_with_code": [
+      "Federated Ensemble Forecasting Under Supply-Chain Market Volatility",
+      "SchemaRouter: Field-Aware Tool Routing for Efficient Heterogeneous Agentic RAG",
+      "Active Interaction-Aware Model Predictive Path Integral via Ego-Conditioned Generative Predictions",
+      "Multimodal-Language-Model-Driven Interaction and Companionship for Service Robots in Elderly-Care Facilities",
+      "RoboShape: Information-Theoretic Point Cloud Representations for Privacy-Aware Robot Perception"
+    ]
+  }
+}
