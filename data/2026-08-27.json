@@ -1,0 +1,315 @@
+{
+  "date": "2026-08-27",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "SIMGUIDE: Procedurally Grounded Multi-Context Representations for Personalized Agent Planning",
+      "authors": [
+        "Chirag Shah"
+      ],
+      "abstract": "Personalized AI agents overwhelmingly treat users as single entities: a flat profile concatenated into a prompt. This fails when the same person holds different priorities across life contexts -- and fails catastrophically when those priorities conflict. The core problem is not that agents lack information about users; it is that the format of user representations determines whether an agent can act on that information at all. We introduce SIMGUIDE, a method that structures user context into typed, domain-specific blocks called Sims and grounds each constraint with procedural examples drawn from past decisions. To evaluate this, we construct SIMBENCH, a diagnostic suite of 47 preference-conditioned planning tasks where the correct plan depends on which user context is active -- a property no existing benchmark tests. Declarative Sim constraints alone do not outperform retrieval-based personalization (RAG). Procedurally grounded Sims outperform RAG on GPT-4o (+7.9 Preference Adherence points, $p = 0.013$), and this advantage replicates on 100 $τ$-bench tasks across both GPT-4o and Claude Sonnet~4.5 ($p \\leq 0.023$). At the parametric level, the same principle holds: training distribution dominates whether parametric adaptation succeeds at all. Task-matched LoRA fine-tuning improves generation quality by 12.8 ROUGE-L points over the unadapted base model, and routing adapters by Sim type rather than user identity adds a further 7.3 points, robust to 28% routing error. Representation format -- not representation content -- is the first-order design variable.",
+      "url": "http://arxiv.org/abs/2608.24888v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24888v1",
+      "arxiv_id": "2608.24888",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Personalized AI agents overwhelmingly treat users as single entities: a flat profile concatenated into a prompt. This fails when the same person holds different priorities across life contexts -- and fails catastrophically when those priorities conflict. The core problem is not that agents lack information about users; it is that the format of user representations determines whether an agent can act on that information at all. We introduce SIMGUIDE, a method that structures user context into typed, domain-specific blocks called Sims and grounds each constraint with procedural examples drawn from past decisions. To evaluate this, we construct SIMBENCH, a diagnostic suite of 47 preference-conditioned planning tasks where the correct plan depends on which user context is active -- a property no existing benchmark tests. Declarative Sim constraints alone do not outperform retrieval-based personalization (RAG). Procedurally grounded Sims outperform RAG on GPT-4o (+7.9 Preference Adherence points, $p = 0.013$), and this advantage replicates on 100 $τ$-bench tasks across both GPT-4o and Claude Sonnet~4.5 ($p \\leq 0.023$). At the parametric level, the same principle holds: training distribution dominates whether parametric adaptation succeeds at all. Task-matched LoRA fine-tuning improves generation quality by 12.8 ROUGE-L points over the unadapted base model, and routing adapters by Sim type rather than user identity adds a further 7.3 points, robust to 28% routing error. Representation format -- not representation content -- is the first-order design variable.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-05-14"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "MacroAgent: Regularity-Aware Macro Legalization with LLM-Agent-Designed Contour Algorithms",
+      "authors": [
+        "Jiaxi Jiang",
+        "Xufeng Yao",
+        "Yuxuan Zhao",
+        "Yuntao Lu",
+        "Peiyu Liao",
+        "Zuodong Zhang",
+        "Yibo Lin",
+        "Bei Yu"
+      ],
+      "abstract": "Macros constitute a large part of the core area in modern very large-scale integration (VLSI) designs. Moreover, macro positions have a significant impact on the final quality of result (QoR), and macro legalization is typically the final step in determining the macro positions. However, existing approaches related to macro legalization either lack robustness or incur substantial computational costs or neglect the regularity between macros. To address these limitations, we introduce MacroAgent. The novel framework is a four-stage approach: clustering, contour generation, template matching, and inter-cluster refinement. We propose leveraging Large Language Models (LLMs) to discover multiple, effective heuristic regularity-aware contour algorithms. This framework successfully generates robust and effective algorithmic solutions for macro legalization. Compared with state-of-the-art macro legalization works, experimental results on TILOS and Chipyard benchmarks demonstrate a 2 to 8 fold improvement in layout regularity, a 3% to 5% reduction in routed wirelength with comparable congestion after global routing, and significantly better robustness with an acceptable runtime. Furthermore, end-to-end evaluation through Cadence Innovus place-and-route confirms that the regularity improvements translate into tangible PPA gains, including 2.9% lower routed wirelength and 68.3% TNS improvement over the DREAMPlace macro legalization baseline; it also achieves 1.8% lower routed wirelength when integrated into the Innovus macro placement flow.",
+      "url": "http://arxiv.org/abs/2608.24946v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24946v1",
+      "arxiv_id": "2608.24946",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Macros constitute a large part of the core area in modern very large-scale integration (VLSI) designs. Moreover, macro positions have a significant impact on the final quality of result (QoR), and macro legalization is typically the final step in determining the macro positions. However, existing approaches related to macro legalization either lack robustness or incur substantial computational costs or neglect the regularity between macros. To address these limitations, we introduce MacroAgent. The novel framework is a four-stage approach: clustering, contour generation, template matching, and inter-cluster refinement. We propose leveraging Large Language Models (LLMs) to discover multiple, effective heuristic regularity-aware contour algorithms. This framework successfully generates robust and effective algorithmic solutions for macro legalization. Compared with state-of-the-art macro legalization works, experimental results on TILOS and Chipyard benchmarks demonstrate a 2 to 8 fold improvement in layout regularity, a 3% to 5% reduction in routed wirelength with comparable congestion after global routing, and significantly better robustness with an acceptable runtime. Furthermore, end-to-end evaluation through Cadence Innovus place-and-route confirms that the regularity improvements translate into tangible PPA gains, including 2.9% lower routed wirelength and 68.3% TNS improvement over the DREAMPlace macro legalization baseline; it also achieves 1.8% lower routed wirelength when integrated into the Innovus macro placement flow.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5,
+        "semantic_scholar": {
+          "paper_id": "1228c668b6eb1291e3531a05edc0b464b3f20290",
+          "url": "https://www.semanticscholar.org/paper/1228c668b6eb1291e3531a05edc0b464b3f20290",
+          "citation_count": 0,
+          "reference_count": 42,
+          "influential_citation_count": 0,
+          "publication_date": "2026-08-24",
+          "tldr": "The novel framework MacroAgent is introduced, leveraging Large Language Models (LLMs) to discover multiple, effective heuristic regularity-aware contour algorithms and generates robust and effective algorithmic solutions for macro legalization."
+        }
+      },
+      "published_date": "2026-08-24"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "ExFold: Unified Expert Folding for Training-Free MoE Prefill-Decode Acceleration",
+      "authors": [
+        "Juntong Wu",
+        "Yifei Liu",
+        "Junyi Chen",
+        "Siqi Fan",
+        "Chaoran Feng",
+        "Minghao Li",
+        "Liujie Zhang",
+        "Weihang Chen",
+        "Li Yuan"
+      ],
+      "abstract": "Mixture-of-Experts (MoE) models scale capacity for strong quality while keeping per-token compute bounded through sparse expert activation. Yet low-latency MoE serving is increasingly challenging, because it spans two inference phases with fundamentally different bottlenecks: prefill is dominated by token-wise expert computation, whereas decode is constrained by memory traffic from the batch-wise activated expert set. However, existing training-free acceleration methods optimize only a single resource proxy, either the experts each token executes or the experts a batch activates, and either discard the excluded experts' contribution or leave it only implicitly approximated. In this paper, we propose ExFold, a unified training-free expert-folding framework for jointly accelerating MoE prefill and decode. ExFold casts both prefill and decode as one budgeted output-approximation problem: execute only a phase-specific constrained expert set while projecting the contribution of budget-excluded experts onto retained experts using calibrated scalar projectors. Motivated by the observation that many expert outputs are directionally aligned but differ in magnitude, ExFold calibrates a pairwise scalar-projector matrix on unlabeled data and uses it at inference time to fold excluded expert contributions into retained experts. Under this view, prefill acceleration becomes token-level Top-K folding, and decode acceleration becomes batch-level expert-pool folding. The two phases differ only in how retained experts are selected, while excluded contributions are recovered by one shared folding mechanism. We implement ExFold as a plug-and-play plugin in vLLM, with a lightweight expert-folding CUDA kernel, delivering up to 1.41x TTFT and 2.45x TPOT speedups while retaining about 99% of the original average quality.",
+      "url": "http://arxiv.org/abs/2608.24938v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24938v1",
+      "arxiv_id": "2608.24938",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Mixture-of-Experts (MoE) models scale capacity for strong quality while keeping per-token compute bounded through sparse expert activation. Yet low-latency MoE serving is increasingly challenging, because it spans two inference phases with fundamentally different bottlenecks: prefill is dominated by token-wise expert computation, whereas decode is constrained by memory traffic from the batch-wise activated expert set. However, existing training-free acceleration methods optimize only a single resource proxy, either the experts each token executes or the experts a batch activates, and either discard the excluded experts' contribution or leave it only implicitly approximated. In this paper, we propose ExFold, a unified training-free expert-folding framework for jointly accelerating MoE prefill and decode. ExFold casts both prefill and decode as one budgeted output-approximation problem: execute only a phase-specific constrained expert set while projecting the contribution of budget-excluded experts onto retained experts using calibrated scalar projectors. Motivated by the observation that many expert outputs are directionally aligned but differ in magnitude, ExFold calibrates a pairwise scalar-projector matrix on unlabeled data and uses it at inference time to fold excluded expert contributions into retained experts. Under this view, prefill acceleration becomes token-level Top-K folding, and decode acceleration becomes batch-level expert-pool folding. The two phases differ only in how retained experts are selected, while excluded contributions are recovered by one shared folding mechanism. We implement ExFold as a plug-and-play plugin in vLLM, with a lightweight expert-folding CUDA kernel, delivering up to 1.41x TTFT and 2.45x TPOT speedups while retaining about 99% of the original average quality.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5,
+        "hugging_face": {
+          "url": "https://huggingface.co/papers/2608.24938",
+          "upvotes": 3,
+          "submitted_by": null,
+          "summary": "Mixture-of-Experts (MoE) models scale capacity for strong quality while keeping per-token compute bounded through sparse expert activation. Yet low-latency MoE serving is increasingly challenging, because it spans two inference phases with fundamentally different bottlenecks: prefill is dominated by token-wise expert computation, whereas decode is constrained by memory traffic from the batch-wise activated expert set. However, existing training-free acceleration methods optimize only a single resource proxy, either the experts each token executes or the experts a batch activates, and either discard the excluded experts' contribution or leave it only implicitly approximated. In this paper, we propose ExFold, a unified training-free expert-folding framework for jointly accelerating MoE prefill and decode. ExFold casts both prefill and decode as one budgeted output-approximation problem: execute only a phase-specific constrained expert set while projecting the contribution of budget-excluded experts onto retained experts using calibrated scalar projectors. Motivated by the observation that many expert outputs are directionally aligned but differ in magnitude, ExFold calibrates a pairwise scalar-projector matrix on unlabeled data and uses it at inference time to fold excluded expert contributions into retained experts. Under this view, prefill acceleration becomes token-level Top-K folding, and decode acceleration becomes batch-level expert-pool folding. The two phases differ only in how retained experts are selected, while excluded contributions are recovered by one shared folding mechanism. We implement ExFold as a plug-and-play plugin in vLLM, with a lightweight expert-folding CUDA kernel, delivering up to 1.41x TTFT and 2.45x TPOT speedups while retaining about 99% of the original average quality.",
+          "linked_repos": {
+            "models": [],
+            "datasets": [],
+            "spaces": []
+          }
+        }
+      },
+      "published_date": "2026-08-24"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Semantic Graph Unification for Industrial Digital Threads: Bridging 11 Heterogeneous Manufacturing Systems Through Ontology-Driven Knowledge Graphs",
+      "authors": [
+        "Grama Chethan"
+      ],
+      "abstract": "Modern manufacturing enterprises operate heterogeneous systems -- ERP, MES, PLM, SCADA, QMS, SCM -- each with its own data model and API. The resulting silos prevent holistic analysis, delay root-cause investigation, and obstruct Industry 4.0 traceability. Point-to-point integration scales as O(n^2) and accumulates brittle dependencies. This paper presents an open framework for semantic graph unification of industrial digital threads. An ontology-driven RDF knowledge graph unifies data from 11 simulated sources across nine domains through a five-stage ETL pipeline with automated entity resolution spanning 97 owl:sameAs identity links. The ontology encompasses 78 RDFS classes, 108 object properties, and 243 data properties, drawing on ISA-95, OPC UA, eClass, the Asset Administration Shell, RAMI 4.0, and additional standards. An automated discovery engine applies nine strategy categories -- cross-station correlation, alarm coverage, ECN impact, CUSUM/EWMA drift detection -- to surface insights spanning system boundaries. The primary empirical result: blocking 24 cross-system tools reduces recall from 1.00 to 0.31 (F1 from 1.00 to 0.48), showing that 69% of discoverable signals require cross-system graph joins. Leave-one-out ablation confirms six of nine strategies contribute unique signals. Verification against a 65-signal manifest (16 positive, 49 null) yields F1 = 1.00 (95% Clopper-Pearson CI [0.79, 1.00]); as the manifest was author-constructed, this constitutes verification not independent validation. The graph is exposed to LLM agents via 287 Model Context Protocol tools as a SPARQL-native semantic layer. Five industry templates (aerospace, CPG, pharma, medical devices, turbine blades) demonstrate schema stability across manufacturing verticals.",
+      "url": "http://arxiv.org/abs/2608.24918v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24918v1",
+      "arxiv_id": "2608.24918",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Modern manufacturing enterprises operate heterogeneous systems -- ERP, MES, PLM, SCADA, QMS, SCM -- each with its own data model and API. The resulting silos prevent holistic analysis, delay root-cause investigation, and obstruct Industry 4.0 traceability. Point-to-point integration scales as O(n^2) and accumulates brittle dependencies. This paper presents an open framework for semantic graph unification of industrial digital threads. An ontology-driven RDF knowledge graph unifies data from 11 simulated sources across nine domains through a five-stage ETL pipeline with automated entity resolution spanning 97 owl:sameAs identity links. The ontology encompasses 78 RDFS classes, 108 object properties, and 243 data properties, drawing on ISA-95, OPC UA, eClass, the Asset Administration Shell, RAMI 4.0, and additional standards. An automated discovery engine applies nine strategy categories -- cross-station correlation, alarm coverage, ECN impact, CUSUM/EWMA drift detection -- to surface insights spanning system boundaries. The primary empirical result: blocking 24 cross-system tools reduces recall from 1.00 to 0.31 (F1 from 1.00 to 0.48), showing that 69% of discoverable signals require cross-system graph joins. Leave-one-out ablation confirms six of nine strategies contribute unique signals. Verification against a 65-signal manifest (16 positive, 49 null) yields F1 = 1.00 (95% Clopper-Pearson CI [0.79, 1.00]); as the manifest was author-constructed, this constitutes verification not independent validation. The graph is exposed to LLM agents via 287 Model Context Protocol tools as a SPARQL-native semantic layer. Five industry templates (aerospace, CPG, pharma, medical devices, turbine blades) demonstrate schema stability across manufacturing verticals.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-08-11"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "GaussVLA: Geometry-Aware Spatial Reasoning for Vision-Language-Action Model",
+      "authors": [
+        "Md Selim Sarowar",
+        "Md Tanvir Islam",
+        "Sungho Kim",
+        "Sangtae Ahn"
+      ],
+      "abstract": "Vision-Language-Action (VLA) models encode visual observations as flat 2D patch tokens that carry no intrinsic geometric structure, and augmenting them with dense monocular depth injects per-pixel scalar values that encode neither surface orientation nor geometric confidence. This leaves the policy with limited structured spatial reasoning for action prediction. We propose GaussVLA, a Mamba-based VLA that incorporates two custom modules: Gaussian Spatial Tokenizer (GST) to lift frozen semantic and depth features into compact 3D Gaussian tokens, pools geometrically salient regions with learned queries, and \\emph{Depth-Aware Chain-of-Thought (DA-CoT)} that performs structured, non-autoregressive geometric reasoning under language and flow-time conditioning. Across both simulation and real-world evaluations, GaussVLA demonstrates strong spatial-manipulation performance while remaining parameter-efficient. On LIBERO, it achieves 93.5% average success and 100.0% success on the Spatial suite with only 200M parameters, improving over SpatialVLA by 19.7% relative average success while remaining significantly more parameter-efficient.",
+      "url": "http://arxiv.org/abs/2608.24959v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24959v1",
+      "arxiv_id": "2608.24959",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Vision-Language-Action (VLA) models encode visual observations as flat 2D patch tokens that carry no intrinsic geometric structure, and augmenting them with dense monocular depth injects per-pixel scalar values that encode neither surface orientation nor geometric confidence. This leaves the policy with limited structured spatial reasoning for action prediction. We propose GaussVLA, a Mamba-based VLA that incorporates two custom modules: Gaussian Spatial Tokenizer (GST) to lift frozen semantic and depth features into compact 3D Gaussian tokens, pools geometrically salient regions with learned queries, and \\emph{Depth-Aware Chain-of-Thought (DA-CoT)} that performs structured, non-autoregressive geometric reasoning under language and flow-time conditioning. Across both simulation and real-world evaluations, GaussVLA demonstrates strong spatial-manipulation performance while remaining parameter-efficient. On LIBERO, it achieves 93.5% average success and 100.0% success on the Spatial suite with only 200M parameters, improving over SpatialVLA by 19.7% relative average success while remaining significantly more parameter-efficient.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-08-25"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://doi.org/10.17638/03194716",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn.1",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "SIMGUIDE: Procedurally Grounded Multi-Context Representations for Personalized Agent Planning",
+      "ExFold: Unified Expert Folding for Training-Free MoE Prefill-Decode Acceleration",
+      "Semantic Graph Unification for Industrial Digital Threads: Bridging 11 Heterogeneous Manufacturing Systems Through Ontology-Driven Knowledge Graphs",
+      "GaussVLA: Geometry-Aware Spatial Reasoning for Vision-Language-Action Model"
+    ],
+    "hugging_face": [
+      "SIMGUIDE: Procedurally Grounded Multi-Context Representations for Personalized Agent Planning",
+      "MacroAgent: Regularity-Aware Macro Legalization with LLM-Agent-Designed Contour Algorithms",
+      "Semantic Graph Unification for Industrial Digital Threads: Bridging 11 Heterogeneous Manufacturing Systems Through Ontology-Driven Knowledge Graphs",
+      "GaussVLA: Geometry-Aware Spatial Reasoning for Vision-Language-Action Model"
+    ],
+    "papers_with_code": [
+      "SIMGUIDE: Procedurally Grounded Multi-Context Representations for Personalized Agent Planning",
+      "MacroAgent: Regularity-Aware Macro Legalization with LLM-Agent-Designed Contour Algorithms",
+      "ExFold: Unified Expert Folding for Training-Free MoE Prefill-Decode Acceleration",
+      "Semantic Graph Unification for Industrial Digital Threads: Bridging 11 Heterogeneous Manufacturing Systems Through Ontology-Driven Knowledge Graphs",
+      "GaussVLA: Geometry-Aware Spatial Reasoning for Vision-Language-Action Model"
+    ]
+  }
+}
