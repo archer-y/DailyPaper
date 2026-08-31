@@ -1,0 +1,295 @@
+{
+  "date": "2026-08-31",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Class-Based Heuristic Selection for Solving the Flying Block Puzzle",
+      "authors": [
+        "Sanyar Ahmadi",
+        "Pedram Asadzadeh",
+        "Amanj Khorramian"
+      ],
+      "abstract": "Heuristic search underlies planning in autonomous systems ranging from warehouse logistics to robotic navigation, yet generic heuristics fail to exploit the structural constraints that govern constrained spatial domains, causing search performance to degrade catastrophically on harder instances. We study this problem through the two-column Flying Block Puzzle, a rigorously NP-complete spatial planning microworld whose bottleneck geometry mirrors clearance-to-size constraints encountered in multi-agent path finding, autonomous vehicle navigation, and block relocation systems. We introduce the Class-Based Heuristic A* (CBHA*) algorithm, which integrates a General Move Constraint to capture minimum displacement costs when vacant units are scarce, a formal kinematic taxonomy partitioning the state space into seven mutually exclusive classes with provably admissible heuristics based on vacancy ratio and goal-piece geometry, and a class-conditional tie-breaking mechanism that dynamically switches between depth-priority and vertical-distance ordering to overcome f-value plateaus. Over 146 benchmark instances, CBHA* achieves a 93.4% success rate against 64% for Depth-Prioritized A*, 39% for Standard A*, and 17% for BFS, while reducing node expansions by 87.98% relative to Standard A* and sustaining an average effective branching factor of approximately 3, demonstrating that class-triggered adaptive heuristics constitute a principled mechanism for efficient spatial planning that generalizes structurally to physical constraint systems.",
+      "url": "http://arxiv.org/abs/2608.27476v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27476v1",
+      "arxiv_id": "2608.27476",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Heuristic search underlies planning in autonomous systems ranging from warehouse logistics to robotic navigation, yet generic heuristics fail to exploit the structural constraints that govern constrained spatial domains, causing search performance to degrade catastrophically on harder instances. We study this problem through the two-column Flying Block Puzzle, a rigorously NP-complete spatial planning microworld whose bottleneck geometry mirrors clearance-to-size constraints encountered in multi-agent path finding, autonomous vehicle navigation, and block relocation systems. We introduce the Class-Based Heuristic A* (CBHA*) algorithm, which integrates a General Move Constraint to capture minimum displacement costs when vacant units are scarce, a formal kinematic taxonomy partitioning the state space into seven mutually exclusive classes with provably admissible heuristics based on vacancy ratio and goal-piece geometry, and a class-conditional tie-breaking mechanism that dynamically switches between depth-priority and vertical-distance ordering to overcome f-value plateaus. Over 146 benchmark instances, CBHA* achieves a 93.4% success rate against 64% for Depth-Prioritized A*, 39% for Standard A*, and 17% for BFS, while reducing node expansions by 87.98% relative to Standard A* and sustaining an average effective branching factor of approximately 3, demonstrating that class-triggered adaptive heuristics constitute a principled mechanism for efficient spatial planning that generalizes structurally to physical constraint systems.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-08-20"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Coordinated Motion Planning for Multi-Arm Systems via Iterative LQ Games",
+      "authors": [
+        "Junyoung Kim",
+        "Hanwen Ren",
+        "Lei Zhang",
+        "Ahmed H. Qureshi"
+      ],
+      "abstract": "Multi-agent motion planning for high-degree-of-freedom robotics manipulators in shared workspaces remains a fundamental yet challenging problem. Centralized planners often suffer from poor scalability, while decentralized approaches face robustness and safety concerns. Game-theoretic formulations offer a promising approach for modeling agent interactions, potentially overcoming these limitations. However, their application to articulated multi-arm systems remains limited. This paper presents an iterative Linear Quadratic (LQ) game framework for multi-manipulator motion planning, where each manipulator is modeled as an independent agent optimizing its own objective while interacting with other agents based on shared global states and collision constraints. The method solves a series of local LQ games by linearizing the dynamics and approximating the cost around a nominal trajectory, with Riccati backward recursions yielding feedback Nash strategies. To address the challenges of articulated systems, we incorporate differentiable penalties for self-collision and inter-arm collision into the optimization pipeline, enabling coordinated, collision-aware trajectory generation. Experiments demonstrate that our framework produces smooth, safe, and efficient trajectories in high-dimensional settings, outperforming traditional methods. This highlights the effectiveness of differential game formulations for multi-robot manipulation.",
+      "url": "http://arxiv.org/abs/2608.27726v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27726v1",
+      "arxiv_id": "2608.27726",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Multi-agent motion planning for high-degree-of-freedom robotics manipulators in shared workspaces remains a fundamental yet challenging problem. Centralized planners often suffer from poor scalability, while decentralized approaches face robustness and safety concerns. Game-theoretic formulations offer a promising approach for modeling agent interactions, potentially overcoming these limitations. However, their application to articulated multi-arm systems remains limited. This paper presents an iterative Linear Quadratic (LQ) game framework for multi-manipulator motion planning, where each manipulator is modeled as an independent agent optimizing its own objective while interacting with other agents based on shared global states and collision constraints. The method solves a series of local LQ games by linearizing the dynamics and approximating the cost around a nominal trajectory, with Riccati backward recursions yielding feedback Nash strategies. To address the challenges of articulated systems, we incorporate differentiable penalties for self-collision and inter-arm collision into the optimization pipeline, enabling coordinated, collision-aware trajectory generation. Experiments demonstrate that our framework produces smooth, safe, and efficient trajectories in high-dimensional settings, outperforming traditional methods. This highlights the effectiveness of differential game formulations for multi-robot manipulation.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-08-27"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Benchmarking General Mobile Assistants in Challenging Real-World Scenarios",
+      "authors": [
+        "Yiqi Zhu",
+        "Feiyu Gao",
+        "Jiaxing Fan",
+        "Jiahui Zeng",
+        "Minggang Wu",
+        "Chenliang Li",
+        "Haiyang Xu",
+        "Peng Li",
+        "Ming Yan",
+        "Yang Liu"
+      ],
+      "abstract": "Graphical user interfaces have emerged as an important environment for evaluating autonomous AI agents on multimodal interactive tasks. Existing benchmarks such as AndroidWorld and MobileWorld provide strong foundations for mobile agent evaluation, but their application coverage and task design do not yet fully capture the diversity and complexity of realistic mobile use. We present GMA, a benchmark for evaluating general mobile assistants in challenging real-world scenarios. GMA introduces seven applications based on open-source projects, spanning domains such as lifestyle sharing and travel planning, and 300 tasks across four difficulty tiers, from atomic actions to complex multi-step workflows. We evaluate eight frontier models and find that performance declines substantially as task complexity increases, with current agents remaining far from reliably handling realistic user requirements. We further conduct controlled ablation studies of agent harness choices, including context retention and explicit state tracking, under a shared environment, model setting, and task taxonomy. Results show that appropriate harness design can meaningfully improve performance, particularly on demanding workflows, while the effectiveness of specific designs can vary across foundation models. Overall, GMA complements existing benchmarks by expanding application coverage and task complexity, providing a challenging testbed for evaluating mobile agents and studying how harness design supports reliable execution in complex mobile workflows.",
+      "url": "http://arxiv.org/abs/2608.27477v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27477v1",
+      "arxiv_id": "2608.27477",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Graphical user interfaces have emerged as an important environment for evaluating autonomous AI agents on multimodal interactive tasks. Existing benchmarks such as AndroidWorld and MobileWorld provide strong foundations for mobile agent evaluation, but their application coverage and task design do not yet fully capture the diversity and complexity of realistic mobile use. We present GMA, a benchmark for evaluating general mobile assistants in challenging real-world scenarios. GMA introduces seven applications based on open-source projects, spanning domains such as lifestyle sharing and travel planning, and 300 tasks across four difficulty tiers, from atomic actions to complex multi-step workflows. We evaluate eight frontier models and find that performance declines substantially as task complexity increases, with current agents remaining far from reliably handling realistic user requirements. We further conduct controlled ablation studies of agent harness choices, including context retention and explicit state tracking, under a shared environment, model setting, and task taxonomy. Results show that appropriate harness design can meaningfully improve performance, particularly on demanding workflows, while the effectiveness of specific designs can vary across foundation models. Overall, GMA complements existing benchmarks by expanding application coverage and task complexity, providing a challenging testbed for evaluating mobile agents and studying how harness design supports reliable execution in complex mobile workflows.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-08-21"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "LLM-Augmented Causal Discovery: Probabilistic Fusion of Edge Existence and Orientation",
+      "authors": [
+        "Neville K. Kitson",
+        "Anthony Constantinou"
+      ],
+      "abstract": "Bayesian network structure learning (BNSL) from observational data struggles with orientation identifiability, while large language models (LLMs) offer broad but often unreliable causal knowledge. We propose combining these complementary sources through a novel representation, termed Probabilistic Dependency Graphs (PDGs). In a PDG, each edge is associated with a distribution over directed, undirected, and absent states, enabling fusion via weighted averaging. We evaluate this approach on 26 benchmark networks, combining ensembles of three BNSL algorithms (FGES, Tabu, PC) with three LLMs (Gemini, Claude, GPT) across multiple prompts and random seeds. A simple 50/50 fusion improves F1 over the better of either source alone in 22 of 26 networks, with a statistically significant mean improvement of $0.056$ $(p<0.001)$. Analysis reveals that the two sources play complementary roles: BNSL contributes a high-recall edge skeleton (80\\% vs 60\\% for LLM), while LLM contributes accurate edge orientation (96\\% vs 77\\% for BNSL). Our results show that representing both sources as probabilistic uncertainty over edge existence and orientation is a practical and effective way to improve causal graph accuracy.",
+      "url": "http://arxiv.org/abs/2608.27472v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27472v1",
+      "arxiv_id": "2608.27472",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Bayesian network structure learning (BNSL) from observational data struggles with orientation identifiability, while large language models (LLMs) offer broad but often unreliable causal knowledge. We propose combining these complementary sources through a novel representation, termed Probabilistic Dependency Graphs (PDGs). In a PDG, each edge is associated with a distribution over directed, undirected, and absent states, enabling fusion via weighted averaging. We evaluate this approach on 26 benchmark networks, combining ensembles of three BNSL algorithms (FGES, Tabu, PC) with three LLMs (Gemini, Claude, GPT) across multiple prompts and random seeds. A simple 50/50 fusion improves F1 over the better of either source alone in 22 of 26 networks, with a statistically significant mean improvement of $0.056$ $(p<0.001)$. Analysis reveals that the two sources play complementary roles: BNSL contributes a high-recall edge skeleton (80\\% vs 60\\% for LLM), while LLM contributes accurate edge orientation (96\\% vs 77\\% for BNSL). Our results show that representing both sources as probabilistic uncertainty over edge existence and orientation is a practical and effective way to improve causal graph accuracy.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-08-19"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Not All Explanations Are Sought: Information-Seeking Psychology for Human-Centered XAI",
+      "authors": [
+        "Andrea Beretta",
+        "Salvatore Rinzivillo"
+      ],
+      "abstract": "This position paper argues that human-centered explainable AI (HCXAI) should incorporate insights from the psychology of information seeking. Drawing on Sharot and Sunstein's framework of information-seeking motives, we propose that people evaluate whether to engage with explanations based on three types of expected utility: instrumental (will it help me act better?), hedonic (will it make me feel better?), and cognitive (will it improve my understanding?). Each utility is estimated through a lens shaped by well-documented cognitive biases, including illusion of control, automation bias, unrealistic optimism, impact bias, overconfidence, and confirmation bias. These biases can lead to two failure modes: excessive information-seeking that fragments attention without improving decisions, and insufficient information-seeking that leaves critical risks and misunderstandings unexamined. This challenge is particularly acute for agentic AI systems, where explanations must support not just understanding a single output but anticipating cascading actions, assessing risks, and deciding when to intervene. By integrating information-seeking psychology into HCXAI, we advocate for a shift from making explanations available to making them sought: designing systems that account for when and why users actually want to know.",
+      "url": "http://arxiv.org/abs/2608.27464v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.27464v1",
+      "arxiv_id": "2608.27464",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "This position paper argues that human-centered explainable AI (HCXAI) should incorporate insights from the psychology of information seeking. Drawing on Sharot and Sunstein's framework of information-seeking motives, we propose that people evaluate whether to engage with explanations based on three types of expected utility: instrumental (will it help me act better?), hedonic (will it make me feel better?), and cognitive (will it improve my understanding?). Each utility is estimated through a lens shaped by well-documented cognitive biases, including illusion of control, automation bias, unrealistic optimism, impact bias, overconfidence, and confirmation bias. These biases can lead to two failure modes: excessive information-seeking that fragments attention without improving decisions, and insufficient information-seeking that leaves critical risks and misunderstandings unexamined. This challenge is particularly acute for agentic AI systems, where explanations must support not just understanding a single output but anticipating cascading actions, assessing risks, and deciding when to intervene. By integrating information-seeking psychology into HCXAI, we advocate for a shift from making explanations available to making them sought: designing systems that account for when and why users actually want to know.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-07-15"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://doi.org/10.17638/03194716",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn.1",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Class-Based Heuristic Selection for Solving the Flying Block Puzzle",
+      "Coordinated Motion Planning for Multi-Arm Systems via Iterative LQ Games",
+      "Benchmarking General Mobile Assistants in Challenging Real-World Scenarios",
+      "LLM-Augmented Causal Discovery: Probabilistic Fusion of Edge Existence and Orientation",
+      "Not All Explanations Are Sought: Information-Seeking Psychology for Human-Centered XAI"
+    ],
+    "hugging_face": [
+      "Class-Based Heuristic Selection for Solving the Flying Block Puzzle",
+      "Coordinated Motion Planning for Multi-Arm Systems via Iterative LQ Games",
+      "Benchmarking General Mobile Assistants in Challenging Real-World Scenarios",
+      "LLM-Augmented Causal Discovery: Probabilistic Fusion of Edge Existence and Orientation",
+      "Not All Explanations Are Sought: Information-Seeking Psychology for Human-Centered XAI"
+    ],
+    "papers_with_code": [
+      "Class-Based Heuristic Selection for Solving the Flying Block Puzzle",
+      "Coordinated Motion Planning for Multi-Arm Systems via Iterative LQ Games",
+      "Benchmarking General Mobile Assistants in Challenging Real-World Scenarios",
+      "LLM-Augmented Causal Discovery: Probabilistic Fusion of Edge Existence and Orientation",
+      "Not All Explanations Are Sought: Information-Seeking Psychology for Human-Centered XAI"
+    ]
+  }
+}
