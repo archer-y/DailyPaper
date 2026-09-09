@@ -1,0 +1,296 @@
+{
+  "date": "2026-09-09",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "CaseWeaver: A Multi-Agent Framework for Multimodal Virtual Clinical Case Generation",
+      "authors": [
+        "Jierui Qu",
+        "Jiachuan Peng",
+        "Lin Li",
+        "Kyle Lam",
+        "Jianing Qiu"
+      ],
+      "abstract": "Clinical diagnosis relies on consistent multimodal data collected from the same patient throughout the disease course, yet such data are difficult to acquire at scale because of collection costs, missing modalities, fragmented systems, and longitudinal follow-ups. Existing synthetic-data approaches largely focus on individual modalities or vision-language dual modalities at report-level generation. Little work has been done to construct synthetic data with consistent patient backgrounds, coherent disease trajectories, and interrelated modality-specific evidence at a complete clinical case level. We introduce CaseWeaver, a multi-agent framework built around a timeline-anchored Latent Clinical Case Graph (LCCG). The LCCG organizes patient context, latent disease states, clinical events, and expected observations in a shared patient-level representation. Modality-agents use scoped observation subgraphs and clinical protocols to generate evidence including clinical records, laboratory results, physiological signals, and medical images. We evaluate clinical inferability using a calibrated AgentClinic protocol and case diversity using Virtual Case Diversity (VCD) score. CaseWeaver outperformed general-model and agentic-workflow baselines on both metrics, producing more diverse and coherent multimodal virtual clinical cases.",
+      "url": "http://arxiv.org/abs/2609.05480v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.05480v1",
+      "arxiv_id": "2609.05480",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Clinical diagnosis relies on consistent multimodal data collected from the same patient throughout the disease course, yet such data are difficult to acquire at scale because of collection costs, missing modalities, fragmented systems, and longitudinal follow-ups. Existing synthetic-data approaches largely focus on individual modalities or vision-language dual modalities at report-level generation. Little work has been done to construct synthetic data with consistent patient backgrounds, coherent disease trajectories, and interrelated modality-specific evidence at a complete clinical case level. We introduce CaseWeaver, a multi-agent framework built around a timeline-anchored Latent Clinical Case Graph (LCCG). The LCCG organizes patient context, latent disease states, clinical events, and expected observations in a shared patient-level representation. Modality-agents use scoped observation subgraphs and clinical protocols to generate evidence including clinical records, laboratory results, physiological signals, and medical images. We evaluate clinical inferability using a calibrated AgentClinic protocol and case diversity using Virtual Case Diversity (VCD) score. CaseWeaver outperformed general-model and agentic-workflow baselines on both metrics, producing more diverse and coherent multimodal virtual clinical cases.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-08-23"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "SimTIO: A Simulation-Grounded Multi-Agent LLM Framework for Compositional Traffic Intervention Optimization",
+      "authors": [
+        "Shuyang Li",
+        "Ruimin Ke"
+      ],
+      "abstract": "Traffic analysts must translate diagnosed bottlenecks into executable interventions without allowing local improvements to degrade network-wide performance. This study presents SimTIO, a simulation-grounded multi-agent large language model framework for composing and selecting traffic interventions under explicit operational constraints. SimTIO first simulates an unmodified SUMO scenario to identify a baseline-frozen set of ten bottleneck edges. A grounded sampler then initializes signal-control, corridor-speed, and demand-preserving routing actions, while three specialist agents use measured simulation feedback to select one-parameter refinements from validator-confirmed mutation catalogs. Compatible actions are combined and re-simulated so that their interaction effects are measured rather than inferred. Final selection minimizes bottleneck time loss while constraining network-wide delay, neighboring-road spillover, throughput loss, and teleport events, with the unmodified scenario retained as a no-operation guard. Across 15 cases covering five U.S. urban networks, three synthetic-demand seeds, and 2,400 origin-destination trips per scenario, SimTIO reduced Top-10 bottleneck time loss by an average of 9.18 percent and network-wide delay by 2.78 percent. It found a feasible improving plan in 86.7 percent of cases, compared with 73.3 percent for grounded random search and 80.0 percent for a deterministic heuristic under the same seven-simulation budget, although the differences in Top-10 improvement were not statistically significant. These results support using LLMs as constrained, feedback-guided local search operators while reserving final decision authority for executable tools, microscopic simulation, and explicit safety constraints.",
+      "url": "http://arxiv.org/abs/2609.05740v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.05740v1",
+      "arxiv_id": "2609.05740",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Traffic analysts must translate diagnosed bottlenecks into executable interventions without allowing local improvements to degrade network-wide performance. This study presents SimTIO, a simulation-grounded multi-agent large language model framework for composing and selecting traffic interventions under explicit operational constraints. SimTIO first simulates an unmodified SUMO scenario to identify a baseline-frozen set of ten bottleneck edges. A grounded sampler then initializes signal-control, corridor-speed, and demand-preserving routing actions, while three specialist agents use measured simulation feedback to select one-parameter refinements from validator-confirmed mutation catalogs. Compatible actions are combined and re-simulated so that their interaction effects are measured rather than inferred. Final selection minimizes bottleneck time loss while constraining network-wide delay, neighboring-road spillover, throughput loss, and teleport events, with the unmodified scenario retained as a no-operation guard. Across 15 cases covering five U.S. urban networks, three synthetic-demand seeds, and 2,400 origin-destination trips per scenario, SimTIO reduced Top-10 bottleneck time loss by an average of 9.18 percent and network-wide delay by 2.78 percent. It found a feasible improving plan in 86.7 percent of cases, compared with 73.3 percent for grounded random search and 80.0 percent for a deterministic heuristic under the same seven-simulation budget, although the differences in Top-10 improvement were not statistically significant. These results support using LLMs as constrained, feedback-guided local search operators while reserving final decision authority for executable tools, microscopic simulation, and explicit safety constraints.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-09-04"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "When and What to Teach: Budget-Aware Online Adaptation for Web Agents",
+      "authors": [
+        "Jianwei Zhang",
+        "Sihan Cao",
+        "Pengcheng Zheng",
+        "Ya Wen",
+        "Pei Ke",
+        "Kuien Liu",
+        "Shen Gao",
+        "Wei Dong",
+        "Yang Yang",
+        "Chaoning Zhang"
+      ],
+      "abstract": "Web agents have achieved significant success in automating complex internet tasks but deploying them in real-world environments requires continuous online adaptation. Given that deploying powerful proprietary models remains commercially cost-prohibitive, practitioners must rely on lightweight local models that evolve post-deployment via online teaching from a stronger teacher. However, standard interactive feedback imposes prohibitive costs. We show that conventional trajectory-level preference optimization wastes budget on both unresolvable episodes and redundant execution turns. To resolve these inefficiencies, we propose \\textbf{Score-Guided Online Teaching with Budgeted Trajectory Trimming}, a budget-aware framework that systematically orchestrates \\textbf{when} and \\textbf{what} to teach. Specifically, our framework integrates a solvability-aware teacher gate to dictate \\textbf{when} to query the teacher model and a score-guided turn selection mechanism to decide \\textbf{what} informative turns to retain. Extensive experiments on MiniWoB and TimeWarp demonstrate that our method achieves comparable first-pass success while reducing teacher calls by 22.6\\% and student training compute by 52.1\\% on average. Our code is available at https://github.com/zjw131f1fc/budgeted-online-teaching.",
+      "url": "http://arxiv.org/abs/2609.05513v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.05513v1",
+      "arxiv_id": "2609.05513",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Web agents have achieved significant success in automating complex internet tasks but deploying them in real-world environments requires continuous online adaptation. Given that deploying powerful proprietary models remains commercially cost-prohibitive, practitioners must rely on lightweight local models that evolve post-deployment via online teaching from a stronger teacher. However, standard interactive feedback imposes prohibitive costs. We show that conventional trajectory-level preference optimization wastes budget on both unresolvable episodes and redundant execution turns. To resolve these inefficiencies, we propose \\textbf{Score-Guided Online Teaching with Budgeted Trajectory Trimming}, a budget-aware framework that systematically orchestrates \\textbf{when} and \\textbf{what} to teach. Specifically, our framework integrates a solvability-aware teacher gate to dictate \\textbf{when} to query the teacher model and a score-guided turn selection mechanism to decide \\textbf{what} informative turns to retain. Extensive experiments on MiniWoB and TimeWarp demonstrate that our method achieves comparable first-pass success while reducing teacher calls by 22.6\\% and student training compute by 52.1\\% on average. Our code is available at https://github.com/zjw131f1fc/budgeted-online-teaching.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-08-31"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Planning and Scheduling Business Processes under Control-Flow Uncertainty",
+      "authors": [
+        "Michel Kunkler",
+        "Stefanie Rinderle-Ma"
+      ],
+      "abstract": "Scheduling activities in business processes can improve efficiency (e.g., reduce makespan), but is challenging because the exact sequence of activities required to complete a case is often uncertain due to decisions based on data that emerges during execution. Nevertheless, probabilistic information regarding such decisions can often be estimated or derived from historical execution logs, and can help anticipate which execution paths are likely to lead to successful completion. Planning with particular execution paths affects feasibility, i.e., the probability of successful completion, and the expected number of superfluous activities that are planned but never executed. We frame the problem as a chance-constrained optimization problem and present two formulations: A decomposed approach with two stages, a planning stage that minimizes the expected number of superfluous activities subject to a feasibility constraint, and a scheduling stage that minimizes the makespan over the planned activities; and an integrated approach that combines planning and scheduling into a single formulation. Evaluation on two real-world and one synthetic dataset shows that the integrated approach yields superior makespans but is intractable at scale, while the decomposed approach scales to large settings.",
+      "url": "http://arxiv.org/abs/2609.05578v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.05578v1",
+      "arxiv_id": "2609.05578",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Scheduling activities in business processes can improve efficiency (e.g., reduce makespan), but is challenging because the exact sequence of activities required to complete a case is often uncertain due to decisions based on data that emerges during execution. Nevertheless, probabilistic information regarding such decisions can often be estimated or derived from historical execution logs, and can help anticipate which execution paths are likely to lead to successful completion. Planning with particular execution paths affects feasibility, i.e., the probability of successful completion, and the expected number of superfluous activities that are planned but never executed. We frame the problem as a chance-constrained optimization problem and present two formulations: A decomposed approach with two stages, a planning stage that minimizes the expected number of superfluous activities subject to a feasibility constraint, and a scheduling stage that minimizes the makespan over the planned activities; and an integrated approach that combines planning and scheduling into a single formulation. Evaluation on two real-world and one synthetic dataset shows that the integrated approach yields superior makespans but is intractable at scale, while the decomposed approach scales to large settings.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-09-04"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "DART: A DAG-Based Reputation and Incentive Framework via Blockchain-Enabled Governance for Trustworthy LLM Multi-Agent Collaboration",
+      "authors": [
+        "Manoj Kumala",
+        "Xinyun Liua",
+        "Ronghua Xu"
+      ],
+      "abstract": "Large language model (LLM)-based multi-agent systems (MAS) predominantly rely on centralized orchestration and lack formal verification mechanisms for agent reliability, participation, and system-level behavioral alignment. These shortcomings leave open environments severely vulnerable to uncooperative or malicious agents. This work proposes DART, a Directed Acyclic Graph (DAG)-based reputation and incentive regulation framework for trustworthy multi-agent collaboration, combining centralized operational orchestration with blockchain-enabled decentralized governance and accountability. DART unifies DAG workflow orchestration, capability and reputation-aware task allocation, dynamic behavior updates, multi-factor incentives, and smart contract accountability paired with IPFS storage. Under this paradigm, agent selection dynamically balances task alignment, historical reputation, and workload, while post-execution behavioral evidence continuously calibrates agent trust and the probability of future participation. Evaluated across four axes, DART achieves 93.6% Pass@1 on GSM8K and builds a full-stack application in 142 s using two agents, outperforming centralized baselines. Across five independent 150-round longitudinal trials, Full DART achieves a mean task success rate of 93.33 +/- 2.26%, output quality of 0.9357 +/- 0.0117, retry rate of 0.2307 +/- 0.0816, and allocation delay of 1.1153 +/- 0.0408 s, consistently outperforming its ablated configurations DART isolates persistent and intermittent malicious agents, obtaining a 99.3% output containment rate and restoring system success to 99.8%. These results demonstrate the potential of coupling reputation, incentives, DAG-based coordination, and verifiable blockchain-enabled governance to support adaptive and accountable multi-agent collaboration.",
+      "url": "http://arxiv.org/abs/2609.05529v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.05529v1",
+      "arxiv_id": "2609.05529",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Large language model (LLM)-based multi-agent systems (MAS) predominantly rely on centralized orchestration and lack formal verification mechanisms for agent reliability, participation, and system-level behavioral alignment. These shortcomings leave open environments severely vulnerable to uncooperative or malicious agents. This work proposes DART, a Directed Acyclic Graph (DAG)-based reputation and incentive regulation framework for trustworthy multi-agent collaboration, combining centralized operational orchestration with blockchain-enabled decentralized governance and accountability. DART unifies DAG workflow orchestration, capability and reputation-aware task allocation, dynamic behavior updates, multi-factor incentives, and smart contract accountability paired with IPFS storage. Under this paradigm, agent selection dynamically balances task alignment, historical reputation, and workload, while post-execution behavioral evidence continuously calibrates agent trust and the probability of future participation. Evaluated across four axes, DART achieves 93.6% Pass@1 on GSM8K and builds a full-stack application in 142 s using two agents, outperforming centralized baselines. Across five independent 150-round longitudinal trials, Full DART achieves a mean task success rate of 93.33 +/- 2.26%, output quality of 0.9357 +/- 0.0117, retry rate of 0.2307 +/- 0.0816, and allocation delay of 1.1153 +/- 0.0408 s, consistently outperforming its ablated configurations DART isolates persistent and intermittent malicious agents, obtaining a 99.3% output containment rate and restoring system success to 99.8%. These results demonstrate the potential of coupling reputation, incentives, DAG-based coordination, and verifiable blockchain-enabled governance to support adaptive and accountable multi-agent collaboration.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-09-01"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://doi.org/10.17638/03194716",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn.1",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "CaseWeaver: A Multi-Agent Framework for Multimodal Virtual Clinical Case Generation",
+      "SimTIO: A Simulation-Grounded Multi-Agent LLM Framework for Compositional Traffic Intervention Optimization",
+      "When and What to Teach: Budget-Aware Online Adaptation for Web Agents",
+      "Planning and Scheduling Business Processes under Control-Flow Uncertainty",
+      "DART: A DAG-Based Reputation and Incentive Framework via Blockchain-Enabled Governance for Trustworthy LLM Multi-Agent Collaboration"
+    ],
+    "hugging_face": [
+      "CaseWeaver: A Multi-Agent Framework for Multimodal Virtual Clinical Case Generation",
+      "SimTIO: A Simulation-Grounded Multi-Agent LLM Framework for Compositional Traffic Intervention Optimization",
+      "When and What to Teach: Budget-Aware Online Adaptation for Web Agents",
+      "Planning and Scheduling Business Processes under Control-Flow Uncertainty",
+      "DART: A DAG-Based Reputation and Incentive Framework via Blockchain-Enabled Governance for Trustworthy LLM Multi-Agent Collaboration"
+    ],
+    "papers_with_code": [
+      "CaseWeaver: A Multi-Agent Framework for Multimodal Virtual Clinical Case Generation",
+      "SimTIO: A Simulation-Grounded Multi-Agent LLM Framework for Compositional Traffic Intervention Optimization",
+      "When and What to Teach: Budget-Aware Online Adaptation for Web Agents",
+      "Planning and Scheduling Business Processes under Control-Flow Uncertainty",
+      "DART: A DAG-Based Reputation and Incentive Framework via Blockchain-Enabled Governance for Trustworthy LLM Multi-Agent Collaboration"
+    ]
+  }
+}
