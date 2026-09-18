@@ -1,0 +1,290 @@
+{
+  "date": "2026-09-18",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Resilient Design and Optimal Operation of Battery Energy Storage Systems for Behind-the-Meter Data Center Microgrids",
+      "authors": [
+        "Hamed Haggi",
+        "Chinmay Morankar"
+      ],
+      "abstract": "This paper proposes a high-fidelity hyperscale data center load modeling framework that disaggregates facility demand into IT and non-IT components and represents load behavior at second- and minute-level resolutions. Building upon this foundation, a comprehensive multi-phase optimization framework is developed for the planning and resilient design of BESS for BTM data center microgrids. The framework deploys BESS on the load side to act as a dynamic buffer between stochastic demand and generation assets. By smoothing the load spikes and excursions before they are observed by gas turbines, the load-side BESS reduces operational stress and limits conditions that can contribute to SSTI issues, shaft fatigue, system trips, equipment damage, and forced outages. Simultaneously, generation-side BESS resources are optimally sized to provide spinning reserves and enhance system resilience. The proposed methodology co-optimizes BESS with solar, wind, natural gas fuel cells, simple-cycle gas turbines, and combined-cycle gas turbines while incorporating operational, reliability, resiliency, and technology-specific constraints. Simulation results demonstrate the proposed methodology's ability to identify cost-effective, resilient, and operationally feasible designs that satisfy the demanding reliability requirements and energy market challenges of next-generation hyperscale data centers while providing planning insights for investors, developers, and system operators.",
+      "url": "http://arxiv.org/abs/2609.19342v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.19342v1",
+      "arxiv_id": "2609.19342",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "This paper proposes a high-fidelity hyperscale data center load modeling framework that disaggregates facility demand into IT and non-IT components and represents load behavior at second- and minute-level resolutions. Building upon this foundation, a comprehensive multi-phase optimization framework is developed for the planning and resilient design of BESS for BTM data center microgrids. The framework deploys BESS on the load side to act as a dynamic buffer between stochastic demand and generation assets. By smoothing the load spikes and excursions before they are observed by gas turbines, the load-side BESS reduces operational stress and limits conditions that can contribute to SSTI issues, shaft fatigue, system trips, equipment damage, and forced outages. Simultaneously, generation-side BESS resources are optimally sized to provide spinning reserves and enhance system resilience. The proposed methodology co-optimizes BESS with solar, wind, natural gas fuel cells, simple-cycle gas turbines, and combined-cycle gas turbines while incorporating operational, reliability, resiliency, and technology-specific constraints. Simulation results demonstrate the proposed methodology's ability to identify cost-effective, resilient, and operationally feasible designs that satisfy the demanding reliability requirements and energy market challenges of next-generation hyperscale data centers while providing planning insights for investors, developers, and system operators.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-09-16"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "SemSafe-3DGS: Semantic Risk-Aware Active Navigation in Uncertain 3D Gaussian Splatting Maps",
+      "authors": [
+        "Amirhossein Mollaei Khass",
+        "Athanasios Cosse",
+        "Nader Motee"
+      ],
+      "abstract": "Autonomous robots operating in partially observed environments must navigate safely while acquiring observations that improve future planning. Existing safety formulations generally reason primarily about geometry. Consequently, geometrically similar scene elements may induce comparable control responses despite having different semantic consequences. We present a semantic risk aware safe-active perception framework for navigation in attributed 3D Gaussian maps. Semantic attributes modulate an Average Value-at-Risk collision clearance model through class dependent risk weights, allowing safety-critical Gaussian primitives to receive greater influence in the composite barrier. The resulting weighted clearances are aggregated into a control barrier function, while a trajectory-relevant active perception barrier promotes observations that reduce geometric map uncertainty along the robot's anticipated motion. Both objectives are integrated in a unified CBF-QP that enforces semantic risk-aware collision avoidance as a hard constraint while relaxing information acquisition when it conflicts with safety or task progress. Experiments demonstrate efficient safety constraint, improved navigation through active perception, semantic dependent trajectory adaptation, and real-robot execution under Ackermann dynamics.",
+      "url": "http://arxiv.org/abs/2609.19330v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.19330v1",
+      "arxiv_id": "2609.19330",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Autonomous robots operating in partially observed environments must navigate safely while acquiring observations that improve future planning. Existing safety formulations generally reason primarily about geometry. Consequently, geometrically similar scene elements may induce comparable control responses despite having different semantic consequences. We present a semantic risk aware safe-active perception framework for navigation in attributed 3D Gaussian maps. Semantic attributes modulate an Average Value-at-Risk collision clearance model through class dependent risk weights, allowing safety-critical Gaussian primitives to receive greater influence in the composite barrier. The resulting weighted clearances are aggregated into a control barrier function, while a trajectory-relevant active perception barrier promotes observations that reduce geometric map uncertainty along the robot's anticipated motion. Both objectives are integrated in a unified CBF-QP that enforces semantic risk-aware collision avoidance as a hard constraint while relaxing information acquisition when it conflicts with safety or task progress. Experiments demonstrate efficient safety constraint, improved navigation through active perception, semantic dependent trajectory adaptation, and real-robot execution under Ackermann dynamics.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-09-16"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research",
+      "authors": [
+        "Qingyang Xu"
+      ],
+      "abstract": "Language models face unique challenges in analyzing interdisciplinary scientific research literature. In biophysics research, faithful answers require grounding observed data in source evidence, interpreting it through a quantitative physics model, and linking it to a biological mechanism. To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature. Each case contains evidence blocks, stable evidence IDs, quantitative values, units, equations, assumptions, mechanisms, and next decisions as grounding targets for question answering (QA) and retrieval-augmented generation (RAG). The initial release contains 500 cases, 1,517 agent-facing tasks, and covers six biological domains and nine physical model families, including three sparse families reserved for future expansion. We enforce strict quality gates for all cases in schema, evidence-integrity, quantitative-grounding, source-license, duplicate, unit-normalization, with domain expert review and annotation for 81 cases. Preliminary evaluations show that DeepSeek-V4-Flash obtain the highest evidence-ID $F_1$ score (0.360), followed by Qwen3.7-Max (0.316) and GPT-4o-mini (0.294). BioPhys-Bridge is an interdisciplinary benchmark for evaluating attribution, faithfulness, hallucination reduction, and biological experiment design with complex, multi-step scientific reasoning. Future works will increase the size and complexity of the dataset and perform comprehensive evaluations. Code and data are available in the GitHub repository and on Hugging Face.",
+      "url": "http://arxiv.org/abs/2609.19180v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.19180v1",
+      "arxiv_id": "2609.19180",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Language models face unique challenges in analyzing interdisciplinary scientific research literature. In biophysics research, faithful answers require grounding observed data in source evidence, interpreting it through a quantitative physics model, and linking it to a biological mechanism. To address this challenge, we introduce BioPhys-Bridge, a novel benchmark dataset for evidence-grounded scientific reasoning over biophysical literature. Each case contains evidence blocks, stable evidence IDs, quantitative values, units, equations, assumptions, mechanisms, and next decisions as grounding targets for question answering (QA) and retrieval-augmented generation (RAG). The initial release contains 500 cases, 1,517 agent-facing tasks, and covers six biological domains and nine physical model families, including three sparse families reserved for future expansion. We enforce strict quality gates for all cases in schema, evidence-integrity, quantitative-grounding, source-license, duplicate, unit-normalization, with domain expert review and annotation for 81 cases. Preliminary evaluations show that DeepSeek-V4-Flash obtain the highest evidence-ID $F_1$ score (0.360), followed by Qwen3.7-Max (0.316) and GPT-4o-mini (0.294). BioPhys-Bridge is an interdisciplinary benchmark for evaluating attribution, faithfulness, hallucination reduction, and biological experiment design with complex, multi-step scientific reasoning. Future works will increase the size and complexity of the dataset and perform comprehensive evaluations. Code and data are available in the GitHub repository and on Hugging Face.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-09-15"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Message capacity and claim wording set the transition points of collective truth-finding in language-model networks",
+      "authors": [
+        "Makoto Fukushima"
+      ],
+      "abstract": "Whether human or large language model (LLM), an agent in a discussion reads only a few of the others' contributions, bounded by cognition, context, or cost. LLM collectives can settle on a wrong consensus even when a majority starts out correct; we ask how far that reading bound alone decides the outcome. We model the bound with one number, the message capacity, which sets how many of the others' messages an agent reads, and generate the communication network from it. Over 31,824 randomized queries, we found that an 8-billion-parameter model's judgment of a claim effectively reduces to a logistic function of a weighted sum of its inbox, the update rule of a stochastic binary neuron with divisively normalized weights. From these weights and the network's degree statistics alone, the wrong consensus should become unreachable from any start once agents read, on average, fewer than 6.4 of their 31 sources. In 1,414 episodes with assigned starts the prediction failed: the correct side won in fewer than 50% of episodes from every start, and in only 28-45% when 75% of agents started correct. The failure traces to the field, the threshold that a claim's wording sets for the agent's answer before any message is read: the experimental claims' fields lay below the calibration mean, and with each claim's own field the same weights reproduce the outcomes. Reversing the wording showed that the threshold follows what a claim asserts, not whether it is true. On a second 8B model the pipeline predicts claim-dependent bistability; transition points appeared where computed, and an eight-claim calibration matched in 15 of 16 conditions. At 70B the assertion bias is not detected. Thus a collective's fate is largely set by two single-agent measurements: the threshold a claim's wording sets, and the message capacity that sets the transition point.",
+      "url": "http://arxiv.org/abs/2609.19183v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.19183v1",
+      "arxiv_id": "2609.19183",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Whether human or large language model (LLM), an agent in a discussion reads only a few of the others' contributions, bounded by cognition, context, or cost. LLM collectives can settle on a wrong consensus even when a majority starts out correct; we ask how far that reading bound alone decides the outcome. We model the bound with one number, the message capacity, which sets how many of the others' messages an agent reads, and generate the communication network from it. Over 31,824 randomized queries, we found that an 8-billion-parameter model's judgment of a claim effectively reduces to a logistic function of a weighted sum of its inbox, the update rule of a stochastic binary neuron with divisively normalized weights. From these weights and the network's degree statistics alone, the wrong consensus should become unreachable from any start once agents read, on average, fewer than 6.4 of their 31 sources. In 1,414 episodes with assigned starts the prediction failed: the correct side won in fewer than 50% of episodes from every start, and in only 28-45% when 75% of agents started correct. The failure traces to the field, the threshold that a claim's wording sets for the agent's answer before any message is read: the experimental claims' fields lay below the calibration mean, and with each claim's own field the same weights reproduce the outcomes. Reversing the wording showed that the threshold follows what a claim asserts, not whether it is true. On a second 8B model the pipeline predicts claim-dependent bistability; transition points appeared where computed, and an eight-claim calibration matched in 15 of 16 conditions. At 70B the assertion bias is not detected. Thus a collective's fate is largely set by two single-agent measurements: the threshold a claim's wording sets, and the message capacity that sets the transition point.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-09-15"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Generative Query Suggestion via Intent Coverage and Query-Level Credit Assignment",
+      "authors": [
+        "Xinpeng Liu",
+        "Lu Ma",
+        "Jiayi Qiao",
+        "Mengyu Zhou",
+        "Linglong Li",
+        "Xiaofeng Bian",
+        "Haonan Chen",
+        "Xiaoxi Jiang",
+        "Guanjun Jiang"
+      ],
+      "abstract": "Generative query suggestion aims to enhance user engagement by anticipating user intents and recommending relevant follow-up queries. A central challenge is to generate slates whose individual queries are useful while the slate covers distinct intents. We propose an Intent-Driven Query Suggestion Framework with dual-stage optimization. First, intent-aware diversity modeling constructs intent-aligned supervised fine-tuning (SFT) data and uses an Intent-Aware Diversity Reward to optimize intent coverage. Second, query-level credit assignment routes individual quality signals to the corresponding query tokens while sharing a slate-level diversity signal across the slate. Experiments on a large-scale production dataset, including online A/B testing and offline evaluation, show improvements in click-through rate, query quality, and intent coverage.",
+      "url": "http://arxiv.org/abs/2609.19209v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.19209v1",
+      "arxiv_id": "2609.19209",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Generative query suggestion aims to enhance user engagement by anticipating user intents and recommending relevant follow-up queries. A central challenge is to generate slates whose individual queries are useful while the slate covers distinct intents. We propose an Intent-Driven Query Suggestion Framework with dual-stage optimization. First, intent-aware diversity modeling constructs intent-aligned supervised fine-tuning (SFT) data and uses an Intent-Aware Diversity Reward to optimize intent coverage. Second, query-level credit assignment routes individual quality signals to the corresponding query tokens while sharing a slate-level diversity signal across the slate. Experiments on a large-scale production dataset, including online A/B testing and offline evaluation, show improvements in click-through rate, query quality, and intent coverage.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-09-16"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://doi.org/10.17638/03194716",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn.1",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Resilient Design and Optimal Operation of Battery Energy Storage Systems for Behind-the-Meter Data Center Microgrids",
+      "SemSafe-3DGS: Semantic Risk-Aware Active Navigation in Uncertain 3D Gaussian Splatting Maps",
+      "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research",
+      "Message capacity and claim wording set the transition points of collective truth-finding in language-model networks",
+      "Generative Query Suggestion via Intent Coverage and Query-Level Credit Assignment"
+    ],
+    "hugging_face": [
+      "Resilient Design and Optimal Operation of Battery Energy Storage Systems for Behind-the-Meter Data Center Microgrids",
+      "SemSafe-3DGS: Semantic Risk-Aware Active Navigation in Uncertain 3D Gaussian Splatting Maps",
+      "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research",
+      "Message capacity and claim wording set the transition points of collective truth-finding in language-model networks",
+      "Generative Query Suggestion via Intent Coverage and Query-Level Credit Assignment"
+    ],
+    "papers_with_code": [
+      "Resilient Design and Optimal Operation of Battery Energy Storage Systems for Behind-the-Meter Data Center Microgrids",
+      "SemSafe-3DGS: Semantic Risk-Aware Active Navigation in Uncertain 3D Gaussian Splatting Maps",
+      "BioPhys-Bridge: A Benchmark for Interdisciplinary Scientific Reasoning in Physics-Grounded Biological Research",
+      "Message capacity and claim wording set the transition points of collective truth-finding in language-model networks",
+      "Generative Query Suggestion via Intent Coverage and Query-Level Credit Assignment"
+    ]
+  }
+}
