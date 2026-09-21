@@ -1,0 +1,291 @@
+{
+  "date": "2026-09-21",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Optimal Day-Ahead Scheduling of Fast EV Charging Station With Multi-Stage Battery Degradation Model",
+      "authors": [
+        "Y. Wan",
+        "D. Gebbran",
+        "R. K. Subroto",
+        "T. Dragičević"
+      ],
+      "abstract": "The paper proposes a day-ahead scheduling framework with a novel multi-stage battery degradation modeling method for an electric vehicle (EV) fast charging station (FCS) equipped with a battery energy storage system (BESS). Unlike previous studies, which employ a single battery degradation model to represent the aging process, this paper proposes a novel multi-stage battery degradation modeling method to accurately capture the degradation process across the whole lifespan. Subsequently, the multi-stage model is explicitly integrated into the proposed adaptive optimization framework in a computationally tractable way, thus having important practical implications in the field. The paper provides case studies to demonstrate the effectiveness of the proposed modeling method on a selected cycle aging model in reducing the operation cost of FCS with BESS operating in different stages. As a result, the overall operation cost with the multi-stage model is around 2.1% on average lower than the single-stage model counterpart. In addition, results show that with the increasing number of divided stages, the model error decreases and becomes stable, while the reduced operation cost compared with the single-stage model increases and saturates. Finally, we apply the multi-stage framework considering other conventional degradation models to show the superiority of the proposed method.",
+      "url": "http://arxiv.org/abs/2609.20946v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20946v1",
+      "arxiv_id": "2609.20946",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "The paper proposes a day-ahead scheduling framework with a novel multi-stage battery degradation modeling method for an electric vehicle (EV) fast charging station (FCS) equipped with a battery energy storage system (BESS). Unlike previous studies, which employ a single battery degradation model to represent the aging process, this paper proposes a novel multi-stage battery degradation modeling method to accurately capture the degradation process across the whole lifespan. Subsequently, the multi-stage model is explicitly integrated into the proposed adaptive optimization framework in a computationally tractable way, thus having important practical implications in the field. The paper provides case studies to demonstrate the effectiveness of the proposed modeling method on a selected cycle aging model in reducing the operation cost of FCS with BESS operating in different stages. As a result, the overall operation cost with the multi-stage model is around 2.1% on average lower than the single-stage model counterpart. In addition, results show that with the increasing number of divided stages, the model error decreases and becomes stable, while the reduced operation cost compared with the single-stage model increases and saturates. Finally, we apply the multi-stage framework considering other conventional degradation models to show the superiority of the proposed method.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-09-17"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Catch Me If You Can: Real-Time Feedback Denoising for Responsive VLAs",
+      "authors": [
+        "Yiheng Ji",
+        "Xingru Zhou",
+        "Luis Sentis",
+        "Mingyo Seo"
+      ],
+      "abstract": "Vision-Language-Action (VLA) models have shown strong generalization in robotic manipulation by combining semantic knowledge from pretrained vision-language models with expressive action-generation policies. Diffusion-based action generators are particularly effective for modeling temporally coherent action chunks, but these chunks are typically executed open-loop after inference. This limits responsiveness when objects move, contacts change, or the scene evolves during execution. We propose VLA-Feedback, a two-timescale architecture that combines low-frequency diffusion planning with high-frequency visual feedback. Rather than fully denoising an action chunk before execution, VLA-Feedback retains its final denoising step as a lightweight feedback interface, allowing each action to be corrected using the latest observation before it is executed. This design preserves the expressiveness of the diffusion planner while enabling real-time action correction without rerunning the full vision-language diffusion model. VLA-Feedback matched GR00T on static LIBERO tasks while improving average success on dynamic simulation tasks from 27.5% to 85.0%. On real-robot tasks, it improved average success from 51% to 73%. Additional materials can be found on our project page: https://vla-feedback.github.io.",
+      "url": "http://arxiv.org/abs/2609.21022v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.21022v1",
+      "arxiv_id": "2609.21022",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Vision-Language-Action (VLA) models have shown strong generalization in robotic manipulation by combining semantic knowledge from pretrained vision-language models with expressive action-generation policies. Diffusion-based action generators are particularly effective for modeling temporally coherent action chunks, but these chunks are typically executed open-loop after inference. This limits responsiveness when objects move, contacts change, or the scene evolves during execution. We propose VLA-Feedback, a two-timescale architecture that combines low-frequency diffusion planning with high-frequency visual feedback. Rather than fully denoising an action chunk before execution, VLA-Feedback retains its final denoising step as a lightweight feedback interface, allowing each action to be corrected using the latest observation before it is executed. This design preserves the expressiveness of the diffusion planner while enabling real-time action correction without rerunning the full vision-language diffusion model. VLA-Feedback matched GR00T on static LIBERO tasks while improving average success on dynamic simulation tasks from 27.5% to 85.0%. On real-robot tasks, it improved average success from 51% to 73%. Additional materials can be found on our project page: https://vla-feedback.github.io.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-09-17"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Efficient Bayes-Adaptive Reinforcement Learning with Temporal Logic Specifications",
+      "authors": [
+        "Jonathan Hau",
+        "Alessandro Abate"
+      ],
+      "abstract": "We present a novel end-to-end model-based Reinforcement Learning (RL) algorithm for efficient policy synthesis under given Linear Temporal Logic (LTL) specifications (e.g., safety or reachability) in unknown environments. To do so, a Limit-Deterministic B{ü}chi Automaton (LDBA) representation of the LTL task is synchronised with a Bayes-Adaptive Markov Decision Process (BAMDP) representation of the environment, which allows us to leverage an enhanced exploration-exploitation trade-off that is achieved via Bayesian RL, as opposed to traditional non-Bayesian approaches. We further propose a novel Bayes-Adaptive Monte-Carlo Planning (BAMCP) algorithm to allow for approximate Bayes-optimal strategy synthesis in the synchronised BAMDP construct. A range of finite- and infinite-horizon task experiments demonstrate the effectiveness of our approach in terms of both property satisfaction and sample efficiency, when compared to traditional model-free approaches. Additional ablation studies also successfully highlight the value of the novel BAMCP algorithm in comparison to classical BAMCP for LTL task satisfaction. Finally, we also showcase a successful application of our approach for \\textit{cautious} RL, namely to reduce the number of task violations incurred during policy training.",
+      "url": "http://arxiv.org/abs/2609.20954v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20954v1",
+      "arxiv_id": "2609.20954",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "We present a novel end-to-end model-based Reinforcement Learning (RL) algorithm for efficient policy synthesis under given Linear Temporal Logic (LTL) specifications (e.g., safety or reachability) in unknown environments. To do so, a Limit-Deterministic B{ü}chi Automaton (LDBA) representation of the LTL task is synchronised with a Bayes-Adaptive Markov Decision Process (BAMDP) representation of the environment, which allows us to leverage an enhanced exploration-exploitation trade-off that is achieved via Bayesian RL, as opposed to traditional non-Bayesian approaches. We further propose a novel Bayes-Adaptive Monte-Carlo Planning (BAMCP) algorithm to allow for approximate Bayes-optimal strategy synthesis in the synchronised BAMDP construct. A range of finite- and infinite-horizon task experiments demonstrate the effectiveness of our approach in terms of both property satisfaction and sample efficiency, when compared to traditional model-free approaches. Additional ablation studies also successfully highlight the value of the novel BAMCP algorithm in comparison to classical BAMCP for LTL task satisfaction. Finally, we also showcase a successful application of our approach for \\textit{cautious} RL, namely to reduce the number of task violations incurred during policy training.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-09-17"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Proxifield: Decentralized Multi-Agent Communication through Semantic Proximity",
+      "authors": [
+        "Pradyumna Tambwekar",
+        "Yenchia Feng",
+        "Deep Patel",
+        "Karime Maamari"
+      ],
+      "abstract": "As LLM capabilities have expanded, multi-agent communication has emerged as an increasingly active area of research. Prevailing protocols often adopt rigid structures that introduce coordination bottlenecks and can degrade as the number of agents increases. We introduce Proxifield, a round-adaptive multi-agent protocol with decentralized agent decision-making that constructs sparse communication graphs from the evolving semantic proximity of agents. Without model training or a centralized planner, Proxifield connects agents using four routing signals derived at inference time: direct address, information needs, plan alignment, and information complementarity. We compare Proxifield with two representative coordination baselines, a centralized Star protocol and a decentralized Shared Context protocol, across two domains: Drone Search and Rescue and the collective-reasoning benchmark HiddenBench. We first ablate base-model capability and find that, in both domains, the performance of Proxifield improves with model size (35B -> 397B parameter model) and Proxifield outperforms all baselines at the largest scale. As team size increases, Proxifield's task-reward advantage over Star widens from 5.4% at (N=5) to 53.0% at (N=25) and 59.5% at (N=50), while Shared Context consistently underperforms both protocols. Proxifield is also substantially more robust to permanent agent failure, retaining 73.6% of its no-failure task reward under the most severe condition, compared with 58.3% for Shared Context and 38.8% for Star. These results demonstrate that decentralized, semantically adaptive routing can improve the scalability and fault tolerance of multi-agent systems.",
+      "url": "http://arxiv.org/abs/2609.20889v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20889v1",
+      "arxiv_id": "2609.20889",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "As LLM capabilities have expanded, multi-agent communication has emerged as an increasingly active area of research. Prevailing protocols often adopt rigid structures that introduce coordination bottlenecks and can degrade as the number of agents increases. We introduce Proxifield, a round-adaptive multi-agent protocol with decentralized agent decision-making that constructs sparse communication graphs from the evolving semantic proximity of agents. Without model training or a centralized planner, Proxifield connects agents using four routing signals derived at inference time: direct address, information needs, plan alignment, and information complementarity. We compare Proxifield with two representative coordination baselines, a centralized Star protocol and a decentralized Shared Context protocol, across two domains: Drone Search and Rescue and the collective-reasoning benchmark HiddenBench. We first ablate base-model capability and find that, in both domains, the performance of Proxifield improves with model size (35B -> 397B parameter model) and Proxifield outperforms all baselines at the largest scale. As team size increases, Proxifield's task-reward advantage over Star widens from 5.4% at (N=5) to 53.0% at (N=25) and 59.5% at (N=50), while Shared Context consistently underperforms both protocols. Proxifield is also substantially more robust to permanent agent failure, retaining 73.6% of its no-failure task reward under the most severe condition, compared with 58.3% for Shared Context and 38.8% for Star. These results demonstrate that decentralized, semantically adaptive routing can improve the scalability and fault tolerance of multi-agent systems.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-09-16"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "BirdsongChat: A Hybrid Multi-Agent Framework for Multimodal Embodied Behavior Simulation",
+      "authors": [
+        "Callie C. Liao",
+        "Duoduo Liao",
+        "Ellie L. Zhang"
+      ],
+      "abstract": "Multimodal embodied systems require translating human intentions into interpretable and coordinated behaviors across heterogeneous modalities. However, existing multimodal agents often rely on implicit representations, limiting controllability and cross-modal consistency. We present a hybrid multi-agent framework for interactive multimodal behavior simulation that bridges semantic reasoning and physical execution through a Unified Parameter Representation (UPR). LLM-based reasoning agents transform multimodal inputs into UPR, which encodes behavioral states and interpretable control parameters for simulation agents generating synchronized 3D motion, spatialized soundscapes, and environmental behaviors. We develop BirdsongChat as a prototype implementation of the proposed framework, using interactive avian behavior simulation as a testbed that tightly couples motion, vocalization, and environmental context. BirdsongChat is evaluated on text- and image-guided scenarios involving species, behaviors, affective states, environments, and multi-bird interactions. The system achieves normalized scores of 94.4\\% for cross-modal coherence, 100% for affective consistency, and 92.6% for generation consistency. These results demonstrate that an explicit intermediate representation effectively bridges semantic reasoning and physical execution, improving controllability and multimodal synchronization. The proposed framework thus offers a generalizable design principle for embodied AI systems requiring interpretable semantic-to-physical coordination across modalities, with potential applications in bio-inspired ecoacoustics, swarm robotics, virtual environments, and creative multimedia.",
+      "url": "http://arxiv.org/abs/2609.20887v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.20887v1",
+      "arxiv_id": "2609.20887",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Multimodal embodied systems require translating human intentions into interpretable and coordinated behaviors across heterogeneous modalities. However, existing multimodal agents often rely on implicit representations, limiting controllability and cross-modal consistency. We present a hybrid multi-agent framework for interactive multimodal behavior simulation that bridges semantic reasoning and physical execution through a Unified Parameter Representation (UPR). LLM-based reasoning agents transform multimodal inputs into UPR, which encodes behavioral states and interpretable control parameters for simulation agents generating synchronized 3D motion, spatialized soundscapes, and environmental behaviors. We develop BirdsongChat as a prototype implementation of the proposed framework, using interactive avian behavior simulation as a testbed that tightly couples motion, vocalization, and environmental context. BirdsongChat is evaluated on text- and image-guided scenarios involving species, behaviors, affective states, environments, and multi-bird interactions. The system achieves normalized scores of 94.4\\% for cross-modal coherence, 100% for affective consistency, and 92.6% for generation consistency. These results demonstrate that an explicit intermediate representation effectively bridges semantic reasoning and physical execution, improving controllability and multimodal synchronization. The proposed framework thus offers a generalizable design principle for embodied AI systems requiring interpretable semantic-to-physical coordination across modalities, with potential applications in bio-inspired ecoacoustics, swarm robotics, virtual environments, and creative multimedia.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-09-16"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://doi.org/10.17638/03194716",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn.1",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Optimal Day-Ahead Scheduling of Fast EV Charging Station With Multi-Stage Battery Degradation Model",
+      "Catch Me If You Can: Real-Time Feedback Denoising for Responsive VLAs",
+      "Efficient Bayes-Adaptive Reinforcement Learning with Temporal Logic Specifications",
+      "Proxifield: Decentralized Multi-Agent Communication through Semantic Proximity",
+      "BirdsongChat: A Hybrid Multi-Agent Framework for Multimodal Embodied Behavior Simulation"
+    ],
+    "hugging_face": [
+      "Optimal Day-Ahead Scheduling of Fast EV Charging Station With Multi-Stage Battery Degradation Model",
+      "Catch Me If You Can: Real-Time Feedback Denoising for Responsive VLAs",
+      "Efficient Bayes-Adaptive Reinforcement Learning with Temporal Logic Specifications",
+      "Proxifield: Decentralized Multi-Agent Communication through Semantic Proximity",
+      "BirdsongChat: A Hybrid Multi-Agent Framework for Multimodal Embodied Behavior Simulation"
+    ],
+    "papers_with_code": [
+      "Optimal Day-Ahead Scheduling of Fast EV Charging Station With Multi-Stage Battery Degradation Model",
+      "Catch Me If You Can: Real-Time Feedback Denoising for Responsive VLAs",
+      "Efficient Bayes-Adaptive Reinforcement Learning with Temporal Logic Specifications",
+      "Proxifield: Decentralized Multi-Agent Communication through Semantic Proximity",
+      "BirdsongChat: A Hybrid Multi-Agent Framework for Multimodal Embodied Behavior Simulation"
+    ]
+  }
+}
