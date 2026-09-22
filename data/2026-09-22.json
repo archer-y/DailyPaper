@@ -1,0 +1,315 @@
+{
+  "date": "2026-09-22",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "A Pinch of SFT, A Dash of RL: When Reinforcement Learning Helps Long-Horizon Advertising Agents",
+      "authors": [
+        "Aakash Kolekar",
+        "Sahika Genc",
+        "Bunyamin Sisman",
+        "Shahriar Shariat",
+        "Shree Vandana Kachroo",
+        "Avishek Saha",
+        "Qianli Wu",
+        "Ari Singer",
+        "Benoit Dumoulin"
+      ],
+      "abstract": "Enterprise analytics agents solve long-horizon tool-use problems over distributed business data, requiring retrieval, reasoning, API calls, code execution, and adaptation to intermediate observations. Supervised fine-tuning (SFT) calibrates tool syntax and teacher-supported behavior, whereas reinforcement learning (RL) can explore reward-supported behaviors beyond demonstrations; applied uniformly, however, RL can perturb already-calibrated skills. We study how to balance SFT and RL under production-mirroring beta APIs. We observe that, in our controlled experiment, checkpoint trajectories retrospectively separated into three regimes: Imitation, where SFT captured reliable teacher behavior; Lift, where both stages helped; and Discovery, where useful reward-observable behavior lay outside reliable teacher support. We leverage this prospectively, using teacher support and reward-observable headroom to route features to SFT only, SFT then RL, increased RL allocation, or further environment development. Across 18 subsequent feature-specific experiments, the diagnostic predicted 15/18 observed trajectories. On GPT-OSS 120B, targeted SFT then RL produced positive point estimates on 7/8 advertiser skills relative to a frontier Control; five positive gains had paired 95% confidence intervals excluding zero, while one skill had a confidence-supported regression. The largest gain was non-disclosure (+11.27 points; 95% CI [+9.72, +12.82]). A separate SME audit surfaced that targeted RL reduces standard leakage from 11.8% to 2.9% and adversarial leakage from 22.9% to 6.8% relative to SFT while preserving actionability (86.2% to 85.7%). In a matched uniform-versus-targeted comparison with shared rewards and optimization, targeted RL improved the seven-skill mean delta from +1.62 to +3.57 while using 43% less incremental RL compute.",
+      "url": "http://arxiv.org/abs/2609.22194v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.22194v1",
+      "arxiv_id": "2609.22194",
+      "doi": null,
+      "score": 2.5,
+      "tldr": "Enterprise analytics agents solve long-horizon tool-use problems over distributed business data, requiring retrieval, reasoning, API calls, code execution, and adaptation to intermediate observations. Supervised fine-tuning (SFT) calibrates tool syntax and teacher-supported behavior, whereas reinforcement learning (RL) can explore reward-supported behaviors beyond demonstrations; applied uniformly, however, RL can perturb already-calibrated skills. We study how to balance SFT and RL under production-mirroring beta APIs. We observe that, in our controlled experiment, checkpoint trajectories retrospectively separated into three regimes: Imitation, where SFT captured reliable teacher behavior; Lift, where both stages helped; and Discovery, where useful reward-observable behavior lay outside reliable teacher support. We leverage this prospectively, using teacher support and reward-observable headroom to route features to SFT only, SFT then RL, increased RL allocation, or further environment development. Across 18 subsequent feature-specific experiments, the diagnostic predicted 15/18 observed trajectories. On GPT-OSS 120B, targeted SFT then RL produced positive point estimates on 7/8 advertiser skills relative to a frontier Control; five positive gains had paired 95% confidence intervals excluding zero, while one skill had a confidence-supported regression. The largest gain was non-disclosure (+11.27 points; 95% CI [+9.72, +12.82]). A separate SME audit surfaced that targeted RL reduces standard leakage from 11.8% to 2.9% and adversarial leakage from 22.9% to 6.8% relative to SFT while preserving actionability (86.2% to 85.7%). In a matched uniform-versus-targeted comparison with shared rewards and optimization, targeted RL improved the seven-skill mean delta from +1.62 to +3.57 while using 43% less incremental RL compute.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 5,
+        "weighted_score": 3.75,
+        "semantic_scholar": {
+          "paper_id": "6bf148dcb8702d1c4f1bd3be6918c3c18315fc87",
+          "url": "https://www.semanticscholar.org/paper/6bf148dcb8702d1c4f1bd3be6918c3c18315fc87",
+          "citation_count": 0,
+          "reference_count": 49,
+          "influential_citation_count": 0,
+          "publication_date": "2026-08-29",
+          "tldr": "This work studies how to balance SFT and RL under production-mirroring beta APIs, and observes that, in a controlled experiment, checkpoint trajectories retrospectively separated into three regimes: Imitation, where SFT captured reliable teacher behavior; Lift, where both stages helped; and Discovery, where useful reward-observable behavior lay outside reliable teacher support."
+        }
+      },
+      "published_date": "2026-08-29"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Hierarchical Bayesian optimization of an aircraft-based multi-agent system-of-systems",
+      "authors": [
+        "Paul Saves",
+        "Thierry Lefebvre",
+        "Nathalie Bartoli",
+        "Jasper Bussemaker",
+        "Nikolaos Kalliatakis",
+        "Nabih Naeem",
+        "Prajwal Prakasha"
+      ],
+      "abstract": "Developing innovative system architectures increasingly relies on advanced modeling and optimization techniques to frame the architecting process and define the corresponding computational problems. For complex System-of-Systems (SoS), high-fidelity multiphysics and multidisciplinary simulations are essential for capturing detailed behaviors. However, their computational expense and the risk of evaluation failures make direct optimization challenging. To overcome these limitations, surrogate-based approaches, like Bayesian optimization, have emerged as effective tools for managing expensive, black-box simulation tasks. This work introduces a hierarchical Bayesian optimization framework that leverages Gaussian process meta-modeling to handle discrete architectural choices, conditional dependencies, and heterogeneous design variables inherent to SoS problems. Results show that the hierarchical formulation improves search efficiency and robustness compared to conventional surrogate-based methods, enabling the exploration of large and structurally diverse design spaces with limited simulation budgets.\n  We apply the approach to an aircraft-based multi-agent system for wildfire suppression, a use case developed within the EU-funded COLOSSUS project that illustrates how SoS principles can coordinate heterogeneous aerial platforms with complementary roles, supporting both sustainable mobility and emergency response missions. Our framework provides a scalable methodology for SoS architecting and model exploration, offering transferable insights for applications in aviation, sustainable mobility, and resilience-oriented system design. By combining hierarchical representations with surrogate-based optimization, this work is among the first practical demonstrations of hierarchical Bayesian optimization applied to real-world SoS problems, advancing both methodology and practice.",
+      "url": "http://arxiv.org/abs/2609.22130v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.22130v1",
+      "arxiv_id": "2609.22130",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Developing innovative system architectures increasingly relies on advanced modeling and optimization techniques to frame the architecting process and define the corresponding computational problems. For complex System-of-Systems (SoS), high-fidelity multiphysics and multidisciplinary simulations are essential for capturing detailed behaviors. However, their computational expense and the risk of evaluation failures make direct optimization challenging. To overcome these limitations, surrogate-based approaches, like Bayesian optimization, have emerged as effective tools for managing expensive, black-box simulation tasks. This work introduces a hierarchical Bayesian optimization framework that leverages Gaussian process meta-modeling to handle discrete architectural choices, conditional dependencies, and heterogeneous design variables inherent to SoS problems. Results show that the hierarchical formulation improves search efficiency and robustness compared to conventional surrogate-based methods, enabling the exploration of large and structurally diverse design spaces with limited simulation budgets.\n  We apply the approach to an aircraft-based multi-agent system for wildfire suppression, a use case developed within the EU-funded COLOSSUS project that illustrates how SoS principles can coordinate heterogeneous aerial platforms with complementary roles, supporting both sustainable mobility and emergency response missions. Our framework provides a scalable methodology for SoS architecting and model exploration, offering transferable insights for applications in aviation, sustainable mobility, and resilience-oriented system design. By combining hierarchical representations with surrogate-based optimization, this work is among the first practical demonstrations of hierarchical Bayesian optimization applied to real-world SoS problems, advancing both methodology and practice.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-08-23"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Contrastive World Models",
+      "authors": [
+        "Bonnie Li"
+      ],
+      "abstract": "World models trained via pixel reconstruction can struggle in visually complex environments, where irrelevant information dominates the objective and distract the model from information relevant to planning and control. We present Contrastive World Models, an approach for learning latent dynamics models without pixel reconstruction. Building on Dreamer, we replace observation reconstruction in the standard world model objective with a Deep InfoMax-like lower bound that maximizes the mutual information between state-action sequences and local patch features of future observations, encouraging state representations to retain information that is predictive of the future without requiring the model to reconstruct visually irrelevant details. We evaluate our approach in small-scale experiments across three settings of increasing visual complexity. Our method matches Dreamer and a momentum prediction baseline in the default setting, and substantially outperforms both once distractors or natural video backgrounds are introduced, while also training more efficiently by removing the pixel decoder entirely. Our approach is general and makes minimal assumptions beyond access to state-action sequences and future observations. These results suggest that contrastive, infomax-based objectives are a principled and promising direction for building world models that are robust to visual nuisance factors, a property particularly relevant for transferring model-based RL agents to the real world.",
+      "url": "http://arxiv.org/abs/2609.22175v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.22175v1",
+      "arxiv_id": "2609.22175",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "World models trained via pixel reconstruction can struggle in visually complex environments, where irrelevant information dominates the objective and distract the model from information relevant to planning and control. We present Contrastive World Models, an approach for learning latent dynamics models without pixel reconstruction. Building on Dreamer, we replace observation reconstruction in the standard world model objective with a Deep InfoMax-like lower bound that maximizes the mutual information between state-action sequences and local patch features of future observations, encouraging state representations to retain information that is predictive of the future without requiring the model to reconstruct visually irrelevant details. We evaluate our approach in small-scale experiments across three settings of increasing visual complexity. Our method matches Dreamer and a momentum prediction baseline in the default setting, and substantially outperforms both once distractors or natural video backgrounds are introduced, while also training more efficiently by removing the pixel decoder entirely. Our approach is general and makes minimal assumptions beyond access to state-action sequences and future observations. These results suggest that contrastive, infomax-based objectives are a principled and promising direction for building world models that are robust to visual nuisance factors, a property particularly relevant for transferring model-based RL agents to the real world.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-08-27"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Success Leaves Detours: Learning Executable Walkthroughs for Long-Horizon Agents",
+      "authors": [
+        "Kaijie Chen",
+        "Chenyu Fang",
+        "Liang Yan",
+        "Bo Li",
+        "Bo Zhang",
+        "Peng Ye"
+      ],
+      "abstract": "Test-time self-evolving agents improve by reusing past experience, yet sparse-reward trajectories contain failures, loops, and detours, while summaries often omit the state conditions and action dependencies needed for execution. We study executable Walkthrough induction from sparse-reward trajectories: extracting compact, state-conditioned, and verifiable procedures. Our key observation is that delayed credit identifies actions associated with progress but cannot determine whether they produce facts required by later actions. We propose Trace, a credit-guided, dependency-grounded framework that compiles noisy trajectories into executable Walkthrough Memory. It detects progress anchors from rewards and persistent state changes, propagates credit to identify valuable transitions, and estimates action prerequisites from cross-episode success and failure evidence. Backward dependency slicing then traces required facts to their producers, extracting dependency-consistent action chains while removing irrelevant loops and detours. The resulting Walkthroughs encode entry conditions, ordered state--action--effect steps, and completion and failure predicates, supporting reuse, intermediate-state resumption, and programmatic verification. Experiments on J-TTL, WebShop, and ScienceWorld with three open-source LLMs show that Trace consistently outperforms eight test-time learning and memory baselines. Compared with the strongest baseline, it improves average AUC and Final-$3$ by $30.0%$ and $40.5%$, respectively, while using fewer inference tokens. These results show that long-horizon interaction benefits more from state-conditioned executable procedures than from complete trajectories or abstract summaries.",
+      "url": "http://arxiv.org/abs/2609.22120v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.22120v1",
+      "arxiv_id": "2609.22120",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Test-time self-evolving agents improve by reusing past experience, yet sparse-reward trajectories contain failures, loops, and detours, while summaries often omit the state conditions and action dependencies needed for execution. We study executable Walkthrough induction from sparse-reward trajectories: extracting compact, state-conditioned, and verifiable procedures. Our key observation is that delayed credit identifies actions associated with progress but cannot determine whether they produce facts required by later actions. We propose Trace, a credit-guided, dependency-grounded framework that compiles noisy trajectories into executable Walkthrough Memory. It detects progress anchors from rewards and persistent state changes, propagates credit to identify valuable transitions, and estimates action prerequisites from cross-episode success and failure evidence. Backward dependency slicing then traces required facts to their producers, extracting dependency-consistent action chains while removing irrelevant loops and detours. The resulting Walkthroughs encode entry conditions, ordered state--action--effect steps, and completion and failure predicates, supporting reuse, intermediate-state resumption, and programmatic verification. Experiments on J-TTL, WebShop, and ScienceWorld with three open-source LLMs show that Trace consistently outperforms eight test-time learning and memory baselines. Compared with the strongest baseline, it improves average AUC and Final-$3$ by $30.0%$ and $40.5%$, respectively, while using fewer inference tokens. These results show that long-horizon interaction benefits more from state-conditioned executable procedures than from complete trajectories or abstract summaries.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-08-20"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "StepKV: Step-Aware KV Cache Compression for LLM Agents",
+      "authors": [
+        "Boyu Feng",
+        "Jiahong Liu",
+        "Yifan Li",
+        "Wenhao Yu",
+        "Zexuan Qiu",
+        "Yuliang Sun",
+        "Ming Shen",
+        "Xiang Li",
+        "Quanyu Dai",
+        "Irwin King"
+      ],
+      "abstract": "Key-value (KV) caching is essential for efficient autoregressive large language model (LLM) inference, but the cache grows linearly with context length, increasing storage and decoding costs. KV cache compression mitigates this cost by retaining only a subset of cached tokens. This challenge is particularly important for multi-step LLM agents, where a query expands into trajectories of reasoning, tool interactions, and retrieved observations. Existing pruning methods typically treat the cache as a flat token stream and rank tokens by recency or attention saliency. This creates a mismatch between the unit of compression and the unit of reasoning: token-level pruning removes individual entries, whereas useful information in multi-step agents is often organized into reasoning steps with uneven and delayed importance. Consequently, an early observation or intermediate decision may receive little recent attention yet remain essential for later evidence synthesis. We term this failure mode Reasoning Continuity Disruption.These observations motivate KV cache compression that jointly considers token- and reasoning-step-level information. StepKV addresses this goal by treating reasoning steps as first-class retention units. It associates cache entries with their generating steps, estimates step utility from trajectory-derived signals, and combines this utility with token-level saliency. The resulting scores globally rank prunable tokens, from which StepKV retains the top-scoring entries under a target budget. StepKV thus provides a step-centric perspective for agent KV cache compression. Across multi-hop QA and long-horizon web reasoning tasks, StepKV sustains accuracy under low KV budgets where token-level baselines degrade sharply, offering a more robust efficiency-accuracy trade-off for multi-step agent inference.",
+      "url": "http://arxiv.org/abs/2609.22158v1",
+      "pdf_url": "https://arxiv.org/pdf/2609.22158v1",
+      "arxiv_id": "2609.22158",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Key-value (KV) caching is essential for efficient autoregressive large language model (LLM) inference, but the cache grows linearly with context length, increasing storage and decoding costs. KV cache compression mitigates this cost by retaining only a subset of cached tokens. This challenge is particularly important for multi-step LLM agents, where a query expands into trajectories of reasoning, tool interactions, and retrieved observations. Existing pruning methods typically treat the cache as a flat token stream and rank tokens by recency or attention saliency. This creates a mismatch between the unit of compression and the unit of reasoning: token-level pruning removes individual entries, whereas useful information in multi-step agents is often organized into reasoning steps with uneven and delayed importance. Consequently, an early observation or intermediate decision may receive little recent attention yet remain essential for later evidence synthesis. We term this failure mode Reasoning Continuity Disruption.These observations motivate KV cache compression that jointly considers token- and reasoning-step-level information. StepKV addresses this goal by treating reasoning steps as first-class retention units. It associates cache entries with their generating steps, estimates step utility from trajectory-derived signals, and combines this utility with token-level saliency. The resulting scores globally rank prunable tokens, from which StepKV retains the top-scoring entries under a target budget. StepKV thus provides a step-centric perspective for agent KV cache compression. Across multi-hop QA and long-horizon web reasoning tasks, StepKV sustains accuracy under low KV budgets where token-level baselines degrade sharply, offering a more robust efficiency-accuracy trade-off for multi-step agent inference.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-08-26"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://doi.org/10.17638/03194716",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn.1",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "Virtual dental consultations : impact on cost and endodontic treatment planning",
+      "authors": [
+        "Ruby Shah"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93286",
+      "pdf_url": "http://hdl.handle.net/2429/93286",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451143",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Towards dietary optimization for patients with Parkinson's disease : insights from a phase II, crossover, randomized controlled trial of two Mediterranean-ketogenic dietary interventions",
+      "authors": [
+        "Kira Nicole Tosefsky"
+      ],
+      "abstract": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "url": "http://hdl.handle.net/2429/93908",
+      "pdf_url": "http://hdl.handle.net/2429/93908",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.14288/1.0451797",
+      "score": 0.5,
+      "tldr": "The full abstract for this thesis is available in the body of the thesis, and will be available when the embargo expires.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-01-01"
+    }
+  ],
+  "enrichment_failures": {
+    "hugging_face": [
+      "A Pinch of SFT, A Dash of RL: When Reinforcement Learning Helps Long-Horizon Advertising Agents",
+      "Hierarchical Bayesian optimization of an aircraft-based multi-agent system-of-systems",
+      "Contrastive World Models",
+      "Success Leaves Detours: Learning Executable Walkthroughs for Long-Horizon Agents",
+      "StepKV: Step-Aware KV Cache Compression for LLM Agents"
+    ],
+    "papers_with_code": [
+      "A Pinch of SFT, A Dash of RL: When Reinforcement Learning Helps Long-Horizon Advertising Agents",
+      "Hierarchical Bayesian optimization of an aircraft-based multi-agent system-of-systems",
+      "Contrastive World Models",
+      "Success Leaves Detours: Learning Executable Walkthroughs for Long-Horizon Agents",
+      "StepKV: Step-Aware KV Cache Compression for LLM Agents"
+    ],
+    "semantic_scholar": [
+      "Hierarchical Bayesian optimization of an aircraft-based multi-agent system-of-systems",
+      "Contrastive World Models",
+      "Success Leaves Detours: Learning Executable Walkthroughs for Long-Horizon Agents",
+      "StepKV: Step-Aware KV Cache Compression for LLM Agents"
+    ]
+  }
+}
