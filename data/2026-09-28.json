@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-28",
+  "paper_count": 0,
+  "papers": [],
+  "enrichment_failures": {
+    "retrievers": [
+      "arxiv: Page request resulted in HTTP 406 (https://export.arxiv.org/api/query?search_query=&id_list=2609.30270v1%2C2609.30271v1%2C2609.30272v1%2C2609.30273v1%2C2609.30275v1%2C2609.30276v1%2C2609.30277v1%2C2609.30279v1%2C2609.30281v1%2C2609.30286v1%2C2609.30291v1%2C2609.30296v1%2C2609.30299v1%2C2609.30316v1%2C2609.30325v1%2C2609.30326v1%2C2609.30328v1%2C2609.30337v1%2C2609.30340v1%2C2609.30341v1&sortBy=relevance&sortOrder=descending&start=0&max_results=100)"
+    ]
+  }
+}
