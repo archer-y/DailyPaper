@@ -1,0 +1,297 @@
+{
+  "date": "2026-10-06",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Network Adaptation in IRS-Aided Hybrid RF/VLC Systems Using Cooperative Multi-Agent DRL",
+      "authors": [
+        "Ahrar N. Hamad",
+        "Ahmad Adnan Qidan",
+        "Taisir E. H. El-Gorashi",
+        "Jaafar M. H. Elmirghani"
+      ],
+      "abstract": "Hybrid radio frequency (RF) and visible light communication (VLC) networks have emerged as a promising solution for high-capacity indoor wireless connectivity in sixth-generation (6G) systems. However, the limited optical coverage and vulnerability of VLC links to line-of-sight (LoS) blockage under user mobility remain fundamental challenges. In this work, a mirror-based intelligent reflecting surface (IRS) is deployed to assist a dynamic indoor hybrid RF/VLC network, where each mobile user is exclusively assigned to either the IRS-enhanced VLC subnetwork or the RF subnetwork through a binary selection decision. A joint optimization problem is then formulated to maximize proportional fairness by jointly optimizing the RF/VLC technology selection, power allocation, and IRS mirror roll and yaw orientation angles. To enable real-time adaptability, the problem is reformulated as a Markov decision process (MDP) and solved using a cooperative multi-agent deep reinforcement learning (DRL) algorithm based on centralized training with decentralized execution. Simulation results demonstrate the superior performance of the optimized hybrid network compared with optimized standalone VLC and RF networks. The results further validate the practicality and effectiveness of the proposed DRL framework compared to widely adopted DRL algorithms as well as conventional model-based optimization approaches.",
+      "url": "http://arxiv.org/abs/2610.03964v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03964v1",
+      "arxiv_id": "2610.03964",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Hybrid radio frequency (RF) and visible light communication (VLC) networks have emerged as a promising solution for high-capacity indoor wireless connectivity in sixth-generation (6G) systems. However, the limited optical coverage and vulnerability of VLC links to line-of-sight (LoS) blockage under user mobility remain fundamental challenges. In this work, a mirror-based intelligent reflecting surface (IRS) is deployed to assist a dynamic indoor hybrid RF/VLC network, where each mobile user is exclusively assigned to either the IRS-enhanced VLC subnetwork or the RF subnetwork through a binary selection decision. A joint optimization problem is then formulated to maximize proportional fairness by jointly optimizing the RF/VLC technology selection, power allocation, and IRS mirror roll and yaw orientation angles. To enable real-time adaptability, the problem is reformulated as a Markov decision process (MDP) and solved using a cooperative multi-agent deep reinforcement learning (DRL) algorithm based on centralized training with decentralized execution. Simulation results demonstrate the superior performance of the optimized hybrid network compared with optimized standalone VLC and RF networks. The results further validate the practicality and effectiveness of the proposed DRL framework compared to widely adopted DRL algorithms as well as conventional model-based optimization approaches.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-10-02"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Bayes-Sufficient Compression Is Not Enough: How Does Communication Help Multi-Agent Systems?",
+      "authors": [
+        "Yi Xie",
+        "Zhanke Zhou",
+        "Yi Fan",
+        "Yong Ge",
+        "Bo Han",
+        "Bo Liu"
+      ],
+      "abstract": "Multi-agent LLM systems pair a sender with broad context and an executor with a limited local view. We study when a short message improves the executor's next decision, when raw context is preferable, and when a stronger sender helps. Our framework, \\emph{receiver-relative bounded coordination}, expresses message utility as receiver gain minus protocol tax. Compression beats raw context when tax savings exceed losses from omitted information and decoder mismatch. Even \\emph{Bayes-sufficient} compression can fail when a bounded executor cannot use its surface form. A three-stage decomposition separates externalization, absorption, and \\emph{action closure}, explaining how errors remain after the correct content reaches the receiver. Under a single-crossing condition, sender upgrades help above a receiver-burden threshold. Across six benchmarks, the same Qwen protocol raises ContextBench joint accuracy from $0.633$ to $0.775$ but lowers ToolSandbox from $0.889$ to $0.653$. Fixed-message replay reveals closure failures despite correct artifact recovery. These results guide an inference-time selector that improves the accuracy-cost frontier on the evaluated communication regimes.",
+      "url": "http://arxiv.org/abs/2610.03769v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03769v1",
+      "arxiv_id": "2610.03769",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Multi-agent LLM systems pair a sender with broad context and an executor with a limited local view. We study when a short message improves the executor's next decision, when raw context is preferable, and when a stronger sender helps. Our framework, \\emph{receiver-relative bounded coordination}, expresses message utility as receiver gain minus protocol tax. Compression beats raw context when tax savings exceed losses from omitted information and decoder mismatch. Even \\emph{Bayes-sufficient} compression can fail when a bounded executor cannot use its surface form. A three-stage decomposition separates externalization, absorption, and \\emph{action closure}, explaining how errors remain after the correct content reaches the receiver. Under a single-crossing condition, sender upgrades help above a receiver-burden threshold. Across six benchmarks, the same Qwen protocol raises ContextBench joint accuracy from $0.633$ to $0.775$ but lowers ToolSandbox from $0.889$ to $0.653$. Fixed-message replay reveals closure failures despite correct artifact recovery. These results guide an inference-time selector that improves the accuracy-cost frontier on the evaluated communication regimes.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-09-29"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities",
+      "authors": [
+        "Yikai Zhao",
+        "Saurabh Pandey",
+        "Pradeep Kumar Misra"
+      ],
+      "abstract": "A deployed LLM agent emits tool calls, queries, and code that can be silently wrong -- by the time the error surfaces, the action has run. Frontier chat APIs hide the model's token probabilities; the agent's stated confidence barely beats chance on the mistakes that matter; and resampling does not help, since frontier models are highly repetitive, reproducing the same call across samples.\n  We recover the missing signal from a low-cost open-weight surrogate run in parallel. It reads the same context, schema, and proposed action as the agent, then scores the call from its own log-probabilities through a family of complementary readouts: teacher forcing and request-PMI weigh the likelihood of each argument value, a discriminative verdict judges the call as a whole, and tool-choice competition tests the function against its siblings. One principle says which to trust: a generative likelihood localizes wrong argument values, while the verdict catches holistically wrong calls. When the error type is unknown, an ensemble is the low-regret default. The readout is training-free, needs no access to the agent's internals, and costs one prefill pass alongside the tool call.\n  On difficult coding tasks it reaches AUROC 0.825 where the actor's stated confidence is near chance (0.598), and the generative readouts beat it by +0.07 to +0.28 across three further actors. Against self-consistency it gains +0.14 to +0.19 on near-deterministic actors, at 1/K the cost. The signal drives two deployment modes: a real-time gate escalating the least-trustworthy calls for review (+0.05 to +0.30 accepted-action accuracy at 50% coverage), and confidence feedback, returning the tool result with the score so the agent adapts its next step -- lifting task success on live-execution benchmarks (+0.119 and +0.137, p <= 1e-4) and beating a random-value control where step errors are silent (+0.078, p = 0.003).",
+      "url": "http://arxiv.org/abs/2610.03894v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03894v1",
+      "arxiv_id": "2610.03894",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "A deployed LLM agent emits tool calls, queries, and code that can be silently wrong -- by the time the error surfaces, the action has run. Frontier chat APIs hide the model's token probabilities; the agent's stated confidence barely beats chance on the mistakes that matter; and resampling does not help, since frontier models are highly repetitive, reproducing the same call across samples.\n  We recover the missing signal from a low-cost open-weight surrogate run in parallel. It reads the same context, schema, and proposed action as the agent, then scores the call from its own log-probabilities through a family of complementary readouts: teacher forcing and request-PMI weigh the likelihood of each argument value, a discriminative verdict judges the call as a whole, and tool-choice competition tests the function against its siblings. One principle says which to trust: a generative likelihood localizes wrong argument values, while the verdict catches holistically wrong calls. When the error type is unknown, an ensemble is the low-regret default. The readout is training-free, needs no access to the agent's internals, and costs one prefill pass alongside the tool call.\n  On difficult coding tasks it reaches AUROC 0.825 where the actor's stated confidence is near chance (0.598), and the generative readouts beat it by +0.07 to +0.28 across three further actors. Against self-consistency it gains +0.14 to +0.19 on near-deterministic actors, at 1/K the cost. The signal drives two deployment modes: a real-time gate escalating the least-trustworthy calls for review (+0.05 to +0.30 accepted-action accuracy at 50% coverage), and confidence feedback, returning the tool result with the score so the agent adapts its next step -- lifting task success on live-execution benchmarks (+0.119 and +0.137, p <= 1e-4) and beating a random-value control where step errors are silent (+0.078, p = 0.003).",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-10-02"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Memory-State Critic for Asymmetric Actor-Critic with Application to Vision-Based Pursuit-Evasion",
+      "authors": [
+        "Arthur Louette",
+        "Alejandro Sánchez Roncero",
+        "Gaspard Lambrechts",
+        "Pascal Leroy",
+        "Julien Hansen",
+        "Petter Ögren",
+        "Damien Ernst"
+      ],
+      "abstract": "In partially observable Markov decision processes, the optimal policy generally depends on the history of observations and past actions. Asymmetric actor-critic methods have become popular to learn such policies when additional information, such as the true state of the environment, is available during training. The critic, which is not needed at execution, is given access to the state. A critic conditioned on the state alone is generally ill-defined and yields biased policy gradients. Conditioning on the state and the history, the history-state critic restores both. In this paper, we show that conditioning the critic on the state and the policy's own memory, i.e., the internal representation of the history through which the policy selects its actions, is already well-defined and gives unbiased policy gradients, removing the need for a second recurrent approximator of the history. We call it the memory state critic. It follows that a critic based on the policy's memory need not backpropagate its loss into that memory, even though the memory is a lossy encoding of the history. We evaluate the memory-state critic in a vision-based pursuit-evasion environment between two quadrotors across two arena types. The pursuer is the learning agent, and the evader is sampled per episode from a fixed pool of heuristic behaviours. The results show that the memory-state critic outperforms the history-state critic and converges faster. In addition to being unbiased compared to the state-only critic, it maintains a slight edge in the wall arena, where the actor's history carries information that the privileged state alone does not.",
+      "url": "http://arxiv.org/abs/2610.03830v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03830v1",
+      "arxiv_id": "2610.03830",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "In partially observable Markov decision processes, the optimal policy generally depends on the history of observations and past actions. Asymmetric actor-critic methods have become popular to learn such policies when additional information, such as the true state of the environment, is available during training. The critic, which is not needed at execution, is given access to the state. A critic conditioned on the state alone is generally ill-defined and yields biased policy gradients. Conditioning on the state and the history, the history-state critic restores both. In this paper, we show that conditioning the critic on the state and the policy's own memory, i.e., the internal representation of the history through which the policy selects its actions, is already well-defined and gives unbiased policy gradients, removing the need for a second recurrent approximator of the history. We call it the memory state critic. It follows that a critic based on the policy's memory need not backpropagate its loss into that memory, even though the memory is a lossy encoding of the history. We evaluate the memory-state critic in a vision-based pursuit-evasion environment between two quadrotors across two arena types. The pursuer is the learning agent, and the evader is sampled per episode from a fixed pool of heuristic behaviours. The results show that the memory-state critic outperforms the history-state critic and converges faster. In addition to being unbiased compared to the state-only critic, it maintains a slight edge in the wall arena, where the actor's history carries information that the privileged state alone does not.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-10-02"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Resilient Multi-Agent Target Localization and Tracking via BAG-Aware Mutual Information Maximization under False Data Injection Attacks",
+      "authors": [
+        "Bibek Adhikari",
+        "Samrat Chaulagain",
+        "Kamesh Subbarao"
+      ],
+      "abstract": "Cooperative multi-agent networks deployed for target localization and tracking remain critically vulnerable to malicious cyberattacks, since a single compromised agent can corrupt the centralized target belief and mislead the estimation process across the entire network. This paper presents a resilient multi-agent target localization and tracking framework under a limited agent sensing range and false-data injection (FDI) attacks. The proposed method combines information-based navigation for target search and posterior target state uncertainty reduction, Bayesian attack graph (BAG) based attack detection for probabilistic identification of the compromised agents, and reachable set-guided recovery that guides the uncompromised agents to relocalize the target when the sole localizing agent is attacked. The framework preserves the network localization capability after an attack by trust-gating compromised sensing information and guiding attack-immune agents toward a dynamically constructed recovery set representing the new target belief using a Linear Quadratic Regulator (LQR). Simulation validates that the proposed framework maintains a robust tracking performance under FDI attacks, demonstrating the potential for resilient autonomy in safety-critical applications.",
+      "url": "http://arxiv.org/abs/2610.03930v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.03930v1",
+      "arxiv_id": "2610.03930",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Cooperative multi-agent networks deployed for target localization and tracking remain critically vulnerable to malicious cyberattacks, since a single compromised agent can corrupt the centralized target belief and mislead the estimation process across the entire network. This paper presents a resilient multi-agent target localization and tracking framework under a limited agent sensing range and false-data injection (FDI) attacks. The proposed method combines information-based navigation for target search and posterior target state uncertainty reduction, Bayesian attack graph (BAG) based attack detection for probabilistic identification of the compromised agents, and reachable set-guided recovery that guides the uncompromised agents to relocalize the target when the sole localizing agent is attacked. The framework preserves the network localization capability after an attack by trust-gating compromised sensing information and guiding attack-immune agents toward a dynamically constructed recovery set representing the new target belief using a Linear Quadratic Regulator (LQR). Simulation validates that the proposed framework maintains a robust tracking performance under FDI attacks, demonstrating the potential for resilient autonomy in safety-critical applications.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-10-02"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://doi.org/10.17638/03194716",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Mapping crown length and canopy depth across global forests at 1 km from multi-platform lidar and satellite data",
+      "authors": [
+        "Zhang Yixuan"
+      ],
+      "abstract": "Crown length (CL) describes the vertical extent of an individual tree's live crown. Canopy depth (CD) describes the vertical extent of the canopy within a forest stand. Both inform fire behaviour, vegetation and habitat models, yet their global distributions remain poorly resolved. We present global maps of mean CL and CD at 1 km resolution for 2020. We first retrieved CL for individual trees segmented from lidar point clouds, as tree height minus crown-base height. Within each of 1147 reference records on six continents, mean CL was the average of the tree values and CD was the 95th-percentile tree height minus the lowest crown base. Both were related to satellite and environmental predictors using random forest models. Tree-level CL agreed with field measurements and manual annotations with R² = 0.62 and RMSE = 2.63 m. Across 46 validation plots, RMSE was 1.90 m for mean CL and 2.09 m for CD. In the 30 % hold-out set, the mapping models achieved R² = 0.64 for CL and 0.72 for CD, with RMSE of 2.15 m and 2.98 m. Global mean CL and CD were 7.0 m and 14.2 m. Long crowns and deep canopies occurred in equatorial rain forests and humid temperate forests. Savannas, Mediterranean woodlands and dry forests had the smallest values. These maps give the first globally consistent view of the crown layer beneath the canopy top. They can constrain crown geometry in vegetation models, canopy fuel depth in fire models and vertical habitat structure in biodiversity studies.",
+      "url": "https://doi.org/10.5281/zenodo.23118929",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23118929",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.23118929",
+      "score": 1.0,
+      "tldr": "Crown length (CL) describes the vertical extent of an individual tree's live crown. Canopy depth (CD) describes the vertical extent of the canopy within a forest stand. Both inform fire behaviour, vegetation and habitat models, yet their global distributions remain poorly resolved. We present global maps of mean CL and CD at 1 km resolution for 2020. We first retrieved CL for individual trees segmented from lidar point clouds, as tree height minus crown-base height. Within each of 1147 reference records on six continents, mean CL was the average of the tree values and CD was the 95th-percentile tree height minus the lowest crown base. Both were related to satellite and environmental predictors using random forest models. Tree-level CL agreed with field measurements and manual annotations with R² = 0.62 and RMSE = 2.63 m. Across 46 validation plots, RMSE was 1.90 m for mean CL and 2.09 m for CD. In the 30 % hold-out set, the mapping models achieved R² = 0.64 for CL and 0.72 for CD, with RMSE of 2.15 m and 2.98 m. Global mean CL and CD were 7.0 m and 14.2 m. Long crowns and deep canopies occurred in equatorial rain forests and humid temperate forests. Savannas, Mediterranean woodlands and dry forests had the smallest values. These maps give the first globally consistent view of the crown layer beneath the canopy top. They can constrain crown geometry in vegetation models, canopy fuel depth in fire models and vertical habitat structure in biodiversity studies.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-10-03"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "A global 1 km forest crown base height dataset for 2020 from multi-platform lidar and satellite data",
+      "authors": [
+        "Zhang Yixuan"
+      ],
+      "abstract": "Crown base height (CBH) is the height of the lowest living branch of a tree. It marks where the live crown begins, and it is a key input for forest growth, vegetation and fire behaviour models. However, a global-scale map of CBH is still lacking. We mapped the first global maps of two stand-level CBH metrics at 1 km resolution for 2020. CBH was first estimated for individual trees segmented from airborne, drone, terrestrial and backpack lidar point clouds. The tree values were then aggregated to 1432 plots of 1 km × 1 km on six continents, and two plot-level metrics were derived. CBHwa is the mean weighted by the square of tree height, which follows the canopy-forming trees. CBHmin is the minimum, which marks the lower edge of the live canopy. Random forest models related both metrics to 47 satellite and environmental predictors. Tree-level CBH agreed with field measurements and manual annotations of 1641 trees with an RMSE of 3.32 m. Plot-level RMSE was 2.65 m for CBHwa and 1.80 m for CBHmin. The models reached R2 = 0.80 (RMSE 2.40 m) for CBHwa and R2 = 0.65 (RMSE 1.51 m) for CBHmin. Global mean CBHwa and CBHmin are 9.5 m and 3.8 m. CBHwa is highest in tropical moist forests, whereas CBHmin is highest in boreal forests. These maps provide a consistent global reference of CBH for forest management, vegetation modelling and wildfire risk assessment.",
+      "url": "https://doi.org/10.5281/zenodo.23089996",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23089996",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.23089996",
+      "score": 0.5,
+      "tldr": "Crown base height (CBH) is the height of the lowest living branch of a tree. It marks where the live crown begins, and it is a key input for forest growth, vegetation and fire behaviour models. However, a global-scale map of CBH is still lacking. We mapped the first global maps of two stand-level CBH metrics at 1 km resolution for 2020. CBH was first estimated for individual trees segmented from airborne, drone, terrestrial and backpack lidar point clouds. The tree values were then aggregated to 1432 plots of 1 km × 1 km on six continents, and two plot-level metrics were derived. CBHwa is the mean weighted by the square of tree height, which follows the canopy-forming trees. CBHmin is the minimum, which marks the lower edge of the live canopy. Random forest models related both metrics to 47 satellite and environmental predictors. Tree-level CBH agreed with field measurements and manual annotations of 1641 trees with an RMSE of 3.32 m. Plot-level RMSE was 2.65 m for CBHwa and 1.80 m for CBHmin. The models reached R2 = 0.80 (RMSE 2.40 m) for CBHwa and R2 = 0.65 (RMSE 1.51 m) for CBHmin. Global mean CBHwa and CBHmin are 9.5 m and 3.8 m. CBHwa is highest in tropical moist forests, whereas CBHmin is highest in boreal forests. These maps provide a consistent global reference of CBH for forest management, vegetation modelling and wildfire risk assessment.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-10-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn.1",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Network Adaptation in IRS-Aided Hybrid RF/VLC Systems Using Cooperative Multi-Agent DRL",
+      "Bayes-Sufficient Compression Is Not Enough: How Does Communication Help Multi-Agent Systems?",
+      "Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities",
+      "Memory-State Critic for Asymmetric Actor-Critic with Application to Vision-Based Pursuit-Evasion",
+      "Resilient Multi-Agent Target Localization and Tracking via BAG-Aware Mutual Information Maximization under False Data Injection Attacks"
+    ],
+    "hugging_face": [
+      "Network Adaptation in IRS-Aided Hybrid RF/VLC Systems Using Cooperative Multi-Agent DRL",
+      "Bayes-Sufficient Compression Is Not Enough: How Does Communication Help Multi-Agent Systems?",
+      "Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities",
+      "Memory-State Critic for Asymmetric Actor-Critic with Application to Vision-Based Pursuit-Evasion",
+      "Resilient Multi-Agent Target Localization and Tracking via BAG-Aware Mutual Information Maximization under False Data Injection Attacks"
+    ],
+    "papers_with_code": [
+      "Network Adaptation in IRS-Aided Hybrid RF/VLC Systems Using Cooperative Multi-Agent DRL",
+      "Bayes-Sufficient Compression Is Not Enough: How Does Communication Help Multi-Agent Systems?",
+      "Proxy Confidence: Auditing Black-Box LLM Agents with a Surrogate's Log-Probabilities",
+      "Memory-State Critic for Asymmetric Actor-Critic with Application to Vision-Based Pursuit-Evasion",
+      "Resilient Multi-Agent Target Localization and Tracking via BAG-Aware Mutual Information Maximization under False Data Injection Attacks"
+    ]
+  }
+}
