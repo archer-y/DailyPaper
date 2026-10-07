@@ -1,0 +1,289 @@
+{
+  "date": "2026-10-07",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "RadOnc-Agent: An LLM-Orchestrated Framework for AI Workflows Across the Radiotherapy Care Pathway",
+      "authors": [
+        "Caiwen Jiang",
+        "Shuoyang Wei",
+        "Songlin Zhao",
+        "Junyu Li",
+        "Jingyuan Chen",
+        "Wei Liu"
+      ],
+      "abstract": "Artificial intelligence has advanced individual radiotherapy tasks, yet these capabilities remain separated across clinical stages, software environments and data modalities. This fragmentation contrasts with the longitudinal radiotherapy workflow from treatment decision-making through follow-up. Here we present RadOnc-Agent, an agentic artificial-intelligence framework that formalizes radiotherapy into four clinical phases and provides 26 callable functions through a conversational interface. A large-language-model controller maps clinical intent to schema-constrained calls, preserves patient and workflow context, and routes requests to specialist services. We evaluated system execution using 2,600 single-function requests (7,800 repeat executions), 200 prespecified synthetic cross-stage scenarios spanning four phases (600 executions), and 120 workflow instances from 60 de-identified patient records (360 clean executions) representing decision-to-planning and planning-to-adaptation. RadOnc-Agent selected the intended function in 98.79% of single-function executions, completed 96.50% of scripted cross-stage workflows, and completed 96.67% of real-patient workflow executions. In comparative ablations, removing longitudinal state reduced cross-stage completion from 96.50% to 84.00%, while disabling schema and identity validation increased mismatched backend dispatch from 0% to 95.28% in a replay/test evaluation. These findings establish the technical feasibility of an LLM-orchestrated architecture for coordinating heterogeneous radiotherapy capabilities and information across longitudinal workflows; they do not establish clinical correctness, clinical utility or prospective benefit.",
+      "url": "http://arxiv.org/abs/2610.06923v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06923v1",
+      "arxiv_id": "2610.06923",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Artificial intelligence has advanced individual radiotherapy tasks, yet these capabilities remain separated across clinical stages, software environments and data modalities. This fragmentation contrasts with the longitudinal radiotherapy workflow from treatment decision-making through follow-up. Here we present RadOnc-Agent, an agentic artificial-intelligence framework that formalizes radiotherapy into four clinical phases and provides 26 callable functions through a conversational interface. A large-language-model controller maps clinical intent to schema-constrained calls, preserves patient and workflow context, and routes requests to specialist services. We evaluated system execution using 2,600 single-function requests (7,800 repeat executions), 200 prespecified synthetic cross-stage scenarios spanning four phases (600 executions), and 120 workflow instances from 60 de-identified patient records (360 clean executions) representing decision-to-planning and planning-to-adaptation. RadOnc-Agent selected the intended function in 98.79% of single-function executions, completed 96.50% of scripted cross-stage workflows, and completed 96.67% of real-patient workflow executions. In comparative ablations, removing longitudinal state reduced cross-stage completion from 96.50% to 84.00%, while disabling schema and identity validation increased mismatched backend dispatch from 0% to 95.28% in a replay/test evaluation. These findings establish the technical feasibility of an LLM-orchestrated architecture for coordinating heterogeneous radiotherapy capabilities and information across longitudinal workflows; they do not establish clinical correctness, clinical utility or prospective benefit.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-02"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "AegisFlow: A Multi-Agent Agentic AI Framework for Autonomous Remediation and Self-Healing in Fragile Data Ecosystems",
+      "authors": [
+        "Muhammad Bilal Awan",
+        "Zubair Hussain",
+        "Abdul Shahid"
+      ],
+      "abstract": "Traditional data pipelines are notoriously brittle, often failing due to upstream schema drift, API contract changes, or website DOM modifications. Present observability tools only raise alerts but for human engineers, resulting in a high Mean Time to Repair (MTTR) and operational fatigue. In this paper we propose AegisFlow (Agentic Engine for Intelligent Self-healing and Graph-driven Operations for Workload remediation), a novel agentic framework that closes the loop between detection and resolution. AegisFlow uses a Watchdog agent to collect runtime telemetry and has a Repair agent to automatically create, test and deploy code patches based on Large Language Models (LLMs). The framework presents the non-intrusive execution model called Parallel Shadow Patching, a non-intrusive execution model based on the Monitor, Analyze, Plan, Execute, Knowledge (MAPE-K) loop to generate and verify patches in digital twin environments. Through experimental testing, we have evaluated AegisFlow across five common failure scenarios, and see 98.1 percent improvement in MTTR (from an average of 170 minutes per patch to 3.2 minutes) and a patch success rate of 92 percent . In particular, the system is successful in dealing with changes in the JSON schema (96 percent ) and punctuation drift (98 percent ), and is least successful in Shadow DOM cases (85 percent ). AegisFlow frees up about 98 percent of data engineering on-call time from firefighting and reallocates it towards innovation. The framework is deployment agnostic consisting of a system that can be deployed in a plugin fashion into an existing pipeline orchestration system with minimal uplift to the existing system.",
+      "url": "http://arxiv.org/abs/2610.06971v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06971v1",
+      "arxiv_id": "2610.06971",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Traditional data pipelines are notoriously brittle, often failing due to upstream schema drift, API contract changes, or website DOM modifications. Present observability tools only raise alerts but for human engineers, resulting in a high Mean Time to Repair (MTTR) and operational fatigue. In this paper we propose AegisFlow (Agentic Engine for Intelligent Self-healing and Graph-driven Operations for Workload remediation), a novel agentic framework that closes the loop between detection and resolution. AegisFlow uses a Watchdog agent to collect runtime telemetry and has a Repair agent to automatically create, test and deploy code patches based on Large Language Models (LLMs). The framework presents the non-intrusive execution model called Parallel Shadow Patching, a non-intrusive execution model based on the Monitor, Analyze, Plan, Execute, Knowledge (MAPE-K) loop to generate and verify patches in digital twin environments. Through experimental testing, we have evaluated AegisFlow across five common failure scenarios, and see 98.1 percent improvement in MTTR (from an average of 170 minutes per patch to 3.2 minutes) and a patch success rate of 92 percent . In particular, the system is successful in dealing with changes in the JSON schema (96 percent ) and punctuation drift (98 percent ), and is least successful in Shadow DOM cases (85 percent ). AegisFlow frees up about 98 percent of data engineering on-call time from firefighting and reallocates it towards innovation. The framework is deployment agnostic consisting of a system that can be deployed in a plugin fashion into an existing pipeline orchestration system with minimal uplift to the existing system.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-03"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Generalizable Robustness Testing of DNN-Based Robotic Navigation Systems via XAI-Guided Search",
+      "authors": [
+        "Khizra Sohail",
+        "Miren Illarramendi",
+        "Aitor Arrieta"
+      ],
+      "abstract": "**Context:** Deep Neural Networks (DNNs) increasingly control Cyber-Physical Systems (CPSs), yet small input perturbations can cause unsafe system-level behavior. Existing approaches often optimize perturbations for individual images and evaluate them only in simulation, limiting their generalizability and practical validity.\n  **Objectives:** This work aims to generate robustness tests that remain effective across operational observations and to evaluate whether the resulting failures transfer from simulation to a physical robot.\n  **Methods:** We propose an explainability-guided multi-objective evolutionary approach that generates sparse perturbations over representative images selected through visual and behavioral clustering. Aggregated Integrated Gradients guide mutations toward influential image regions. We evaluate the approach on a DNN-controlled LeoRover in Gazebo, conduct an ablation study, and validate a stratified subset of perturbations on the physical robot.\n  **Results:** The approach achieved a median success rate of 70.0%, compared with 53.85% for unguided search, and increased median hypervolume from 0.65 to 0.73. Multi-image optimization improved the success rate from 50.0% to 57.5%, while XAI guidance further increased it to 70.0%. In the sim-to-real evaluation, simulation achieved 0.95 precision and 0.67 recall, and simulated and physical failure times showed a significant positive correlation of 0.617.\n  **Conclusion:** Combining multi-image optimization with explainability-guided search improves robustness testing for DNN-controlled robotic systems. Simulation effectively identifies and prioritizes transferable failures, but physical validation remains necessary because some real-world failures are not reproduced in simulation.",
+      "url": "http://arxiv.org/abs/2610.06862v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06862v1",
+      "arxiv_id": "2610.06862",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "**Context:** Deep Neural Networks (DNNs) increasingly control Cyber-Physical Systems (CPSs), yet small input perturbations can cause unsafe system-level behavior. Existing approaches often optimize perturbations for individual images and evaluate them only in simulation, limiting their generalizability and practical validity.\n  **Objectives:** This work aims to generate robustness tests that remain effective across operational observations and to evaluate whether the resulting failures transfer from simulation to a physical robot.\n  **Methods:** We propose an explainability-guided multi-objective evolutionary approach that generates sparse perturbations over representative images selected through visual and behavioral clustering. Aggregated Integrated Gradients guide mutations toward influential image regions. We evaluate the approach on a DNN-controlled LeoRover in Gazebo, conduct an ablation study, and validate a stratified subset of perturbations on the physical robot.\n  **Results:** The approach achieved a median success rate of 70.0%, compared with 53.85% for unguided search, and increased median hypervolume from 0.65 to 0.73. Multi-image optimization improved the success rate from 50.0% to 57.5%, while XAI guidance further increased it to 70.0%. In the sim-to-real evaluation, simulation achieved 0.95 precision and 0.67 recall, and simulated and physical failure times showed a significant positive correlation of 0.617.\n  **Conclusion:** Combining multi-image optimization with explainability-guided search improves robustness testing for DNN-controlled robotic systems. Simulation effectively identifies and prioritizes transferable failures, but physical validation remains necessary because some real-world failures are not reproduced in simulation.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-07-24"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Learning from Unreliable Trajectories: Adversarially-Robust Federated Q-Learning",
+      "authors": [
+        "Sreejeet Maity",
+        "Aritra Mitra"
+      ],
+      "abstract": "We study federated reinforcement learning in which multiple agents interact with a common Markov decision process and communicate through a central server to collaboratively learn the optimal state-action value function. Our goal is to understand whether the sample-efficiency benefits of collaboration can be retained when a fraction of the agents behave adversarially and transmit arbitrarily corrupted information. To address this problem, we introduce Robust Async-Fed-Q, an epoch-based federated learning algorithm that combines variance-reduced estimation of the Bellman optimality operator at the agents with robust aggregation at the server. We establish high-probability finite-time guarantees showing that the proposed method preserves the statistical gains of collaboration among the honest agents while tolerating adversarial corruption. In particular, the effect of the adversarial agents decreases as the amount of data collected by each honest agent grows and eventually vanishes in the infinite-sample limit. We complement these guarantees with information-theoretic lower bounds that characterize the unavoidable statistical cost of adversarial corruption, leading to the first nearly matching upper and lower bounds for adversarially robust federated reinforcement learning. We further extend our framework to accommodate single-trajectory Markovian sampling and heterogeneous partial coverage, where different agents may explore different regions of the state-action space and learning relies on their collective coverage. Finally, our epoch-based design substantially improves the best known communication complexity for federated Q-learning under asynchronous sampling.",
+      "url": "http://arxiv.org/abs/2610.06918v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06918v1",
+      "arxiv_id": "2610.06918",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "We study federated reinforcement learning in which multiple agents interact with a common Markov decision process and communicate through a central server to collaboratively learn the optimal state-action value function. Our goal is to understand whether the sample-efficiency benefits of collaboration can be retained when a fraction of the agents behave adversarially and transmit arbitrarily corrupted information. To address this problem, we introduce Robust Async-Fed-Q, an epoch-based federated learning algorithm that combines variance-reduced estimation of the Bellman optimality operator at the agents with robust aggregation at the server. We establish high-probability finite-time guarantees showing that the proposed method preserves the statistical gains of collaboration among the honest agents while tolerating adversarial corruption. In particular, the effect of the adversarial agents decreases as the amount of data collected by each honest agent grows and eventually vanishes in the infinite-sample limit. We complement these guarantees with information-theoretic lower bounds that characterize the unavoidable statistical cost of adversarial corruption, leading to the first nearly matching upper and lower bounds for adversarially robust federated reinforcement learning. We further extend our framework to accommodate single-trajectory Markovian sampling and heterogeneous partial coverage, where different agents may explore different regions of the state-action space and learning relies on their collective coverage. Finally, our epoch-based design substantially improves the best known communication complexity for federated Q-learning under asynchronous sampling.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-10-02"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Geometric Coherence via Weighted Matching for 3D Heterogeneous Multi-Agent Reach-Avoid Games",
+      "authors": [
+        "Prajwal Vijay"
+      ],
+      "abstract": "We study assignment quality in 3D heterogeneous multi-agent reach-avoid games and identify a recurring failure mode of cardinality-only matching in geometrically structured scenarios, which we term \\emph{Geometric Sprawl}. In these cases, multiple maximum-cardinality assignments are available, but some induce spatially incoherent pairings and inefficient pursuit trajectories. Building on the evasion-space framework of Yan et al.~\\cite{yan2022}, we introduce a cardinality-first weighted sequential matching method in which the Hamilton--Jacobi--Isaacs interception value $z_I(s,j)$ is used as a secondary assignment weight. Each sequential stage is solved with a min-cost max-flow backend, while the unweighted baseline uses the same solver with the weight term removed. We evaluate both methods on a deterministic 35-scenario benchmark (7 families & 5 initialization variants) under two regimes: a diagnostic stationary-unmatched setting and a hybrid saddle-point setting with goal-directed unmatched evaders. On this benchmark, the weighted method resolves 13 of 15 geometric stress-test instances that cause repeated timeouts for the unweighted baseline in the diagnostic regime, and under the hybrid regime improves mean captures from $3.20$ to $3.91$ (22\\% increase) and mean interception height from $3.87$ to $5.36$ (40\\% increase). We also report lower path tortuosity and lower angular-effort proxy values, suggesting smoother pursuit trajectories in this first-order simulation model. We release the simulator and benchmark suite at \\href{https://github.com/Prajwal-Vijay/geometric-coherence-weighted-matching}{github.com/Prajwal-Vijay/geometric-coherence-weighted-matching} to support reproducible evaluation of assignment strategies for 3D reach-avoid games.",
+      "url": "http://arxiv.org/abs/2610.06882v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.06882v1",
+      "arxiv_id": "2610.06882",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "We study assignment quality in 3D heterogeneous multi-agent reach-avoid games and identify a recurring failure mode of cardinality-only matching in geometrically structured scenarios, which we term \\emph{Geometric Sprawl}. In these cases, multiple maximum-cardinality assignments are available, but some induce spatially incoherent pairings and inefficient pursuit trajectories. Building on the evasion-space framework of Yan et al.~\\cite{yan2022}, we introduce a cardinality-first weighted sequential matching method in which the Hamilton--Jacobi--Isaacs interception value $z_I(s,j)$ is used as a secondary assignment weight. Each sequential stage is solved with a min-cost max-flow backend, while the unweighted baseline uses the same solver with the weight term removed. We evaluate both methods on a deterministic 35-scenario benchmark (7 families & 5 initialization variants) under two regimes: a diagnostic stationary-unmatched setting and a hybrid saddle-point setting with goal-directed unmatched evaders. On this benchmark, the weighted method resolves 13 of 15 geometric stress-test instances that cause repeated timeouts for the unweighted baseline in the diagnostic regime, and under the hybrid regime improves mean captures from $3.20$ to $3.91$ (22\\% increase) and mean interception height from $3.87$ to $5.36$ (40\\% increase). We also report lower path tortuosity and lower angular-effort proxy values, suggesting smoother pursuit trajectories in this first-order simulation model. We release the simulator and benchmark suite at \\href{https://github.com/Prajwal-Vijay/geometric-coherence-weighted-matching}{github.com/Prajwal-Vijay/geometric-coherence-weighted-matching} to support reproducible evaluation of assignment strategies for 3D reach-avoid games.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-09-19"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://doi.org/10.17638/03194716",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Mapping crown length and canopy depth across global forests at 1 km from multi-platform lidar and satellite data",
+      "authors": [
+        "Zhang Yixuan"
+      ],
+      "abstract": "Crown length (CL) describes the vertical extent of an individual tree's live crown. Canopy depth (CD) describes the vertical extent of the canopy within a forest stand. Both inform fire behaviour, vegetation and habitat models, yet their global distributions remain poorly resolved. We present global maps of mean CL and CD at 1 km resolution for 2020. We first retrieved CL for individual trees segmented from lidar point clouds, as tree height minus crown-base height. Within each of 1147 reference records on six continents, mean CL was the average of the tree values and CD was the 95th-percentile tree height minus the lowest crown base. Both were related to satellite and environmental predictors using random forest models. Tree-level CL agreed with field measurements and manual annotations with R² = 0.62 and RMSE = 2.63 m. Across 46 validation plots, RMSE was 1.90 m for mean CL and 2.09 m for CD. In the 30 % hold-out set, the mapping models achieved R² = 0.64 for CL and 0.72 for CD, with RMSE of 2.15 m and 2.98 m. Global mean CL and CD were 7.0 m and 14.2 m. Long crowns and deep canopies occurred in equatorial rain forests and humid temperate forests. Savannas, Mediterranean woodlands and dry forests had the smallest values. These maps give the first globally consistent view of the crown layer beneath the canopy top. They can constrain crown geometry in vegetation models, canopy fuel depth in fire models and vertical habitat structure in biodiversity studies.",
+      "url": "https://doi.org/10.5281/zenodo.23118929",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23118929",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.23118929",
+      "score": 1.0,
+      "tldr": "Crown length (CL) describes the vertical extent of an individual tree's live crown. Canopy depth (CD) describes the vertical extent of the canopy within a forest stand. Both inform fire behaviour, vegetation and habitat models, yet their global distributions remain poorly resolved. We present global maps of mean CL and CD at 1 km resolution for 2020. We first retrieved CL for individual trees segmented from lidar point clouds, as tree height minus crown-base height. Within each of 1147 reference records on six continents, mean CL was the average of the tree values and CD was the 95th-percentile tree height minus the lowest crown base. Both were related to satellite and environmental predictors using random forest models. Tree-level CL agreed with field measurements and manual annotations with R² = 0.62 and RMSE = 2.63 m. Across 46 validation plots, RMSE was 1.90 m for mean CL and 2.09 m for CD. In the 30 % hold-out set, the mapping models achieved R² = 0.64 for CL and 0.72 for CD, with RMSE of 2.15 m and 2.98 m. Global mean CL and CD were 7.0 m and 14.2 m. Long crowns and deep canopies occurred in equatorial rain forests and humid temperate forests. Savannas, Mediterranean woodlands and dry forests had the smallest values. These maps give the first globally consistent view of the crown layer beneath the canopy top. They can constrain crown geometry in vegetation models, canopy fuel depth in fire models and vertical habitat structure in biodiversity studies.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-10-03"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "A global 1 km forest crown base height dataset for 2020 from multi-platform lidar and satellite data",
+      "authors": [
+        "Zhang Yixuan"
+      ],
+      "abstract": "Crown base height (CBH) is the height of the lowest living branch of a tree. It marks where the live crown begins, and it is a key input for forest growth, vegetation and fire behaviour models. However, a global-scale map of CBH is still lacking. We mapped the first global maps of two stand-level CBH metrics at 1 km resolution for 2020. CBH was first estimated for individual trees segmented from airborne, drone, terrestrial and backpack lidar point clouds. The tree values were then aggregated to 1432 plots of 1 km × 1 km on six continents, and two plot-level metrics were derived. CBHwa is the mean weighted by the square of tree height, which follows the canopy-forming trees. CBHmin is the minimum, which marks the lower edge of the live canopy. Random forest models related both metrics to 47 satellite and environmental predictors. Tree-level CBH agreed with field measurements and manual annotations of 1641 trees with an RMSE of 3.32 m. Plot-level RMSE was 2.65 m for CBHwa and 1.80 m for CBHmin. The models reached R2 = 0.80 (RMSE 2.40 m) for CBHwa and R2 = 0.65 (RMSE 1.51 m) for CBHmin. Global mean CBHwa and CBHmin are 9.5 m and 3.8 m. CBHwa is highest in tropical moist forests, whereas CBHmin is highest in boreal forests. These maps provide a consistent global reference of CBH for forest management, vegetation modelling and wildfire risk assessment.",
+      "url": "https://doi.org/10.5281/zenodo.23089996",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23089996",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.23089996",
+      "score": 0.5,
+      "tldr": "Crown base height (CBH) is the height of the lowest living branch of a tree. It marks where the live crown begins, and it is a key input for forest growth, vegetation and fire behaviour models. However, a global-scale map of CBH is still lacking. We mapped the first global maps of two stand-level CBH metrics at 1 km resolution for 2020. CBH was first estimated for individual trees segmented from airborne, drone, terrestrial and backpack lidar point clouds. The tree values were then aggregated to 1432 plots of 1 km × 1 km on six continents, and two plot-level metrics were derived. CBHwa is the mean weighted by the square of tree height, which follows the canopy-forming trees. CBHmin is the minimum, which marks the lower edge of the live canopy. Random forest models related both metrics to 47 satellite and environmental predictors. Tree-level CBH agreed with field measurements and manual annotations of 1641 trees with an RMSE of 3.32 m. Plot-level RMSE was 2.65 m for CBHwa and 1.80 m for CBHmin. The models reached R2 = 0.80 (RMSE 2.40 m) for CBHwa and R2 = 0.65 (RMSE 1.51 m) for CBHmin. Global mean CBHwa and CBHmin are 9.5 m and 3.8 m. CBHwa is highest in tropical moist forests, whereas CBHmin is highest in boreal forests. These maps provide a consistent global reference of CBH for forest management, vegetation modelling and wildfire risk assessment.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-10-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Deterministic Alignment and Pallet Docking for Non-Holonomic Forklifts via Deep Keypoint Detection and Geometric Planning",
+      "authors": [
+        "Ahmet Emin Bilginer"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "pdf_url": "https://doi.org/10.17632/m8d6236xpn.1",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/m8d6236xpn.1",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-07-29"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "RadOnc-Agent: An LLM-Orchestrated Framework for AI Workflows Across the Radiotherapy Care Pathway",
+      "AegisFlow: A Multi-Agent Agentic AI Framework for Autonomous Remediation and Self-Healing in Fragile Data Ecosystems",
+      "Generalizable Robustness Testing of DNN-Based Robotic Navigation Systems via XAI-Guided Search",
+      "Learning from Unreliable Trajectories: Adversarially-Robust Federated Q-Learning",
+      "Geometric Coherence via Weighted Matching for 3D Heterogeneous Multi-Agent Reach-Avoid Games"
+    ],
+    "hugging_face": [
+      "RadOnc-Agent: An LLM-Orchestrated Framework for AI Workflows Across the Radiotherapy Care Pathway",
+      "AegisFlow: A Multi-Agent Agentic AI Framework for Autonomous Remediation and Self-Healing in Fragile Data Ecosystems",
+      "Generalizable Robustness Testing of DNN-Based Robotic Navigation Systems via XAI-Guided Search",
+      "Learning from Unreliable Trajectories: Adversarially-Robust Federated Q-Learning",
+      "Geometric Coherence via Weighted Matching for 3D Heterogeneous Multi-Agent Reach-Avoid Games"
+    ],
+    "papers_with_code": [
+      "RadOnc-Agent: An LLM-Orchestrated Framework for AI Workflows Across the Radiotherapy Care Pathway",
+      "AegisFlow: A Multi-Agent Agentic AI Framework for Autonomous Remediation and Self-Healing in Fragile Data Ecosystems",
+      "Generalizable Robustness Testing of DNN-Based Robotic Navigation Systems via XAI-Guided Search",
+      "Learning from Unreliable Trajectories: Adversarially-Robust Federated Q-Learning",
+      "Geometric Coherence via Weighted Matching for 3D Heterogeneous Multi-Agent Reach-Avoid Games"
+    ]
+  }
+}
