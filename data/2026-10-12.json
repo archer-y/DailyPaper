@@ -1,0 +1,303 @@
+{
+  "date": "2026-10-12",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Sample-Adaptive Zeroth-Order Post-Training",
+      "authors": [
+        "Haiyuan Wan",
+        "Yanyi Li",
+        "Weicheng Lin",
+        "Cong Fang"
+      ],
+      "abstract": "Zeroth-order (ZO) optimization offers a memory-efficient alternative to backpropagation for fine-tuning large language models. However, existing ZO methods typically sample training examples uniformly, overlooking their evolving importance and leaving avoidable estimation variance. To address this limitation, we propose Sample-Adaptive Zeroth-Order Optimization (SAZO), which learns sample importance online and adaptively allocates queries to accelerate convergence. SAZO extracts gradient-norm information from existing directional differences to estimate sample importance without access to true gradients. Furthermore, to track evolving importance from sparse minibatch feedback, SAZO maintains per-example exponential moving averages that aggregate observations across updates. The method requires no additional model evaluations and only $O(N)$ additional scalar state compared with MeZO. We prove that SAZO asymptotically matches the leading convergence term of the minimum-variance sampling oracle, and achieves a strictly faster convergence rate than standard methods. Extensive experiments across four model families demonstrate improved average downstream performance and up to $6\\times$ faster convergence to the same training loss in terms of query count.",
+      "url": "http://arxiv.org/abs/2610.12566v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12566v1",
+      "arxiv_id": "2610.12566",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Zeroth-order (ZO) optimization offers a memory-efficient alternative to backpropagation for fine-tuning large language models. However, existing ZO methods typically sample training examples uniformly, overlooking their evolving importance and leaving avoidable estimation variance. To address this limitation, we propose Sample-Adaptive Zeroth-Order Optimization (SAZO), which learns sample importance online and adaptively allocates queries to accelerate convergence. SAZO extracts gradient-norm information from existing directional differences to estimate sample importance without access to true gradients. Furthermore, to track evolving importance from sparse minibatch feedback, SAZO maintains per-example exponential moving averages that aggregate observations across updates. The method requires no additional model evaluations and only $O(N)$ additional scalar state compared with MeZO. We prove that SAZO asymptotically matches the leading convergence term of the minimum-variance sampling oracle, and achieves a strictly faster convergence rate than standard methods. Extensive experiments across four model families demonstrate improved average downstream performance and up to $6\\times$ faster convergence to the same training loss in terms of query count.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-08"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback",
+      "authors": [
+        "Jaewoo Lee",
+        "Jeongyeon Seo",
+        "Sihyun Cho",
+        "Gyeongrak Choe",
+        "Yutong Wang",
+        "Bavin Saravanan",
+        "Jia-Bin Huang",
+        "Furong Huang",
+        "Sebastian Scherer",
+        "Guanya Shi",
+        "H. Jin Kim",
+        "Seungjae Lee",
+        "Dongjae Lee"
+      ],
+      "abstract": "Embodied coding agents construct robot policies from natural-language instructions by generating executable programs and refining them from execution feedback. This refinement assumes that execution feedback reveals whether the task succeeded and, after a failure, provides sufficient evidence to guide program revision. Aerial manipulation violates this assumption in two ways. Payload constraints restrict onboard camera coverage and leave task-critical outcomes outside the robot's view (partial observability), while strong dynamic coupling and limited control margins make physical interactions fragile (limited interaction robustness) and leave failure causes unresolved. Re-examining the same feedback cannot recover observations that were never collected or separate failure causes that the available evidence does not distinguish. To acquire this missing evidence, we introduce Active Feedback (AF), an active \"View and Probe\" framework. When execution feedback leaves unresolved questions, the agent synthesizes a separate diagnostic program that runs in simulation to inspect unseen outcomes from informative viewpoints (View) or test hypotheses about failure causes through targeted physical interactions (Probe). Across six simulated aerial manipulation tasks with 60 trials per condition, AF reduces false completion declarations from 25 to 5 and raises final task success from 31.7% to 75% compared with terminal feedback under the same coding-agent configuration and task-execution limit. Using shared robot APIs, task programs refined with AF in simulation run on a physical aerial manipulator without task-program source-code modification and complete multi-stage manipulation tasks in the real world. These results show that executable diagnosis fills gaps in execution feedback for embodied coding agents, improving both completion assessment and program refinement in aerial manipulation.",
+      "url": "http://arxiv.org/abs/2610.12549v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12549v1",
+      "arxiv_id": "2610.12549",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Embodied coding agents construct robot policies from natural-language instructions by generating executable programs and refining them from execution feedback. This refinement assumes that execution feedback reveals whether the task succeeded and, after a failure, provides sufficient evidence to guide program revision. Aerial manipulation violates this assumption in two ways. Payload constraints restrict onboard camera coverage and leave task-critical outcomes outside the robot's view (partial observability), while strong dynamic coupling and limited control margins make physical interactions fragile (limited interaction robustness) and leave failure causes unresolved. Re-examining the same feedback cannot recover observations that were never collected or separate failure causes that the available evidence does not distinguish. To acquire this missing evidence, we introduce Active Feedback (AF), an active \"View and Probe\" framework. When execution feedback leaves unresolved questions, the agent synthesizes a separate diagnostic program that runs in simulation to inspect unseen outcomes from informative viewpoints (View) or test hypotheses about failure causes through targeted physical interactions (Probe). Across six simulated aerial manipulation tasks with 60 trials per condition, AF reduces false completion declarations from 25 to 5 and raises final task success from 31.7% to 75% compared with terminal feedback under the same coding-agent configuration and task-execution limit. Using shared robot APIs, task programs refined with AF in simulation run on a physical aerial manipulator without task-program source-code modification and complete multi-stage manipulation tasks in the real world. These results show that executable diagnosis fills gaps in execution feedback for embodied coding agents, improving both completion assessment and program refinement in aerial manipulation.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-08"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "SynAct: Synergistic Active Feedback Learning for LLM Agents",
+      "authors": [
+        "Ning Liu",
+        "Ian Li",
+        "Kristina Klinkner"
+      ],
+      "abstract": "LLM agents executing multi-step workflows fail in two fundamentally different ways: recoverable slips, which further attempts can repair, and knowledge gaps, which retrying cannot resolve. Expert feedback can address the latter, but expert attention is scarce. The key challenge is therefore not whether to ask for feedback, but where feedback can change the outcome. Existing approaches either avoid expert feedback, allowing agents to reinforce their own errors, or allocate feedback at the task level without identifying consequential decisions. We present SynAct, an active learning framework that treats expert attention as the binding constraint and allocates feedback at the level of individual decisions. SynAct ranks decisions by the mutual information between the selected action and the terminal outcome across repeated rollouts, queries an expert at the highest-value decisions, and distills the resulting corrections into transferable rules that the agent can reuse without expert access at deployment. We theoretically characterize what this signal identifies under finite repeated sampling: with k rollouts and at least m observations per action, outcome-constant decisions have zero mutual information, while outcome-separating decisions have mutual information at least H2(m/k) bits, yielding exact separation for any threshold t in (0,H2(m/k)). This also explains why success-based acquisition can be blind when all rollouts fail: success is constant even when failed runs reach different outcomes. Across four agent benchmarks and four models spanning three families, SynAct improves held-out accuracy in all 16 evaluated settings, by +11.7pp on average. The same signal transfers to inference-time routing, where SynAct outperforms budget-matched cascade, uncertainty, and expert-judge routers in 15 of 16 settings, while a single targeted correction outperforms seven additional unaimed retries.",
+      "url": "http://arxiv.org/abs/2610.12651v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12651v1",
+      "arxiv_id": "2610.12651",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "LLM agents executing multi-step workflows fail in two fundamentally different ways: recoverable slips, which further attempts can repair, and knowledge gaps, which retrying cannot resolve. Expert feedback can address the latter, but expert attention is scarce. The key challenge is therefore not whether to ask for feedback, but where feedback can change the outcome. Existing approaches either avoid expert feedback, allowing agents to reinforce their own errors, or allocate feedback at the task level without identifying consequential decisions. We present SynAct, an active learning framework that treats expert attention as the binding constraint and allocates feedback at the level of individual decisions. SynAct ranks decisions by the mutual information between the selected action and the terminal outcome across repeated rollouts, queries an expert at the highest-value decisions, and distills the resulting corrections into transferable rules that the agent can reuse without expert access at deployment. We theoretically characterize what this signal identifies under finite repeated sampling: with k rollouts and at least m observations per action, outcome-constant decisions have zero mutual information, while outcome-separating decisions have mutual information at least H2(m/k) bits, yielding exact separation for any threshold t in (0,H2(m/k)). This also explains why success-based acquisition can be blind when all rollouts fail: success is constant even when failed runs reach different outcomes. Across four agent benchmarks and four models spanning three families, SynAct improves held-out accuracy in all 16 evaluated settings, by +11.7pp on average. The same signal transfers to inference-time routing, where SynAct outperforms budget-matched cascade, uncertainty, and expert-judge routers in 15 of 16 settings, while a single targeted correction outperforms seven additional unaimed retries.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-08"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Distributed Harmonic-Covariance Feedback for Hole Closure in Planar Robot Swarms",
+      "authors": [
+        "Jitian Liu",
+        "Subhrajit Bhattacharya"
+      ],
+      "abstract": "We consider hole closure in a planar multi-agent system whose sensing disks form a time-varying Čech complex. We propose a harmonic-covariance feedback that uses harmonic edge signals to locate holes and converts those signals into agent forces. For distributed evaluation, we use a fixed-degree polynomial of the regularized Hodge Laplacian. This polynomial is evaluated through local operator applications. The closed loop has a unique global trajectory from every safe initial state. The model data and initial state are supplied with procedures for approximation to any requested accuracy with explicit error bounds. We assume that hole area is measurable and bounded, holes evolve continuously without splitting or merging, and only finitely many temporary new holes appear. Under these conditions, offline finite calculations produce rational lower bounds for the cumulative hole area on the time horizon without querying trajectory data. These bounds converge to that cumulative area, whether finite or infinite. If it is finite, holes close in the time-averaged sense: the average normalized hole area over every fixed-length time window tends to zero as time tends to infinity. In a 15-second numerical demo, all holes close by 9.9s and remain closed through the end.",
+      "url": "http://arxiv.org/abs/2610.12637v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12637v1",
+      "arxiv_id": "2610.12637",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "We consider hole closure in a planar multi-agent system whose sensing disks form a time-varying Čech complex. We propose a harmonic-covariance feedback that uses harmonic edge signals to locate holes and converts those signals into agent forces. For distributed evaluation, we use a fixed-degree polynomial of the regularized Hodge Laplacian. This polynomial is evaluated through local operator applications. The closed loop has a unique global trajectory from every safe initial state. The model data and initial state are supplied with procedures for approximation to any requested accuracy with explicit error bounds. We assume that hole area is measurable and bounded, holes evolve continuously without splitting or merging, and only finitely many temporary new holes appear. Under these conditions, offline finite calculations produce rational lower bounds for the cumulative hole area on the time horizon without querying trajectory data. These bounds converge to that cumulative area, whether finite or infinite. If it is finite, holes close in the time-averaged sense: the average normalized hole area over every fixed-length time window tends to zero as time tends to infinity. In a 15-second numerical demo, all holes close by 9.9s and remain closed through the end.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-08"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Know What You Don't Know: Agentic Data Synthesis by Evolving Generation Space for Closed-Loop Learning",
+      "authors": [
+        "Wei Yang",
+        "Qing Ping",
+        "Youzhi Luo",
+        "Yawei Wang",
+        "Abhishek Kumar",
+        "Panpan Xu",
+        "Jun Huan"
+      ],
+      "abstract": "The continued improvement of large language models increasingly depends on synthetic experience, yet effective data synthesis for interactive agents requires not only executable and verifiable trajectories, but also interactions that provide learning value for the current task agent. Existing methods increasingly incorporate environment feedback, data validation, or learner failures, but still face a feedback-to-decision gap: observed weaknesses do not directly specify how future synthesis should change, or whether they can be represented by the current synthesis space. To address this gap, we propose EvoSyn, a learning-feedback-driven multi-agent framework that organizes synthesis around a revisable state specifying what interaction factors can be deliberately generated and where synthesis effort should be allocated. A role-specialized multi-agent system translates learner feedback into synthesis revisions, while a Designer allocates synthesis directions and a Planner grounds them into executable experience. This process enables within-space adaptation toward weak or under-covered regions and synthesis-space expansion that promotes newly discovered factors into explicit generation controls. Experiments on $τ^2$-Bench and CAR-Bench show that EvoSyn improves average task success by 13.3 points over the strongest synthesis baseline, while producing higher-quality and structurally broader synthetic experience and discovering controllable factors missed without learner feedback.",
+      "url": "http://arxiv.org/abs/2610.12593v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.12593v1",
+      "arxiv_id": "2610.12593",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "The continued improvement of large language models increasingly depends on synthetic experience, yet effective data synthesis for interactive agents requires not only executable and verifiable trajectories, but also interactions that provide learning value for the current task agent. Existing methods increasingly incorporate environment feedback, data validation, or learner failures, but still face a feedback-to-decision gap: observed weaknesses do not directly specify how future synthesis should change, or whether they can be represented by the current synthesis space. To address this gap, we propose EvoSyn, a learning-feedback-driven multi-agent framework that organizes synthesis around a revisable state specifying what interaction factors can be deliberately generated and where synthesis effort should be allocated. A role-specialized multi-agent system translates learner feedback into synthesis revisions, while a Designer allocates synthesis directions and a Planner grounds them into executable experience. This process enables within-space adaptation toward weak or under-covered regions and synthesis-space expansion that promotes newly discovered factors into explicit generation controls. Experiments on $τ^2$-Bench and CAR-Bench show that EvoSyn improves average task success by 13.3 points over the strongest synthesis baseline, while producing higher-quality and structurally broader synthetic experience and discovering controllable factors missed without learner feedback.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-08"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://doi.org/10.17638/03194716",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Mapping crown length and canopy depth across global forests at 1 km from multi-platform lidar and satellite data",
+      "authors": [
+        "Zhang Yixuan"
+      ],
+      "abstract": "Crown length (CL) describes the vertical extent of an individual tree's live crown. Canopy depth (CD) describes the vertical extent of the canopy within a forest stand. Both inform fire behaviour, vegetation and habitat models, yet their global distributions remain poorly resolved. We present global maps of mean CL and CD at 1 km resolution for 2020. We first retrieved CL for individual trees segmented from lidar point clouds, as tree height minus crown-base height. Within each of 1147 reference records on six continents, mean CL was the average of the tree values and CD was the 95th-percentile tree height minus the lowest crown base. Both were related to satellite and environmental predictors using random forest models. Tree-level CL agreed with field measurements and manual annotations with R² = 0.62 and RMSE = 2.63 m. Across 46 validation plots, RMSE was 1.90 m for mean CL and 2.09 m for CD. In the 30 % hold-out set, the mapping models achieved R² = 0.64 for CL and 0.72 for CD, with RMSE of 2.15 m and 2.98 m. Global mean CL and CD were 7.0 m and 14.2 m. Long crowns and deep canopies occurred in equatorial rain forests and humid temperate forests. Savannas, Mediterranean woodlands and dry forests had the smallest values. These maps give the first globally consistent view of the crown layer beneath the canopy top. They can constrain crown geometry in vegetation models, canopy fuel depth in fire models and vertical habitat structure in biodiversity studies.",
+      "url": "https://doi.org/10.5281/zenodo.23118929",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23118929",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.23118929",
+      "score": 1.0,
+      "tldr": "Crown length (CL) describes the vertical extent of an individual tree's live crown. Canopy depth (CD) describes the vertical extent of the canopy within a forest stand. Both inform fire behaviour, vegetation and habitat models, yet their global distributions remain poorly resolved. We present global maps of mean CL and CD at 1 km resolution for 2020. We first retrieved CL for individual trees segmented from lidar point clouds, as tree height minus crown-base height. Within each of 1147 reference records on six continents, mean CL was the average of the tree values and CD was the 95th-percentile tree height minus the lowest crown base. Both were related to satellite and environmental predictors using random forest models. Tree-level CL agreed with field measurements and manual annotations with R² = 0.62 and RMSE = 2.63 m. Across 46 validation plots, RMSE was 1.90 m for mean CL and 2.09 m for CD. In the 30 % hold-out set, the mapping models achieved R² = 0.64 for CL and 0.72 for CD, with RMSE of 2.15 m and 2.98 m. Global mean CL and CD were 7.0 m and 14.2 m. Long crowns and deep canopies occurred in equatorial rain forests and humid temperate forests. Savannas, Mediterranean woodlands and dry forests had the smallest values. These maps give the first globally consistent view of the crown layer beneath the canopy top. They can constrain crown geometry in vegetation models, canopy fuel depth in fire models and vertical habitat structure in biodiversity studies.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-10-03"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation",
+      "authors": [
+        "Anonymous Anonymous"
+      ],
+      "abstract": "This contains the actual source code, prompts, scripts and all experiment results as described in the paper:REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation.This data is provided as part of reproducibility effort to support transparency and allow verification of reported findings.",
+      "url": "https://doi.org/10.5281/zenodo.22893746",
+      "pdf_url": "https://doi.org/10.5281/zenodo.22893746",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.22893746",
+      "score": 1.0,
+      "tldr": "This contains the actual source code, prompts, scripts and all experiment results as described in the paper:REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation.This data is provided as part of reproducibility effort to support transparency and allow verification of reported findings.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-09-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "A global 1 km forest crown base height dataset for 2020 from multi-platform lidar and satellite data",
+      "authors": [
+        "Zhang Yixuan"
+      ],
+      "abstract": "Crown base height (CBH) is the height of the lowest living branch of a tree. It marks where the live crown begins, and it is a key input for forest growth, vegetation and fire behaviour models. However, a global-scale map of CBH is still lacking. We mapped the first global maps of two stand-level CBH metrics at 1 km resolution for 2020. CBH was first estimated for individual trees segmented from airborne, drone, terrestrial and backpack lidar point clouds. The tree values were then aggregated to 1432 plots of 1 km × 1 km on six continents, and two plot-level metrics were derived. CBHwa is the mean weighted by the square of tree height, which follows the canopy-forming trees. CBHmin is the minimum, which marks the lower edge of the live canopy. Random forest models related both metrics to 47 satellite and environmental predictors. Tree-level CBH agreed with field measurements and manual annotations of 1641 trees with an RMSE of 3.32 m. Plot-level RMSE was 2.65 m for CBHwa and 1.80 m for CBHmin. The models reached R2 = 0.80 (RMSE 2.40 m) for CBHwa and R2 = 0.65 (RMSE 1.51 m) for CBHmin. Global mean CBHwa and CBHmin are 9.5 m and 3.8 m. CBHwa is highest in tropical moist forests, whereas CBHmin is highest in boreal forests. These maps provide a consistent global reference of CBH for forest management, vegetation modelling and wildfire risk assessment.",
+      "url": "https://doi.org/10.5281/zenodo.23089995",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23089995",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.23089995",
+      "score": 0.5,
+      "tldr": "Crown base height (CBH) is the height of the lowest living branch of a tree. It marks where the live crown begins, and it is a key input for forest growth, vegetation and fire behaviour models. However, a global-scale map of CBH is still lacking. We mapped the first global maps of two stand-level CBH metrics at 1 km resolution for 2020. CBH was first estimated for individual trees segmented from airborne, drone, terrestrial and backpack lidar point clouds. The tree values were then aggregated to 1432 plots of 1 km × 1 km on six continents, and two plot-level metrics were derived. CBHwa is the mean weighted by the square of tree height, which follows the canopy-forming trees. CBHmin is the minimum, which marks the lower edge of the live canopy. Random forest models related both metrics to 47 satellite and environmental predictors. Tree-level CBH agreed with field measurements and manual annotations of 1641 trees with an RMSE of 3.32 m. Plot-level RMSE was 2.65 m for CBHwa and 1.80 m for CBHmin. The models reached R2 = 0.80 (RMSE 2.40 m) for CBHwa and R2 = 0.65 (RMSE 1.51 m) for CBHmin. Global mean CBHwa and CBHmin are 9.5 m and 3.8 m. CBHwa is highest in tropical moist forests, whereas CBHmin is highest in boreal forests. These maps provide a consistent global reference of CBH for forest management, vegetation modelling and wildfire risk assessment.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-10-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Sample-Adaptive Zeroth-Order Post-Training",
+      "Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback",
+      "SynAct: Synergistic Active Feedback Learning for LLM Agents",
+      "Distributed Harmonic-Covariance Feedback for Hole Closure in Planar Robot Swarms",
+      "Know What You Don't Know: Agentic Data Synthesis by Evolving Generation Space for Closed-Loop Learning"
+    ],
+    "hugging_face": [
+      "Sample-Adaptive Zeroth-Order Post-Training",
+      "Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback",
+      "SynAct: Synergistic Active Feedback Learning for LLM Agents",
+      "Distributed Harmonic-Covariance Feedback for Hole Closure in Planar Robot Swarms",
+      "Know What You Don't Know: Agentic Data Synthesis by Evolving Generation Space for Closed-Loop Learning"
+    ],
+    "papers_with_code": [
+      "Sample-Adaptive Zeroth-Order Post-Training",
+      "Fly-by-Code: Embodied Coding Agents for Aerial Manipulation with Active Visual and Physical Feedback",
+      "SynAct: Synergistic Active Feedback Learning for LLM Agents",
+      "Distributed Harmonic-Covariance Feedback for Hole Closure in Planar Robot Swarms",
+      "Know What You Don't Know: Agentic Data Synthesis by Evolving Generation Space for Closed-Loop Learning"
+    ]
+  }
+}
