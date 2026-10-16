@@ -1,0 +1,289 @@
+{
+  "date": "2026-10-16",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Feasibility Ceilings Before Learning: Sizing and Timing Bounds for Drone-Mesh Interception",
+      "authors": [
+        "Dmytro Babarytskyi"
+      ],
+      "abstract": "A mesh of interceptors defending a fixed site must spread over the predicted arrival point of an approaching object. This is a recurring task in multi-agent robotics: N agents, each covering a disc of radius r, spread over a probability density so that a point drawn from it falls within some agent's disc. We give closed forms for the quantities that bound performance before any policy is chosen, and validate each by Monte Carlo. The uncertainty of a point predicted by extrapolating a noisy linear track follows from least-squares variance propagation plus a delta-method term for the uncertain arrival time, agreeing with simulation to within 1.8%. The coverage probability of a packed mesh admits a closed form accurate to 0.007 absolute, with a volumetric analogue. A naive area ratio misses a ceiling: while agents stay at least 2r apart, no mesh exceeds 90.69% coverage in the plane or 74.05% in a volume. This ceiling belongs to the separation constraint, not to the problem - permitting overlap substitutes Kershner's thinnest-covering density and removes it, the better regime above a crossover at p=0.80. Hexagonal packing is optimal among five arrangements; the centroidal-Voronoi configuration coverage control supplies reaches only half its coverage at small budgets. The Gaussian assumption is conservative under heavy tails and anisotropy but fragile under bias: a one-sigma aim-point offset costs 14 points of coverage. A repositioning team must also choose a commit time, and the admissible window can be empty. Against the applicable ceiling, analytic placement attains 85% of what the configuration permits while centralised PPO averages 15% over three trainer seeds, with a paired bootstrap against a null policy containing zero at every seed. We argue such ceilings should be computed before any learning experiment and quoted alongside every result.",
+      "url": "http://arxiv.org/abs/2610.20823v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20823v1",
+      "arxiv_id": "2610.20823",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "A mesh of interceptors defending a fixed site must spread over the predicted arrival point of an approaching object. This is a recurring task in multi-agent robotics: N agents, each covering a disc of radius r, spread over a probability density so that a point drawn from it falls within some agent's disc. We give closed forms for the quantities that bound performance before any policy is chosen, and validate each by Monte Carlo. The uncertainty of a point predicted by extrapolating a noisy linear track follows from least-squares variance propagation plus a delta-method term for the uncertain arrival time, agreeing with simulation to within 1.8%. The coverage probability of a packed mesh admits a closed form accurate to 0.007 absolute, with a volumetric analogue. A naive area ratio misses a ceiling: while agents stay at least 2r apart, no mesh exceeds 90.69% coverage in the plane or 74.05% in a volume. This ceiling belongs to the separation constraint, not to the problem - permitting overlap substitutes Kershner's thinnest-covering density and removes it, the better regime above a crossover at p=0.80. Hexagonal packing is optimal among five arrangements; the centroidal-Voronoi configuration coverage control supplies reaches only half its coverage at small budgets. The Gaussian assumption is conservative under heavy tails and anisotropy but fragile under bias: a one-sigma aim-point offset costs 14 points of coverage. A repositioning team must also choose a commit time, and the admissible window can be empty. Against the applicable ceiling, analytic placement attains 85% of what the configuration permits while centralised PPO averages 15% over three trainer seeds, with a paired bootstrap against a null policy containing zero at every seed. We argue such ceilings should be computed before any learning experiment and quoted alongside every result.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-10-14"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Optimal Demand Response-Based Energy Management for Campus Buildings with Battery Energy Storage Systems: A Case Study of the ELB Building",
+      "authors": [
+        "Ali Beidoun",
+        "Quang Manh Hoang",
+        "Guilherme Vieira Hollweg",
+        "Van-Hai Bui"
+      ],
+      "abstract": "Buildings account for a significant portion of global electricity consumption, making demand response (DR) an effective strategy for reducing energy costs and improving grid flexibility. This paper presents an optimal energy management framework for a campus building that integrates demand response and battery energy storage systems (BESS) to minimize electricity costs while satisfying operational constraints and occupant comfort requirements. The proposed optimization model schedules building loads and battery charging/discharging based on time-varying electricity prices and building demand profiles. The framework is validated using the Engineering Laboratory Building (ELB) at the University of Michigan-Dearborn as a real-world case study. Four operating scenarios are investigated: (i) baseline operation, (ii) demand response without battery energy storage, (iii) battery energy storage, and (iv) demand response with battery energy storage. Simulation results demonstrate that demand alone reduces the building's electricity cost by approximately 12% compared with conventional operation. When battery energy storage is incorporated, the total electricity cost reduction increases to approximately 26%, highlighting the significant economic benefits of coordinated demand response and energy storage scheduling. The results demonstrate that integrating battery energy storage with demand response substantially enhances the operational flexibility of campus buildings and provides an effective solution for cost-effective and sustainable building energy management.",
+      "url": "http://arxiv.org/abs/2610.20777v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20777v1",
+      "arxiv_id": "2610.20777",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Buildings account for a significant portion of global electricity consumption, making demand response (DR) an effective strategy for reducing energy costs and improving grid flexibility. This paper presents an optimal energy management framework for a campus building that integrates demand response and battery energy storage systems (BESS) to minimize electricity costs while satisfying operational constraints and occupant comfort requirements. The proposed optimization model schedules building loads and battery charging/discharging based on time-varying electricity prices and building demand profiles. The framework is validated using the Engineering Laboratory Building (ELB) at the University of Michigan-Dearborn as a real-world case study. Four operating scenarios are investigated: (i) baseline operation, (ii) demand response without battery energy storage, (iii) battery energy storage, and (iv) demand response with battery energy storage. Simulation results demonstrate that demand alone reduces the building's electricity cost by approximately 12% compared with conventional operation. When battery energy storage is incorporated, the total electricity cost reduction increases to approximately 26%, highlighting the significant economic benefits of coordinated demand response and energy storage scheduling. The results demonstrate that integrating battery energy storage with demand response substantially enhances the operational flexibility of campus buildings and provides an effective solution for cost-effective and sustainable building energy management.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-14"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+      "authors": [
+        "Ningxin Pan",
+        "Hanyu Li",
+        "Yeqing Shen",
+        "Ning Ding",
+        "Yehui Tang",
+        "Wentao Zhang"
+      ],
+      "abstract": "Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. We introduce RealtimeBench, with 180 tasks across six game types, to evaluate agents while games continue running during inference. Paired evaluations show that GPT-6.1-sol outperforms the faster Jev when games are paused, but falls behind when they keep running. We propose Two-Timescale Offline Recursive Self-Improvement (TORSI): a slow teacher studies failures and tests corrections in paused games between attempts, then writes reusable instructions for a fast student. The student acts without teacher calls during gameplay, and validation scores determine which updates are adopted. Two rounds raise Jev's average test score from 13.51 to 24.19 on a 0--100 progress scale, improving all six game types. The instructions also improve average scores for three other models without retuning. These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
+      "url": "http://arxiv.org/abs/2610.20665v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20665v1",
+      "arxiv_id": "2610.20665",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Large language model (LLM) agents can solve complex interactive tasks, yet reasoning and tool calls take time. In continuously changing environments, an otherwise correct action may arrive too late. We introduce RealtimeBench, with 180 tasks across six game types, to evaluate agents while games continue running during inference. Paired evaluations show that GPT-6.1-sol outperforms the faster Jev when games are paused, but falls behind when they keep running. We propose Two-Timescale Offline Recursive Self-Improvement (TORSI): a slow teacher studies failures and tests corrections in paused games between attempts, then writes reusable instructions for a fast student. The student acts without teacher calls during gameplay, and validation scores determine which updates are adopted. Two rounds raise Jev's average test score from 13.51 to 24.19 on a 0--100 progress scale, improving all six game types. The instructions also improve average scores for three other models without retuning. These findings point toward real-time intelligence: enabling powerful LLM agents to remain effective in a continuously changing world by organizing deliberation, learning, and action across timescales.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-10-14"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "When Reality Outpaces Cognition: A New Scaling Principle for Reliable Intelligence",
+      "authors": [
+        "Ahsan Adeel",
+        "Talha Bin Riaz"
+      ],
+      "abstract": "This paper challenges the understanding capabilities of existing AI paradigms and emerging world models by asking a fundamental question: How quickly can reality change before an intelligent system can no longer reliably perceive, reason, and act? We formulate this as a theory- and model-agnostic challenge in which systems must infer reliable actions for increasingly distant future states across a growing observation--reality gap. We operationalize this challenge through the effective Speed of Coherent Cognition (\\(S_C^{\\mathrm{eff}}\\)), defined as the highest tested Speed of Reality (\\(S_R\\)) through which a system continuously satisfies a predefined behavioural reliability criterion from baseline. As a proof of concept, reinforcement-learning agents are trained at the baseline \\(S_R\\) and evaluated, without retraining, as \\(S_R\\) is increased by up to \\(50\\times\\) while computational resources remain fixed. We compare Transformer and gated-MLP baselines with \\(Co^4\\), an architecture inspired by cellular mechanisms implicated in conscious processing and awake thought. Across the tested scenarios, \\(Co^4\\) achieves substantially higher \\(S_C^{\\mathrm{eff}}\\) than the baselines, motivating \\(S_C^{\\mathrm{eff}}\\) as a new benchmark and the scaling of coherent cognition as a principle for reliable AI.",
+      "url": "http://arxiv.org/abs/2610.20764v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20764v1",
+      "arxiv_id": "2610.20764",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "This paper challenges the understanding capabilities of existing AI paradigms and emerging world models by asking a fundamental question: How quickly can reality change before an intelligent system can no longer reliably perceive, reason, and act? We formulate this as a theory- and model-agnostic challenge in which systems must infer reliable actions for increasingly distant future states across a growing observation--reality gap. We operationalize this challenge through the effective Speed of Coherent Cognition (\\(S_C^{\\mathrm{eff}}\\)), defined as the highest tested Speed of Reality (\\(S_R\\)) through which a system continuously satisfies a predefined behavioural reliability criterion from baseline. As a proof of concept, reinforcement-learning agents are trained at the baseline \\(S_R\\) and evaluated, without retraining, as \\(S_R\\) is increased by up to \\(50\\times\\) while computational resources remain fixed. We compare Transformer and gated-MLP baselines with \\(Co^4\\), an architecture inspired by cellular mechanisms implicated in conscious processing and awake thought. Across the tested scenarios, \\(Co^4\\) achieves substantially higher \\(S_C^{\\mathrm{eff}}\\) than the baselines, motivating \\(S_C^{\\mathrm{eff}}\\) as a new benchmark and the scaling of coherent cognition as a principle for reliable AI.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-10-14"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "ARIA: Runtime Inspection and Amendment for Multi-Agent Systems",
+      "authors": [
+        "Bolin Shen",
+        "Yushun Dong"
+      ],
+      "abstract": "In LLM-based multi-agent systems (MAS), a local mistake can propagate as other agents build on it, turning a correctable error into a failed task. Diagnosing completed runs or repeatedly re-executing them to search for corrections does not provide a learned policy for intervening while execution is still in progress. We present Agent Runtime Inspection and Amendment (ARIA), a framework for learning when and how to repair ongoing multi-agent executions. Our key intuition is to turn execution-verified repairs into reusable supervision, moving repair search into data construction and training so that a learned model can intervene at runtime without repeatedly testing alternatives. First, we collect over 24{,}000 successful and failed trajectories across four multi-agent frameworks, six benchmarks, and eight host models. From these trajectories, we construct the ARIA dataset, to our knowledge the first large-scale dataset pairing failed multi-agent trajectories with execution-verified repairs. It contains 3{,}953 verified repair pairs, each specifying what went wrong, where to intervene, and how execution should continue. Then, we develop the ARIA framework for MAS-agnostic runtime inspection and amendment, designed to integrate with any MAS that exposes execution trajectories and supports continuation replacement. Using verified repairs as training examples, we teach a compact model to recognize when intervention is needed and how to correct an ongoing run. The aim is to learn repair strategies that apply to related failures in new configurations, rather than merely reproduce individual corrections. Finally, the trained ARIA model demonstrates strong repair performance in both post-hoc and runtime settings, with generalization to unseen frameworks and host models. Our code is available at https://github.com/LabRAI/ARIA.",
+      "url": "http://arxiv.org/abs/2610.20780v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.20780v1",
+      "arxiv_id": "2610.20780",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "In LLM-based multi-agent systems (MAS), a local mistake can propagate as other agents build on it, turning a correctable error into a failed task. Diagnosing completed runs or repeatedly re-executing them to search for corrections does not provide a learned policy for intervening while execution is still in progress. We present Agent Runtime Inspection and Amendment (ARIA), a framework for learning when and how to repair ongoing multi-agent executions. Our key intuition is to turn execution-verified repairs into reusable supervision, moving repair search into data construction and training so that a learned model can intervene at runtime without repeatedly testing alternatives. First, we collect over 24{,}000 successful and failed trajectories across four multi-agent frameworks, six benchmarks, and eight host models. From these trajectories, we construct the ARIA dataset, to our knowledge the first large-scale dataset pairing failed multi-agent trajectories with execution-verified repairs. It contains 3{,}953 verified repair pairs, each specifying what went wrong, where to intervene, and how execution should continue. Then, we develop the ARIA framework for MAS-agnostic runtime inspection and amendment, designed to integrate with any MAS that exposes execution trajectories and supports continuation replacement. Using verified repairs as training examples, we teach a compact model to recognize when intervention is needed and how to correct an ongoing run. The aim is to learn repair strategies that apply to related failures in new configurations, rather than merely reproduce individual corrections. Finally, the trained ARIA model demonstrates strong repair performance in both post-hoc and runtime settings, with generalization to unseen frameworks and host models. Our code is available at https://github.com/LabRAI/ARIA.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-10-14"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://doi.org/10.17638/03194716",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Mapping crown length and canopy depth across global forests at 1 km from multi-platform lidar and satellite data",
+      "authors": [
+        "Zhang Yixuan"
+      ],
+      "abstract": "Crown length (CL) describes the vertical extent of an individual tree's live crown. Canopy depth (CD) describes the vertical extent of the canopy within a forest stand. Both inform fire behaviour, vegetation and habitat models, yet their global distributions remain poorly resolved. We present global maps of mean CL and CD at 1 km resolution for 2020. We first retrieved CL for individual trees segmented from lidar point clouds, as tree height minus crown-base height. Within each of 1147 reference records on six continents, mean CL was the average of the tree values and CD was the 95th-percentile tree height minus the lowest crown base. Both were related to satellite and environmental predictors using random forest models. Tree-level CL agreed with field measurements and manual annotations with R² = 0.62 and RMSE = 2.63 m. Across 46 validation plots, RMSE was 1.90 m for mean CL and 2.09 m for CD. In the 30 % hold-out set, the mapping models achieved R² = 0.64 for CL and 0.72 for CD, with RMSE of 2.15 m and 2.98 m. Global mean CL and CD were 7.0 m and 14.2 m. Long crowns and deep canopies occurred in equatorial rain forests and humid temperate forests. Savannas, Mediterranean woodlands and dry forests had the smallest values. These maps give the first globally consistent view of the crown layer beneath the canopy top. They can constrain crown geometry in vegetation models, canopy fuel depth in fire models and vertical habitat structure in biodiversity studies.",
+      "url": "https://doi.org/10.5281/zenodo.23118929",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23118929",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.23118929",
+      "score": 1.0,
+      "tldr": "Crown length (CL) describes the vertical extent of an individual tree's live crown. Canopy depth (CD) describes the vertical extent of the canopy within a forest stand. Both inform fire behaviour, vegetation and habitat models, yet their global distributions remain poorly resolved. We present global maps of mean CL and CD at 1 km resolution for 2020. We first retrieved CL for individual trees segmented from lidar point clouds, as tree height minus crown-base height. Within each of 1147 reference records on six continents, mean CL was the average of the tree values and CD was the 95th-percentile tree height minus the lowest crown base. Both were related to satellite and environmental predictors using random forest models. Tree-level CL agreed with field measurements and manual annotations with R² = 0.62 and RMSE = 2.63 m. Across 46 validation plots, RMSE was 1.90 m for mean CL and 2.09 m for CD. In the 30 % hold-out set, the mapping models achieved R² = 0.64 for CL and 0.72 for CD, with RMSE of 2.15 m and 2.98 m. Global mean CL and CD were 7.0 m and 14.2 m. Long crowns and deep canopies occurred in equatorial rain forests and humid temperate forests. Savannas, Mediterranean woodlands and dry forests had the smallest values. These maps give the first globally consistent view of the crown layer beneath the canopy top. They can constrain crown geometry in vegetation models, canopy fuel depth in fire models and vertical habitat structure in biodiversity studies.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-10-03"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation",
+      "authors": [
+        "Anonymous Anonymous"
+      ],
+      "abstract": "This contains the actual source code, prompts, scripts and all experiment results as described in the paper:REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation.This data is provided as part of reproducibility effort to support transparency and allow verification of reported findings.",
+      "url": "https://doi.org/10.5281/zenodo.22893746",
+      "pdf_url": "https://doi.org/10.5281/zenodo.22893746",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.22893746",
+      "score": 1.0,
+      "tldr": "This contains the actual source code, prompts, scripts and all experiment results as described in the paper:REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation.This data is provided as part of reproducibility effort to support transparency and allow verification of reported findings.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-09-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "A global 1 km forest crown base height dataset for 2020 from multi-platform lidar and satellite data",
+      "authors": [
+        "Zhang Yixuan"
+      ],
+      "abstract": "Crown base height (CBH) is the height of the lowest living branch of a tree. It marks where the live crown begins, and it is a key input for forest growth, vegetation and fire behaviour models. However, a global-scale map of CBH is still lacking. We mapped the first global maps of two stand-level CBH metrics at 1 km resolution for 2020. CBH was first estimated for individual trees segmented from airborne, drone, terrestrial and backpack lidar point clouds. The tree values were then aggregated to 1432 plots of 1 km × 1 km on six continents, and two plot-level metrics were derived. CBHwa is the mean weighted by the square of tree height, which follows the canopy-forming trees. CBHmin is the minimum, which marks the lower edge of the live canopy. Random forest models related both metrics to 47 satellite and environmental predictors. Tree-level CBH agreed with field measurements and manual annotations of 1641 trees with an RMSE of 3.32 m. Plot-level RMSE was 2.65 m for CBHwa and 1.80 m for CBHmin. The models reached R2 = 0.80 (RMSE 2.40 m) for CBHwa and R2 = 0.65 (RMSE 1.51 m) for CBHmin. Global mean CBHwa and CBHmin are 9.5 m and 3.8 m. CBHwa is highest in tropical moist forests, whereas CBHmin is highest in boreal forests. These maps provide a consistent global reference of CBH for forest management, vegetation modelling and wildfire risk assessment.",
+      "url": "https://doi.org/10.5281/zenodo.23089995",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23089995",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.23089995",
+      "score": 0.5,
+      "tldr": "Crown base height (CBH) is the height of the lowest living branch of a tree. It marks where the live crown begins, and it is a key input for forest growth, vegetation and fire behaviour models. However, a global-scale map of CBH is still lacking. We mapped the first global maps of two stand-level CBH metrics at 1 km resolution for 2020. CBH was first estimated for individual trees segmented from airborne, drone, terrestrial and backpack lidar point clouds. The tree values were then aggregated to 1432 plots of 1 km × 1 km on six continents, and two plot-level metrics were derived. CBHwa is the mean weighted by the square of tree height, which follows the canopy-forming trees. CBHmin is the minimum, which marks the lower edge of the live canopy. Random forest models related both metrics to 47 satellite and environmental predictors. Tree-level CBH agreed with field measurements and manual annotations of 1641 trees with an RMSE of 3.32 m. Plot-level RMSE was 2.65 m for CBHwa and 1.80 m for CBHmin. The models reached R2 = 0.80 (RMSE 2.40 m) for CBHwa and R2 = 0.65 (RMSE 1.51 m) for CBHmin. Global mean CBHwa and CBHmin are 9.5 m and 3.8 m. CBHwa is highest in tropical moist forests, whereas CBHmin is highest in boreal forests. These maps provide a consistent global reference of CBH for forest management, vegetation modelling and wildfire risk assessment.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-10-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Feasibility Ceilings Before Learning: Sizing and Timing Bounds for Drone-Mesh Interception",
+      "Optimal Demand Response-Based Energy Management for Campus Buildings with Battery Energy Storage Systems: A Case Study of the ELB Building",
+      "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+      "When Reality Outpaces Cognition: A New Scaling Principle for Reliable Intelligence",
+      "ARIA: Runtime Inspection and Amendment for Multi-Agent Systems"
+    ],
+    "hugging_face": [
+      "Feasibility Ceilings Before Learning: Sizing and Timing Bounds for Drone-Mesh Interception",
+      "Optimal Demand Response-Based Energy Management for Campus Buildings with Battery Energy Storage Systems: A Case Study of the ELB Building",
+      "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+      "When Reality Outpaces Cognition: A New Scaling Principle for Reliable Intelligence",
+      "ARIA: Runtime Inspection and Amendment for Multi-Agent Systems"
+    ],
+    "papers_with_code": [
+      "Feasibility Ceilings Before Learning: Sizing and Timing Bounds for Drone-Mesh Interception",
+      "Optimal Demand Response-Based Energy Management for Campus Buildings with Battery Energy Storage Systems: A Case Study of the ELB Building",
+      "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+      "When Reality Outpaces Cognition: A New Scaling Principle for Reliable Intelligence",
+      "ARIA: Runtime Inspection and Amendment for Multi-Agent Systems"
+    ]
+  }
+}
