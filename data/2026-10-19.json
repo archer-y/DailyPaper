@@ -1,0 +1,315 @@
+{
+  "date": "2026-10-19",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "ECHOES: Seeing Beyond the Current Image via Recursive History Compression and Privileged On-Policy Distillation",
+      "authors": [
+        "Tengda Guo",
+        "Jiawang Hu",
+        "Yifei Tao",
+        "Yin Wang",
+        "Haotian Hu",
+        "Fanyi Wang",
+        "Liujuan Tang"
+      ],
+      "abstract": "Long-horizon GUI agents rely on visual history to maintain task states, but retaining historical screenshots increases visual-token usage and inference costs, while textual summaries can discard critical state information, undermining long-horizon reliability. We propose ECHOES, which leverages training-time privileged information to guide textual history compression and strengthen long-horizon reasoning. Specifically, ECHOES adopts a Compression-Think-Action (CTA) format to recursively update a textual history state and reason. The same model, given privileged multi-image inputs, serves as a teacher that provides dense token-level on-policy distillation on student-generated CTA rollouts. Our Perception-Memory Fidelity (PMF) Gap-guided OPD-RL framework dynamically balances privileged distillation and task-reward optimization, with periodic teacher updates supporting continued improvement. We further introduce ECHOESBMK, a fine-grained diagnostic benchmark derived from real GUI agent failure trajectories to jointly evaluate visual perception and cross-modal state retention. Experiments on four GUI benchmarks and ECHOESBMK demonstrate substantial gains in task performance and memory fidelity. Without retaining historical screenshots at deployment, ECHOES achieves competitive performance with a favorable performance-inference-cost trade-off and exhibits positive zero-shot transfer to unseen visual planning tasks.",
+      "url": "http://arxiv.org/abs/2610.22408v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22408v1",
+      "arxiv_id": "2610.22408",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Long-horizon GUI agents rely on visual history to maintain task states, but retaining historical screenshots increases visual-token usage and inference costs, while textual summaries can discard critical state information, undermining long-horizon reliability. We propose ECHOES, which leverages training-time privileged information to guide textual history compression and strengthen long-horizon reasoning. Specifically, ECHOES adopts a Compression-Think-Action (CTA) format to recursively update a textual history state and reason. The same model, given privileged multi-image inputs, serves as a teacher that provides dense token-level on-policy distillation on student-generated CTA rollouts. Our Perception-Memory Fidelity (PMF) Gap-guided OPD-RL framework dynamically balances privileged distillation and task-reward optimization, with periodic teacher updates supporting continued improvement. We further introduce ECHOESBMK, a fine-grained diagnostic benchmark derived from real GUI agent failure trajectories to jointly evaluate visual perception and cross-modal state retention. Experiments on four GUI benchmarks and ECHOESBMK demonstrate substantial gains in task performance and memory fidelity. Without retaining historical screenshots at deployment, ECHOES achieves competitive performance with a favorable performance-inference-cost trade-off and exhibits positive zero-shot transfer to unseen visual planning tasks.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-10-14"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Structured Authority Injection: Persistent Human Control for LLM Agents via Typed MCP Overrides",
+      "authors": [
+        "Ryan Tran",
+        "YueMing Zhang",
+        "Lingfeng Tao",
+        "Nan Yang",
+        "Shengjie Xu",
+        "Yu Yin",
+        "Shuai Xu",
+        "Wenlu Zhang",
+        "Hailu Xu"
+      ],
+      "abstract": "LLM-based agents are increasingly used as autonomous orchestrators in distributed and multi-agent systems, yet a control gap remains: no protocol-level mechanism allows human operators to inject binding directives that persist across planning cycles. Free-text overrides suffer from ambiguous interpretation due to lack of schema validation and from authority erosion as operator instructions lose influence within accumulating context. We propose Structured Authority Injection (SAI), a protocol that addresses these issues by routing operator corrections through typed, schema-validated Model Context Protocol (MCP) tool calls and maintaining a ranked authority context prepended to each LLM prompt. SAI defines three override classes (Constraint, Priority, and Strategy) with distinct persistence semantics and an explicit precedence order enforced via a directed authority channel inaccessible to the planning process. The method requires no model fine-tuning or access to model weights and applies to instruction-tuned LLMs supporting MCP tool use. Evaluation across nine LLMs and eight scenarios targeting agent failure modes shows reduced ambiguous directive interpretation and mitigated authority decay across planning iterations, with lower prompt overhead in the strongest models (up to 38% depending on model and scenario), though benefit varies substantially across models. SAI provides a general design pattern for agent systems requiring explicit and persistent human control.",
+      "url": "http://arxiv.org/abs/2610.22373v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22373v1",
+      "arxiv_id": "2610.22373",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "LLM-based agents are increasingly used as autonomous orchestrators in distributed and multi-agent systems, yet a control gap remains: no protocol-level mechanism allows human operators to inject binding directives that persist across planning cycles. Free-text overrides suffer from ambiguous interpretation due to lack of schema validation and from authority erosion as operator instructions lose influence within accumulating context. We propose Structured Authority Injection (SAI), a protocol that addresses these issues by routing operator corrections through typed, schema-validated Model Context Protocol (MCP) tool calls and maintaining a ranked authority context prepended to each LLM prompt. SAI defines three override classes (Constraint, Priority, and Strategy) with distinct persistence semantics and an explicit precedence order enforced via a directed authority channel inaccessible to the planning process. The method requires no model fine-tuning or access to model weights and applies to instruction-tuned LLMs supporting MCP tool use. Evaluation across nine LLMs and eight scenarios targeting agent failure modes shows reduced ambiguous directive interpretation and mitigated authority decay across planning iterations, with lower prompt overhead in the strongest models (up to 38% depending on model and scenario), though benefit varies substantially across models. SAI provides a general design pattern for agent systems requiring explicit and persistent human control.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-07-27"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks",
+      "authors": [
+        "Md Farhan Ishmam",
+        "Minh Pham Dinh",
+        "Kenneth Marino"
+      ],
+      "abstract": "The web is not static or uniform. Websites that serve the same purpose can look and navigate very differently. Even within a single site, successive redesigns can change how familiar features are presented and accessed. Humans adapt to this by recognizing familiar interaction patterns and reusing what they already know. We give web agents a similar ability with WebMix, a mixture hypernetwork that adapts them to unseen interfaces by composing previously trained low-rank adapters. WebMix begins with a bank of adapters trained on source interfaces. At deployment, a scout agent explores the target interface and summarizes its observations into a compact manual. A lightweight router uses this manual to predict mixing coefficients over the adapter bank, which combine the existing adapters into a new one for inference. Adapting to a new interface takes only a scouting run and a forward pass, without gradient updates on the target. With Qwen and Llama models, we evaluate domain transfer on TimeWarp and WebArena-Lite-v2, and version transfer on TimeWarp. In all three settings, WebMix matches or outperforms in-context learning and LoRA baselines, often matching the average success of specialists trained directly on those interfaces. On TimeWarp domain transfer, it gains about 8 percentage points on average over the best baseline with both models. These gains do not come at the cost of seen interfaces, where WebMix keeps its lead, and extend to version transfer. Adapting to a new interface can therefore rely on exploration and composition instead of retraining.",
+      "url": "http://arxiv.org/abs/2610.22539v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22539v1",
+      "arxiv_id": "2610.22539",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "The web is not static or uniform. Websites that serve the same purpose can look and navigate very differently. Even within a single site, successive redesigns can change how familiar features are presented and accessed. Humans adapt to this by recognizing familiar interaction patterns and reusing what they already know. We give web agents a similar ability with WebMix, a mixture hypernetwork that adapts them to unseen interfaces by composing previously trained low-rank adapters. WebMix begins with a bank of adapters trained on source interfaces. At deployment, a scout agent explores the target interface and summarizes its observations into a compact manual. A lightweight router uses this manual to predict mixing coefficients over the adapter bank, which combine the existing adapters into a new one for inference. Adapting to a new interface takes only a scouting run and a forward pass, without gradient updates on the target. With Qwen and Llama models, we evaluate domain transfer on TimeWarp and WebArena-Lite-v2, and version transfer on TimeWarp. In all three settings, WebMix matches or outperforms in-context learning and LoRA baselines, often matching the average success of specialists trained directly on those interfaces. On TimeWarp domain transfer, it gains about 8 percentage points on average over the best baseline with both models. These gains do not come at the cost of seen interfaces, where WebMix keeps its lead, and extend to version transfer. Adapting to a new interface can therefore rely on exploration and composition instead of retraining.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-15"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Scaling Online Exploration for Robot Agents",
+      "authors": [
+        "Runhan Huang",
+        "Xiangcheng Zhang",
+        "Haoyu Chen",
+        "Yitong Li",
+        "Yen-Jen Wang",
+        "Bohan Lyu",
+        "Haotian Ye",
+        "Chuye Hong",
+        "Yixuan Wang",
+        "Chloe Su",
+        "Haoyu Xiong",
+        "Yangzhen Wu",
+        "Enze Xie",
+        "Travis Manderson",
+        "Stefano Ermon",
+        "Pieter Abbeel",
+        "Antonio Torralba",
+        "Dawn Song",
+        "Weirui Ye",
+        "Yilun Du"
+      ],
+      "abstract": "Robot learning has advanced by scaling demonstration datasets and model capacity; however, deploying a new robot embodiment or task typically necessitates a dedicated teleoperation corpus. The resulting policies remain bounded by their imitation distributions, limiting generalization and continual self-improvement. We introduce RAX (Robot Agent eXploration), an open-source framework for robot agents centered on scaling exploration: enabling agents to improve by acquiring online experience and synthesizing executable programs. In RAX, a general-purpose coding agent generates robot control code, operating without action demonstration data, hand-engineered action primitives, or value-function guidance. Through online exploration, the agent identifies decision sequences that achieve task goals and compiles them into modular programs encapsulating the full perception-planning-control loop. Using RAX, we present a systematic multi-embodiment study on scaling online exploration across precision and long-horizon manipulation tasks using single-arm, bimanual, dexterous, mobile, and humanoid systems in simulation and on real robots. Generalization performance on unseen environments improves consistently as exploration scales. In simulation, RAX outperforms top baseline models by +37.4% on average. On real robots, RAX autonomously learns memory-dependent, articulated, high-precision, deformable, and long-horizon mobile manipulation tasks without human demonstrations, continually improving performance by composing verified skills from prior exploration sessions. As exploration scales, we observe emergent capabilities including active perception, error recovery, safety guardrails, and human-robot collaboration. We open-source RAX as a generalist robot-agent platform in which new robot embodiments are integrated through their APIs alone, without teleoperated data collection or policy training.",
+      "url": "http://arxiv.org/abs/2610.22496v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22496v1",
+      "arxiv_id": "2610.22496",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Robot learning has advanced by scaling demonstration datasets and model capacity; however, deploying a new robot embodiment or task typically necessitates a dedicated teleoperation corpus. The resulting policies remain bounded by their imitation distributions, limiting generalization and continual self-improvement. We introduce RAX (Robot Agent eXploration), an open-source framework for robot agents centered on scaling exploration: enabling agents to improve by acquiring online experience and synthesizing executable programs. In RAX, a general-purpose coding agent generates robot control code, operating without action demonstration data, hand-engineered action primitives, or value-function guidance. Through online exploration, the agent identifies decision sequences that achieve task goals and compiles them into modular programs encapsulating the full perception-planning-control loop. Using RAX, we present a systematic multi-embodiment study on scaling online exploration across precision and long-horizon manipulation tasks using single-arm, bimanual, dexterous, mobile, and humanoid systems in simulation and on real robots. Generalization performance on unseen environments improves consistently as exploration scales. In simulation, RAX outperforms top baseline models by +37.4% on average. On real robots, RAX autonomously learns memory-dependent, articulated, high-precision, deformable, and long-horizon mobile manipulation tasks without human demonstrations, continually improving performance by composing verified skills from prior exploration sessions. As exploration scales, we observe emergent capabilities including active perception, error recovery, safety guardrails, and human-robot collaboration. We open-source RAX as a generalist robot-agent platform in which new robot embodiments are integrated through their APIs alone, without teleoperated data collection or policy training.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-15"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "PRIME: Towards Verifiable Evidence-Grounded Reasoning in LLM Agents",
+      "authors": [
+        "Hamed Khosravi",
+        "Xiaoming Huo"
+      ],
+      "abstract": "LLM agents are used to check records against an organization's requirements, for example whether a vulnerability report is ready for investigation. Requirements often allow several ways to be met, such as a severity rating with a curator-reviewed advisory or a published advisory link. Agents fail by accepting a report after a required check has failed, or by settling for a weaker conclusion without trying another way that could still succeed. We introduce PRIME (Precommitted Rules for Inference from Minimal Evidence). Before checking, it fixes evidence routes specifying how each conclusion may be justified. A separate program records each check result and refuses any conclusion the results do not justify. It also points the agent to checks that could justify a stronger conclusion, or runs them itself. PRIME reports only conclusions authorized by its rules and ledger. With correct requirements, exact checks at known locations, and sufficient budget at stopping, completion reaches the strongest supported conclusion. On 480 public-record tasks, an agent shown the requirements reported unjustified conclusions on 26.7% of tasks, while PRIME reported none. Its directions and added checks raised the average score for justified conclusions from 30.1, with refusal alone, to the maximum of 59.2 out of 100.",
+      "url": "http://arxiv.org/abs/2610.22426v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.22426v1",
+      "arxiv_id": "2610.22426",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "LLM agents are used to check records against an organization's requirements, for example whether a vulnerability report is ready for investigation. Requirements often allow several ways to be met, such as a severity rating with a curator-reviewed advisory or a published advisory link. Agents fail by accepting a report after a required check has failed, or by settling for a weaker conclusion without trying another way that could still succeed. We introduce PRIME (Precommitted Rules for Inference from Minimal Evidence). Before checking, it fixes evidence routes specifying how each conclusion may be justified. A separate program records each check result and refuses any conclusion the results do not justify. It also points the agent to checks that could justify a stronger conclusion, or runs them itself. PRIME reports only conclusions authorized by its rules and ledger. With correct requirements, exact checks at known locations, and sufficient budget at stopping, completion reaches the strongest supported conclusion. On 480 public-record tasks, an agent shown the requirements reported unjustified conclusions on 26.7% of tasks, while PRIME reported none. Its directions and added checks raised the average score for justified conclusions from 30.1, with refusal alone, to the maximum of 59.2 out of 100.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-10-15"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://doi.org/10.17638/03194716",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Mapping crown length and canopy depth across global forests at 1 km from multi-platform lidar and satellite data",
+      "authors": [
+        "Zhang Yixuan"
+      ],
+      "abstract": "Crown length (CL) describes the vertical extent of an individual tree's live crown. Canopy depth (CD) describes the vertical extent of the canopy within a forest stand. Both inform fire behaviour, vegetation and habitat models, yet their global distributions remain poorly resolved. We present global maps of mean CL and CD at 1 km resolution for 2020. We first retrieved CL for individual trees segmented from lidar point clouds, as tree height minus crown-base height. Within each of 1147 reference records on six continents, mean CL was the average of the tree values and CD was the 95th-percentile tree height minus the lowest crown base. Both were related to satellite and environmental predictors using random forest models. Tree-level CL agreed with field measurements and manual annotations with R² = 0.62 and RMSE = 2.63 m. Across 46 validation plots, RMSE was 1.90 m for mean CL and 2.09 m for CD. In the 30 % hold-out set, the mapping models achieved R² = 0.64 for CL and 0.72 for CD, with RMSE of 2.15 m and 2.98 m. Global mean CL and CD were 7.0 m and 14.2 m. Long crowns and deep canopies occurred in equatorial rain forests and humid temperate forests. Savannas, Mediterranean woodlands and dry forests had the smallest values. These maps give the first globally consistent view of the crown layer beneath the canopy top. They can constrain crown geometry in vegetation models, canopy fuel depth in fire models and vertical habitat structure in biodiversity studies.",
+      "url": "https://doi.org/10.5281/zenodo.23118929",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23118929",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.23118929",
+      "score": 1.0,
+      "tldr": "Crown length (CL) describes the vertical extent of an individual tree's live crown. Canopy depth (CD) describes the vertical extent of the canopy within a forest stand. Both inform fire behaviour, vegetation and habitat models, yet their global distributions remain poorly resolved. We present global maps of mean CL and CD at 1 km resolution for 2020. We first retrieved CL for individual trees segmented from lidar point clouds, as tree height minus crown-base height. Within each of 1147 reference records on six continents, mean CL was the average of the tree values and CD was the 95th-percentile tree height minus the lowest crown base. Both were related to satellite and environmental predictors using random forest models. Tree-level CL agreed with field measurements and manual annotations with R² = 0.62 and RMSE = 2.63 m. Across 46 validation plots, RMSE was 1.90 m for mean CL and 2.09 m for CD. In the 30 % hold-out set, the mapping models achieved R² = 0.64 for CL and 0.72 for CD, with RMSE of 2.15 m and 2.98 m. Global mean CL and CD were 7.0 m and 14.2 m. Long crowns and deep canopies occurred in equatorial rain forests and humid temperate forests. Savannas, Mediterranean woodlands and dry forests had the smallest values. These maps give the first globally consistent view of the crown layer beneath the canopy top. They can constrain crown geometry in vegetation models, canopy fuel depth in fire models and vertical habitat structure in biodiversity studies.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-10-03"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation",
+      "authors": [
+        "Anonymous Anonymous"
+      ],
+      "abstract": "This contains the actual source code, prompts, scripts and all experiment results as described in the paper:REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation.This data is provided as part of reproducibility effort to support transparency and allow verification of reported findings.",
+      "url": "https://doi.org/10.5281/zenodo.22893746",
+      "pdf_url": "https://doi.org/10.5281/zenodo.22893746",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.22893746",
+      "score": 1.0,
+      "tldr": "This contains the actual source code, prompts, scripts and all experiment results as described in the paper:REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation.This data is provided as part of reproducibility effort to support transparency and allow verification of reported findings.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-09-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "A global 1 km forest crown base height dataset for 2020 from multi-platform lidar and satellite data",
+      "authors": [
+        "Zhang Yixuan"
+      ],
+      "abstract": "Crown base height (CBH) is the height of the lowest living branch of a tree. It marks where the live crown begins, and it is a key input for forest growth, vegetation and fire behaviour models. However, a global-scale map of CBH is still lacking. We mapped the first global maps of two stand-level CBH metrics at 1 km resolution for 2020. CBH was first estimated for individual trees segmented from airborne, drone, terrestrial and backpack lidar point clouds. The tree values were then aggregated to 1432 plots of 1 km × 1 km on six continents, and two plot-level metrics were derived. CBHwa is the mean weighted by the square of tree height, which follows the canopy-forming trees. CBHmin is the minimum, which marks the lower edge of the live canopy. Random forest models related both metrics to 47 satellite and environmental predictors. Tree-level CBH agreed with field measurements and manual annotations of 1641 trees with an RMSE of 3.32 m. Plot-level RMSE was 2.65 m for CBHwa and 1.80 m for CBHmin. The models reached R2 = 0.80 (RMSE 2.40 m) for CBHwa and R2 = 0.65 (RMSE 1.51 m) for CBHmin. Global mean CBHwa and CBHmin are 9.5 m and 3.8 m. CBHwa is highest in tropical moist forests, whereas CBHmin is highest in boreal forests. These maps provide a consistent global reference of CBH for forest management, vegetation modelling and wildfire risk assessment.",
+      "url": "https://doi.org/10.5281/zenodo.23089995",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23089995",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.23089995",
+      "score": 0.5,
+      "tldr": "Crown base height (CBH) is the height of the lowest living branch of a tree. It marks where the live crown begins, and it is a key input for forest growth, vegetation and fire behaviour models. However, a global-scale map of CBH is still lacking. We mapped the first global maps of two stand-level CBH metrics at 1 km resolution for 2020. CBH was first estimated for individual trees segmented from airborne, drone, terrestrial and backpack lidar point clouds. The tree values were then aggregated to 1432 plots of 1 km × 1 km on six continents, and two plot-level metrics were derived. CBHwa is the mean weighted by the square of tree height, which follows the canopy-forming trees. CBHmin is the minimum, which marks the lower edge of the live canopy. Random forest models related both metrics to 47 satellite and environmental predictors. Tree-level CBH agreed with field measurements and manual annotations of 1641 trees with an RMSE of 3.32 m. Plot-level RMSE was 2.65 m for CBHwa and 1.80 m for CBHmin. The models reached R2 = 0.80 (RMSE 2.40 m) for CBHwa and R2 = 0.65 (RMSE 1.51 m) for CBHmin. Global mean CBHwa and CBHmin are 9.5 m and 3.8 m. CBHwa is highest in tropical moist forests, whereas CBHmin is highest in boreal forests. These maps provide a consistent global reference of CBH for forest management, vegetation modelling and wildfire risk assessment.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-10-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "ECHOES: Seeing Beyond the Current Image via Recursive History Compression and Privileged On-Policy Distillation",
+      "Structured Authority Injection: Persistent Human Control for LLM Agents via Typed MCP Overrides",
+      "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks",
+      "Scaling Online Exploration for Robot Agents",
+      "PRIME: Towards Verifiable Evidence-Grounded Reasoning in LLM Agents"
+    ],
+    "hugging_face": [
+      "ECHOES: Seeing Beyond the Current Image via Recursive History Compression and Privileged On-Policy Distillation",
+      "Structured Authority Injection: Persistent Human Control for LLM Agents via Typed MCP Overrides",
+      "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks",
+      "Scaling Online Exploration for Robot Agents",
+      "PRIME: Towards Verifiable Evidence-Grounded Reasoning in LLM Agents"
+    ],
+    "papers_with_code": [
+      "ECHOES: Seeing Beyond the Current Image via Recursive History Compression and Privileged On-Policy Distillation",
+      "Structured Authority Injection: Persistent Human Control for LLM Agents via Typed MCP Overrides",
+      "Don't Retrain, Remix: Adaptation of Web Agents using Mixture Hypernetworks",
+      "Scaling Online Exploration for Robot Agents",
+      "PRIME: Towards Verifiable Evidence-Grounded Reasoning in LLM Agents"
+    ]
+  }
+}
