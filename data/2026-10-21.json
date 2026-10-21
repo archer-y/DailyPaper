@@ -1,0 +1,300 @@
+{
+  "date": "2026-10-21",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "M-Plan: Comprehensive Planning For LLM Agents with Memory Arrangement",
+      "authors": [
+        "Ziyang Liu",
+        "Jiakang Yuan",
+        "Jiayuan Fan",
+        "Tao Chen"
+      ],
+      "abstract": "Large language model (LLM)-based agents have recently demonstrated outstanding performance in single-turn tasks, yet they continue to struggle with long-horizon tasks, particularly in environments without prior training. A key limitation of single LLMs is their difficulty in processing long contexts, which stems from weaknesses in continuous decision-making and reasoning capabilities. Although existing multi-agent systems (MAS) equipped with long-term memory bases can partially address this gap, they mostly rely on knowledge reuse or summarization, an approach that is often constrained by directly retrieval without any adaptation for the current task, while the retrieved memory may contain much history noises waiting to be preprocessed. In contrast, MAS characterized by task-specific guidance often lack long-term memory specifically designed for the guidance. To address these challenges, we propose M-Plan, a closed-loop MAS framework that integrates long-term and short-term memory. By combining global-local and past-current guidance, M-Plan enhances agents' performance on multi-turn tasks while maintaining a plug-and-play design. During task execution, agents receive task-specific milestones and insights, and are provided with local hints only when confusion arises, which form global-local guidance together. These guidance generation and utilization construct the short-term memory as well. After task completion, relevant information about the current task is optimized or reorganized before being sent to the long-term memory storage for future retrieval. The designments mentioned above build a comprehensive framework different from other individual long-term or short-term memory works. Extensive experiments on multi-turn tasks including ALFWorld, Webshop, and PDDL across diverse models demonstrate that M-Plan outperforms multiple baseline methods in both accuracy and efficiency.",
+      "url": "http://arxiv.org/abs/2610.27032v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.27032v1",
+      "arxiv_id": "2610.27032",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Large language model (LLM)-based agents have recently demonstrated outstanding performance in single-turn tasks, yet they continue to struggle with long-horizon tasks, particularly in environments without prior training. A key limitation of single LLMs is their difficulty in processing long contexts, which stems from weaknesses in continuous decision-making and reasoning capabilities. Although existing multi-agent systems (MAS) equipped with long-term memory bases can partially address this gap, they mostly rely on knowledge reuse or summarization, an approach that is often constrained by directly retrieval without any adaptation for the current task, while the retrieved memory may contain much history noises waiting to be preprocessed. In contrast, MAS characterized by task-specific guidance often lack long-term memory specifically designed for the guidance. To address these challenges, we propose M-Plan, a closed-loop MAS framework that integrates long-term and short-term memory. By combining global-local and past-current guidance, M-Plan enhances agents' performance on multi-turn tasks while maintaining a plug-and-play design. During task execution, agents receive task-specific milestones and insights, and are provided with local hints only when confusion arises, which form global-local guidance together. These guidance generation and utilization construct the short-term memory as well. After task completion, relevant information about the current task is optimized or reorganized before being sent to the long-term memory storage for future retrieval. The designments mentioned above build a comprehensive framework different from other individual long-term or short-term memory works. Extensive experiments on multi-turn tasks including ALFWorld, Webshop, and PDDL across diverse models demonstrate that M-Plan outperforms multiple baseline methods in both accuracy and efficiency.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-10-19"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "EDMA: Entropy-Driven Multimodal Answering",
+      "authors": [
+        "Emanuele Mezzi",
+        "Gertjan Burghouts",
+        "Fabio Massacci",
+        "Mengyuan Zhang"
+      ],
+      "abstract": "Multimodal question answering (MMQA) is based on integrating heterogeneous data sources, selectively leveraging relevant modalities, and ignoring distractors. Existing approaches based on Multimodal Large Language Models (MLLMs) improve performance by splitting the task into intermediate steps, but do not quantify how each modality contributes to reaching the final answer. We argue that quantifying the effect that each modality has on the answering process improves process traceability and final performance. Thus, we propose Entropy-Driven Multimodal Answering (EDMA), which uses logical entropy to formalise multimodal QA as an iterative process of entropy reduction and to quantify the contribution of each modality in distinguishing correct from incorrect candidate answers. This enables the construction of quantifiable answering trajectories, where each step is associated with a measurable entropy reduction. EDMA introduces (i) modality-conditioned partitioning to estimate unimodal entropy reduction, (ii) entropy-driven multimodal fusion to capture complementary information across modalities, and (iii) entropy-based selection of the answering trajectory that minimises the most logical entropy. Evaluated across standard MMQA benchmarks, EDMA outperforms competitive prompting baselines, with average gains of 12.8 F1 and 4.6 LLM-J points over Planning Prompting and 18.6 F1 and 8.3 LLM-J points over Chain-of-Thought. Moreover, EDMA outperforms self-consistency baselines and is competitive with the multi-agent system baseline. Moreover, we show that higher entropy correlates with more false positives and, through controlled trajectory selection, demonstrate that logical entropy serves as an effective, monotonic selector for correct reasoning paths, validating entropy level as a reliable proxy for performance.",
+      "url": "http://arxiv.org/abs/2610.27120v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.27120v1",
+      "arxiv_id": "2610.27120",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Multimodal question answering (MMQA) is based on integrating heterogeneous data sources, selectively leveraging relevant modalities, and ignoring distractors. Existing approaches based on Multimodal Large Language Models (MLLMs) improve performance by splitting the task into intermediate steps, but do not quantify how each modality contributes to reaching the final answer. We argue that quantifying the effect that each modality has on the answering process improves process traceability and final performance. Thus, we propose Entropy-Driven Multimodal Answering (EDMA), which uses logical entropy to formalise multimodal QA as an iterative process of entropy reduction and to quantify the contribution of each modality in distinguishing correct from incorrect candidate answers. This enables the construction of quantifiable answering trajectories, where each step is associated with a measurable entropy reduction. EDMA introduces (i) modality-conditioned partitioning to estimate unimodal entropy reduction, (ii) entropy-driven multimodal fusion to capture complementary information across modalities, and (iii) entropy-based selection of the answering trajectory that minimises the most logical entropy. Evaluated across standard MMQA benchmarks, EDMA outperforms competitive prompting baselines, with average gains of 12.8 F1 and 4.6 LLM-J points over Planning Prompting and 18.6 F1 and 8.3 LLM-J points over Chain-of-Thought. Moreover, EDMA outperforms self-consistency baselines and is competitive with the multi-agent system baseline. Moreover, we show that higher entropy correlates with more false positives and, through controlled trajectory selection, demonstrate that logical entropy serves as an effective, monotonic selector for correct reasoning paths, validating entropy level as a reliable proxy for performance.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-10-19"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning",
+      "authors": [
+        "Xinping Wang",
+        "Jie Ma",
+        "Rui Xing",
+        "Wensong Guo",
+        "Xiayi Zhang",
+        "Jianhao Deng",
+        "Zihao Zhou",
+        "Boqian Yang",
+        "Feijuan He"
+      ],
+      "abstract": "Mathematical reasoning is a fundamental capability for educational applications of Large Language Models (LLMs), where reliable problem solving requires not only correct answers but also coherent and verifiable reasoning processes. Multi-agent systems (MASs) have shown growing potential in this domain by leveraging collaboration and verification among multiple LLM agents. However, existing evaluations primarily focus on the correctness of final answers in text-only settings, offering limited insight into multimodal reasoning capabilities, the reliability of intermediate reasoning steps, and robustness against reasoning errors. To address these limitations, we introduce MAMath-Bench, a process-aware benchmark designed to evaluate the multimodal mathematical reasoning capabilities of MASs. MAMath-Bench comprises 1,003 problems spanning 11 mathematical categories, multiple difficulty levels, and several modalities, including text, images, and audio. It features fine-grained milestone annotations to evaluate systems across three dimensions: problem-solving correctness, reasoning-process reliability, and robustness to adversarial reasoning-chain perturbations. Our evaluation yields three key findings. First, multi-agent collaboration does not consistently improve final-answer accuracy over strong single LLMs. Second, collaboration can substantially enhance the coverage of intermediate reasoning, but such gains may come at the cost of increased reasoning redundancy. Third, current systems remain vulnerable to adversarial reasoning errors, particularly those involving subtle structural perturbations. The dataset is available at https://github.com/mira-ai-lab/AgentMath.",
+      "url": "http://arxiv.org/abs/2610.26943v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26943v1",
+      "arxiv_id": "2610.26943",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Mathematical reasoning is a fundamental capability for educational applications of Large Language Models (LLMs), where reliable problem solving requires not only correct answers but also coherent and verifiable reasoning processes. Multi-agent systems (MASs) have shown growing potential in this domain by leveraging collaboration and verification among multiple LLM agents. However, existing evaluations primarily focus on the correctness of final answers in text-only settings, offering limited insight into multimodal reasoning capabilities, the reliability of intermediate reasoning steps, and robustness against reasoning errors. To address these limitations, we introduce MAMath-Bench, a process-aware benchmark designed to evaluate the multimodal mathematical reasoning capabilities of MASs. MAMath-Bench comprises 1,003 problems spanning 11 mathematical categories, multiple difficulty levels, and several modalities, including text, images, and audio. It features fine-grained milestone annotations to evaluate systems across three dimensions: problem-solving correctness, reasoning-process reliability, and robustness to adversarial reasoning-chain perturbations. Our evaluation yields three key findings. First, multi-agent collaboration does not consistently improve final-answer accuracy over strong single LLMs. Second, collaboration can substantially enhance the coverage of intermediate reasoning, but such gains may come at the cost of increased reasoning redundancy. Third, current systems remain vulnerable to adversarial reasoning errors, particularly those involving subtle structural perturbations. The dataset is available at https://github.com/mira-ai-lab/AgentMath.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-18"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
+      "authors": [
+        "Shrish Shrinath Vaidya",
+        "Minmini Selvam",
+        "Ganapathy Krishnamurthi"
+      ],
+      "abstract": "The adoption of Large Language Models for radiology report structuring has been largely dominated by either proprietary cloud-based models or large open models requiring high-end GPUs for deployment, which is a critical bottleneck for clinical adoption in radiology workflows that demand data privacy and offline operation. To address this, we present MedPAO-Assist, an edge-deployable agentic framework that generates structured radiology reports directly from radiologist dictation and voice commands, requiring only $\\approx3.3$ GB peak RAM and achieving an average end-to-end latency of $\\approx31$ seconds on a standard laptop CPU through an asynchronous, multi-threaded execution pipeline. The system currently supports four major imaging modalities -- Chest X-ray, Chest CT, Abdomen CT, and Brain MRI. To our knowledge, it is among the earliest agentic systems to run its entire pipeline with a Small Language Model (SLM) in the 0.6B-parameter range. This multi-agent architecture, built around an Extract-Ground-Generate paradigm, performs concept extraction, SNOMED-CT grounding, and structured report generation, followed by a speech-driven human-in-the-loop correction phase, together forming a fully \"no-touch\" reporting workflow that requires no keyboard input, external API calls, or internet connectivity. We evaluate each pipeline stage individually -- concept extraction, ontology grounding, and concept categorization and report hardware profiling results demonstrating the system's feasibility for real-time, CPU-only clinical deployment.",
+      "url": "http://arxiv.org/abs/2610.26913v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26913v1",
+      "arxiv_id": "2610.26913",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "The adoption of Large Language Models for radiology report structuring has been largely dominated by either proprietary cloud-based models or large open models requiring high-end GPUs for deployment, which is a critical bottleneck for clinical adoption in radiology workflows that demand data privacy and offline operation. To address this, we present MedPAO-Assist, an edge-deployable agentic framework that generates structured radiology reports directly from radiologist dictation and voice commands, requiring only $\\approx3.3$ GB peak RAM and achieving an average end-to-end latency of $\\approx31$ seconds on a standard laptop CPU through an asynchronous, multi-threaded execution pipeline. The system currently supports four major imaging modalities -- Chest X-ray, Chest CT, Abdomen CT, and Brain MRI. To our knowledge, it is among the earliest agentic systems to run its entire pipeline with a Small Language Model (SLM) in the 0.6B-parameter range. This multi-agent architecture, built around an Extract-Ground-Generate paradigm, performs concept extraction, SNOMED-CT grounding, and structured report generation, followed by a speech-driven human-in-the-loop correction phase, together forming a fully \"no-touch\" reporting workflow that requires no keyboard input, external API calls, or internet connectivity. We evaluate each pipeline stage individually -- concept extraction, ontology grounding, and concept categorization and report hardware profiling results demonstrating the system's feasibility for real-time, CPU-only clinical deployment.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-17"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Expert-Guided Rubrics as Dense Reward Signals for Reinforcement Learning in Non-Verifiable Domains",
+      "authors": [
+        "Ashish Bansal",
+        "Hossam Amer",
+        "Keerat Kaur Guliani",
+        "Parinita Edke",
+        "Lesley Matheson",
+        "Leizer Teran"
+      ],
+      "abstract": "Large language models (LLMs) are increasingly deployed as autonomous agents in non-verifiable domains such as financial services, where they must interpret user intent, rewrite queries, and retrieve information under domain-specific constraints. Although reinforcement learning (RL) can train such agents from the consequences of their actions, recent successes largely rely on verifiable tasks with automatically computed binary rewards. In non-verifiable retrieval tasks, assessing query quality requires scarce subject-matter expert (SME) judgment that is inherently graded rather than binary. With Group Relative Policy Optimization (GRPO), sparse rewards yield no useful learning signal when all sampled outputs within a group receive the same outcome, causing optimization to stall. We introduce a method that converts a small, fixed investment of SME judgment into a dense reward and combines it with retrieval-based metrics to form a hybrid, GRPO-compatible training signal. Experiments show improvements of up to 6\\% in Recall@3 and 6.7\\% in MRR@3 compared with sparse-reward baselines.",
+      "url": "http://arxiv.org/abs/2610.26932v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26932v1",
+      "arxiv_id": "2610.26932",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Large language models (LLMs) are increasingly deployed as autonomous agents in non-verifiable domains such as financial services, where they must interpret user intent, rewrite queries, and retrieve information under domain-specific constraints. Although reinforcement learning (RL) can train such agents from the consequences of their actions, recent successes largely rely on verifiable tasks with automatically computed binary rewards. In non-verifiable retrieval tasks, assessing query quality requires scarce subject-matter expert (SME) judgment that is inherently graded rather than binary. With Group Relative Policy Optimization (GRPO), sparse rewards yield no useful learning signal when all sampled outputs within a group receive the same outcome, causing optimization to stall. We introduce a method that converts a small, fixed investment of SME judgment into a dense reward and combines it with retrieval-based metrics to form a hybrid, GRPO-compatible training signal. Experiments show improvements of up to 6\\% in Recall@3 and 6.7\\% in MRR@3 compared with sparse-reward baselines.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-17"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "COMPARATIVE CRITICAL ANALYSIS OF URBAN DESIGN PROCESSES IN TWO PLANNING SYSTEMS IN SAUDI ARABIA: CASE STUDIES OF THE WATERFRONT DEVELOPMENT IN JEDDAH AND YANBU",
+      "authors": [
+        "Khalid Bazughayfan"
+      ],
+      "abstract": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "url": "https://doi.org/10.17638/03194716",
+      "pdf_url": "https://doi.org/10.17638/03194716",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17638/03194716",
+      "score": 1.0,
+      "tldr": "This research critically examines the urban design processes within two distinct planning systems in Saudi Arabia, focusing on the waterfront developments in Jeddah and Yanbu. It explores how decision-making environments, governance mechanisms, and the roles of various actors influence the quality of urban public spaces. Despite substantial urbanisation driven by development programs, research on design governance and the influence of the design process on urban space quality in Saudi Arabia remains limited. This gap necessitates a deeper understanding of how governance frameworks shape urban design outcomes and their alignment with national developmental objectives. Employing a comparative framework and a case study approach, the study evaluates the centralised, dependent planning system of Jeddah and the independent system of Yanbu, highlighting their strengths and weaknesses in delivering high-quality urban design aligned with Saudi Vision 2030 and related development programs. Using theories of design governance and planning culture, this dissertation develops a conceptual framework focused on design principles, tools, mechanisms, and actor interactions in urban development. Primary data were collected through in-depth interviews, document analysis, and field observations, revealing systemic disparities in governance approaches. Findings reveal that while Jeddah’s flexibility-driven planning model often leads to inconsistency, Yanbu’s prescriptive model provides stability but lacks adaptability. This analysis underscores the need for an integrated approach that combines the strengths of both systems to enhance the effectiveness of urban design governance. The study contributes valuable insights into the local and global discourse on urban planning by providing lessons on aligning governance frameworks with sustainable urban development goals, particularly in rapidly urbanizing contexts.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2030-01-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Mapping crown length and canopy depth across global forests at 1 km from multi-platform lidar and satellite data",
+      "authors": [
+        "Zhang Yixuan"
+      ],
+      "abstract": "Crown length (CL) describes the vertical extent of an individual tree's live crown. Canopy depth (CD) describes the vertical extent of the canopy within a forest stand. Both inform fire behaviour, vegetation and habitat models, yet their global distributions remain poorly resolved. We present global maps of mean CL and CD at 1 km resolution for 2020. We first retrieved CL for individual trees segmented from lidar point clouds, as tree height minus crown-base height. Within each of 1147 reference records on six continents, mean CL was the average of the tree values and CD was the 95th-percentile tree height minus the lowest crown base. Both were related to satellite and environmental predictors using random forest models. Tree-level CL agreed with field measurements and manual annotations with R² = 0.62 and RMSE = 2.63 m. Across 46 validation plots, RMSE was 1.90 m for mean CL and 2.09 m for CD. In the 30 % hold-out set, the mapping models achieved R² = 0.64 for CL and 0.72 for CD, with RMSE of 2.15 m and 2.98 m. Global mean CL and CD were 7.0 m and 14.2 m. Long crowns and deep canopies occurred in equatorial rain forests and humid temperate forests. Savannas, Mediterranean woodlands and dry forests had the smallest values. These maps give the first globally consistent view of the crown layer beneath the canopy top. They can constrain crown geometry in vegetation models, canopy fuel depth in fire models and vertical habitat structure in biodiversity studies.",
+      "url": "https://doi.org/10.5281/zenodo.23118929",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23118929",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.23118929",
+      "score": 1.0,
+      "tldr": "Crown length (CL) describes the vertical extent of an individual tree's live crown. Canopy depth (CD) describes the vertical extent of the canopy within a forest stand. Both inform fire behaviour, vegetation and habitat models, yet their global distributions remain poorly resolved. We present global maps of mean CL and CD at 1 km resolution for 2020. We first retrieved CL for individual trees segmented from lidar point clouds, as tree height minus crown-base height. Within each of 1147 reference records on six continents, mean CL was the average of the tree values and CD was the 95th-percentile tree height minus the lowest crown base. Both were related to satellite and environmental predictors using random forest models. Tree-level CL agreed with field measurements and manual annotations with R² = 0.62 and RMSE = 2.63 m. Across 46 validation plots, RMSE was 1.90 m for mean CL and 2.09 m for CD. In the 30 % hold-out set, the mapping models achieved R² = 0.64 for CL and 0.72 for CD, with RMSE of 2.15 m and 2.98 m. Global mean CL and CD were 7.0 m and 14.2 m. Long crowns and deep canopies occurred in equatorial rain forests and humid temperate forests. Savannas, Mediterranean woodlands and dry forests had the smallest values. These maps give the first globally consistent view of the crown layer beneath the canopy top. They can constrain crown geometry in vegetation models, canopy fuel depth in fire models and vertical habitat structure in biodiversity studies.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-10-03"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Living with the Foreign Agents’ Law: a socio-legal analysis of Russian human rights defenders’ responses to the Foreign Agents’ Law, 2012-2024",
+      "authors": [
+        "Mercedes Roxane Malcomson"
+      ],
+      "abstract": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "url": "https://eprints.bbk.ac.uk/id/eprint/57500/1/13008794_livingwiththefal_final.pdf",
+      "pdf_url": "https://doi.org/10.18743/pub.00057500",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.18743/pub.00057500",
+      "score": 1.0,
+      "tldr": "This thesis argues that Russian human rights defenders’ responses to the Foreign Agents’ Law reveal a polyvocal and context-dependent legal consciousness that challenges the universal applicability of dominant legal consciousness frameworks. By putting legal culture and legal consciousness approaches into dialogue, it re-theorises legal consciousness outside the North American context, showing how Russian activists simultaneously reproduce and resist dominant legal meanings to generate a more situated understanding of law’s role under increasing authoritarianism. Introduced in 2012, the Foreign Agents’ Law regulates non-profit organisations based on funding sources and activities. Over the next decade, it became a central tool of civil society repression, particularly targeting human rights organisations. Those designated ‘foreign agents’ faced onerous reporting requirements and reputational harm, the term itself evoking Cold War-era espionage. Amendments since 2019 expanded the law’s scope, making legal compliance ever more difficult. By 2022, many human rights defenders chose to kinut’ Rossiiu (“quit Russia”), many continuing their work in exile. The Supreme Court ordered the liquidation of International Memorial and Memorial Human Rights Centre, signalling the law’s function as a mechanism of systemic suppression. This thesis employs a socio-legal approach, combining doctrinal analysis, social media and documentary review, and interviews with human rights defenders. Using Ewick and Silbey’s (1998) heuristics of ‘before,’ ‘with,’ and ‘against’ the law, together with Fritsvold’s (2009) ‘under the law,’ I developed a four-part framework for analysing human rights defenders’ responses. I also interrogate the transferability of the legal consciousness framework to the Russian context, integrating insights from legal culture scholarship and ‘cultural dissent’ to emphasise the contested, dynamic nature of legal meaning-making. Empirical observations show that human rights defenders oscillated between multiple legal positions, sometimes within a single utterance, for example, mobilising legal complaints ‘before the law’ while simultaneously expressing scepticism toward legal institutions. These observations underpin the thesis’s argument that understanding legal consciousness requires attention to its shifting, context-dependent character and the polyvocality of legal narratives employed by a range of human rights actors",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2028-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation",
+      "authors": [
+        "Anonymous Anonymous"
+      ],
+      "abstract": "This contains the actual source code, prompts, scripts and all experiment results as described in the paper:REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation.This data is provided as part of reproducibility effort to support transparency and allow verification of reported findings.",
+      "url": "https://doi.org/10.5281/zenodo.22893746",
+      "pdf_url": "https://doi.org/10.5281/zenodo.22893746",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.22893746",
+      "score": 1.0,
+      "tldr": "This contains the actual source code, prompts, scripts and all experiment results as described in the paper:REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation.This data is provided as part of reproducibility effort to support transparency and allow verification of reported findings.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-09-01"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "A global 1 km forest crown base height dataset for 2020 from multi-platform lidar and satellite data",
+      "authors": [
+        "Zhang Yixuan"
+      ],
+      "abstract": "Crown base height (CBH) is the height of the lowest living branch of a tree. It marks where the live crown begins, and it is a key input for forest growth, vegetation and fire behaviour models. However, a global-scale map of CBH is still lacking. We mapped the first global maps of two stand-level CBH metrics at 1 km resolution for 2020. CBH was first estimated for individual trees segmented from airborne, drone, terrestrial and backpack lidar point clouds. The tree values were then aggregated to 1432 plots of 1 km × 1 km on six continents, and two plot-level metrics were derived. CBHwa is the mean weighted by the square of tree height, which follows the canopy-forming trees. CBHmin is the minimum, which marks the lower edge of the live canopy. Random forest models related both metrics to 47 satellite and environmental predictors. Tree-level CBH agreed with field measurements and manual annotations of 1641 trees with an RMSE of 3.32 m. Plot-level RMSE was 2.65 m for CBHwa and 1.80 m for CBHmin. The models reached R2 = 0.80 (RMSE 2.40 m) for CBHwa and R2 = 0.65 (RMSE 1.51 m) for CBHmin. Global mean CBHwa and CBHmin are 9.5 m and 3.8 m. CBHwa is highest in tropical moist forests, whereas CBHmin is highest in boreal forests. These maps provide a consistent global reference of CBH for forest management, vegetation modelling and wildfire risk assessment.",
+      "url": "https://doi.org/10.5281/zenodo.23089995",
+      "pdf_url": "https://doi.org/10.5281/zenodo.23089995",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.23089995",
+      "score": 0.5,
+      "tldr": "Crown base height (CBH) is the height of the lowest living branch of a tree. It marks where the live crown begins, and it is a key input for forest growth, vegetation and fire behaviour models. However, a global-scale map of CBH is still lacking. We mapped the first global maps of two stand-level CBH metrics at 1 km resolution for 2020. CBH was first estimated for individual trees segmented from airborne, drone, terrestrial and backpack lidar point clouds. The tree values were then aggregated to 1432 plots of 1 km × 1 km on six continents, and two plot-level metrics were derived. CBHwa is the mean weighted by the square of tree height, which follows the canopy-forming trees. CBHmin is the minimum, which marks the lower edge of the live canopy. Random forest models related both metrics to 47 satellite and environmental predictors. Tree-level CBH agreed with field measurements and manual annotations of 1641 trees with an RMSE of 3.32 m. Plot-level RMSE was 2.65 m for CBHwa and 1.80 m for CBHmin. The models reached R2 = 0.80 (RMSE 2.40 m) for CBHwa and R2 = 0.65 (RMSE 1.51 m) for CBHmin. Global mean CBHwa and CBHmin are 9.5 m and 3.8 m. CBHwa is highest in tropical moist forests, whereas CBHmin is highest in boreal forests. These maps provide a consistent global reference of CBH for forest management, vegetation modelling and wildfire risk assessment.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2028-10-01"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "M-Plan: Comprehensive Planning For LLM Agents with Memory Arrangement",
+      "EDMA: Entropy-Driven Multimodal Answering",
+      "MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning",
+      "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
+      "Expert-Guided Rubrics as Dense Reward Signals for Reinforcement Learning in Non-Verifiable Domains"
+    ],
+    "hugging_face": [
+      "M-Plan: Comprehensive Planning For LLM Agents with Memory Arrangement",
+      "EDMA: Entropy-Driven Multimodal Answering",
+      "MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning",
+      "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
+      "Expert-Guided Rubrics as Dense Reward Signals for Reinforcement Learning in Non-Verifiable Domains"
+    ],
+    "papers_with_code": [
+      "M-Plan: Comprehensive Planning For LLM Agents with Memory Arrangement",
+      "EDMA: Entropy-Driven Multimodal Answering",
+      "MAMath-Bench: Process-Aware and Robust Evaluation of Multimodal Multi-Agent Mathematical Reasoning",
+      "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
+      "Expert-Guided Rubrics as Dense Reward Signals for Reinforcement Learning in Non-Verifiable Domains"
+    ]
+  }
+}
