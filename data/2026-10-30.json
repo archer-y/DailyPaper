@@ -1,0 +1,315 @@
+{
+  "date": "2026-10-30",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "Where Planning Changes the Outcome of Orbital Games",
+      "authors": [
+        "Duncan Eddy",
+        "Mahdi Al-Husseini",
+        "Mykel J. Kochenderfer"
+      ],
+      "abstract": "This paper introduces OrbitalGym, a simulation environment for studying when planning algorithms or system design determine the outcome of adversarial orbital encounters. In an orbital game, two non-cooperative teams of satellites maneuver during rendezvous and proximity operations to win a differential-reward objective. Advances in terrestrial game playing have prompted many methods for orbital games, but studies typically evaluate one method in one scenario, often against a passive or random defender. It is unclear whether better planning matters once vehicle capability (maneuverability, sensing, communications) and adversarial responses are considered.\n  OrbitalGym is a JAX-based environment supporting varying numbers of agents, state representations (position, velocity, attitude, fuel), explicit or implicit communication, and proximity or conical field-of-view sensors. It compiles games to batched GPU code, enabling large-scale parallel simulation of policies across many configurations. This identifies regimes where policy choice affects outcomes and regimes where system capability dominates.\n  We study two close-range games: pursuit-evasion, where one spacecraft tries to capture another, and lady-bandit-guard, where a guard prevents an attacker from reaching a protected asset. We compare PD, LQR, model predictive path integral control, and Monte Carlo tree search over ratios of thrust and propellant, initial separation, game duration, sensor capability, and the definition of capture. In pursuit-evasion the propellant ratio decides most encounters: against five of six evader policies, pursuer policy changes capture probability by 10 percent or more in at most 15 of 90 capability configurations. In lady-bandit-guard, policy matters more: against bandits able to reach the asset, a better guard policy raises defense probability by at least 10 percent in 56 to 74 of 90 configurations.",
+      "url": "http://arxiv.org/abs/2610.37686v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37686v1",
+      "arxiv_id": "2610.37686",
+      "doi": null,
+      "score": 2.5,
+      "tldr": "This paper introduces OrbitalGym, a simulation environment for studying when planning algorithms or system design determine the outcome of adversarial orbital encounters. In an orbital game, two non-cooperative teams of satellites maneuver during rendezvous and proximity operations to win a differential-reward objective. Advances in terrestrial game playing have prompted many methods for orbital games, but studies typically evaluate one method in one scenario, often against a passive or random defender. It is unclear whether better planning matters once vehicle capability (maneuverability, sensing, communications) and adversarial responses are considered.\n  OrbitalGym is a JAX-based environment supporting varying numbers of agents, state representations (position, velocity, attitude, fuel), explicit or implicit communication, and proximity or conical field-of-view sensors. It compiles games to batched GPU code, enabling large-scale parallel simulation of policies across many configurations. This identifies regimes where policy choice affects outcomes and regimes where system capability dominates.\n  We study two close-range games: pursuit-evasion, where one spacecraft tries to capture another, and lady-bandit-guard, where a guard prevents an attacker from reaching a protected asset. We compare PD, LQR, model predictive path integral control, and Monte Carlo tree search over ratios of thrust and propellant, initial separation, game duration, sensor capability, and the definition of capture. In pursuit-evasion the propellant ratio decides most encounters: against five of six evader policies, pursuer policy changes capture probability by 10 percent or more in at most 15 of 90 capability configurations. In lady-bandit-guard, policy matters more: against bandits able to reach the asset, a better guard policy raises defense probability by at least 10 percent in 56 to 74 of 90 configurations.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 5,
+        "weighted_score": 3.75
+      },
+      "published_date": "2026-10-16"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Rethinking Social Simulation in Open-Population Systems: From Persistent Agents to Communication Processes",
+      "authors": [
+        "Yunyao Zhang",
+        "Yihao Ai",
+        "Boqi Xu",
+        "Zuocheng Ying",
+        "Junqing Yu",
+        "Zikai Song"
+      ],
+      "abstract": "Large language models (LLMs) have enabled social simulation with persistent agents, where fixed computational individuals maintain internal states and interact over time. However, large-scale social networks are inherently open-population systems: the participating population changes over time, users enter and leave dynamically, and only a sparse subset becomes observable through communication at any given time. In such systems, persistent account identities do not provide continuously observable individual-state trajectories, making recursively maintained psychological states insufficiently grounded in empirical observations. We therefore shift the simulation target from persistent individual trajectories to the observable evolution of social communication, modeling who participates, what they communicate, and how these communications shape subsequent system dynamics. We instantiate this formulation with participant activation from a global user pool, collective state transition, and an LLM policy for communication generation, while explicitly separating environmental inputs from endogenous system evolution. Across five Qwen backbones, our framework reduces average KL divergence by 71.2% over Direct LLM and 35.0% over MF-LLM, with boundary and counterfactual experiments further validating the proposed modeling boundaries. Our results support communication-centered simulation as a principled formulation for long-horizon open-population social systems. Project Website: https://ai4ss.github.io/OpenSim/",
+      "url": "http://arxiv.org/abs/2610.37687v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37687v1",
+      "arxiv_id": "2610.37687",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Large language models (LLMs) have enabled social simulation with persistent agents, where fixed computational individuals maintain internal states and interact over time. However, large-scale social networks are inherently open-population systems: the participating population changes over time, users enter and leave dynamically, and only a sparse subset becomes observable through communication at any given time. In such systems, persistent account identities do not provide continuously observable individual-state trajectories, making recursively maintained psychological states insufficiently grounded in empirical observations. We therefore shift the simulation target from persistent individual trajectories to the observable evolution of social communication, modeling who participates, what they communicate, and how these communications shape subsequent system dynamics. We instantiate this formulation with participant activation from a global user pool, collective state transition, and an LLM policy for communication generation, while explicitly separating environmental inputs from endogenous system evolution. Across five Qwen backbones, our framework reduces average KL divergence by 71.2% over Direct LLM and 35.0% over MF-LLM, with boundary and counterfactual experiments further validating the proposed modeling boundaries. Our results support communication-centered simulation as a principled formulation for long-horizon open-population social systems. Project Website: https://ai4ss.github.io/OpenSim/",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-17"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "WebAnything: From the Wild Web to Scalable Agent Environments",
+      "authors": [
+        "Tianci Xie",
+        "Zikun Cai",
+        "Chaoyun Zhang",
+        "Pinxue Guo",
+        "Bingxuan Li",
+        "Rui Zheng",
+        "Hang Yan"
+      ],
+      "abstract": "Web agents require diverse, executable, and resettable website environments for reproducible training and evaluation. Human-assisted mirrors demand per-site engineering, while generative construction can diverge from specified real websites. Capture-and-replay preserves observations, with interaction coverage constrained by captured content and replay capabilities.\n  We present WebAnything, a fully automated framework that reconstructs source-grounded, reusable Web environments from real URLs without per-site manual implementation or repair after initial setup and authorization. An Explorer-Builder collects browser-observable structures, resources, and interaction outcomes; an independent verifier checks frozen candidates and guides local repair or targeted source recapture.\n  We construct 244 website artifacts across 14 application domains and 53 categories, supporting 12,984 executed and accepted tasks. Compared with human-assisted WebHarbor, WebAnything achieves higher aggregate scores on three fidelity metrics, with 12 wins, two ties, and no losses in a blind audit. Fine-tuning Qwen3.5-9B on 5,856 interaction trajectories improves REAL success by 9.9 percentage points, Odysseys-Easy Rubric Avg and Task Avg by 6.25 and 6.32 percentage points, and WebArena-Verified Overall success by 13.33 percentage points under the fixed harness. Code: https://github.com/china-qijizhifeng/Web-Anything",
+      "url": "http://arxiv.org/abs/2610.37786v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37786v1",
+      "arxiv_id": "2610.37786",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Web agents require diverse, executable, and resettable website environments for reproducible training and evaluation. Human-assisted mirrors demand per-site engineering, while generative construction can diverge from specified real websites. Capture-and-replay preserves observations, with interaction coverage constrained by captured content and replay capabilities.\n  We present WebAnything, a fully automated framework that reconstructs source-grounded, reusable Web environments from real URLs without per-site manual implementation or repair after initial setup and authorization. An Explorer-Builder collects browser-observable structures, resources, and interaction outcomes; an independent verifier checks frozen candidates and guides local repair or targeted source recapture.\n  We construct 244 website artifacts across 14 application domains and 53 categories, supporting 12,984 executed and accepted tasks. Compared with human-assisted WebHarbor, WebAnything achieves higher aggregate scores on three fidelity metrics, with 12 wins, two ties, and no losses in a blind audit. Fine-tuning Qwen3.5-9B on 5,856 interaction trajectories improves REAL success by 9.9 percentage points, Odysseys-Easy Rubric Avg and Task Avg by 6.25 and 6.32 percentage points, and WebArena-Verified Overall success by 13.33 percentage points under the fixed harness. Code: https://github.com/china-qijizhifeng/Web-Anything",
+      "affiliations": null,
+      "code_urls": [
+        "https://github.com/china-qijizhifeng/Web-Anything"
+      ],
+      "project_urls": [
+        "https://china-qijizhifeng.github.io/Web-Anything/"
+      ],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25,
+        "hugging_face": {
+          "url": "https://huggingface.co/papers/2610.37786",
+          "upvotes": 8,
+          "submitted_by": null,
+          "summary": "Web agents require diverse, executable, and resettable website environments for reproducible training and evaluation. Human-assisted mirrors demand per-site engineering, while generative construction can diverge from specified real websites. Capture-and-replay preserves observations, with interaction coverage constrained by captured content and replay capabilities.\n  We present WebAnything, a fully automated framework that reconstructs source-grounded, reusable Web environments from real URLs without per-site manual implementation or repair after initial setup and authorization. An Explorer-Builder collects browser-observable structures, resources, and interaction outcomes; an independent verifier checks frozen candidates and guides local repair or targeted source recapture.\n  We construct 244 website artifacts across 14 application domains and 53 categories, supporting 12,984 executed and accepted tasks. Compared with human-assisted WebHarbor, WebAnything achieves higher aggregate scores on three fidelity metrics, with 12 wins, two ties, and no losses in a blind audit. Fine-tuning Qwen3.5-9B on 5,856 interaction trajectories improves REAL success by 9.9 percentage points, Odysseys-Easy Rubric Avg and Task Avg by 6.25 and 6.32 percentage points, and WebArena-Verified Overall success by 13.33 percentage points under the fixed harness. Code: https://github.com/china-qijizhifeng/Web-Anything",
+          "linked_repos": {
+            "models": [],
+            "datasets": [],
+            "spaces": []
+          }
+        }
+      },
+      "published_date": "2026-10-27"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "Multi-Agent Reinforcement Learning for Global Climate Policy Cooperation",
+      "authors": [
+        "Anne Moll-Elsborg",
+        "Oskar Bohn Lassen",
+        "Francisco Camara Pereira"
+      ],
+      "abstract": "International climate policy requires coordination among countries whose mitigation decisions impose local costs but generate global benefits. Classical game-theoretic and integrated assessment approaches can study these incentives, but typically rely on prescribed behavioural assumptions or equilibrium concepts. Recent work has therefore explored Multi-Agent Reinforcement Learning as a way to model climate-policy cooperation as an emergent outcome of repeated strategic interaction. We extend an existing MARL climate framework with a multi-stage negotiation mechanism in which agents propose agreements, accept or reject commitments, and face penalties for non-compliance. This allows us to study how agreement design affects learned mitigation behaviour, compliance, and climate outcomes. In an idealized setting with four homogeneous agents, we find that non-binding agreements do little to overcome free-riding, while moderate non-compliance penalties improve cooperation and reduce warming. However, excessively strong penalties discourage ambitious commitments, revealing a trade-off between enforcement and participation. We position the framework as a methodological contribution for testing agreement design rather than a predictive model of real negotiations.",
+      "url": "http://arxiv.org/abs/2610.37870v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37870v1",
+      "arxiv_id": "2610.37870",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "International climate policy requires coordination among countries whose mitigation decisions impose local costs but generate global benefits. Classical game-theoretic and integrated assessment approaches can study these incentives, but typically rely on prescribed behavioural assumptions or equilibrium concepts. Recent work has therefore explored Multi-Agent Reinforcement Learning as a way to model climate-policy cooperation as an emergent outcome of repeated strategic interaction. We extend an existing MARL climate framework with a multi-stage negotiation mechanism in which agents propose agreements, accept or reject commitments, and face penalties for non-compliance. This allows us to study how agreement design affects learned mitigation behaviour, compliance, and climate outcomes. In an idealized setting with four homogeneous agents, we find that non-binding agreements do little to overcome free-riding, while moderate non-compliance penalties improve cooperation and reduce warming. However, excessively strong penalties discourage ambitious commitments, revealing a trade-off between enforcement and participation. We position the framework as a methodological contribution for testing agreement design rather than a predictive model of real negotiations.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-10-27"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "Selective and Hybrid-State Communication for Latent Multi-Agent Systems",
+      "authors": [
+        "Miles Liao",
+        "Aaron Smieszek",
+        "Yuhao Ge"
+      ],
+      "abstract": "Efficient communication remains a major bottleneck in large language model multiagent systems. Latent communication reduces repeated natural-language exchange by transferring internal model states between agents, but these transfers remain costly and are typically designed around conventional KV-cache representations. We address this problem from two complementary perspectives. We introduce SelectKV, a boundary-aware method that selectively communicates KV states while protecting inherited context, and HyLaMAS, which extends latent collaboration to hybrid linear-attention models by communicating both KV caches and recurrent states through a shared workspace. Across six benchmarks, SelectKV reduces communicated KV positions and logical KV payload by 9.7-9.9%, with accuracy unchanged on two benchmarks, within one percentage point on three, and six points lower on HumanEval+. Across Qwen3.5 model scales, HyLaMAS reduces decoded output tokens by 53-80% and achieves 1.16-2.78x speedups relative to text-based multi-agent communication. Together, these independently evaluated methods represent two complementary approaches to efficient latent-state communication across conventional Transformer and hybrid model architectures.",
+      "url": "http://arxiv.org/abs/2610.37779v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.37779v1",
+      "arxiv_id": "2610.37779",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Efficient communication remains a major bottleneck in large language model multiagent systems. Latent communication reduces repeated natural-language exchange by transferring internal model states between agents, but these transfers remain costly and are typically designed around conventional KV-cache representations. We address this problem from two complementary perspectives. We introduce SelectKV, a boundary-aware method that selectively communicates KV states while protecting inherited context, and HyLaMAS, which extends latent collaboration to hybrid linear-attention models by communicating both KV caches and recurrent states through a shared workspace. Across six benchmarks, SelectKV reduces communicated KV positions and logical KV payload by 9.7-9.9%, with accuracy unchanged on two benchmarks, within one percentage point on three, and six points lower on HumanEval+. Across Qwen3.5 model scales, HyLaMAS reduces decoded output tokens by 53-80% and achieves 1.16-2.78x speedups relative to text-based multi-agent communication. Together, these independently evaluated methods represent two complementary approaches to efficient latent-state communication across conventional Transformer and hybrid model architectures.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-10-27"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation",
+      "authors": [
+        "Anonymous, Anonymous"
+      ],
+      "abstract": "This contains the actual source code, prompts, scripts and all experiment results as described in the paper:REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation.This data is provided as part of reproducibility effort to support transparency and allow verification of reported findings.",
+      "url": "https://doi.org/10.5281/zenodo.22893746",
+      "pdf_url": "https://doi.org/10.5281/zenodo.22893746",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.22893746",
+      "score": 1.0,
+      "tldr": "This contains the actual source code, prompts, scripts and all experiment results as described in the paper:REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation.This data is provided as part of reproducibility effort to support transparency and allow verification of reported findings.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-09-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Code and Experimental Data for Feasibility-Oriented Dung Beetle Optimization for Collision-Constrained Robotic Path Planning",
+      "authors": [
+        "QIANKUN ZHOU",
+        "Xiaotong Lian",
+        "Yubin Lan",
+        "Wanjie Xiong"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/tfrr2pcmrk",
+      "pdf_url": "https://doi.org/10.17632/tfrr2pcmrk",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/tfrr2pcmrk",
+      "score": 1.0,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-07-05"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://researchonline.lshtm.ac.uk/id/eprint/4681611/1/2026_PHP_PhD_Karapici_A.pdf",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "34th IAA SYMPOSIUM ON SMALL SATELLITE MISSIONS",
+      "authors": [
+        "International Astronautical Federation"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.25798/ppty-x093",
+      "pdf_url": "https://doi.org/10.25798/ppty-x093",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.25798/ppty-x093",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2027-09-27"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Benchmark instances for three‑stage integrated scheduling with complete‑kit assembly and finite‑buffer constraints",
+      "authors": [
+        "Wenbo Qi",
+        "Congcong Niu",
+        "Jiantang Zhang"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/v9ft5sx4cn",
+      "pdf_url": "https://doi.org/10.17632/v9ft5sx4cn",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/v9ft5sx4cn",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2027-09-04"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "Where Planning Changes the Outcome of Orbital Games",
+      "Rethinking Social Simulation in Open-Population Systems: From Persistent Agents to Communication Processes",
+      "WebAnything: From the Wild Web to Scalable Agent Environments",
+      "Multi-Agent Reinforcement Learning for Global Climate Policy Cooperation",
+      "Selective and Hybrid-State Communication for Latent Multi-Agent Systems"
+    ],
+    "hugging_face": [
+      "Where Planning Changes the Outcome of Orbital Games",
+      "Rethinking Social Simulation in Open-Population Systems: From Persistent Agents to Communication Processes",
+      "Multi-Agent Reinforcement Learning for Global Climate Policy Cooperation",
+      "Selective and Hybrid-State Communication for Latent Multi-Agent Systems"
+    ],
+    "papers_with_code": [
+      "Where Planning Changes the Outcome of Orbital Games",
+      "Rethinking Social Simulation in Open-Population Systems: From Persistent Agents to Communication Processes",
+      "WebAnything: From the Wild Web to Scalable Agent Environments",
+      "Multi-Agent Reinforcement Learning for Global Climate Policy Cooperation",
+      "Selective and Hybrid-State Communication for Latent Multi-Agent Systems"
+    ]
+  }
+}
