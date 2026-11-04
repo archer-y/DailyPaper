@@ -1,0 +1,316 @@
+{
+  "date": "2026-11-04",
+  "paper_count": 10,
+  "papers": [
+    {
+      "rank": 1,
+      "source": "arxiv",
+      "title": "RoboScope Kit: Unified Interfaces for Fast and Scalable Embodied-AI Evaluation",
+      "authors": [
+        "Deng-Ke Wu",
+        "Yifan Jin",
+        "Yida Yang",
+        "Lei Qian",
+        "Zhaoye Zhou",
+        "Hongru Zhang",
+        "Kai Ye",
+        "Shuyuan Hu",
+        "Yiran Mao",
+        "Zewei Ye",
+        "Bo Zhao"
+      ],
+      "abstract": "Simulation benchmarks are the standard way to compare robot policies, but each benchmark brings its own evaluator, observation layout, and action convention, and evaluation is slow: 500 RoboTwin Easy episodes with one simulator and one model on one GPU take 359.7 minutes. Profiling the official StarVLA evaluator shows that simulation occupies CPU cores while the GPU averages 14.3% utilization. RoboScope Kit wraps each model once in a Python class called a Policy, and each benchmark once in an adapter around the benchmark's own evaluator, so the benchmark's rules and scoring stay unchanged. Scheduling runs simulator workers and Policy replicas as separate pools, sizes both from measured probes, and shards work deterministically across GPU instances; runtime optimization renders only the observations an action-chunk Policy reads. Adapters cover six benchmark families. On LIBERO-Long with a StarVLA checkpoint on one 48 GiB RTX 4090, the concurrency search selects twelve simulator workers sharing three Policy replicas, which evaluate 500 episodes 4.45$\\times$ faster than the official StarVLA evaluation with equivalent success rates, 2.78$\\times$ faster than RLinf, and 1.52$\\times$ faster than vla-eval at its tuned configuration. With CUDA MPS, which lets the replicas run their kernels concurrently, the search selects sixteen workers sharing four replicas, 6.16$\\times$ faster than StarVLA, 3.85$\\times$ faster than RLinf, and 2.10$\\times$ faster than vla-eval. On RoboTwin Easy, four GPUs with chunk-boundary observation complete the 500 episodes in 14.4 minutes, 25.04$\\times$ faster than the single-GPU baseline, with identical success outcomes and terminal steps.",
+      "url": "http://arxiv.org/abs/2611.03850v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03850v1",
+      "arxiv_id": "2611.03850",
+      "doi": null,
+      "score": 2.0,
+      "tldr": "Simulation benchmarks are the standard way to compare robot policies, but each benchmark brings its own evaluator, observation layout, and action convention, and evaluation is slow: 500 RoboTwin Easy episodes with one simulator and one model on one GPU take 359.7 minutes. Profiling the official StarVLA evaluator shows that simulation occupies CPU cores while the GPU averages 14.3% utilization. RoboScope Kit wraps each model once in a Python class called a Policy, and each benchmark once in an adapter around the benchmark's own evaluator, so the benchmark's rules and scoring stay unchanged. Scheduling runs simulator workers and Policy replicas as separate pools, sizes both from measured probes, and shards work deterministically across GPU instances; runtime optimization renders only the observations an action-chunk Policy reads. Adapters cover six benchmark families. On LIBERO-Long with a StarVLA checkpoint on one 48 GiB RTX 4090, the concurrency search selects twelve simulator workers sharing three Policy replicas, which evaluate 500 episodes 4.45$\\times$ faster than the official StarVLA evaluation with equivalent success rates, 2.78$\\times$ faster than RLinf, and 1.52$\\times$ faster than vla-eval at its tuned configuration. With CUDA MPS, which lets the replicas run their kernels concurrently, the search selects sixteen workers sharing four replicas, 6.16$\\times$ faster than StarVLA, 3.85$\\times$ faster than RLinf, and 2.10$\\times$ faster than vla-eval. On RoboTwin Easy, four GPUs with chunk-boundary observation complete the 500 episodes in 14.4 minutes, 25.04$\\times$ faster than the single-GPU baseline, with identical success outcomes and terminal steps.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 4,
+        "weighted_score": 3.0
+      },
+      "published_date": "2026-11-02"
+    },
+    {
+      "rank": 2,
+      "source": "arxiv",
+      "title": "Performance, Scalability and Maintenance: An Experimental Study of RPA vs. Autonomous Agents in the Healthcare Domain",
+      "authors": [
+        "Daniel Schulz",
+        "Pedro Cabral Buchaim",
+        "Bernardo Soares",
+        "Fernando Rafael Ensslin Schwengber",
+        "Lorenzo Farias",
+        "Daniela Duarte da Silva Bagatini",
+        "Ana Paula Wernz da Cunha Müller"
+      ],
+      "abstract": "Healthcare information systems are fragmented, and retrieving data from legacy web portals is a recurrent need. Robotic Process Automation (RPA) is deterministic but sensitive to interface changes, whereas autonomous agents based on large language models (Agent Process Automation, APA) promise adaptability at a higher computational cost. Following Design Science Research, we developed and compared an RPA solution (Playwright) and an APA solution (browser-use, LangGraph and Gemini 2.5 Flash-lite) to retrieve mammography and breast ultrasound reports from a laboratory portal, treating reports solely as informational artifacts. Across two rounds (T and T+7), RPA reached 98.90% accuracy and 98.27% F1-score versus 96.49% and 94.48% for APA, was about 13 times faster (16.07 s vs. 207.21 s per patient) and cost about six times less per report (USD 0.030 vs. 0.187). Both reached 100% step success rates; APA varied more over time. For a stable interface, RPA was superior.",
+      "url": "http://arxiv.org/abs/2611.03853v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03853v1",
+      "arxiv_id": "2611.03853",
+      "doi": null,
+      "score": 1.5,
+      "tldr": "Healthcare information systems are fragmented, and retrieving data from legacy web portals is a recurrent need. Robotic Process Automation (RPA) is deterministic but sensitive to interface changes, whereas autonomous agents based on large language models (Agent Process Automation, APA) promise adaptability at a higher computational cost. Following Design Science Research, we developed and compared an RPA solution (Playwright) and an APA solution (browser-use, LangGraph and Gemini 2.5 Flash-lite) to retrieve mammography and breast ultrasound reports from a laboratory portal, treating reports solely as informational artifacts. Across two rounds (T and T+7), RPA reached 98.90% accuracy and 98.27% F1-score versus 96.49% and 94.48% for APA, was about 13 times faster (16.07 s vs. 207.21 s per patient) and cost about six times less per report (USD 0.030 vs. 0.187). Both reached 100% step success rates; APA varied more over time. For a stable interface, RPA was superior.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 3,
+        "weighted_score": 2.25
+      },
+      "published_date": "2026-11-02"
+    },
+    {
+      "rank": 3,
+      "source": "arxiv",
+      "title": "Functional-Group Knowledge Is Structured in Language Models Before It Is Spoken",
+      "authors": [
+        "Tran Nhat Khang Nguyen",
+        "Anh Nguyen",
+        "Obed Issakah",
+        "Janghoon Ock"
+      ],
+      "abstract": "Language models serve as the reasoning core of agents for chemistry and materials science, where they must interpret molecular structure before planning syntheses or proposing materials. Yet their outputs show only what they say, not what they know. Given a prompt such as ``The primary functional group in 1-Fluorobutane (CCCCF) is'', a small general-purpose model may answer ``the alkyne group'' instead of an alkyl fluoride. The output alone cannot tell whether the model failed to recognize the fluorine or recognized it and failed to say so. We address this by reading the internal representations of five open-source models on prompts covering 92 molecules and 20 functional groups. Even without chemistry training, the models organize functional groups by chemical family, and they encode chemical differences as consistent directions. The shift from thioether ($\\mathrm{R{-}S{-}R'}$) to thiol ($\\mathrm{R{-}SH}$), added to ether ($\\mathrm{R{-}O{-}R'}$), lands nearest alcohol ($\\mathrm{R{-}OH}$). This structure emerges abruptly in the middle layers, where representations shift from tracking the wording of the prompt to tracking the functional group. The base model names the correct functional group in only 58.5\\% of prompts, the lowest of the five, yet it encodes functional-group families and preserves chemically meaningful patterns. Its errors are mostly failures to answer rather than wrong answers. Functional-group knowledge is structured in the model before it is spoken. Chemistry fine-tuning reorganizes it, making functional groups rather than prompt wording dominate the representation. These results suggest that evaluating chemical language models through outputs alone can underestimate the chemical information they encode. Representation analysis can distinguish a lack of knowledge from a failure to express it, which matters when choosing or adapting models for chemical agents.",
+      "url": "http://arxiv.org/abs/2611.03684v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03684v1",
+      "arxiv_id": "2611.03684",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Language models serve as the reasoning core of agents for chemistry and materials science, where they must interpret molecular structure before planning syntheses or proposing materials. Yet their outputs show only what they say, not what they know. Given a prompt such as ``The primary functional group in 1-Fluorobutane (CCCCF) is'', a small general-purpose model may answer ``the alkyne group'' instead of an alkyl fluoride. The output alone cannot tell whether the model failed to recognize the fluorine or recognized it and failed to say so. We address this by reading the internal representations of five open-source models on prompts covering 92 molecules and 20 functional groups. Even without chemistry training, the models organize functional groups by chemical family, and they encode chemical differences as consistent directions. The shift from thioether ($\\mathrm{R{-}S{-}R'}$) to thiol ($\\mathrm{R{-}SH}$), added to ether ($\\mathrm{R{-}O{-}R'}$), lands nearest alcohol ($\\mathrm{R{-}OH}$). This structure emerges abruptly in the middle layers, where representations shift from tracking the wording of the prompt to tracking the functional group. The base model names the correct functional group in only 58.5\\% of prompts, the lowest of the five, yet it encodes functional-group families and preserves chemically meaningful patterns. Its errors are mostly failures to answer rather than wrong answers. Functional-group knowledge is structured in the model before it is spoken. Chemistry fine-tuning reorganizes it, making functional groups rather than prompt wording dominate the representation. These results suggest that evaluating chemical language models through outputs alone can underestimate the chemical information they encode. Representation analysis can distinguish a lack of knowledge from a failure to express it, which matters when choosing or adapting models for chemical agents.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-10-23"
+    },
+    {
+      "rank": 4,
+      "source": "arxiv",
+      "title": "From Logs to Faults: Reference-Free Fault Localization for Retrieval-Augmented Generation Pipelines",
+      "authors": [
+        "Hira Naveed",
+        "Scott Barnett",
+        "Stefanus Kurniawan",
+        "John Grundy",
+        "Chetan Arora",
+        "Hourieh Khalajzadeh",
+        "Omar Haggag"
+      ],
+      "abstract": "Retrieval-Augmented Generation (RAG) pipelines are widely used for domain-specific question answering, yet locating faults remains manual and time-consuming. Fault localization is challenging because RAG pipelines consist of interdependent stages, where faults can propagate downstream, masking their origin, or remain undetected even when the final answer is correct. Existing evaluation approaches often focus on individual stages and rely on reference answers or code instrumentation. We present RAGLog, which detects and localizes faults across RAG stages using execution logs, without requiring reference answers or code instrumentation. RAGLog transforms heterogeneous API logs into a common RAG schema and combines rule-based, embedding-based, and LLM-based checks to identify faulty stages. We introduce a live fault injector and RAGLog Faults, a dataset of 3,134 runs from five RAG pipelines with stage-level fault labels. With Claude Haiku 5.5, RAGLog achieves a pooled F1 score of 0.73 on runs with naturally occurring faults, outperforming Claude Code (0.58) and Codex (0.52), and comparable effectiveness on runs with injected faults (0.84 versus 0.80 and 0.82, respectively). It analyzes runs in approximately five seconds at US\\$0.005 each, with overall lower cost and latency than agent baselines. RAGLog is available as an open-source tool for debugging, evaluating, and monitoring RAG pipelines.",
+      "url": "http://arxiv.org/abs/2611.03725v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03725v1",
+      "arxiv_id": "2611.03725",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Retrieval-Augmented Generation (RAG) pipelines are widely used for domain-specific question answering, yet locating faults remains manual and time-consuming. Fault localization is challenging because RAG pipelines consist of interdependent stages, where faults can propagate downstream, masking their origin, or remain undetected even when the final answer is correct. Existing evaluation approaches often focus on individual stages and rely on reference answers or code instrumentation. We present RAGLog, which detects and localizes faults across RAG stages using execution logs, without requiring reference answers or code instrumentation. RAGLog transforms heterogeneous API logs into a common RAG schema and combines rule-based, embedding-based, and LLM-based checks to identify faulty stages. We introduce a live fault injector and RAGLog Faults, a dataset of 3,134 runs from five RAG pipelines with stage-level fault labels. With Claude Haiku 5.5, RAGLog achieves a pooled F1 score of 0.73 on runs with naturally occurring faults, outperforming Claude Code (0.58) and Codex (0.52), and comparable effectiveness on runs with injected faults (0.84 versus 0.80 and 0.82, respectively). It analyzes runs in approximately five seconds at US\\$0.005 each, with overall lower cost and latency than agent baselines. RAGLog is available as an open-source tool for debugging, evaluating, and monitoring RAG pipelines.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-11-01"
+    },
+    {
+      "rank": 5,
+      "source": "arxiv",
+      "title": "EMBERS: Empirically Motivated Robustness Testing of Deep Research Systems via Defect-Guided Fuzzing",
+      "authors": [
+        "Shuochuan Li",
+        "Zan Wang",
+        "Dong Wang",
+        "Yuhang Jiang",
+        "Huajin Cui",
+        "Chen Zhang",
+        "Gang Wang",
+        "Junjie Chen"
+      ],
+      "abstract": "Deep Research (DR) systems extend large language models into autonomous agents that decompose complex information needs, iteratively search the web, and synthesize evidence to answer challenging questions. However, their multi-stage execution may introduce robustness risks, as variations in user questions or intermediate search inputs may propagate across research stages and lead to incorrect answers. Existing evaluations focus on task-solving capabilities or robustness against external evidence disturbances, leaving intrinsic weaknesses in DR execution insufficiently explored. Thus, we conduct an empirical study of 1,932 execution trajectories from three representative DR systems and identify nine recurring defect categories across subquestion formulation, online search, and final reasoning. Guided by these findings, we propose EMBERS, an empirically motivated, defect-guided fuzzing framework for robustness testing of DR systems. Starting from correctly answered seed questions, EMBERS generates stage-targeted test inputs using defect-guided mutation, web-search-assisted fidelity assurance, and diversity-aware seed maintenance. Experiments across 16 framework--model--dataset settings show that EMBERS achieves 3.21 times the failure-discovery throughput of the strongest baseline under identical testing budgets. Human and LLM-assisted evaluations demonstrate that most generated inputs preserve the original information need and necessary contextual constraints. Moreover, model fine-tuning experiments show consistent-answer performance improvement, highlighting their value for robustness testing and model improvement.",
+      "url": "http://arxiv.org/abs/2611.03723v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.03723v1",
+      "arxiv_id": "2611.03723",
+      "doi": null,
+      "score": 1.0,
+      "tldr": "Deep Research (DR) systems extend large language models into autonomous agents that decompose complex information needs, iteratively search the web, and synthesize evidence to answer challenging questions. However, their multi-stage execution may introduce robustness risks, as variations in user questions or intermediate search inputs may propagate across research stages and lead to incorrect answers. Existing evaluations focus on task-solving capabilities or robustness against external evidence disturbances, leaving intrinsic weaknesses in DR execution insufficiently explored. Thus, we conduct an empirical study of 1,932 execution trajectories from three representative DR systems and identify nine recurring defect categories across subquestion formulation, online search, and final reasoning. Guided by these findings, we propose EMBERS, an empirically motivated, defect-guided fuzzing framework for robustness testing of DR systems. Starting from correctly answered seed questions, EMBERS generates stage-targeted test inputs using defect-guided mutation, web-search-assisted fidelity assurance, and diversity-aware seed maintenance. Experiments across 16 framework--model--dataset settings show that EMBERS achieves 3.21 times the failure-discovery throughput of the strongest baseline under identical testing budgets. Human and LLM-assisted evaluations demonstrate that most generated inputs preserve the original information need and necessary contextual constraints. Moreover, model fine-tuning experiments show consistent-answer performance improvement, highlighting their value for robustness testing and model improvement.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "arxiv",
+        "source_weight": 1.5,
+        "keyword_matches": 2,
+        "weighted_score": 1.5
+      },
+      "published_date": "2026-11-01"
+    },
+    {
+      "rank": 6,
+      "source": "openalex",
+      "title": "REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation",
+      "authors": [
+        "Anonymous, Anonymous"
+      ],
+      "abstract": "This contains the actual source code, prompts, scripts and all experiment results as described in the paper:REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation.This data is provided as part of reproducibility effort to support transparency and allow verification of reported findings.",
+      "url": "https://doi.org/10.5281/zenodo.22893746",
+      "pdf_url": "https://doi.org/10.5281/zenodo.22893746",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.5281/zenodo.22893746",
+      "score": 1.0,
+      "tldr": "This contains the actual source code, prompts, scripts and all experiment results as described in the paper:REALMS-CG: Resilient Ensemble of Autonomous LLM Multi-agent with Spectral clustering for Code Generation.This data is provided as part of reproducibility effort to support transparency and allow verification of reported findings.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-09-01"
+    },
+    {
+      "rank": 7,
+      "source": "openalex",
+      "title": "Code and Experimental Data for Feasibility-Oriented Dung Beetle Optimization for Collision-Constrained Robotic Path Planning",
+      "authors": [
+        "QIANKUN ZHOU",
+        "Xiaotong Lian",
+        "Yubin Lan",
+        "Wanjie Xiong"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/tfrr2pcmrk",
+      "pdf_url": "https://doi.org/10.17632/tfrr2pcmrk",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/tfrr2pcmrk",
+      "score": 1.0,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-07-05"
+    },
+    {
+      "rank": 8,
+      "source": "openalex",
+      "title": "Simulating the effect of urban food system interventions on dietary behaviour: a qualitative system dynamics and spatial agent-based modelling approach",
+      "authors": [
+        "A Karapici"
+      ],
+      "abstract": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "url": "https://researchonline.lshtm.ac.uk/id/eprint/4681611/1/2026_PHP_PhD_Karapici_A.pdf",
+      "pdf_url": "https://doi.org/10.17037/pubs.04681611",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17037/pubs.04681611",
+      "score": 1.0,
+      "tldr": "Background: Neighbourhood food environments influence dietary behaviour, particularly through the out-of-home (OOH) purchase of meals from fast-food and takeaway outlets. In the United Kingdom, such purchases have risen, contributing to unhealthy diets, yet evidence linking neighbourhood environments to these behaviours remains inconclusive. This thesis investigates their impact on OOH purchases, the feedback mechanisms involved, and the effectiveness of spatial planning policies restricting outlet proliferation, using Tower Hamlets as a case study. Methods: A systems approach integrated system dynamics modelling with spatial agent-based modelling. Group model building informed the development of a causal loop diagram (CLD), which mapped key feedback mechanisms of the neighbourhood food retail environment influencing OOH purchases. A nonspatial agent-based model, derived from the CLD, was developed using the Overview, Design Concepts, and Details protocol to simulate interactions between households and local outlets. The model was subsequently expanded to incorporate demographic and spatial data from Tower Hamlets to assess a planning policy, which restricts fast-food and takeaway outlets within 200 metres of schools and leisure centres, as well as modified scenarios applying 400-metre and 800-metre restrictions. Results: The CLD identified 76 feedback loops involving socioeconomic status, food preferences, social norms, and outlet availability. The nonspatial model, calibrated to real-world OOH purchasing patterns using household purchase data from the Kantar Fast Moving Consumer Goods Panel, showed that a 20% outlet reduction significantly decreased fast-food and takeaway purchases by 6.72%, while a 20% increase had no significant effect. Applied to Tower Hamlets, the model estimated that policy implementation reduced outlets by 29% (200m), 41% (400m), and 53% (800m) over nine years. However, purchasing patterns showed no significant change, partly due to clustering near policy boundaries. Conclusions: While planning policies can limit outlet proliferation, meaningful dietary improvements require multifaceted interventions that also address socioeconomic and behavioural determinants.",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 2,
+        "weighted_score": 1.2
+      },
+      "published_date": "2027-01-01"
+    },
+    {
+      "rank": 9,
+      "source": "openalex",
+      "title": "34th IAA SYMPOSIUM ON SMALL SATELLITE MISSIONS",
+      "authors": [
+        "International Astronautical Federation"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.25798/ppty-x093",
+      "pdf_url": "https://doi.org/10.25798/ppty-x093",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.25798/ppty-x093",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2027-09-27"
+    },
+    {
+      "rank": 10,
+      "source": "openalex",
+      "title": "Benchmark instances for three‑stage integrated scheduling with complete‑kit assembly and finite‑buffer constraints",
+      "authors": [
+        "Wenbo Qi",
+        "Congcong Niu",
+        "Jiantang Zhang"
+      ],
+      "abstract": "",
+      "url": "https://doi.org/10.17632/v9ft5sx4cn",
+      "pdf_url": "https://doi.org/10.17632/v9ft5sx4cn",
+      "arxiv_id": null,
+      "doi": "https://doi.org/10.17632/v9ft5sx4cn",
+      "score": 0.5,
+      "tldr": "Failed to generate TLDR. Neither full text nor abstract is provided",
+      "affiliations": null,
+      "code_urls": [],
+      "project_urls": [],
+      "metadata": {
+        "primary_source": "openalex",
+        "source_weight": 1.2,
+        "keyword_matches": 1,
+        "weighted_score": 0.6
+      },
+      "published_date": "2027-09-04"
+    }
+  ],
+  "enrichment_failures": {
+    "semantic_scholar": [
+      "RoboScope Kit: Unified Interfaces for Fast and Scalable Embodied-AI Evaluation",
+      "Performance, Scalability and Maintenance: An Experimental Study of RPA vs. Autonomous Agents in the Healthcare Domain",
+      "Functional-Group Knowledge Is Structured in Language Models Before It Is Spoken",
+      "From Logs to Faults: Reference-Free Fault Localization for Retrieval-Augmented Generation Pipelines",
+      "EMBERS: Empirically Motivated Robustness Testing of Deep Research Systems via Defect-Guided Fuzzing"
+    ],
+    "hugging_face": [
+      "RoboScope Kit: Unified Interfaces for Fast and Scalable Embodied-AI Evaluation",
+      "Performance, Scalability and Maintenance: An Experimental Study of RPA vs. Autonomous Agents in the Healthcare Domain",
+      "Functional-Group Knowledge Is Structured in Language Models Before It Is Spoken",
+      "From Logs to Faults: Reference-Free Fault Localization for Retrieval-Augmented Generation Pipelines",
+      "EMBERS: Empirically Motivated Robustness Testing of Deep Research Systems via Defect-Guided Fuzzing"
+    ],
+    "papers_with_code": [
+      "RoboScope Kit: Unified Interfaces for Fast and Scalable Embodied-AI Evaluation",
+      "Performance, Scalability and Maintenance: An Experimental Study of RPA vs. Autonomous Agents in the Healthcare Domain",
+      "Functional-Group Knowledge Is Structured in Language Models Before It Is Spoken",
+      "From Logs to Faults: Reference-Free Fault Localization for Retrieval-Augmented Generation Pipelines",
+      "EMBERS: Empirically Motivated Robustness Testing of Deep Research Systems via Defect-Guided Fuzzing"
+    ]
+  }
+}
